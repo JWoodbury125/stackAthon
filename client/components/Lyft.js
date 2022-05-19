@@ -7,7 +7,7 @@ class Lyft extends React.Component {
       color: "White",
       backgroundColor: "Pink",
       padding: "10px",
-      fontFamily: "Arial",
+      fontFamily: "Helvetica",
       border: "2px solid black",
       height: "250px",
       width: "200px",

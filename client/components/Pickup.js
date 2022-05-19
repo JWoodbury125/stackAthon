@@ -61,6 +61,7 @@ class Pickup extends Component {
             onChange={this.onChange}
             placeholder="Zip Code"
           />
+          <button>Submit</button>
         </form>
         <Uber />
         <Lyft />

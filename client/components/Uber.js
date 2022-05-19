@@ -7,7 +7,7 @@ class Uber extends React.Component {
       color: "green",
       backgroundColor: "Black",
       padding: "10px",
-      fontFamily: "Arial",
+      fontFamily: "Helvetica",
       border: "2px solid green",
       height: "250px",
       width: "200px",
