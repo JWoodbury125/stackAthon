@@ -1,0 +1,16 @@
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+form {
+  margin: 1em;
+  display: inline-block;
+}
+
+.price-box {
+  display: grid;
+  grid-template-columns: 200px 200px;
+}

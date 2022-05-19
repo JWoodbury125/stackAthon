@@ -5,35 +5,23 @@ const {
   models: { User },
 } = require("../server/db");
 
-async function seed() {
+async function runSeed() {
+  console.log("seeding database...");
   try {
     await db.sync({ force: true });
-    console.log("database seeded");
+    console.log("database synced");
 
-    const jennifer = await User.create({
-      firstName: "Jennifer",
-      lastName: "Woodbury",
+    await User.create({
       email: "jenrocks@gmail.com",
-      username: "jwood",
+      username: "jwoodrocks",
       password: "123",
     });
   } catch (err) {
     console.log(err);
-  }
-}
-
-async function runSeed() {
-  console.log("seeding database...");
-  try {
-    await seed();
-  } catch (err) {
-    console.log(err);
     process.exitCode = 1;
-  } finally {
-    console.log("closing db connection");
-    await db.close();
-    console.log("db connection closed finally");
   }
 }
 
 runSeed();
+
+module.exports = runSeed;
