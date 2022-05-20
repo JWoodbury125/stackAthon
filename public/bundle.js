@@ -4424,12 +4424,72 @@ __webpack_require__.r(__webpack_exports__);
 class GoogleMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   constructor(props) {
     super(props);
+    const {
+      lat,
+      lng
+    } = this.props.text;
     this.state = {
       stores: [{
-        latitude: 40.704498,
-        longitude: -74.009499
+        latitude: this.props.text ? lat : null,
+        longitude: this.props.text ? lng : null
       }]
     };
+    this.displayMarkers = this.displayMarkers.bind(this);
+    this.recenterMap = this.recenterMap.bind(this);
+    this.loadMap = this.loadMap.bind(this);
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log(`HERE IS PREV PROPS ---> ${prevProps.text.lat}`);
+
+    if (prevProps.google !== this.props.google) {
+      this.loadMap();
+    }
+
+    if (prevProps.text.lat !== this.state.stores[0].latitude) {
+      this.recenterMap();
+    }
+  } // ...
+
+
+  loadMap() {
+    if (this.props && this.props.google) {
+      // checks if google is available
+      const {
+        google
+      } = this.props;
+      const maps = google.maps;
+      const mapRef = this.refs.map; // reference to the actual DOM element
+
+      const node = ReactDOM.findDOMNode(mapRef);
+      let {
+        zoom
+      } = this.props;
+      const {
+        lat,
+        lng
+      } = this.state.stores[0];
+      const center = new maps.LatLng(lat, lng);
+      const mapConfig = Object.assign({}, {
+        center: center,
+        zoom: zoom
+      }); // maps.Map() is constructor that instantiates the map
+
+      this.map = new maps.Map(node, mapConfig);
+    }
+  } // ...
+
+
+  recenterMap() {
+    const map = this.map;
+    const current = this.state.stores[0];
+    const google = this.props.google;
+    const maps = google.maps;
+
+    if (map) {
+      let center = new maps.LatLng(current.latitude, current.longitude);
+      map.panTo(center);
+    }
   }
 
   displayMarkers = () => {
@@ -4446,6 +4506,7 @@ class GoogleMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   };
 
   render() {
+    console.log(`HERE IS MAP PROPS----> ${this.props.text.lat} ${this.props.text.lng}`);
     const mapStyles = {
       maxWidth: "550px",
       height: "550px",
@@ -4463,9 +4524,12 @@ class GoogleMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       zoom: 16,
       style: mapStyles,
       containerStyle: containerStyle,
-      initialCenter: {
-        lat: 40.704498,
-        lng: -74.009499
+      initialCenter: this.props.text.lat ? {
+        lat: this.props.text.lat,
+        lng: this.props.text.lng
+      } : {
+        lat: 40.632769,
+        lng: -73.90728
       }
     }, this.displayMarkers());
   }
@@ -4494,6 +4558,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Maps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Maps */ "./client/components/Maps.js");
 /* harmony import */ var _Uber__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Uber */ "./client/components/Uber.js");
 /* harmony import */ var _Lyft__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Lyft */ "./client/components/Lyft.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../config */ "./client/config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_7__);
+
+
 
 
 
@@ -4508,10 +4578,25 @@ class Pickup extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       address: "",
       city: "",
       state: "",
-      zip: ""
+      zip: "",
+      lat: "",
+      lng: ""
     };
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.geocodingQuery = this.geocodingQuery.bind(this);
+  }
+
+  async geocodingQuery(address, city, state) {
+    const geocoderQuery = `${address.split(" ").join("+")},+${city.split(" ").join("+")},+${state}`;
+    const uri = `https://maps.googleapis.com/maps/api/geocode/json?address=${geocoderQuery}&key=${_config__WEBPACK_IMPORTED_MODULE_7__.googleApiKey}`;
+    return await axios__WEBPACK_IMPORTED_MODULE_6___default().get(uri).then(response => {
+      let lngLat = {
+        lat: response.data.results["0"].geometry.location.lat,
+        lng: response.data.results["0"].geometry.location.lng
+      };
+      return lngLat;
+    });
   }
 
   onChange(ev) {
@@ -4522,13 +4607,30 @@ class Pickup extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
 
   async onSubmit(ev) {
     ev.preventDefault();
-    console.log("Submitted!!!");
+    const {
+      address,
+      city,
+      state,
+      zip
+    } = this.state;
+    const {
+      lat,
+      lng
+    } = await this.geocodingQuery(address, city, state);
+    this.setState({
+      address: address,
+      city: city,
+      state: state,
+      zip: zip,
+      lat: lat,
+      lng: lng
+    });
   }
 
   render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Maps__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
       onSubmit: this.onSubmit
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    }, "Pickup Location:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
       name: "address",
       type: "text",
       value: this.state.address,
@@ -4552,16 +4654,12 @@ class Pickup extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       value: this.state.zip,
       onChange: this.onChange,
       placeholder: "Zip Code"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", null, "Submit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Uber__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Lyft__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", null, "Submit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Maps__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      text: this.state
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Uber__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Lyft__WEBPACK_IMPORTED_MODULE_5__["default"], null));
   }
 
 }
-
-const mapDispatchToProps = dispatch => {
-  return {
-    sendPickup: dispatch(sendPickup())
-  };
-};
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pickup);
 
@@ -4691,52 +4789,24 @@ const me = () => async dispatch => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "me": () => (/* reexport safe */ _auth__WEBPACK_IMPORTED_MODULE_2__.me)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @reduxjs/toolkit */ "./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js");
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @reduxjs/toolkit */ "./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js");
 /* harmony import */ var redux_logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-logger */ "./node_modules/redux-logger/dist/redux-logger.js");
 /* harmony import */ var redux_logger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux_logger__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
 /* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
 /* harmony import */ var _auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth */ "./client/store/auth.js");
-/* harmony import */ var _users__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./users */ "./client/store/users.js");
 
 
 
 
 
 
-const reducer = (0,redux__WEBPACK_IMPORTED_MODULE_3__.combineReducers)({
-  auth: _auth__WEBPACK_IMPORTED_MODULE_2__["default"]
-});
-const middleware = (0,redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__.composeWithDevTools)((0,redux__WEBPACK_IMPORTED_MODULE_3__.applyMiddleware)(redux_thunk__WEBPACK_IMPORTED_MODULE_4__["default"], (0,redux_logger__WEBPACK_IMPORTED_MODULE_0__.createLogger)({
-  collapsed: true
-})));
-const store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_5__.configureStore)({
-  reducer: {
-    auth: _auth__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }
+
+const store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_3__.configureStore)({
+  reducer: _auth__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (store);
-
-
-
-/***/ }),
-
-/***/ "./client/store/users.js":
-/*!*******************************!*\
-  !*** ./client/store/users.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-
-const FETCH_USERS = "FETCH_USERS";
 
 /***/ }),
 
