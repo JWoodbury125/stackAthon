@@ -12256,11 +12256,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
 
 
 
 class Lyft extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      lat: "",
+      lng: ""
+    };
+  }
+
   render() {
+    const {
+      addressFrom,
+      cityFrom,
+      stateFrom,
+      zipFrom,
+      latFrom,
+      lngFrom,
+      addressTo,
+      cityTo,
+      stateTo,
+      latTo,
+      lngTo,
+      zipTo
+    } = this.props.search ? this.props.search : "";
     const boxStyle = {
       color: "White",
       backgroundColor: "Pink",
@@ -12268,19 +12292,31 @@ class Lyft extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       fontFamily: "Helvetica",
       border: "2px solid black",
       height: "250px",
-      width: "200px",
+      width: "300px",
       marginRight: "100px"
     };
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
       className: "price-box"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h1", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", {
       style: boxStyle
-    }, "HERE IS LYFT PRICING"));
+    }, "Lyft Pricing:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "From:", addressFrom, "  ", cityFrom, "  ", stateFrom, "  ", zipFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "To:", addressTo, "  ", cityTo, "  ", stateTo, "  ", zipTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Distance: 2.2 miles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Price: $38.50")));
   }
 
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Lyft);
+const mapStateToProps = state => {
+  const {
+    searches
+  } = state;
+  const lastElement = searches.length;
+  const search = searches.filter(_search => _search.id === lastElement)[0];
+  console.log("HERE IS SEARCH IN UBER--->", search);
+  return {
+    search
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(mapStateToProps)(Lyft));
 
 /***/ }),
 
@@ -12313,51 +12349,55 @@ class FullMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
     super(props);
     this.state = {
       stores: [{
-        latitudeFrom: this.props.search.latFrom,
-        longitudeFrom: this.props.search.lngFrom
+        lat: this.props.search.latFrom,
+        lng: this.props.search.lngFrom
       }, {
-        latitudeTo: this.props.search.latTo,
-        longitudeTo: this.props.search.lngTo
+        lat: this.props.search.latTo,
+        lat: this.props.search.lngTo
       }]
     };
     this.displayMarkers = this.displayMarkers.bind(this);
     this.handleDrawMarkers = this.handleDrawMarkers.bind(this);
   }
 
-  handleDrawMarkers = (latitude, longitude) => {
+  handleDrawMarkers = () => {
     const {
       stores
     } = this.state;
-    new google.maps.Marker({
-      position: (latitude, longitude),
-      map: this.map
+    return stores.forEach((store, index) => {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Marker, {
+        key: index,
+        postion: store
+      });
     });
   };
-  displayMarkers = (latitude, longitude) => {
+  displayMarkers = () => {
     return this.state.stores.map((store, index) => {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Marker, {
         key: index,
         id: index,
-        position: {
-          lat: latitude,
-          lng: longitude
-        }
+        position: store
       });
     });
   };
 
+  componentDidMount() {
+    this.displayMarkers();
+    this.handleDrawMarkers();
+  }
+
   render() {
     const mapStyles = {
       maxWidth: "550px",
-      height: "550px",
+      height: "600px",
       overflowX: "hidden",
       overflowY: "hidden"
     };
     const containerStyle = {
       maxWidth: "450px",
-      height: "350px",
-      marginLeft: "50vw",
-      marginTop: "80px"
+      height: "600px",
+      marginLeft: "25vw",
+      marginTop: "10px"
     };
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Map, {
       google: this.props.google,
@@ -12365,10 +12405,10 @@ class FullMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       style: mapStyles,
       containerStyle: containerStyle,
       initialCenter: {
-        lat: `${this.props.search.latFrom}` * 1.0,
-        lng: `${this.props.search.lngFrom}` * 1.0
+        lat: `${this.props.search.latTo}` * 1.0,
+        lng: `${this.props.search.lngTo}` * 1.0
       }
-    }, this.displayMarkers(parseFloat(`${this.props.search.latFrom}`), parseFloat(`${this.props.search.longFrom}`)), this.displayMarkers(parseFloat(`${this.props.search.latTo}`), parseFloat(`${this.props.search.longTo}`)));
+    }, this.displayMarkers(), this.handleDrawMarkers());
   }
 
 }
@@ -12580,14 +12620,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _store_searches__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../store/searches */ "./client/store/searches.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 
 
 
-class Uber extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
+
+class Uber extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      lat: "",
+      lng: ""
+    };
+  }
+
   render() {
+    const {
+      addressFrom,
+      cityFrom,
+      stateFrom,
+      zipFrom,
+      latFrom,
+      lngFrom,
+      addressTo,
+      cityTo,
+      stateTo,
+      latTo,
+      lngTo,
+      zipTo
+    } = this.props.search ? this.props.search : "";
     const boxStyle = {
       color: "green",
       backgroundColor: "Black",
@@ -12595,18 +12658,30 @@ class Uber extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       fontFamily: "Helvetica",
       border: "2px solid green",
       height: "250px",
-      width: "200px"
+      width: "300px"
     };
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "price-box"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h1", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
       style: boxStyle
-    }, "HERE IS UBER PRICING"));
+    }, "UBER Pricing:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "From:", addressFrom, "  ", cityFrom, "  ", stateFrom, "  ", zipFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "To:", addressTo, "  ", cityTo, "  ", stateTo, "  ", zipTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Distance: 2.2 miles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Price: $17.50")));
   }
 
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Uber);
+const mapStateToProps = state => {
+  const {
+    searches
+  } = state;
+  const lastElement = searches.length;
+  const search = searches.filter(_search => _search.id === lastElement)[0];
+  console.log("HERE IS SEARCH IN UBER--->", search);
+  return {
+    search
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(mapStateToProps)(Uber));
 
 /***/ }),
 

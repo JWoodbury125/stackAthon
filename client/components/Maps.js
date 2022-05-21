@@ -17,12 +17,12 @@ export class FullMap extends Component {
     this.state = {
       stores: [
         {
-          latitudeFrom: this.props.search.latFrom,
-          longitudeFrom: this.props.search.lngFrom,
+          lat: this.props.search.latFrom,
+          lng: this.props.search.lngFrom,
         },
         {
-          latitudeTo: this.props.search.latTo,
-          longitudeTo: this.props.search.lngTo,
+          lat: this.props.search.latTo,
+          lat: this.props.search.lngTo,
         },
       ],
     };
@@ -30,41 +30,35 @@ export class FullMap extends Component {
     this.handleDrawMarkers = this.handleDrawMarkers.bind(this);
   }
 
-  handleDrawMarkers = (latitude, longitude) => {
+  handleDrawMarkers = () => {
     const { stores } = this.state;
-    new google.maps.Marker({
-      position: (latitude, longitude),
-      map: this.map,
+    return stores.forEach((store, index) => {
+      return <Marker key={index} postion={store}></Marker>;
     });
   };
 
-  displayMarkers = (latitude, longitude) => {
+  displayMarkers = () => {
     return this.state.stores.map((store, index) => {
-      return (
-        <Marker
-          key={index}
-          id={index}
-          position={{
-            lat: latitude,
-            lng: longitude,
-          }}
-        />
-      );
+      return <Marker key={index} id={index} position={store} />;
     });
   };
+  componentDidMount() {
+    this.displayMarkers();
+    this.handleDrawMarkers();
+  }
 
   render() {
     const mapStyles = {
       maxWidth: "550px",
-      height: "550px",
+      height: "600px",
       overflowX: "hidden",
       overflowY: "hidden",
     };
     const containerStyle = {
       maxWidth: "450px",
-      height: "350px",
-      marginLeft: "50vw",
-      marginTop: "80px",
+      height: "600px",
+      marginLeft: "25vw",
+      marginTop: "10px",
     };
     return (
       <Map
@@ -73,26 +67,12 @@ export class FullMap extends Component {
         style={mapStyles}
         containerStyle={containerStyle}
         initialCenter={{
-          lat: `${this.props.search.latFrom}` * 1.0,
-          lng: `${this.props.search.lngFrom}` * 1.0,
+          lat: `${this.props.search.latTo}` * 1.0,
+          lng: `${this.props.search.lngTo}` * 1.0,
         }}
       >
-        {this.displayMarkers(
-          parseFloat(`${this.props.search.latFrom}`),
-          parseFloat(`${this.props.search.longFrom}`)
-        )}
-        {this.displayMarkers(
-          parseFloat(`${this.props.search.latTo}`),
-          parseFloat(`${this.props.search.longTo}`)
-        )}
-        {/* {this.handleDrawMarkers(
-          parseFloat(`${this.props.search.latFrom}`),
-          parseFloat(`${this.props.search.longFrom}`)
-        )}
-        {this.handleDrawMarkers(
-          parseFloat(`${this.props.search.latTo}`),
-          parseFloat(`${this.props.search.longTo}`)
-        )} */}
+        {this.displayMarkers()}
+        {this.handleDrawMarkers()}
       </Map>
     );
   }
