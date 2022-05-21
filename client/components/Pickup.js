@@ -6,6 +6,13 @@ import Uber from "./Uber";
 import Lyft from "./Lyft";
 import axios from "axios";
 import { googleApiKey } from "../config";
+import {
+  Map,
+  GoogleApiWrapper,
+  Marker,
+  DirectionsRenderer,
+  DirectionsService,
+} from "google-maps-react";
 
 class Pickup extends Component {
   constructor(props) {
@@ -28,6 +35,7 @@ class Pickup extends Component {
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
     this.geocodingQuery = this.geocodingQuery.bind(this);
+    this.loadMap = this.loadMap.bind(this);
   }
 
   async geocodingQuery(address, city, state) {
@@ -44,6 +52,26 @@ class Pickup extends Component {
       };
       return lngLat;
     });
+  }
+
+  loadMap() {
+    document.getElementById("map").style.display = "block";
+    const { latFrom, lngFrom, latTo, lngTo } = this.state;
+    return (
+      <div>
+        <Map
+          google={this.props.google}
+          zoom={14}
+          initialCenter={{
+            lat: { latFrom },
+            lng: { lngFrom },
+          }}
+        >
+          <Marker position={{ latFrom, lngFrom }} />
+          <Marker position={{ latTo, lngTo }} />
+        </Map>
+      </div>
+    );
   }
 
   onChange(ev) {
@@ -64,8 +92,10 @@ class Pickup extends Component {
       stateTo,
       zipTo,
     } = this.state;
+
     const latlng1 = await this.geocodingQuery(addressFrom, cityFrom, stateFrom);
     const latlng2 = await this.geocodingQuery(addressTo, cityTo, stateTo);
+
     this.setState({
       addressFrom: addressFrom,
       cityFrom: cityFrom,
@@ -81,6 +111,7 @@ class Pickup extends Component {
       lngTo: latlng2["lng"],
     });
     this.props.addSearches(this.state);
+    this.loadMap();
   }
 
   render() {

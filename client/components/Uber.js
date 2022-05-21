@@ -34,6 +34,7 @@ class Uber extends React.Component {
       height: "250px",
       width: "300px",
     };
+    const prices = [35.4, 48.9, 15.1, 7.19, 12.5];
     return (
       <div className="price-box">
         <h3 style={boxStyle}>
@@ -59,7 +60,7 @@ class Uber extends React.Component {
             {zipTo}
           </p>
           <p>Distance: 2.2 miles</p>
-          <p>Price: $17.50</p>
+          <p>Price: ${prices[Math.floor(Math.random() * prices.length)]}</p>
         </h3>
       </div>
     );
@@ -69,7 +70,7 @@ const mapStateToProps = (state) => {
   const { searches } = state;
   const lastElement = searches.length;
   const search = searches.filter((_search) => _search.id === lastElement)[0];
-  console.log("HERE IS SEARCH IN UBER--->", search);
+
   return {
     search,
   };

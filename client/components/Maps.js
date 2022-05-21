@@ -60,20 +60,33 @@ export class FullMap extends Component {
       marginLeft: "25vw",
       marginTop: "10px",
     };
+    const markers = this.state.stores;
     return (
-      <Map
-        google={this.props.google}
-        zoom={14}
-        style={mapStyles}
-        containerStyle={containerStyle}
-        initialCenter={{
-          lat: `${this.props.search.latTo}` * 1.0,
-          lng: `${this.props.search.lngTo}` * 1.0,
-        }}
-      >
-        {this.displayMarkers()}
-        {this.handleDrawMarkers()}
-      </Map>
+      <div>
+        <Map
+          google={this.props.google}
+          zoom={9}
+          style={mapStyles}
+          containerStyle={containerStyle}
+          initialCenter={{
+            lat: `${this.props.search.latTo}` * 1.0,
+            lng: `${this.props.search.lngTo}` * 1.0,
+          }}
+        >
+          <Marker
+            position={{
+              lat: `${markers[0].lat}` * 1.0,
+              lng: `${markers[0].lng}` * 1.0,
+            }}
+          />
+          <Marker
+            position={{
+              lat: `${markers[0].lat}` * 1.0,
+              lng: `${markers[0].lng}` * 1.0,
+            }}
+          />
+        </Map>
+      </div>
     );
   }
 }

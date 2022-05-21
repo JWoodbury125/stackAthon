@@ -12286,7 +12286,7 @@ class Lyft extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       zipTo
     } = this.props.search ? this.props.search : "";
     const boxStyle = {
-      color: "White",
+      color: "Red",
       backgroundColor: "Pink",
       padding: "10px",
       fontFamily: "Helvetica",
@@ -12295,11 +12295,12 @@ class Lyft extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       width: "300px",
       marginRight: "100px"
     };
+    const prices = [35.4, 48.9, 15.1, 7.19, 12.5];
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
       className: "price-box"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", {
       style: boxStyle
-    }, "Lyft Pricing:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "From:", addressFrom, "  ", cityFrom, "  ", stateFrom, "  ", zipFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "To:", addressTo, "  ", cityTo, "  ", stateTo, "  ", zipTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Distance: 2.2 miles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Price: $38.50")));
+    }, "Lyft Pricing:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "From:", addressFrom, "  ", cityFrom, "  ", stateFrom, "  ", zipFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "To:", addressTo, "  ", cityTo, "  ", stateTo, "  ", zipTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Distance: 2.2 miles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Price: $", prices[Math.floor(Math.random() * prices.length)])));
   }
 
 }
@@ -12310,7 +12311,6 @@ const mapStateToProps = state => {
   } = state;
   const lastElement = searches.length;
   const search = searches.filter(_search => _search.id === lastElement)[0];
-  console.log("HERE IS SEARCH IN UBER--->", search);
   return {
     search
   };
@@ -12399,16 +12399,27 @@ class FullMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       marginLeft: "25vw",
       marginTop: "10px"
     };
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Map, {
+    const markers = this.state.stores;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Map, {
       google: this.props.google,
-      zoom: 14,
+      zoom: 9,
       style: mapStyles,
       containerStyle: containerStyle,
       initialCenter: {
         lat: `${this.props.search.latTo}` * 1.0,
         lng: `${this.props.search.lngTo}` * 1.0
       }
-    }, this.displayMarkers(), this.handleDrawMarkers());
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Marker, {
+      position: {
+        lat: `${markers[0].lat}` * 1.0,
+        lng: `${markers[0].lng}` * 1.0
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Marker, {
+      position: {
+        lat: `${markers[0].lat}` * 1.0,
+        lng: `${markers[0].lng}` * 1.0
+      }
+    })));
   }
 
 }
@@ -12451,6 +12462,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../config */ "./client/config.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -12480,6 +12494,7 @@ class Pickup extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
     this.geocodingQuery = this.geocodingQuery.bind(this);
+    this.loadMap = this.loadMap.bind(this);
   }
 
   async geocodingQuery(address, city, state) {
@@ -12492,6 +12507,38 @@ class Pickup extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       };
       return lngLat;
     });
+  }
+
+  loadMap() {
+    document.getElementById("map").style.display = "block";
+    const {
+      latFrom,
+      lngFrom,
+      latTo,
+      lngTo
+    } = this.state;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_8__.Map, {
+      google: this.props.google,
+      zoom: 14,
+      initialCenter: {
+        lat: {
+          latFrom
+        },
+        lng: {
+          lngFrom
+        }
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_8__.Marker, {
+      position: {
+        latFrom,
+        lngFrom
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_8__.Marker, {
+      position: {
+        latTo,
+        lngTo
+      }
+    })));
   }
 
   onChange(ev) {
@@ -12529,6 +12576,7 @@ class Pickup extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       lngTo: latlng2["lng"]
     });
     this.props.addSearches(this.state);
+    this.loadMap();
   }
 
   render() {
@@ -12660,11 +12708,12 @@ class Uber extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       height: "250px",
       width: "300px"
     };
+    const prices = [35.4, 48.9, 15.1, 7.19, 12.5];
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "price-box"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
       style: boxStyle
-    }, "UBER Pricing:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "From:", addressFrom, "  ", cityFrom, "  ", stateFrom, "  ", zipFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "To:", addressTo, "  ", cityTo, "  ", stateTo, "  ", zipTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Distance: 2.2 miles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Price: $17.50")));
+    }, "UBER Pricing:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "From:", addressFrom, "  ", cityFrom, "  ", stateFrom, "  ", zipFrom), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "To:", addressTo, "  ", cityTo, "  ", stateTo, "  ", zipTo), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Distance: 2.2 miles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Price: $", prices[Math.floor(Math.random() * prices.length)])));
   }
 
 }
@@ -12675,7 +12724,6 @@ const mapStateToProps = state => {
   } = state;
   const lastElement = searches.length;
   const search = searches.filter(_search => _search.id === lastElement)[0];
-  console.log("HERE IS SEARCH IN UBER--->", search);
   return {
     search
   };

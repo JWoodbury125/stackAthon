@@ -27,7 +27,7 @@ class Lyft extends React.Component {
     } = this.props.search ? this.props.search : "";
 
     const boxStyle = {
-      color: "White",
+      color: "Red",
       backgroundColor: "Pink",
       padding: "10px",
       fontFamily: "Helvetica",
@@ -36,6 +36,7 @@ class Lyft extends React.Component {
       width: "300px",
       marginRight: "100px",
     };
+    const prices = [35.4, 48.9, 15.1, 7.19, 12.5];
     return (
       <div className="price-box">
         <h3 style={boxStyle}>
@@ -61,7 +62,7 @@ class Lyft extends React.Component {
             {zipTo}
           </p>
           <p>Distance: 2.2 miles</p>
-          <p>Price: $38.50</p>
+          <p>Price: ${prices[Math.floor(Math.random() * prices.length)]}</p>
         </h3>
       </div>
     );
@@ -71,7 +72,6 @@ const mapStateToProps = (state) => {
   const { searches } = state;
   const lastElement = searches.length;
   const search = searches.filter((_search) => _search.id === lastElement)[0];
-  console.log("HERE IS SEARCH IN UBER--->", search);
   return {
     search,
   };
