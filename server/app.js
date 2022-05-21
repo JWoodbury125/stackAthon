@@ -18,4 +18,12 @@ app.get("/", (req, res) => {
 // static file-serving middleware
 app.use(express.static(path.join(__dirname, "..", "public")));
 
+app.use("/api/searches", require("./api/routes/searches"));
+
+app.use((err, req, res, next) => {
+  console.error(err);
+  console.error(err.stack);
+  res.status(err.status || 500).send(err.message || "Internal server error.");
+});
+
 module.exports = app;

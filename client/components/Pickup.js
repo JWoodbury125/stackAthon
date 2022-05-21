@@ -1,23 +1,29 @@
 import React, { Component } from "react";
-import store from "../store";
+import { fetchSearches, addSearches } from "../store/searches";
 import { connect } from "react-redux";
-import Maps from "./Maps";
+import FullMap from "./Maps";
 import Uber from "./Uber";
 import Lyft from "./Lyft";
 import axios from "axios";
 import { googleApiKey } from "../config";
 
 class Pickup extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      address: "",
-      city: "",
-      state: "",
-      zip: "",
-      lat: "",
-      lng: "",
+      addressFrom: "",
+      cityFrom: "",
+      stateFrom: "",
+      zipFrom: "",
+      latFrom: 0,
+      lngFrom: 0,
+      addressTo: "",
+      cityTo: "",
+      stateTo: "",
+      zipTo: "",
+      latTo: 0,
+      lngTo: 0,
     };
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
@@ -48,16 +54,33 @@ class Pickup extends Component {
 
   async onSubmit(ev) {
     ev.preventDefault();
-    const { address, city, state, zip } = this.state;
-    const { lat, lng } = await this.geocodingQuery(address, city, state);
+    const {
+      addressFrom,
+      cityFrom,
+      stateFrom,
+      zipFrom,
+      addressTo,
+      cityTo,
+      stateTo,
+      zipTo,
+    } = this.state;
+    const latlng1 = await this.geocodingQuery(addressFrom, cityFrom, stateFrom);
+    const latlng2 = await this.geocodingQuery(addressTo, cityTo, stateTo);
     this.setState({
-      address: address,
-      city: city,
-      state: state,
-      zip: zip,
-      lat: lat,
-      lng: lng,
+      addressFrom: addressFrom,
+      cityFrom: cityFrom,
+      stateFrom: stateFrom,
+      zipFrom: zipFrom,
+      latFrom: latlng1["lat"],
+      lngFrom: latlng1["lng"],
+      addressTo: addressTo,
+      cityTo: cityTo,
+      stateTo: stateTo,
+      zipTo: zipTo,
+      latTo: latlng2["lat"],
+      lngTo: latlng2["lng"],
     });
+    this.props.addSearches(this.state);
   }
 
   render() {
@@ -66,42 +89,88 @@ class Pickup extends Component {
         <form onSubmit={this.onSubmit}>
           Pickup Location:
           <input
-            name="address"
+            name="addressFrom"
             type="text"
-            value={this.state.address}
+            value={this.state.addressFrom}
             onChange={this.onChange}
             placeholder="Address"
           />
           <input
-            name="city"
+            name="cityFrom"
             type="text"
-            value={this.state.city}
+            value={this.state.cityFrom}
             onChange={this.onChange}
             placeholder="City"
           />
           <input
-            name="state"
+            name="stateFrom"
             type="text"
-            value={this.state.state}
+            value={this.state.stateFrom}
             onChange={this.onChange}
             placeholder="State"
           />
           <input
-            name="zip"
+            name="zipFrom"
             type="text"
-            value={this.state.zip}
+            value={this.state.zipFrom}
             onChange={this.onChange}
             placeholder="Zip Code"
           />
+          <div>
+            DropOff Location:
+            <input
+              name="addressTo"
+              type="text"
+              value={this.state.addressTo}
+              onChange={this.onChange}
+              placeholder="Address"
+            />
+            <input
+              name="cityTo"
+              type="text"
+              value={this.state.cityTo}
+              onChange={this.onChange}
+              placeholder="City"
+            />
+            <input
+              name="stateTo"
+              type="text"
+              value={this.state.stateTo}
+              onChange={this.onChange}
+              placeholder="State"
+            />
+            <input
+              name="zipTo"
+              type="text"
+              value={this.state.zipTo}
+              onChange={this.onChange}
+              placeholder="Zip Code"
+            />
+          </div>
           <button>Submit</button>
         </form>
         <hr />
-        <Maps text={this.state} />
+        <FullMap />
         <Uber />
         <Lyft />
       </div>
     );
   }
 }
+const mapStateToProps = (state) => {
+  const { searches } = state;
+  const lastElement = searches.length;
+  const search = searches.filter((_search) => _search.id === lastElement)[0];
+  return {
+    search,
+  };
+};
 
-export default Pickup;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchSearches: () => dispatch(fetchSearches()),
+    addSearches: (searches) => dispatch(addSearches(searches)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Pickup);

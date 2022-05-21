@@ -1,1825 +1,9610 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js ***!
-  \*****************************************************************/
+/***/ "./node_modules/@react-google-maps/api/dist/esm.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@react-google-maps/api/dist/esm.js ***!
+  \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "MiddlewareArray": () => (/* binding */ MiddlewareArray),
-/* harmony export */   "TaskAbortError": () => (/* binding */ TaskAbortError),
-/* harmony export */   "__DO_NOT_USE__ActionTypes": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.__DO_NOT_USE__ActionTypes),
-/* harmony export */   "addListener": () => (/* binding */ addListener),
-/* harmony export */   "applyMiddleware": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.applyMiddleware),
-/* harmony export */   "bindActionCreators": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.bindActionCreators),
-/* harmony export */   "clearAllListeners": () => (/* binding */ clearAllListeners),
-/* harmony export */   "combineReducers": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.combineReducers),
-/* harmony export */   "compose": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.compose),
-/* harmony export */   "configureStore": () => (/* binding */ configureStore),
-/* harmony export */   "createAction": () => (/* binding */ createAction),
-/* harmony export */   "createAsyncThunk": () => (/* binding */ createAsyncThunk),
-/* harmony export */   "createDraftSafeSelector": () => (/* binding */ createDraftSafeSelector),
-/* harmony export */   "createEntityAdapter": () => (/* binding */ createEntityAdapter),
-/* harmony export */   "createImmutableStateInvariantMiddleware": () => (/* binding */ createImmutableStateInvariantMiddleware),
-/* harmony export */   "createListenerMiddleware": () => (/* binding */ createListenerMiddleware),
-/* harmony export */   "createNextState": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__["default"]),
-/* harmony export */   "createReducer": () => (/* binding */ createReducer),
-/* harmony export */   "createSelector": () => (/* reexport safe */ reselect__WEBPACK_IMPORTED_MODULE_1__.createSelector),
-/* harmony export */   "createSerializableStateInvariantMiddleware": () => (/* binding */ createSerializableStateInvariantMiddleware),
-/* harmony export */   "createSlice": () => (/* binding */ createSlice),
-/* harmony export */   "createStore": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.createStore),
-/* harmony export */   "current": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__.current),
-/* harmony export */   "findNonSerializableValue": () => (/* binding */ findNonSerializableValue),
-/* harmony export */   "freeze": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__.freeze),
-/* harmony export */   "getDefaultMiddleware": () => (/* binding */ getDefaultMiddleware),
-/* harmony export */   "getType": () => (/* binding */ getType),
-/* harmony export */   "isAllOf": () => (/* binding */ isAllOf),
-/* harmony export */   "isAnyOf": () => (/* binding */ isAnyOf),
-/* harmony export */   "isAsyncThunkAction": () => (/* binding */ isAsyncThunkAction),
-/* harmony export */   "isDraft": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__.isDraft),
-/* harmony export */   "isFulfilled": () => (/* binding */ isFulfilled),
-/* harmony export */   "isImmutableDefault": () => (/* binding */ isImmutableDefault),
-/* harmony export */   "isPending": () => (/* binding */ isPending),
-/* harmony export */   "isPlain": () => (/* binding */ isPlain),
-/* harmony export */   "isPlainObject": () => (/* binding */ isPlainObject),
-/* harmony export */   "isRejected": () => (/* binding */ isRejected),
-/* harmony export */   "isRejectedWithValue": () => (/* binding */ isRejectedWithValue),
-/* harmony export */   "legacy_createStore": () => (/* reexport safe */ redux__WEBPACK_IMPORTED_MODULE_0__.legacy_createStore),
-/* harmony export */   "miniSerializeError": () => (/* binding */ miniSerializeError),
-/* harmony export */   "nanoid": () => (/* binding */ nanoid),
-/* harmony export */   "original": () => (/* reexport safe */ immer__WEBPACK_IMPORTED_MODULE_2__.original),
-/* harmony export */   "removeListener": () => (/* binding */ removeListener),
-/* harmony export */   "unwrapResult": () => (/* binding */ unwrapResult)
+/* harmony export */   "Autocomplete": () => (/* binding */ Autocomplete),
+/* harmony export */   "BicyclingLayer": () => (/* binding */ BicyclingLayer),
+/* harmony export */   "BicyclingLayerF": () => (/* binding */ BicyclingLayerF),
+/* harmony export */   "Circle": () => (/* binding */ Circle),
+/* harmony export */   "CircleF": () => (/* binding */ CircleF),
+/* harmony export */   "Data": () => (/* binding */ Data),
+/* harmony export */   "DataF": () => (/* binding */ DataF),
+/* harmony export */   "DirectionsRenderer": () => (/* binding */ DirectionsRenderer),
+/* harmony export */   "DirectionsService": () => (/* binding */ DirectionsService),
+/* harmony export */   "DistanceMatrixService": () => (/* binding */ DistanceMatrixService),
+/* harmony export */   "DrawingManager": () => (/* binding */ DrawingManager),
+/* harmony export */   "DrawingManagerF": () => (/* binding */ DrawingManagerF),
+/* harmony export */   "GoogleMap": () => (/* binding */ GoogleMap),
+/* harmony export */   "GoogleMapsMarkerClusterer": () => (/* binding */ index_esm),
+/* harmony export */   "GoogleMarkerClusterer": () => (/* binding */ GoogleMarkerClusterer$1),
+/* harmony export */   "GroundOverlay": () => (/* binding */ GroundOverlay),
+/* harmony export */   "HeatmapLayer": () => (/* binding */ HeatmapLayer),
+/* harmony export */   "InfoBox": () => (/* binding */ InfoBoxComponent),
+/* harmony export */   "InfoBoxF": () => (/* binding */ InfoBoxF),
+/* harmony export */   "InfoWindow": () => (/* binding */ InfoWindow),
+/* harmony export */   "InfoWindowF": () => (/* binding */ InfoWindowF),
+/* harmony export */   "KmlLayer": () => (/* binding */ KmlLayer),
+/* harmony export */   "LoadScript": () => (/* binding */ LoadScript),
+/* harmony export */   "LoadScriptNext": () => (/* binding */ LoadScriptNext$1),
+/* harmony export */   "MapContext": () => (/* binding */ MapContext),
+/* harmony export */   "Marker": () => (/* binding */ Marker),
+/* harmony export */   "MarkerClusterer": () => (/* binding */ ClustererComponent),
+/* harmony export */   "MarkerF": () => (/* binding */ MarkerF),
+/* harmony export */   "OverlayView": () => (/* binding */ OverlayView),
+/* harmony export */   "Polygon": () => (/* binding */ Polygon),
+/* harmony export */   "PolygonF": () => (/* binding */ PolygonF),
+/* harmony export */   "Polyline": () => (/* binding */ Polyline),
+/* harmony export */   "PolylineF": () => (/* binding */ PolylineF),
+/* harmony export */   "Rectangle": () => (/* binding */ Rectangle),
+/* harmony export */   "RectangleF": () => (/* binding */ RectangleF),
+/* harmony export */   "StandaloneSearchBox": () => (/* binding */ StandaloneSearchBox),
+/* harmony export */   "StreetViewPanorama": () => (/* binding */ StreetViewPanorama),
+/* harmony export */   "StreetViewService": () => (/* binding */ StreetViewService),
+/* harmony export */   "TrafficLayer": () => (/* binding */ TrafficLayer),
+/* harmony export */   "TrafficLayerF": () => (/* binding */ TrafficLayerF),
+/* harmony export */   "TransitLayer": () => (/* binding */ TransitLayer),
+/* harmony export */   "TransitLayerF": () => (/* binding */ TransitLayerF),
+/* harmony export */   "useGoogleMap": () => (/* binding */ useGoogleMap),
+/* harmony export */   "useJsApiLoader": () => (/* binding */ useJsApiLoader),
+/* harmony export */   "useLoadScript": () => (/* binding */ useLoadScript)
 /* harmony export */ });
-/* harmony import */ var immer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! immer */ "./node_modules/immer/dist/immer.esm.mjs");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-/* harmony import */ var reselect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reselect */ "./node_modules/reselect/es/index.js");
-/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
-var __extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+
+
+
+
+
+var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof __webpack_require__.g !== 'undefined' ? __webpack_require__.g : typeof self !== 'undefined' ? self : {};
+
+var jsxRuntime = {exports: {}};
+
+var reactJsxRuntime_production_min = {};
+
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var hasRequiredReactJsxRuntime_production_min;
+
+function requireReactJsxRuntime_production_min () {
+	if (hasRequiredReactJsxRuntime_production_min) return reactJsxRuntime_production_min;
+	hasRequiredReactJsxRuntime_production_min = 1;
+var f=react__WEBPACK_IMPORTED_MODULE_0__,k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+	function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return {$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}reactJsxRuntime_production_min.Fragment=l;reactJsxRuntime_production_min.jsx=q;reactJsxRuntime_production_min.jsxs=q;
+	return reactJsxRuntime_production_min;
+}
+
+var reactJsxRuntime_development = {};
+
+/**
+ * @license React
+ * react-jsx-runtime.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var hasRequiredReactJsxRuntime_development;
+
+function requireReactJsxRuntime_development () {
+	if (hasRequiredReactJsxRuntime_development) return reactJsxRuntime_development;
+	hasRequiredReactJsxRuntime_development = 1;
+
+	if (true) {
+	  (function() {
+
+	var React = react__WEBPACK_IMPORTED_MODULE_0__;
+
+	// -----------------------------------------------------------------------------
+
+	var enableScopeAPI = false; // Experimental Create Event Handle API.
+	var enableCacheElement = false;
+	var enableTransitionTracing = false; // No known bugs, but needs performance testing
+
+	var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
+	// stuff. Intended to enable React core members to more easily debug scheduling
+	// issues in DEV builds.
+
+	var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
+
+	// ATTENTION
+
+	var REACT_ELEMENT_TYPE =  Symbol.for('react.element');
+	var REACT_PORTAL_TYPE =  Symbol.for('react.portal');
+	var REACT_FRAGMENT_TYPE =  Symbol.for('react.fragment');
+	var REACT_STRICT_MODE_TYPE =  Symbol.for('react.strict_mode');
+	var REACT_PROFILER_TYPE =  Symbol.for('react.profiler');
+	var REACT_PROVIDER_TYPE =  Symbol.for('react.provider');
+	var REACT_CONTEXT_TYPE =  Symbol.for('react.context');
+	var REACT_FORWARD_REF_TYPE =  Symbol.for('react.forward_ref');
+	var REACT_SUSPENSE_TYPE =  Symbol.for('react.suspense');
+	var REACT_SUSPENSE_LIST_TYPE =  Symbol.for('react.suspense_list');
+	var REACT_MEMO_TYPE =  Symbol.for('react.memo');
+	var REACT_LAZY_TYPE =  Symbol.for('react.lazy');
+	var REACT_OFFSCREEN_TYPE =  Symbol.for('react.offscreen');
+	var MAYBE_ITERATOR_SYMBOL =  Symbol.iterator;
+	var FAUX_ITERATOR_SYMBOL = '@@iterator';
+	function getIteratorFn(maybeIterable) {
+	  if (maybeIterable === null || typeof maybeIterable !== 'object') {
+	    return null;
+	  }
+
+	  var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
+
+	  if (typeof maybeIterator === 'function') {
+	    return maybeIterator;
+	  }
+
+	  return null;
+	}
+
+	var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+
+	function error(format) {
+	  {
+	    {
+	      for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+	        args[_key2 - 1] = arguments[_key2];
+	      }
+
+	      printWarning('error', format, args);
+	    }
+	  }
+	}
+
+	function printWarning(level, format, args) {
+	  // When changing this logic, you might want to also
+	  // update consoleWithStackDev.www.js as well.
+	  {
+	    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+	    var stack = ReactDebugCurrentFrame.getStackAddendum();
+
+	    if (stack !== '') {
+	      format += '%s';
+	      args = args.concat([stack]);
+	    } // eslint-disable-next-line react-internal/safe-string-coercion
+
+
+	    var argsWithFormat = args.map(function (item) {
+	      return String(item);
+	    }); // Careful: RN currently depends on this prefix
+
+	    argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
+	    // breaks IE9: https://github.com/facebook/react/issues/13610
+	    // eslint-disable-next-line react-internal/no-production-logging
+
+	    Function.prototype.apply.call(console[level], console, argsWithFormat);
+	  }
+	}
+
+	var REACT_MODULE_REFERENCE;
+
+	{
+	  REACT_MODULE_REFERENCE = Symbol.for('react.module.reference');
+	}
+
+	function isValidElementType(type) {
+	  if (typeof type === 'string' || typeof type === 'function') {
+	    return true;
+	  } // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
+
+
+	  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing  || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden  || type === REACT_OFFSCREEN_TYPE || enableScopeAPI  || enableCacheElement  || enableTransitionTracing ) {
+	    return true;
+	  }
+
+	  if (typeof type === 'object' && type !== null) {
+	    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+	    // types supported by any Flight configuration anywhere since
+	    // we don't know which Flight build this will end up being used
+	    // with.
+	    type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) {
+	      return true;
+	    }
+	  }
+
+	  return false;
+	}
+
+	function getWrappedName(outerType, innerType, wrapperName) {
+	  var displayName = outerType.displayName;
+
+	  if (displayName) {
+	    return displayName;
+	  }
+
+	  var functionName = innerType.displayName || innerType.name || '';
+	  return functionName !== '' ? wrapperName + "(" + functionName + ")" : wrapperName;
+	} // Keep in sync with react-reconciler/getComponentNameFromFiber
+
+
+	function getContextName(type) {
+	  return type.displayName || 'Context';
+	} // Note that the reconciler package should generally prefer to use getComponentNameFromFiber() instead.
+
+
+	function getComponentNameFromType(type) {
+	  if (type == null) {
+	    // Host root, text node or just invalid type.
+	    return null;
+	  }
+
+	  {
+	    if (typeof type.tag === 'number') {
+	      error('Received an unexpected object in getComponentNameFromType(). ' + 'This is likely a bug in React. Please file an issue.');
+	    }
+	  }
+
+	  if (typeof type === 'function') {
+	    return type.displayName || type.name || null;
+	  }
+
+	  if (typeof type === 'string') {
+	    return type;
+	  }
+
+	  switch (type) {
+	    case REACT_FRAGMENT_TYPE:
+	      return 'Fragment';
+
+	    case REACT_PORTAL_TYPE:
+	      return 'Portal';
+
+	    case REACT_PROFILER_TYPE:
+	      return 'Profiler';
+
+	    case REACT_STRICT_MODE_TYPE:
+	      return 'StrictMode';
+
+	    case REACT_SUSPENSE_TYPE:
+	      return 'Suspense';
+
+	    case REACT_SUSPENSE_LIST_TYPE:
+	      return 'SuspenseList';
+
+	  }
+
+	  if (typeof type === 'object') {
+	    switch (type.$$typeof) {
+	      case REACT_CONTEXT_TYPE:
+	        var context = type;
+	        return getContextName(context) + '.Consumer';
+
+	      case REACT_PROVIDER_TYPE:
+	        var provider = type;
+	        return getContextName(provider._context) + '.Provider';
+
+	      case REACT_FORWARD_REF_TYPE:
+	        return getWrappedName(type, type.render, 'ForwardRef');
+
+	      case REACT_MEMO_TYPE:
+	        var outerName = type.displayName || null;
+
+	        if (outerName !== null) {
+	          return outerName;
+	        }
+
+	        return getComponentNameFromType(type.type) || 'Memo';
+
+	      case REACT_LAZY_TYPE:
+	        {
+	          var lazyComponent = type;
+	          var payload = lazyComponent._payload;
+	          var init = lazyComponent._init;
+
+	          try {
+	            return getComponentNameFromType(init(payload));
+	          } catch (x) {
+	            return null;
+	          }
+	        }
+
+	      // eslint-disable-next-line no-fallthrough
+	    }
+	  }
+
+	  return null;
+	}
+
+	var assign = Object.assign;
+
+	// Helpers to patch console.logs to avoid logging during side-effect free
+	// replaying on render function. This currently only patches the object
+	// lazily which won't cover if the log function was extracted eagerly.
+	// We could also eagerly patch the method.
+	var disabledDepth = 0;
+	var prevLog;
+	var prevInfo;
+	var prevWarn;
+	var prevError;
+	var prevGroup;
+	var prevGroupCollapsed;
+	var prevGroupEnd;
+
+	function disabledLog() {}
+
+	disabledLog.__reactDisabledLog = true;
+	function disableLogs() {
+	  {
+	    if (disabledDepth === 0) {
+	      /* eslint-disable react-internal/no-production-logging */
+	      prevLog = console.log;
+	      prevInfo = console.info;
+	      prevWarn = console.warn;
+	      prevError = console.error;
+	      prevGroup = console.group;
+	      prevGroupCollapsed = console.groupCollapsed;
+	      prevGroupEnd = console.groupEnd; // https://github.com/facebook/react/issues/19099
+
+	      var props = {
+	        configurable: true,
+	        enumerable: true,
+	        value: disabledLog,
+	        writable: true
+	      }; // $FlowFixMe Flow thinks console is immutable.
+
+	      Object.defineProperties(console, {
+	        info: props,
+	        log: props,
+	        warn: props,
+	        error: props,
+	        group: props,
+	        groupCollapsed: props,
+	        groupEnd: props
+	      });
+	      /* eslint-enable react-internal/no-production-logging */
+	    }
+
+	    disabledDepth++;
+	  }
+	}
+	function reenableLogs() {
+	  {
+	    disabledDepth--;
+
+	    if (disabledDepth === 0) {
+	      /* eslint-disable react-internal/no-production-logging */
+	      var props = {
+	        configurable: true,
+	        enumerable: true,
+	        writable: true
+	      }; // $FlowFixMe Flow thinks console is immutable.
+
+	      Object.defineProperties(console, {
+	        log: assign({}, props, {
+	          value: prevLog
+	        }),
+	        info: assign({}, props, {
+	          value: prevInfo
+	        }),
+	        warn: assign({}, props, {
+	          value: prevWarn
+	        }),
+	        error: assign({}, props, {
+	          value: prevError
+	        }),
+	        group: assign({}, props, {
+	          value: prevGroup
+	        }),
+	        groupCollapsed: assign({}, props, {
+	          value: prevGroupCollapsed
+	        }),
+	        groupEnd: assign({}, props, {
+	          value: prevGroupEnd
+	        })
+	      });
+	      /* eslint-enable react-internal/no-production-logging */
+	    }
+
+	    if (disabledDepth < 0) {
+	      error('disabledDepth fell below zero. ' + 'This is a bug in React. Please file an issue.');
+	    }
+	  }
+	}
+
+	var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
+	var prefix;
+	function describeBuiltInComponentFrame(name, source, ownerFn) {
+	  {
+	    if (prefix === undefined) {
+	      // Extract the VM specific prefix used by each line.
+	      try {
+	        throw Error();
+	      } catch (x) {
+	        var match = x.stack.trim().match(/\n( *(at )?)/);
+	        prefix = match && match[1] || '';
+	      }
+	    } // We use the prefix to ensure our stacks line up with native stack frames.
+
+
+	    return '\n' + prefix + name;
+	  }
+	}
+	var reentry = false;
+	var componentFrameCache;
+
+	{
+	  var PossiblyWeakMap = typeof WeakMap === 'function' ? WeakMap : Map;
+	  componentFrameCache = new PossiblyWeakMap();
+	}
+
+	function describeNativeComponentFrame(fn, construct) {
+	  // If something asked for a stack inside a fake render, it should get ignored.
+	  if ( !fn || reentry) {
+	    return '';
+	  }
+
+	  {
+	    var frame = componentFrameCache.get(fn);
+
+	    if (frame !== undefined) {
+	      return frame;
+	    }
+	  }
+
+	  var control;
+	  reentry = true;
+	  var previousPrepareStackTrace = Error.prepareStackTrace; // $FlowFixMe It does accept undefined.
+
+	  Error.prepareStackTrace = undefined;
+	  var previousDispatcher;
+
+	  {
+	    previousDispatcher = ReactCurrentDispatcher.current; // Set the dispatcher in DEV because this might be call in the render function
+	    // for warnings.
+
+	    ReactCurrentDispatcher.current = null;
+	    disableLogs();
+	  }
+
+	  try {
+	    // This should throw.
+	    if (construct) {
+	      // Something should be setting the props in the constructor.
+	      var Fake = function () {
+	        throw Error();
+	      }; // $FlowFixMe
+
+
+	      Object.defineProperty(Fake.prototype, 'props', {
+	        set: function () {
+	          // We use a throwing setter instead of frozen or non-writable props
+	          // because that won't throw in a non-strict mode function.
+	          throw Error();
+	        }
+	      });
+
+	      if (typeof Reflect === 'object' && Reflect.construct) {
+	        // We construct a different control for this case to include any extra
+	        // frames added by the construct call.
+	        try {
+	          Reflect.construct(Fake, []);
+	        } catch (x) {
+	          control = x;
+	        }
+
+	        Reflect.construct(fn, [], Fake);
+	      } else {
+	        try {
+	          Fake.call();
+	        } catch (x) {
+	          control = x;
+	        }
+
+	        fn.call(Fake.prototype);
+	      }
+	    } else {
+	      try {
+	        throw Error();
+	      } catch (x) {
+	        control = x;
+	      }
+
+	      fn();
+	    }
+	  } catch (sample) {
+	    // This is inlined manually because closure doesn't do it for us.
+	    if (sample && control && typeof sample.stack === 'string') {
+	      // This extracts the first frame from the sample that isn't also in the control.
+	      // Skipping one frame that we assume is the frame that calls the two.
+	      var sampleLines = sample.stack.split('\n');
+	      var controlLines = control.stack.split('\n');
+	      var s = sampleLines.length - 1;
+	      var c = controlLines.length - 1;
+
+	      while (s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c]) {
+	        // We expect at least one stack frame to be shared.
+	        // Typically this will be the root most one. However, stack frames may be
+	        // cut off due to maximum stack limits. In this case, one maybe cut off
+	        // earlier than the other. We assume that the sample is longer or the same
+	        // and there for cut off earlier. So we should find the root most frame in
+	        // the sample somewhere in the control.
+	        c--;
+	      }
+
+	      for (; s >= 1 && c >= 0; s--, c--) {
+	        // Next we find the first one that isn't the same which should be the
+	        // frame that called our sample function and the control.
+	        if (sampleLines[s] !== controlLines[c]) {
+	          // In V8, the first line is describing the message but other VMs don't.
+	          // If we're about to return the first line, and the control is also on the same
+	          // line, that's a pretty good indicator that our sample threw at same line as
+	          // the control. I.e. before we entered the sample frame. So we ignore this result.
+	          // This can happen if you passed a class to function component, or non-function.
+	          if (s !== 1 || c !== 1) {
+	            do {
+	              s--;
+	              c--; // We may still have similar intermediate frames from the construct call.
+	              // The next one that isn't the same should be our match though.
+
+	              if (c < 0 || sampleLines[s] !== controlLines[c]) {
+	                // V8 adds a "new" prefix for native classes. Let's remove it to make it prettier.
+	                var _frame = '\n' + sampleLines[s].replace(' at new ', ' at '); // If our component frame is labeled "<anonymous>"
+	                // but we have a user-provided "displayName"
+	                // splice it in to make the stack more readable.
+
+
+	                if (fn.displayName && _frame.includes('<anonymous>')) {
+	                  _frame = _frame.replace('<anonymous>', fn.displayName);
+	                }
+
+	                {
+	                  if (typeof fn === 'function') {
+	                    componentFrameCache.set(fn, _frame);
+	                  }
+	                } // Return the line we found.
+
+
+	                return _frame;
+	              }
+	            } while (s >= 1 && c >= 0);
+	          }
+
+	          break;
+	        }
+	      }
+	    }
+	  } finally {
+	    reentry = false;
+
+	    {
+	      ReactCurrentDispatcher.current = previousDispatcher;
+	      reenableLogs();
+	    }
+
+	    Error.prepareStackTrace = previousPrepareStackTrace;
+	  } // Fallback to just using the name if we couldn't make it throw.
+
+
+	  var name = fn ? fn.displayName || fn.name : '';
+	  var syntheticFrame = name ? describeBuiltInComponentFrame(name) : '';
+
+	  {
+	    if (typeof fn === 'function') {
+	      componentFrameCache.set(fn, syntheticFrame);
+	    }
+	  }
+
+	  return syntheticFrame;
+	}
+	function describeFunctionComponentFrame(fn, source, ownerFn) {
+	  {
+	    return describeNativeComponentFrame(fn, false);
+	  }
+	}
+
+	function shouldConstruct(Component) {
+	  var prototype = Component.prototype;
+	  return !!(prototype && prototype.isReactComponent);
+	}
+
+	function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
+
+	  if (type == null) {
+	    return '';
+	  }
+
+	  if (typeof type === 'function') {
+	    {
+	      return describeNativeComponentFrame(type, shouldConstruct(type));
+	    }
+	  }
+
+	  if (typeof type === 'string') {
+	    return describeBuiltInComponentFrame(type);
+	  }
+
+	  switch (type) {
+	    case REACT_SUSPENSE_TYPE:
+	      return describeBuiltInComponentFrame('Suspense');
+
+	    case REACT_SUSPENSE_LIST_TYPE:
+	      return describeBuiltInComponentFrame('SuspenseList');
+	  }
+
+	  if (typeof type === 'object') {
+	    switch (type.$$typeof) {
+	      case REACT_FORWARD_REF_TYPE:
+	        return describeFunctionComponentFrame(type.render);
+
+	      case REACT_MEMO_TYPE:
+	        // Memo may contain any component type so we recursively resolve it.
+	        return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
+
+	      case REACT_LAZY_TYPE:
+	        {
+	          var lazyComponent = type;
+	          var payload = lazyComponent._payload;
+	          var init = lazyComponent._init;
+
+	          try {
+	            // Lazy may contain any component type so we recursively resolve it.
+	            return describeUnknownElementTypeFrameInDEV(init(payload), source, ownerFn);
+	          } catch (x) {}
+	        }
+	    }
+	  }
+
+	  return '';
+	}
+
+	var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+	var loggedTypeFailures = {};
+	var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+
+	function setCurrentlyValidatingElement(element) {
+	  {
+	    if (element) {
+	      var owner = element._owner;
+	      var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+	      ReactDebugCurrentFrame.setExtraStackFrame(stack);
+	    } else {
+	      ReactDebugCurrentFrame.setExtraStackFrame(null);
+	    }
+	  }
+	}
+
+	function checkPropTypes(typeSpecs, values, location, componentName, element) {
+	  {
+	    // $FlowFixMe This is okay but Flow doesn't know it.
+	    var has = Function.call.bind(hasOwnProperty);
+
+	    for (var typeSpecName in typeSpecs) {
+	      if (has(typeSpecs, typeSpecName)) {
+	        var error$1 = void 0; // Prop type validation may throw. In case they do, we don't want to
+	        // fail the render phase where it didn't fail before. So we log it.
+	        // After these have been cleaned up, we'll let them throw.
+
+	        try {
+	          // This is intentionally an invariant that gets caught. It's the same
+	          // behavior as without this statement except with a better message.
+	          if (typeof typeSpecs[typeSpecName] !== 'function') {
+	            // eslint-disable-next-line react-internal/prod-error-codes
+	            var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' + 'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.');
+	            err.name = 'Invariant Violation';
+	            throw err;
+	          }
+
+	          error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED');
+	        } catch (ex) {
+	          error$1 = ex;
+	        }
+
+	        if (error$1 && !(error$1 instanceof Error)) {
+	          setCurrentlyValidatingElement(element);
+
+	          error('%s: type specification of %s' + ' `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', location, typeSpecName, typeof error$1);
+
+	          setCurrentlyValidatingElement(null);
+	        }
+
+	        if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
+	          // Only monitor this failure once because there tends to be a lot of the
+	          // same error.
+	          loggedTypeFailures[error$1.message] = true;
+	          setCurrentlyValidatingElement(element);
+
+	          error('Failed %s type: %s', location, error$1.message);
+
+	          setCurrentlyValidatingElement(null);
+	        }
+	      }
+	    }
+	  }
+	}
+
+	var isArrayImpl = Array.isArray; // eslint-disable-next-line no-redeclare
+
+	function isArray(a) {
+	  return isArrayImpl(a);
+	}
+
+	/*
+	 * The `'' + value` pattern (used in in perf-sensitive code) throws for Symbol
+	 * and Temporal.* types. See https://github.com/facebook/react/pull/22064.
+	 *
+	 * The functions in this module will throw an easier-to-understand,
+	 * easier-to-debug exception with a clear errors message message explaining the
+	 * problem. (Instead of a confusing exception thrown inside the implementation
+	 * of the `value` object).
+	 */
+	// $FlowFixMe only called in DEV, so void return is not possible.
+	function typeName(value) {
+	  {
+	    // toStringTag is needed for namespaced types like Temporal.Instant
+	    var hasToStringTag = typeof Symbol === 'function' && Symbol.toStringTag;
+	    var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || 'Object';
+	    return type;
+	  }
+	} // $FlowFixMe only called in DEV, so void return is not possible.
+
+
+	function willCoercionThrow(value) {
+	  {
+	    try {
+	      testStringCoercion(value);
+	      return false;
+	    } catch (e) {
+	      return true;
+	    }
+	  }
+	}
+
+	function testStringCoercion(value) {
+	  // If you ended up here by following an exception call stack, here's what's
+	  // happened: you supplied an object or symbol value to React (as a prop, key,
+	  // DOM attribute, CSS property, string ref, etc.) and when React tried to
+	  // coerce it to a string using `'' + value`, an exception was thrown.
+	  //
+	  // The most common types that will cause this exception are `Symbol` instances
+	  // and Temporal objects like `Temporal.Instant`. But any object that has a
+	  // `valueOf` or `[Symbol.toPrimitive]` method that throws will also cause this
+	  // exception. (Library authors do this to prevent users from using built-in
+	  // numeric operators like `+` or comparison operators like `>=` because custom
+	  // methods are needed to perform accurate arithmetic or comparison.)
+	  //
+	  // To fix the problem, coerce this object or symbol value to a string before
+	  // passing it to React. The most reliable way is usually `String(value)`.
+	  //
+	  // To find which value is throwing, check the browser or debugger console.
+	  // Before this exception was thrown, there should be `console.error` output
+	  // that shows the type (Symbol, Temporal.PlainDate, etc.) that caused the
+	  // problem and how that type was used: key, atrribute, input value prop, etc.
+	  // In most cases, this console output also shows the component and its
+	  // ancestor components where the exception happened.
+	  //
+	  // eslint-disable-next-line react-internal/safe-string-coercion
+	  return '' + value;
+	}
+	function checkKeyStringCoercion(value) {
+	  {
+	    if (willCoercionThrow(value)) {
+	      error('The provided key is an unsupported type %s.' + ' This value must be coerced to a string before before using it here.', typeName(value));
+
+	      return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
+	    }
+	  }
+	}
+
+	var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
+	var RESERVED_PROPS = {
+	  key: true,
+	  ref: true,
+	  __self: true,
+	  __source: true
+	};
+	var specialPropKeyWarningShown;
+	var specialPropRefWarningShown;
+	var didWarnAboutStringRefs;
+
+	{
+	  didWarnAboutStringRefs = {};
+	}
+
+	function hasValidRef(config) {
+	  {
+	    if (hasOwnProperty.call(config, 'ref')) {
+	      var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;
+
+	      if (getter && getter.isReactWarning) {
+	        return false;
+	      }
+	    }
+	  }
+
+	  return config.ref !== undefined;
+	}
+
+	function hasValidKey(config) {
+	  {
+	    if (hasOwnProperty.call(config, 'key')) {
+	      var getter = Object.getOwnPropertyDescriptor(config, 'key').get;
+
+	      if (getter && getter.isReactWarning) {
+	        return false;
+	      }
+	    }
+	  }
+
+	  return config.key !== undefined;
+	}
+
+	function warnIfStringRefCannotBeAutoConverted(config, self) {
+	  {
+	    if (typeof config.ref === 'string' && ReactCurrentOwner.current && self && ReactCurrentOwner.current.stateNode !== self) {
+	      var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
+
+	      if (!didWarnAboutStringRefs[componentName]) {
+	        error('Component "%s" contains the string ref "%s". ' + 'Support for string refs will be removed in a future major release. ' + 'This case cannot be automatically converted to an arrow function. ' + 'We ask you to manually fix this case by using useRef() or createRef() instead. ' + 'Learn more about using refs safely here: ' + 'https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
+
+	        didWarnAboutStringRefs[componentName] = true;
+	      }
+	    }
+	  }
+	}
+
+	function defineKeyPropWarningGetter(props, displayName) {
+	  {
+	    var warnAboutAccessingKey = function () {
+	      if (!specialPropKeyWarningShown) {
+	        specialPropKeyWarningShown = true;
+
+	        error('%s: `key` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://reactjs.org/link/special-props)', displayName);
+	      }
+	    };
+
+	    warnAboutAccessingKey.isReactWarning = true;
+	    Object.defineProperty(props, 'key', {
+	      get: warnAboutAccessingKey,
+	      configurable: true
+	    });
+	  }
+	}
+
+	function defineRefPropWarningGetter(props, displayName) {
+	  {
+	    var warnAboutAccessingRef = function () {
+	      if (!specialPropRefWarningShown) {
+	        specialPropRefWarningShown = true;
+
+	        error('%s: `ref` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://reactjs.org/link/special-props)', displayName);
+	      }
+	    };
+
+	    warnAboutAccessingRef.isReactWarning = true;
+	    Object.defineProperty(props, 'ref', {
+	      get: warnAboutAccessingRef,
+	      configurable: true
+	    });
+	  }
+	}
+	/**
+	 * Factory method to create a new React element. This no longer adheres to
+	 * the class pattern, so do not use new to call it. Also, instanceof check
+	 * will not work. Instead test $$typeof field against Symbol.for('react.element') to check
+	 * if something is a React Element.
+	 *
+	 * @param {*} type
+	 * @param {*} props
+	 * @param {*} key
+	 * @param {string|object} ref
+	 * @param {*} owner
+	 * @param {*} self A *temporary* helper to detect places where `this` is
+	 * different from the `owner` when React.createElement is called, so that we
+	 * can warn. We want to get rid of owner and replace string `ref`s with arrow
+	 * functions, and as long as `this` and owner are the same, there will be no
+	 * change in behavior.
+	 * @param {*} source An annotation object (added by a transpiler or otherwise)
+	 * indicating filename, line number, and/or other information.
+	 * @internal
+	 */
+
+
+	var ReactElement = function (type, key, ref, self, source, owner, props) {
+	  var element = {
+	    // This tag allows us to uniquely identify this as a React Element
+	    $$typeof: REACT_ELEMENT_TYPE,
+	    // Built-in properties that belong on the element
+	    type: type,
+	    key: key,
+	    ref: ref,
+	    props: props,
+	    // Record the component responsible for creating this element.
+	    _owner: owner
+	  };
+
+	  {
+	    // The validation flag is currently mutative. We put it on
+	    // an external backing store so that we can freeze the whole object.
+	    // This can be replaced with a WeakMap once they are implemented in
+	    // commonly used development environments.
+	    element._store = {}; // To make comparing ReactElements easier for testing purposes, we make
+	    // the validation flag non-enumerable (where possible, which should
+	    // include every environment we run tests in), so the test framework
+	    // ignores it.
+
+	    Object.defineProperty(element._store, 'validated', {
+	      configurable: false,
+	      enumerable: false,
+	      writable: true,
+	      value: false
+	    }); // self and source are DEV only properties.
+
+	    Object.defineProperty(element, '_self', {
+	      configurable: false,
+	      enumerable: false,
+	      writable: false,
+	      value: self
+	    }); // Two elements created in two different places should be considered
+	    // equal for testing purposes and therefore we hide it from enumeration.
+
+	    Object.defineProperty(element, '_source', {
+	      configurable: false,
+	      enumerable: false,
+	      writable: false,
+	      value: source
+	    });
+
+	    if (Object.freeze) {
+	      Object.freeze(element.props);
+	      Object.freeze(element);
+	    }
+	  }
+
+	  return element;
+	};
+	/**
+	 * https://github.com/reactjs/rfcs/pull/107
+	 * @param {*} type
+	 * @param {object} props
+	 * @param {string} key
+	 */
+
+	function jsxDEV(type, config, maybeKey, source, self) {
+	  {
+	    var propName; // Reserved names are extracted
+
+	    var props = {};
+	    var key = null;
+	    var ref = null; // Currently, key can be spread in as a prop. This causes a potential
+	    // issue if key is also explicitly declared (ie. <div {...props} key="Hi" />
+	    // or <div key="Hi" {...props} /> ). We want to deprecate key spread,
+	    // but as an intermediary step, we will use jsxDEV for everything except
+	    // <div {...props} key="Hi" />, because we aren't currently able to tell if
+	    // key is explicitly declared to be undefined or not.
+
+	    if (maybeKey !== undefined) {
+	      {
+	        checkKeyStringCoercion(maybeKey);
+	      }
+
+	      key = '' + maybeKey;
+	    }
+
+	    if (hasValidKey(config)) {
+	      {
+	        checkKeyStringCoercion(config.key);
+	      }
+
+	      key = '' + config.key;
+	    }
+
+	    if (hasValidRef(config)) {
+	      ref = config.ref;
+	      warnIfStringRefCannotBeAutoConverted(config, self);
+	    } // Remaining properties are added to a new props object
+
+
+	    for (propName in config) {
+	      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
+	        props[propName] = config[propName];
+	      }
+	    } // Resolve default props
+
+
+	    if (type && type.defaultProps) {
+	      var defaultProps = type.defaultProps;
+
+	      for (propName in defaultProps) {
+	        if (props[propName] === undefined) {
+	          props[propName] = defaultProps[propName];
+	        }
+	      }
+	    }
+
+	    if (key || ref) {
+	      var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
+
+	      if (key) {
+	        defineKeyPropWarningGetter(props, displayName);
+	      }
+
+	      if (ref) {
+	        defineRefPropWarningGetter(props, displayName);
+	      }
+	    }
+
+	    return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
+	  }
+	}
+
+	var ReactCurrentOwner$1 = ReactSharedInternals.ReactCurrentOwner;
+	var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
+
+	function setCurrentlyValidatingElement$1(element) {
+	  {
+	    if (element) {
+	      var owner = element._owner;
+	      var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+	      ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
+	    } else {
+	      ReactDebugCurrentFrame$1.setExtraStackFrame(null);
+	    }
+	  }
+	}
+
+	var propTypesMisspellWarningShown;
+
+	{
+	  propTypesMisspellWarningShown = false;
+	}
+	/**
+	 * Verifies the object is a ReactElement.
+	 * See https://reactjs.org/docs/react-api.html#isvalidelement
+	 * @param {?object} object
+	 * @return {boolean} True if `object` is a ReactElement.
+	 * @final
+	 */
+
+
+	function isValidElement(object) {
+	  {
+	    return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+	  }
+	}
+
+	function getDeclarationErrorAddendum() {
+	  {
+	    if (ReactCurrentOwner$1.current) {
+	      var name = getComponentNameFromType(ReactCurrentOwner$1.current.type);
+
+	      if (name) {
+	        return '\n\nCheck the render method of `' + name + '`.';
+	      }
+	    }
+
+	    return '';
+	  }
+	}
+
+	function getSourceInfoErrorAddendum(source) {
+	  {
+	    if (source !== undefined) {
+	      var fileName = source.fileName.replace(/^.*[\\\/]/, '');
+	      var lineNumber = source.lineNumber;
+	      return '\n\nCheck your code at ' + fileName + ':' + lineNumber + '.';
+	    }
+
+	    return '';
+	  }
+	}
+	/**
+	 * Warn if there's no key explicitly set on dynamic arrays of children or
+	 * object keys are not valid. This allows us to keep track of children between
+	 * updates.
+	 */
+
+
+	var ownerHasKeyUseWarning = {};
+
+	function getCurrentComponentErrorInfo(parentType) {
+	  {
+	    var info = getDeclarationErrorAddendum();
+
+	    if (!info) {
+	      var parentName = typeof parentType === 'string' ? parentType : parentType.displayName || parentType.name;
+
+	      if (parentName) {
+	        info = "\n\nCheck the top-level render call using <" + parentName + ">.";
+	      }
+	    }
+
+	    return info;
+	  }
+	}
+	/**
+	 * Warn if the element doesn't have an explicit key assigned to it.
+	 * This element is in an array. The array could grow and shrink or be
+	 * reordered. All children that haven't already been validated are required to
+	 * have a "key" property assigned to it. Error statuses are cached so a warning
+	 * will only be shown once.
+	 *
+	 * @internal
+	 * @param {ReactElement} element Element that requires a key.
+	 * @param {*} parentType element's parent's type.
+	 */
+
+
+	function validateExplicitKey(element, parentType) {
+	  {
+	    if (!element._store || element._store.validated || element.key != null) {
+	      return;
+	    }
+
+	    element._store.validated = true;
+	    var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
+
+	    if (ownerHasKeyUseWarning[currentComponentErrorInfo]) {
+	      return;
+	    }
+
+	    ownerHasKeyUseWarning[currentComponentErrorInfo] = true; // Usually the current owner is the offender, but if it accepts children as a
+	    // property, it may be the creator of the child that's responsible for
+	    // assigning it a key.
+
+	    var childOwner = '';
+
+	    if (element && element._owner && element._owner !== ReactCurrentOwner$1.current) {
+	      // Give the component that originally created this child.
+	      childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
+	    }
+
+	    setCurrentlyValidatingElement$1(element);
+
+	    error('Each child in a list should have a unique "key" prop.' + '%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
+
+	    setCurrentlyValidatingElement$1(null);
+	  }
+	}
+	/**
+	 * Ensure that every element either is passed in a static location, in an
+	 * array with an explicit keys property defined, or in an object literal
+	 * with valid key property.
+	 *
+	 * @internal
+	 * @param {ReactNode} node Statically passed child of any type.
+	 * @param {*} parentType node's parent's type.
+	 */
+
+
+	function validateChildKeys(node, parentType) {
+	  {
+	    if (typeof node !== 'object') {
+	      return;
+	    }
+
+	    if (isArray(node)) {
+	      for (var i = 0; i < node.length; i++) {
+	        var child = node[i];
+
+	        if (isValidElement(child)) {
+	          validateExplicitKey(child, parentType);
+	        }
+	      }
+	    } else if (isValidElement(node)) {
+	      // This element was passed in a valid location.
+	      if (node._store) {
+	        node._store.validated = true;
+	      }
+	    } else if (node) {
+	      var iteratorFn = getIteratorFn(node);
+
+	      if (typeof iteratorFn === 'function') {
+	        // Entry iterators used to provide implicit keys,
+	        // but now we print a separate warning for them later.
+	        if (iteratorFn !== node.entries) {
+	          var iterator = iteratorFn.call(node);
+	          var step;
+
+	          while (!(step = iterator.next()).done) {
+	            if (isValidElement(step.value)) {
+	              validateExplicitKey(step.value, parentType);
+	            }
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+	/**
+	 * Given an element, validate that its props follow the propTypes definition,
+	 * provided by the type.
+	 *
+	 * @param {ReactElement} element
+	 */
+
+
+	function validatePropTypes(element) {
+	  {
+	    var type = element.type;
+
+	    if (type === null || type === undefined || typeof type === 'string') {
+	      return;
+	    }
+
+	    var propTypes;
+
+	    if (typeof type === 'function') {
+	      propTypes = type.propTypes;
+	    } else if (typeof type === 'object' && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
+	    // Inner props are checked in the reconciler.
+	    type.$$typeof === REACT_MEMO_TYPE)) {
+	      propTypes = type.propTypes;
+	    } else {
+	      return;
+	    }
+
+	    if (propTypes) {
+	      // Intentionally inside to avoid triggering lazy initializers:
+	      var name = getComponentNameFromType(type);
+	      checkPropTypes(propTypes, element.props, 'prop', name, element);
+	    } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
+	      propTypesMisspellWarningShown = true; // Intentionally inside to avoid triggering lazy initializers:
+
+	      var _name = getComponentNameFromType(type);
+
+	      error('Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?', _name || 'Unknown');
+	    }
+
+	    if (typeof type.getDefaultProps === 'function' && !type.getDefaultProps.isReactClassApproved) {
+	      error('getDefaultProps is only used on classic React.createClass ' + 'definitions. Use a static property named `defaultProps` instead.');
+	    }
+	  }
+	}
+	/**
+	 * Given a fragment, validate that it can only be provided with fragment props
+	 * @param {ReactElement} fragment
+	 */
+
+
+	function validateFragmentProps(fragment) {
+	  {
+	    var keys = Object.keys(fragment.props);
+
+	    for (var i = 0; i < keys.length; i++) {
+	      var key = keys[i];
+
+	      if (key !== 'children' && key !== 'key') {
+	        setCurrentlyValidatingElement$1(fragment);
+
+	        error('Invalid prop `%s` supplied to `React.Fragment`. ' + 'React.Fragment can only have `key` and `children` props.', key);
+
+	        setCurrentlyValidatingElement$1(null);
+	        break;
+	      }
+	    }
+
+	    if (fragment.ref !== null) {
+	      setCurrentlyValidatingElement$1(fragment);
+
+	      error('Invalid attribute `ref` supplied to `React.Fragment`.');
+
+	      setCurrentlyValidatingElement$1(null);
+	    }
+	  }
+	}
+
+	function jsxWithValidation(type, props, key, isStaticChildren, source, self) {
+	  {
+	    var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
+	    // succeed and there will likely be errors in render.
+
+	    if (!validType) {
+	      var info = '';
+
+	      if (type === undefined || typeof type === 'object' && type !== null && Object.keys(type).length === 0) {
+	        info += ' You likely forgot to export your component from the file ' + "it's defined in, or you might have mixed up default and named imports.";
+	      }
+
+	      var sourceInfo = getSourceInfoErrorAddendum(source);
+
+	      if (sourceInfo) {
+	        info += sourceInfo;
+	      } else {
+	        info += getDeclarationErrorAddendum();
+	      }
+
+	      var typeString;
+
+	      if (type === null) {
+	        typeString = 'null';
+	      } else if (isArray(type)) {
+	        typeString = 'array';
+	      } else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
+	        typeString = "<" + (getComponentNameFromType(type.type) || 'Unknown') + " />";
+	        info = ' Did you accidentally export a JSX literal instead of a component?';
+	      } else {
+	        typeString = typeof type;
+	      }
+
+	      error('React.jsx: type is invalid -- expected a string (for ' + 'built-in components) or a class/function (for composite ' + 'components) but got: %s.%s', typeString, info);
+	    }
+
+	    var element = jsxDEV(type, props, key, source, self); // The result can be nullish if a mock or a custom function is used.
+	    // TODO: Drop this when these are no longer allowed as the type argument.
+
+	    if (element == null) {
+	      return element;
+	    } // Skip key warning if the type isn't valid since our key validation logic
+	    // doesn't expect a non-string/function type and can throw confusing errors.
+	    // We don't want exception behavior to differ between dev and prod.
+	    // (Rendering will throw with a helpful message and as soon as the type is
+	    // fixed, the key warnings will appear.)
+
+
+	    if (validType) {
+	      var children = props.children;
+
+	      if (children !== undefined) {
+	        if (isStaticChildren) {
+	          if (isArray(children)) {
+	            for (var i = 0; i < children.length; i++) {
+	              validateChildKeys(children[i], type);
+	            }
+
+	            if (Object.freeze) {
+	              Object.freeze(children);
+	            }
+	          } else {
+	            error('React.jsx: Static children should always be an array. ' + 'You are likely explicitly calling React.jsxs or React.jsxDEV. ' + 'Use the Babel transform instead.');
+	          }
+	        } else {
+	          validateChildKeys(children, type);
+	        }
+	      }
+	    }
+
+	    if (type === REACT_FRAGMENT_TYPE) {
+	      validateFragmentProps(element);
+	    } else {
+	      validatePropTypes(element);
+	    }
+
+	    return element;
+	  }
+	} // These two functions exist to still get child warnings in dev
+	// even with the prod transform. This means that jsxDEV is purely
+	// opt-in behavior for better messages but that we won't stop
+	// giving you warnings if you use production apis.
+
+	function jsxWithValidationStatic(type, props, key) {
+	  {
+	    return jsxWithValidation(type, props, key, true);
+	  }
+	}
+	function jsxWithValidationDynamic(type, props, key) {
+	  {
+	    return jsxWithValidation(type, props, key, false);
+	  }
+	}
+
+	var jsx =  jsxWithValidationDynamic ; // we may want to special case jsxs internally to take advantage of static children.
+	// for now we can ship identical prod functions
+
+	var jsxs =  jsxWithValidationStatic ;
+
+	reactJsxRuntime_development.Fragment = REACT_FRAGMENT_TYPE;
+	reactJsxRuntime_development.jsx = jsx;
+	reactJsxRuntime_development.jsxs = jsxs;
+	  })();
+	}
+	return reactJsxRuntime_development;
+}
+
+(function (module) {
+
+	if (false) {} else {
+	  module.exports = requireReactJsxRuntime_development();
+	}
+} (jsxRuntime));
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var NODE_ENV = "development";
+
+var invariant = function(condition, format, a, b, c, d, e, f) {
+  if (NODE_ENV !== 'production') {
+    if (format === undefined) {
+      throw new Error('invariant requires an error message argument');
     }
+  }
+
+  if (!condition) {
+    var error;
+    if (format === undefined) {
+      error = new Error(
+        'Minified exception occurred; use the non-minified dev environment ' +
+        'for the full error message and additional helpful warnings.'
+      );
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(
+        format.replace(/%s/g, function() { return args[argIndex++]; })
+      );
+      error.name = 'Invariant Violation';
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+    throw error;
+  }
 };
-var __spreadArray = (undefined && undefined.__spreadArray) || function (to, from) {
-    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
-        to[j] = from[i];
-    return to;
-};
-var __defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __propIsEnum = Object.prototype.propertyIsEnumerable;
-var __defNormalProp = function (obj, key, value) { return key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value: value }) : obj[key] = value; };
-var __spreadValues = function (a, b) {
-    for (var prop in b || (b = {}))
-        if (__hasOwnProp.call(b, prop))
-            __defNormalProp(a, prop, b[prop]);
-    if (__getOwnPropSymbols)
-        for (var _i = 0, _c = __getOwnPropSymbols(b); _i < _c.length; _i++) {
-            var prop = _c[_i];
-            if (__propIsEnum.call(b, prop))
-                __defNormalProp(a, prop, b[prop]);
-        }
-    return a;
-};
-var __spreadProps = function (a, b) { return __defProps(a, __getOwnPropDescs(b)); };
-var __async = function (__this, __arguments, generator) {
-    return new Promise(function (resolve, reject) {
-        var fulfilled = function (value) {
-            try {
-                step(generator.next(value));
-            }
-            catch (e) {
-                reject(e);
-            }
-        };
-        var rejected = function (value) {
-            try {
-                step(generator.throw(value));
-            }
-            catch (e) {
-                reject(e);
-            }
-        };
-        var step = function (x) { return x.done ? resolve(x.value) : Promise.resolve(x.value).then(fulfilled, rejected); };
-        step((generator = generator.apply(__this, __arguments)).next());
+
+var invariant_1 = invariant;
+
+const MapContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)(null);
+function useGoogleMap() {
+    invariant_1(!!react__WEBPACK_IMPORTED_MODULE_0__.useContext, 'useGoogleMap is React hook and requires React version 16.8+');
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    invariant_1(!!map, 'useGoogleMap needs a GoogleMap available up in the tree');
+    return map;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function reduce(obj, fn, acc) {
+    return Object.keys(obj).reduce(function reducer(newAcc, key) {
+        return fn(newAcc, obj[key], key);
+    }, acc);
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function forEach(obj, fn) {
+    Object.keys(obj).forEach((key) => {
+        return fn(obj[key], key);
     });
-};
-// src/index.ts
-
-
-
-
-// src/createDraftSafeSelector.ts
-
-
-var createDraftSafeSelector = function () {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
-    }
-    var selector = reselect__WEBPACK_IMPORTED_MODULE_1__.createSelector.apply(void 0, args);
-    var wrappedSelector = function (value) {
-        var rest = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            rest[_i - 1] = arguments[_i];
-        }
-        return selector.apply(void 0, __spreadArray([(0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraft)(value) ? (0,immer__WEBPACK_IMPORTED_MODULE_2__.current)(value) : value], rest));
-    };
-    return wrappedSelector;
-};
-// src/configureStore.ts
-
-// src/devtoolsExtension.ts
-
-var composeWithDevTools = typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : function () {
-    if (arguments.length === 0)
-        return void 0;
-    if (typeof arguments[0] === "object")
-        return redux__WEBPACK_IMPORTED_MODULE_0__.compose;
-    return redux__WEBPACK_IMPORTED_MODULE_0__.compose.apply(null, arguments);
-};
-var devToolsEnhancer = typeof window !== "undefined" && window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__ : function () {
-    return function (noop2) {
-        return noop2;
-    };
-};
-// src/isPlainObject.ts
-function isPlainObject(value) {
-    if (typeof value !== "object" || value === null)
-        return false;
-    var proto = Object.getPrototypeOf(value);
-    if (proto === null)
-        return true;
-    var baseProto = proto;
-    while (Object.getPrototypeOf(baseProto) !== null) {
-        baseProto = Object.getPrototypeOf(baseProto);
-    }
-    return proto === baseProto;
 }
-// src/getDefaultMiddleware.ts
 
-// src/utils.ts
-function getTimeMeasureUtils(maxDelay, fnName) {
-    var elapsed = 0;
-    return {
-        measureTime: function (fn) {
-            var started = Date.now();
-            try {
-                return fn();
+/* global google */
+function applyUpdaterToNextProps(
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+updaterMap, 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+prevProps, 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+nextProps, 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+instance
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const map = {};
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const iter = (fn, key) => {
+        const nextValue = nextProps[key];
+        if (nextValue !== prevProps[key]) {
+            map[key] = nextValue;
+            fn(instance, nextValue);
+        }
+    };
+    forEach(updaterMap, iter);
+    return map;
+}
+function registerEvents(
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+props, 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+instance, eventMap) {
+    const registeredList = reduce(eventMap, function reducer(acc, googleEventName, 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    onEventName) {
+        if (typeof props[onEventName] === 'function') {
+            acc.push(google.maps.event.addListener(instance, googleEventName, props[onEventName]));
+        }
+        return acc;
+    }, []);
+    return registeredList;
+}
+function unregisterEvent(registered) {
+    google.maps.event.removeListener(registered);
+}
+function unregisterEvents(events = []) {
+    events.forEach(unregisterEvent);
+}
+function applyUpdatersToPropsAndRegisterEvents({ updaterMap, eventMap, prevProps, nextProps, instance, }) {
+    const registeredEvents = registerEvents(nextProps, instance, eventMap);
+    applyUpdaterToNextProps(updaterMap, prevProps, nextProps, instance);
+    return registeredEvents;
+}
+
+const eventMap$i = {
+    onDblClick: 'dblclick',
+    onDragEnd: 'dragend',
+    onDragStart: 'dragstart',
+    onMapTypeIdChanged: 'maptypeid_changed',
+    onMouseMove: 'mousemove',
+    onMouseOut: 'mouseout',
+    onMouseOver: 'mouseover',
+    onMouseDown: 'mousedown',
+    onMouseUp: 'mouseup',
+    onRightClick: 'rightclick',
+    onTilesLoaded: 'tilesloaded',
+    onBoundsChanged: 'bounds_changed',
+    onCenterChanged: 'center_changed',
+    onClick: 'click',
+    onDrag: 'drag',
+    onHeadingChanged: 'heading_changed',
+    onIdle: 'idle',
+    onProjectionChanged: 'projection_changed',
+    onResize: 'resize',
+    onTiltChanged: 'tilt_changed',
+    onZoomChanged: 'zoom_changed',
+};
+const updaterMap$i = {
+    extraMapTypes(map, extra) {
+        extra.forEach(function forEachExtra(it, i) {
+            map.mapTypes.set(String(i), it);
+        });
+    },
+    center(map, center) {
+        map.setCenter(center);
+    },
+    clickableIcons(map, clickable) {
+        map.setClickableIcons(clickable);
+    },
+    heading(map, heading) {
+        map.setHeading(heading);
+    },
+    mapTypeId(map, mapTypeId) {
+        map.setMapTypeId(mapTypeId);
+    },
+    options(map, options) {
+        map.setOptions(options);
+    },
+    streetView(map, streetView) {
+        map.setStreetView(streetView);
+    },
+    tilt(map, tilt) {
+        map.setTilt(tilt);
+    },
+    zoom(map, zoom) {
+        map.setZoom(zoom);
+    },
+};
+// TODO: unfinished!
+function GoogleMapFunctional({ children, options, id, mapContainerStyle, mapContainerClassName, center, 
+// clickableIcons,
+// extraMapTypes,
+// heading,
+// mapTypeId,
+onClick, onDblClick, onDrag, onDragEnd, onDragStart, onMouseMove, onMouseOut, onMouseOver, onMouseDown, onMouseUp, onRightClick, 
+// onMapTypeIdChanged,
+// onTilesLoaded,
+// onBoundsChanged,
+onCenterChanged, 
+// onHeadingChanged,
+// onIdle,
+// onProjectionChanged,
+// onResize,
+// onTiltChanged,
+// onZoomChanged,
+onLoad, onUnmount, }) {
+    const [map, setMap] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+    // const [extraMapTypesListener, setExtraMapTypesListener] = useState<google.maps.MapsEventListener | null>(null)
+    const [centerChangedListener, setCenterChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dblclickListener, setDblclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragendListener, setDragendListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragstartListener, setDragstartListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousedownListener, setMousedownListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousemoveListener, setMousemoveListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoutListener, setMouseoutListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoverListener, setMouseoverListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseupListener, setMouseupListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [rightclickListener, setRightclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [clickListener, setClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragListener, setDragListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (options && map !== null) {
+            map.setOptions(options);
+        }
+    }, [map, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map !== null && typeof center !== 'undefined') {
+            map.setCenter(center);
+        }
+    }, [map, center]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onDblClick) {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
             }
-            finally {
-                var finished = Date.now();
-                elapsed += finished - started;
+            setDblclickListener(google.maps.event.addListener(map, 'dblclick', onDblClick));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onDragEnd) {
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
             }
-        },
-        warnIfExceeded: function () {
-            if (elapsed > maxDelay) {
-                console.warn(fnName + " took " + elapsed + "ms, which is more than the warning threshold of " + maxDelay + "ms. \nIf your state or actions are very large, you may want to disable the middleware as it might cause too much of a slowdown in development mode. See https://redux-toolkit.js.org/api/getDefaultMiddleware for instructions.\nIt is disabled in production builds, so you don't need to worry about that.");
+            setDragendListener(google.maps.event.addListener(map, 'dragend', onDragEnd));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onDragStart) {
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
             }
+            setDragstartListener(google.maps.event.addListener(map, 'dragstart', onDragStart));
         }
-    };
-}
-var MiddlewareArray = /** @class */ (function (_super) {
-    __extends(MiddlewareArray, _super);
-    function MiddlewareArray() {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
+    }, [onDragStart]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onMouseDown) {
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            setMousedownListener(google.maps.event.addListener(map, 'mousedown', onMouseDown));
         }
-        var _this = _super.apply(this, args) || this;
-        Object.setPrototypeOf(_this, MiddlewareArray.prototype);
-        return _this;
-    }
-    Object.defineProperty(MiddlewareArray, Symbol.species, {
-        get: function () {
-            return MiddlewareArray;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    MiddlewareArray.prototype.concat = function () {
-        var arr = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            arr[_i] = arguments[_i];
+    }, [onMouseDown]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onMouseMove) {
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            setMousemoveListener(google.maps.event.addListener(map, 'mousemove', onMouseMove));
         }
-        return _super.prototype.concat.apply(this, arr);
-    };
-    MiddlewareArray.prototype.prepend = function () {
-        var arr = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            arr[_i] = arguments[_i];
+    }, [onMouseMove]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onMouseOut) {
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            setMouseoutListener(google.maps.event.addListener(map, 'mouseout', onMouseOut));
         }
-        if (arr.length === 1 && Array.isArray(arr[0])) {
-            return new (MiddlewareArray.bind.apply(MiddlewareArray, __spreadArray([void 0], arr[0].concat(this))))();
+    }, [onMouseOut]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onMouseOver) {
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            setMouseoverListener(google.maps.event.addListener(map, 'mouseover', onMouseOver));
         }
-        return new (MiddlewareArray.bind.apply(MiddlewareArray, __spreadArray([void 0], arr.concat(this))))();
-    };
-    return MiddlewareArray;
-}(Array));
-// src/immutableStateInvariantMiddleware.ts
-var isProduction = "development" === "production";
-var prefix = "Invariant failed";
-function invariant(condition, message) {
-    if (condition) {
-        return;
-    }
-    if (isProduction) {
-        throw new Error(prefix);
-    }
-    throw new Error(prefix + ": " + (message || ""));
-}
-function stringify(obj, serializer, indent, decycler) {
-    return JSON.stringify(obj, getSerialize(serializer, decycler), indent);
-}
-function getSerialize(serializer, decycler) {
-    var stack = [], keys = [];
-    if (!decycler)
-        decycler = function (_, value) {
-            if (stack[0] === value)
-                return "[Circular ~]";
-            return "[Circular ~." + keys.slice(0, stack.indexOf(value)).join(".") + "]";
+    }, [onMouseOver]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onMouseUp) {
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            setMouseupListener(google.maps.event.addListener(map, 'mouseup', onMouseUp));
+        }
+    }, [onMouseUp]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onRightClick) {
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            setRightclickListener(google.maps.event.addListener(map, 'rightclick', onRightClick));
+        }
+    }, [onRightClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onClick) {
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            setClickListener(google.maps.event.addListener(map, 'click', onClick));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onDrag) {
+            if (dragListener !== null) {
+                google.maps.event.removeListener(dragListener);
+            }
+            setDragListener(google.maps.event.addListener(map, 'drag', onDrag));
+        }
+    }, [onDrag]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && onCenterChanged) {
+            if (centerChangedListener !== null) {
+                google.maps.event.removeListener(centerChangedListener);
+            }
+            setCenterChangedListener(google.maps.event.addListener(map, 'center_changed', onCenterChanged));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const map = ref.current === null
+            ? null
+            : new google.maps.Map(ref.current, options);
+        setMap(map);
+        if (map !== null && onLoad) {
+            onLoad(map);
+        }
+        return () => {
+            if (map !== null) {
+                if (onUnmount) {
+                    onUnmount(map);
+                }
+            }
         };
-    return function (key, value) {
-        if (stack.length > 0) {
-            var thisPos = stack.indexOf(this);
-            ~thisPos ? stack.splice(thisPos + 1) : stack.push(this);
-            ~thisPos ? keys.splice(thisPos, Infinity, key) : keys.push(key);
-            if (~stack.indexOf(value))
-                value = decycler.call(this, key, value);
-        }
-        else
-            stack.push(value);
-        return serializer == null ? value : serializer.call(this, key, value);
-    };
+    }, []);
+    return (jsxRuntime.exports.jsx("div", Object.assign({ id: id, ref: ref, style: mapContainerStyle, className: mapContainerClassName }, { children: jsxRuntime.exports.jsx(MapContext.Provider, Object.assign({ value: map }, { children: map !== null ? children : jsxRuntime.exports.jsx(jsxRuntime.exports.Fragment, {}) })) })));
 }
-function isImmutableDefault(value) {
-    return typeof value !== "object" || value === null || typeof value === "undefined" || Object.isFrozen(value);
-}
-function trackForMutations(isImmutable, ignorePaths, obj) {
-    var trackedProperties = trackProperties(isImmutable, ignorePaths, obj);
-    return {
-        detectMutations: function () {
-            return detectMutations(isImmutable, ignorePaths, trackedProperties, obj);
-        }
-    };
-}
-function trackProperties(isImmutable, ignorePaths, obj, path) {
-    if (ignorePaths === void 0) { ignorePaths = []; }
-    if (path === void 0) { path = ""; }
-    var tracked = { value: obj };
-    if (!isImmutable(obj)) {
-        tracked.children = {};
-        for (var key in obj) {
-            var childPath = path ? path + "." + key : key;
-            if (ignorePaths.length && ignorePaths.indexOf(childPath) !== -1) {
-                continue;
+(0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(GoogleMapFunctional);
+class GoogleMap extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            map: null,
+        };
+        this.registeredEvents = [];
+        this.mapRef = null;
+        this.getInstance = () => {
+            if (this.mapRef === null) {
+                return null;
             }
-            tracked.children[key] = trackProperties(isImmutable, ignorePaths, obj[key], childPath);
-        }
-    }
-    return tracked;
-}
-function detectMutations(isImmutable, ignorePaths, trackedProperty, obj, sameParentRef, path) {
-    if (ignorePaths === void 0) { ignorePaths = []; }
-    if (sameParentRef === void 0) { sameParentRef = false; }
-    if (path === void 0) { path = ""; }
-    var prevObj = trackedProperty ? trackedProperty.value : void 0;
-    var sameRef = prevObj === obj;
-    if (sameParentRef && !sameRef && !Number.isNaN(obj)) {
-        return { wasMutated: true, path: path };
-    }
-    if (isImmutable(prevObj) || isImmutable(obj)) {
-        return { wasMutated: false };
-    }
-    var keysToDetect = {};
-    for (var key in trackedProperty.children) {
-        keysToDetect[key] = true;
-    }
-    for (var key in obj) {
-        keysToDetect[key] = true;
-    }
-    for (var key in keysToDetect) {
-        var childPath = path ? path + "." + key : key;
-        if (ignorePaths.length && ignorePaths.indexOf(childPath) !== -1) {
-            continue;
-        }
-        var result = detectMutations(isImmutable, ignorePaths, trackedProperty.children[key], obj[key], sameRef, childPath);
-        if (result.wasMutated) {
-            return result;
-        }
-    }
-    return { wasMutated: false };
-}
-function createImmutableStateInvariantMiddleware(options) {
-    if (options === void 0) { options = {}; }
-    if (false) {}
-    var _c = options.isImmutable, isImmutable = _c === void 0 ? isImmutableDefault : _c, ignoredPaths = options.ignoredPaths, _d = options.warnAfter, warnAfter = _d === void 0 ? 32 : _d, ignore = options.ignore;
-    ignoredPaths = ignoredPaths || ignore;
-    var track = trackForMutations.bind(null, isImmutable, ignoredPaths);
-    return function (_c) {
-        var getState = _c.getState;
-        var state = getState();
-        var tracker = track(state);
-        var result;
-        return function (next) { return function (action) {
-            var measureUtils = getTimeMeasureUtils(warnAfter, "ImmutableStateInvariantMiddleware");
-            measureUtils.measureTime(function () {
-                state = getState();
-                result = tracker.detectMutations();
-                tracker = track(state);
-                invariant(!result.wasMutated, "A state mutation was detected between dispatches, in the path '" + (result.path || "") + "'.  This may cause incorrect behavior. (https://redux.js.org/style-guide/style-guide#do-not-mutate-state)");
-            });
-            var dispatchedAction = next(action);
-            measureUtils.measureTime(function () {
-                state = getState();
-                result = tracker.detectMutations();
-                tracker = track(state);
-                result.wasMutated && invariant(!result.wasMutated, "A state mutation was detected inside a dispatch, in the path: " + (result.path || "") + ". Take a look at the reducer(s) handling the action " + stringify(action) + ". (https://redux.js.org/style-guide/style-guide#do-not-mutate-state)");
-            });
-            measureUtils.warnIfExceeded();
-            return dispatchedAction;
-        }; };
-    };
-}
-// src/serializableStateInvariantMiddleware.ts
-function isPlain(val) {
-    var type = typeof val;
-    return type === "undefined" || val === null || type === "string" || type === "boolean" || type === "number" || Array.isArray(val) || isPlainObject(val);
-}
-function findNonSerializableValue(value, path, isSerializable, getEntries, ignoredPaths) {
-    if (path === void 0) { path = ""; }
-    if (isSerializable === void 0) { isSerializable = isPlain; }
-    if (ignoredPaths === void 0) { ignoredPaths = []; }
-    var foundNestedSerializable;
-    if (!isSerializable(value)) {
-        return {
-            keyPath: path || "<root>",
-            value: value
+            return new google.maps.Map(this.mapRef, this.props.options);
+        };
+        this.panTo = (latLng) => {
+            const map = this.getInstance();
+            if (map) {
+                map.panTo(latLng);
+            }
+        };
+        this.setMapCallback = () => {
+            if (this.state.map !== null) {
+                if (this.props.onLoad) {
+                    this.props.onLoad(this.state.map);
+                }
+            }
+        };
+        this.getRef = (ref) => {
+            this.mapRef = ref;
         };
     }
-    if (typeof value !== "object" || value === null) {
-        return false;
-    }
-    var entries = getEntries != null ? getEntries(value) : Object.entries(value);
-    var hasIgnoredPaths = ignoredPaths.length > 0;
-    for (var _i = 0, entries_1 = entries; _i < entries_1.length; _i++) {
-        var _c = entries_1[_i], key = _c[0], nestedValue = _c[1];
-        var nestedPath = path ? path + "." + key : key;
-        if (hasIgnoredPaths && ignoredPaths.indexOf(nestedPath) >= 0) {
-            continue;
-        }
-        if (!isSerializable(nestedValue)) {
+    componentDidMount() {
+        const map = this.getInstance();
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$i,
+            eventMap: eventMap$i,
+            prevProps: {},
+            nextProps: this.props,
+            instance: map,
+        });
+        this.setState(function setMap() {
             return {
-                keyPath: nestedPath,
-                value: nestedValue
+                map,
             };
+        }, this.setMapCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.map !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$i,
+                eventMap: eventMap$i,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.map,
+            });
         }
-        if (typeof nestedValue === "object") {
-            foundNestedSerializable = findNonSerializableValue(nestedValue, nestedPath, isSerializable, getEntries, ignoredPaths);
-            if (foundNestedSerializable) {
-                return foundNestedSerializable;
+    }
+    componentWillUnmount() {
+        if (this.state.map !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.map);
+            }
+            unregisterEvents(this.registeredEvents);
+        }
+    }
+    render() {
+        return (jsxRuntime.exports.jsx("div", Object.assign({ id: this.props.id, ref: this.getRef, style: this.props.mapContainerStyle, className: this.props.mapContainerClassName }, { children: jsxRuntime.exports.jsx(MapContext.Provider, Object.assign({ value: this.state.map }, { children: this.state.map !== null ? this.props.children : jsxRuntime.exports.jsx(jsxRuntime.exports.Fragment, {}) })) })));
+    }
+}
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+function __rest$1(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+const isBrowser = typeof document !== 'undefined';
+
+function injectScript({ url, id, nonce }) {
+    if (!isBrowser) {
+        return Promise.reject(new Error('document is undefined'));
+    }
+    return new Promise(function injectScriptCallback(resolve, reject) {
+        const existingScript = document.getElementById(id);
+        const windowWithGoogleMap = window;
+        if (existingScript) {
+            // Same script id/url: keep same script
+            const dataStateAttribute = existingScript.getAttribute('data-state');
+            if (existingScript.src === url && dataStateAttribute !== 'error') {
+                if (dataStateAttribute === 'ready') {
+                    return resolve(id);
+                }
+                else {
+                    const originalInitMap = windowWithGoogleMap.initMap;
+                    const originalErrorCallback = existingScript.onerror;
+                    windowWithGoogleMap.initMap = function initMap() {
+                        if (originalInitMap) {
+                            originalInitMap();
+                        }
+                        resolve(id);
+                    };
+                    existingScript.onerror = function (err) {
+                        if (originalErrorCallback) {
+                            originalErrorCallback(err);
+                        }
+                        reject(err);
+                    };
+                    return;
+                }
+            }
+            // Same script id, but either
+            // 1. requested URL is different
+            // 2. script failed to load
+            else {
+                existingScript.remove();
             }
         }
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        script.id = id;
+        script.async = true;
+        script.nonce = nonce;
+        script.onerror = function onerror(err) {
+            script.setAttribute('data-state', 'error');
+            reject(err);
+        };
+        windowWithGoogleMap.initMap = function onload() {
+            script.setAttribute('data-state', 'ready');
+            resolve(id);
+        };
+        document.head.appendChild(script);
+    }).catch(err => {
+        console.error('injectScript error: ', err);
+        throw err;
+    });
+}
+
+function isGoogleFontStyle(element) {
+    // 'Roboto' or 'Google Sans Text' font download
+    const href = element.href;
+    if (href && (href.indexOf('https://fonts.googleapis.com/css?family=Roboto') === 0 ||
+        href.indexOf('https://fonts.googleapis.com/css?family=Google+Sans+Text') === 0)) {
+        return true;
+    }
+    // font style elements
+    if (element.tagName.toLowerCase() === 'style' &&
+        // @ts-ignore
+        element.styleSheet &&
+        // @ts-ignore
+        element.styleSheet.cssText &&
+        // @ts-ignore
+        element.styleSheet.cssText.replace('\r\n', '').indexOf('.gm-style') === 0) {
+        // @ts-ignore
+        element.styleSheet.cssText = '';
+        return true;
+    }
+    // font style elements for other browsers
+    if (element.tagName.toLowerCase() === 'style' &&
+        element.innerHTML &&
+        element.innerHTML.replace('\r\n', '').indexOf('.gm-style') === 0) {
+        element.innerHTML = '';
+        return true;
+    }
+    // when google tries to add empty style
+    if (element.tagName.toLowerCase() === 'style' &&
+        // @ts-ignore
+        !element.styleSheet &&
+        !element.innerHTML) {
+        return true;
     }
     return false;
 }
-function createSerializableStateInvariantMiddleware(options) {
-    if (options === void 0) { options = {}; }
-    if (false) {}
-    var _c = options.isSerializable, isSerializable = _c === void 0 ? isPlain : _c, getEntries = options.getEntries, _d = options.ignoredActions, ignoredActions = _d === void 0 ? [] : _d, _e = options.ignoredActionPaths, ignoredActionPaths = _e === void 0 ? ["meta.arg", "meta.baseQueryMeta"] : _e, _f = options.ignoredPaths, ignoredPaths = _f === void 0 ? [] : _f, _g = options.warnAfter, warnAfter = _g === void 0 ? 32 : _g, _h = options.ignoreState, ignoreState = _h === void 0 ? false : _h, _j = options.ignoreActions, ignoreActions = _j === void 0 ? false : _j;
-    return function (storeAPI) { return function (next) { return function (action) {
-        var result = next(action);
-        var measureUtils = getTimeMeasureUtils(warnAfter, "SerializableStateInvariantMiddleware");
-        if (!ignoreActions && !(ignoredActions.length && ignoredActions.indexOf(action.type) !== -1)) {
-            measureUtils.measureTime(function () {
-                var foundActionNonSerializableValue = findNonSerializableValue(action, "", isSerializable, getEntries, ignoredActionPaths);
-                if (foundActionNonSerializableValue) {
-                    var keyPath = foundActionNonSerializableValue.keyPath, value = foundActionNonSerializableValue.value;
-                    console.error("A non-serializable value was detected in an action, in the path: `" + keyPath + "`. Value:", value, "\nTake a look at the logic that dispatched this action: ", action, "\n(See https://redux.js.org/faq/actions#why-should-type-be-a-string-or-at-least-serializable-why-should-my-action-types-be-constants)", "\n(To allow non-serializable values see: https://redux-toolkit.js.org/usage/usage-guide#working-with-non-serializable-data)");
-                }
-            });
+// Preventing the Google Maps library from downloading an extra font
+function preventGoogleFonts() {
+    // we override these methods only for one particular head element
+    // default methods for other elements are not affected
+    const head = document.getElementsByTagName('head')[0];
+    const trueInsertBefore = head.insertBefore.bind(head);
+    // TODO: adding return before reflect solves the TS issue
+    // @ts-ignore
+    head.insertBefore = function insertBefore(newElement, referenceElement) {
+        if (!isGoogleFontStyle(newElement)) {
+            Reflect.apply(trueInsertBefore, head, [newElement, referenceElement]);
         }
-        if (!ignoreState) {
-            measureUtils.measureTime(function () {
-                var state = storeAPI.getState();
-                var foundStateNonSerializableValue = findNonSerializableValue(state, "", isSerializable, getEntries, ignoredPaths);
-                if (foundStateNonSerializableValue) {
-                    var keyPath = foundStateNonSerializableValue.keyPath, value = foundStateNonSerializableValue.value;
-                    console.error("A non-serializable value was detected in the state, in the path: `" + keyPath + "`. Value:", value, "\nTake a look at the reducer(s) handling this action type: " + action.type + ".\n(See https://redux.js.org/faq/organizing-state#can-i-put-functions-promises-or-other-non-serializable-items-in-my-store-state)");
-                }
-            });
-            measureUtils.warnIfExceeded();
+    };
+    const trueAppend = head.appendChild.bind(head);
+    // TODO: adding return before reflect solves the TS issue
+    // @ts-ignore
+    head.appendChild = function appendChild(textNode) {
+        if (!isGoogleFontStyle(textNode)) {
+            Reflect.apply(trueAppend, head, [textNode]);
         }
-        return result;
-    }; }; };
-}
-// src/getDefaultMiddleware.ts
-function isBoolean(x) {
-    return typeof x === "boolean";
-}
-function curryGetDefaultMiddleware() {
-    return function curriedGetDefaultMiddleware(options) {
-        return getDefaultMiddleware(options);
     };
 }
-function getDefaultMiddleware(options) {
-    if (options === void 0) { options = {}; }
-    var _c = options.thunk, thunk = _c === void 0 ? true : _c, _d = options.immutableCheck, immutableCheck = _d === void 0 ? true : _d, _e = options.serializableCheck, serializableCheck = _e === void 0 ? true : _e;
-    var middlewareArray = new MiddlewareArray();
-    if (thunk) {
-        if (isBoolean(thunk)) {
-            middlewareArray.push(redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"]);
-        }
-        else {
-            middlewareArray.push(redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"].withExtraArgument(thunk.extraArgument));
-        }
-    }
-    if (true) {
-        if (immutableCheck) {
-            var immutableOptions = {};
-            if (!isBoolean(immutableCheck)) {
-                immutableOptions = immutableCheck;
-            }
-            middlewareArray.unshift(createImmutableStateInvariantMiddleware(immutableOptions));
-        }
-        if (serializableCheck) {
-            var serializableOptions = {};
-            if (!isBoolean(serializableCheck)) {
-                serializableOptions = serializableCheck;
-            }
-            middlewareArray.push(createSerializableStateInvariantMiddleware(serializableOptions));
-        }
-    }
-    return middlewareArray;
-}
-// src/configureStore.ts
-var IS_PRODUCTION = "development" === "production";
-function configureStore(options) {
-    var curriedGetDefaultMiddleware = curryGetDefaultMiddleware();
-    var _c = options || {}, _d = _c.reducer, reducer = _d === void 0 ? void 0 : _d, _e = _c.middleware, middleware = _e === void 0 ? curriedGetDefaultMiddleware() : _e, _f = _c.devTools, devTools = _f === void 0 ? true : _f, _g = _c.preloadedState, preloadedState = _g === void 0 ? void 0 : _g, _h = _c.enhancers, enhancers = _h === void 0 ? void 0 : _h;
-    var rootReducer;
-    if (typeof reducer === "function") {
-        rootReducer = reducer;
-    }
-    else if (isPlainObject(reducer)) {
-        rootReducer = (0,redux__WEBPACK_IMPORTED_MODULE_0__.combineReducers)(reducer);
-    }
-    else {
-        throw new Error('"reducer" is a required argument, and must be a function or an object of functions that can be passed to combineReducers');
-    }
-    var finalMiddleware = middleware;
-    if (typeof finalMiddleware === "function") {
-        finalMiddleware = finalMiddleware(curriedGetDefaultMiddleware);
-        if (!IS_PRODUCTION && !Array.isArray(finalMiddleware)) {
-            throw new Error("when using a middleware builder function, an array of middleware must be returned");
-        }
-    }
-    if (!IS_PRODUCTION && finalMiddleware.some(function (item) { return typeof item !== "function"; })) {
-        throw new Error("each middleware provided to configureStore must be a function");
-    }
-    var middlewareEnhancer = redux__WEBPACK_IMPORTED_MODULE_0__.applyMiddleware.apply(void 0, finalMiddleware);
-    var finalCompose = redux__WEBPACK_IMPORTED_MODULE_0__.compose;
-    if (devTools) {
-        finalCompose = composeWithDevTools(__spreadValues({
-            trace: !IS_PRODUCTION
-        }, typeof devTools === "object" && devTools));
-    }
-    var storeEnhancers = [middlewareEnhancer];
-    if (Array.isArray(enhancers)) {
-        storeEnhancers = __spreadArray([middlewareEnhancer], enhancers);
-    }
-    else if (typeof enhancers === "function") {
-        storeEnhancers = enhancers(storeEnhancers);
-    }
-    var composedEnhancer = finalCompose.apply(void 0, storeEnhancers);
-    return (0,redux__WEBPACK_IMPORTED_MODULE_0__.createStore)(rootReducer, preloadedState, composedEnhancer);
-}
-// src/createAction.ts
-function createAction(type, prepareAction) {
-    function actionCreator() {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
-        if (prepareAction) {
-            var prepared = prepareAction.apply(void 0, args);
-            if (!prepared) {
-                throw new Error("prepareAction did not return an object");
-            }
-            return __spreadValues(__spreadValues({
-                type: type,
-                payload: prepared.payload
-            }, "meta" in prepared && { meta: prepared.meta }), "error" in prepared && { error: prepared.error });
-        }
-        return { type: type, payload: args[0] };
-    }
-    actionCreator.toString = function () { return "" + type; };
-    actionCreator.type = type;
-    actionCreator.match = function (action) { return action.type === type; };
-    return actionCreator;
-}
-function isFSA(action) {
-    return isPlainObject(action) && typeof action.type === "string" && Object.keys(action).every(isValidKey);
-}
-function isValidKey(key) {
-    return ["type", "payload", "error", "meta"].indexOf(key) > -1;
-}
-function getType(actionCreator) {
-    return "" + actionCreator;
-}
-// src/createReducer.ts
 
-// src/mapBuilders.ts
-function executeReducerBuilderCallback(builderCallback) {
-    var actionsMap = {};
-    var actionMatchers = [];
-    var defaultCaseReducer;
-    var builder = {
-        addCase: function (typeOrActionCreator, reducer) {
-            if (true) {
-                if (actionMatchers.length > 0) {
-                    throw new Error("`builder.addCase` should only be called before calling `builder.addMatcher`");
-                }
-                if (defaultCaseReducer) {
-                    throw new Error("`builder.addCase` should only be called before calling `builder.addDefaultCase`");
-                }
-            }
-            var type = typeof typeOrActionCreator === "string" ? typeOrActionCreator : typeOrActionCreator.type;
-            if (type in actionsMap) {
-                throw new Error("addCase cannot be called with two reducers for the same action type");
-            }
-            actionsMap[type] = reducer;
-            return builder;
-        },
-        addMatcher: function (matcher, reducer) {
-            if (true) {
-                if (defaultCaseReducer) {
-                    throw new Error("`builder.addMatcher` should only be called before calling `builder.addDefaultCase`");
-                }
-            }
-            actionMatchers.push({ matcher: matcher, reducer: reducer });
-            return builder;
-        },
-        addDefaultCase: function (reducer) {
-            if (true) {
-                if (defaultCaseReducer) {
-                    throw new Error("`builder.addDefaultCase` can only be called once");
-                }
-            }
-            defaultCaseReducer = reducer;
-            return builder;
-        }
-    };
-    builderCallback(builder);
-    return [actionsMap, actionMatchers, defaultCaseReducer];
-}
-// src/createReducer.ts
-function isStateFunction(x) {
-    return typeof x === "function";
-}
-function createReducer(initialState, mapOrBuilderCallback, actionMatchers, defaultCaseReducer) {
-    if (actionMatchers === void 0) { actionMatchers = []; }
-    var _c = typeof mapOrBuilderCallback === "function" ? executeReducerBuilderCallback(mapOrBuilderCallback) : [mapOrBuilderCallback, actionMatchers, defaultCaseReducer], actionsMap = _c[0], finalActionMatchers = _c[1], finalDefaultCaseReducer = _c[2];
-    var getInitialState;
-    if (isStateFunction(initialState)) {
-        getInitialState = function () { return (0,immer__WEBPACK_IMPORTED_MODULE_2__["default"])(initialState(), function () {
-        }); };
+function makeLoadScriptUrl({ googleMapsApiKey, googleMapsClientId, version = 'weekly', language, region, libraries, channel, mapIds }) {
+    const params = [];
+    invariant_1((googleMapsApiKey && googleMapsClientId) || !(googleMapsApiKey && googleMapsClientId), 'You need to specify either googleMapsApiKey or googleMapsClientId for @react-google-maps/api load script to work. You cannot use both at the same time.');
+    if (googleMapsApiKey) {
+        params.push(`key=${googleMapsApiKey}`);
     }
-    else {
-        var frozenInitialState_1 = (0,immer__WEBPACK_IMPORTED_MODULE_2__["default"])(initialState, function () {
-        });
-        getInitialState = function () { return frozenInitialState_1; };
+    else if (googleMapsClientId) {
+        params.push(`client=${googleMapsClientId}`);
     }
-    function reducer(state, action) {
-        if (state === void 0) { state = getInitialState(); }
-        var caseReducers = __spreadArray([
-            actionsMap[action.type]
-        ], finalActionMatchers.filter(function (_c) {
-            var matcher = _c.matcher;
-            return matcher(action);
-        }).map(function (_c) {
-            var reducer2 = _c.reducer;
-            return reducer2;
-        }));
-        if (caseReducers.filter(function (cr) { return !!cr; }).length === 0) {
-            caseReducers = [finalDefaultCaseReducer];
-        }
-        return caseReducers.reduce(function (previousState, caseReducer) {
-            if (caseReducer) {
-                if ((0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraft)(previousState)) {
-                    var draft = previousState;
-                    var result = caseReducer(draft, action);
-                    if (typeof result === "undefined") {
-                        return previousState;
-                    }
-                    return result;
-                }
-                else if (!(0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraftable)(previousState)) {
-                    var result = caseReducer(previousState, action);
-                    if (typeof result === "undefined") {
-                        if (previousState === null) {
-                            return previousState;
-                        }
-                        throw Error("A case reducer on a non-draftable value must not return undefined");
-                    }
-                    return result;
+    if (version) {
+        params.push(`v=${version}`);
+    }
+    if (language) {
+        params.push(`language=${language}`);
+    }
+    if (region) {
+        params.push(`region=${region}`);
+    }
+    if (libraries && libraries.length) {
+        params.push(`libraries=${libraries.sort().join(',')}`);
+    }
+    if (channel) {
+        params.push(`channel=${channel}`);
+    }
+    if (mapIds && mapIds.length) {
+        params.push(`map_ids=${mapIds.join(',')}`);
+    }
+    params.push('callback=initMap');
+    return `https://maps.googleapis.com/maps/api/js?${params.join('&')}`;
+}
+
+let cleaningUp = false;
+function DefaultLoadingElement() {
+    return jsxRuntime.exports.jsx("div", { children: `Loading...` });
+}
+const defaultLoadScriptProps = {
+    id: 'script-loader',
+    version: 'weekly',
+};
+class LoadScript extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.check = (0,react__WEBPACK_IMPORTED_MODULE_0__.createRef)();
+        this.state = {
+            loaded: false,
+        };
+        this.cleanupCallback = () => {
+            // @ts-ignore
+            delete window.google.maps;
+            this.injectScript();
+        };
+        this.isCleaningUp = () => __awaiter(this, void 0, void 0, function* () {
+            function promiseCallback(resolve) {
+                if (!cleaningUp) {
+                    resolve();
                 }
                 else {
-                    return (0,immer__WEBPACK_IMPORTED_MODULE_2__["default"])(previousState, function (draft) {
-                        return caseReducer(draft, action);
-                    });
+                    if (isBrowser) {
+                        const timer = window.setInterval(function interval() {
+                            if (!cleaningUp) {
+                                window.clearInterval(timer);
+                                resolve();
+                            }
+                        }, 1);
+                    }
                 }
+                return;
             }
-            return previousState;
-        }, state);
-    }
-    reducer.getInitialState = getInitialState;
-    return reducer;
-}
-// src/createSlice.ts
-function getType2(slice, actionKey) {
-    return slice + "/" + actionKey;
-}
-function createSlice(options) {
-    var name = options.name;
-    if (!name) {
-        throw new Error("`name` is a required option for createSlice");
-    }
-    var initialState = typeof options.initialState == "function" ? options.initialState : (0,immer__WEBPACK_IMPORTED_MODULE_2__["default"])(options.initialState, function () {
-    });
-    var reducers = options.reducers || {};
-    var reducerNames = Object.keys(reducers);
-    var sliceCaseReducersByName = {};
-    var sliceCaseReducersByType = {};
-    var actionCreators = {};
-    reducerNames.forEach(function (reducerName) {
-        var maybeReducerWithPrepare = reducers[reducerName];
-        var type = getType2(name, reducerName);
-        var caseReducer;
-        var prepareCallback;
-        if ("reducer" in maybeReducerWithPrepare) {
-            caseReducer = maybeReducerWithPrepare.reducer;
-            prepareCallback = maybeReducerWithPrepare.prepare;
-        }
-        else {
-            caseReducer = maybeReducerWithPrepare;
-        }
-        sliceCaseReducersByName[reducerName] = caseReducer;
-        sliceCaseReducersByType[type] = caseReducer;
-        actionCreators[reducerName] = prepareCallback ? createAction(type, prepareCallback) : createAction(type);
-    });
-    function buildReducer() {
-        var _c = typeof options.extraReducers === "function" ? executeReducerBuilderCallback(options.extraReducers) : [options.extraReducers], _d = _c[0], extraReducers = _d === void 0 ? {} : _d, _e = _c[1], actionMatchers = _e === void 0 ? [] : _e, _f = _c[2], defaultCaseReducer = _f === void 0 ? void 0 : _f;
-        var finalCaseReducers = __spreadValues(__spreadValues({}, extraReducers), sliceCaseReducersByType);
-        return createReducer(initialState, finalCaseReducers, actionMatchers, defaultCaseReducer);
-    }
-    var _reducer;
-    return {
-        name: name,
-        reducer: function (state, action) {
-            if (!_reducer)
-                _reducer = buildReducer();
-            return _reducer(state, action);
-        },
-        actions: actionCreators,
-        caseReducers: sliceCaseReducersByName,
-        getInitialState: function () {
-            if (!_reducer)
-                _reducer = buildReducer();
-            return _reducer.getInitialState();
-        }
-    };
-}
-// src/entities/entity_state.ts
-function getInitialEntityState() {
-    return {
-        ids: [],
-        entities: {}
-    };
-}
-function createInitialStateFactory() {
-    function getInitialState(additionalState) {
-        if (additionalState === void 0) { additionalState = {}; }
-        return Object.assign(getInitialEntityState(), additionalState);
-    }
-    return { getInitialState: getInitialState };
-}
-// src/entities/state_selectors.ts
-function createSelectorsFactory() {
-    function getSelectors(selectState) {
-        var selectIds = function (state) { return state.ids; };
-        var selectEntities = function (state) { return state.entities; };
-        var selectAll = createDraftSafeSelector(selectIds, selectEntities, function (ids, entities) { return ids.map(function (id) { return entities[id]; }); });
-        var selectId = function (_, id) { return id; };
-        var selectById = function (entities, id) { return entities[id]; };
-        var selectTotal = createDraftSafeSelector(selectIds, function (ids) { return ids.length; });
-        if (!selectState) {
-            return {
-                selectIds: selectIds,
-                selectEntities: selectEntities,
-                selectAll: selectAll,
-                selectTotal: selectTotal,
-                selectById: createDraftSafeSelector(selectEntities, selectId, selectById)
+            return new Promise(promiseCallback);
+        });
+        this.cleanup = () => {
+            cleaningUp = true;
+            const script = document.getElementById(this.props.id);
+            if (script && script.parentNode) {
+                script.parentNode.removeChild(script);
+            }
+            Array.prototype.slice
+                .call(document.getElementsByTagName('script'))
+                .filter(function filter(script) {
+                return typeof script.src === 'string' && script.src.includes('maps.googleapis');
+            })
+                .forEach(function forEach(script) {
+                if (script.parentNode) {
+                    script.parentNode.removeChild(script);
+                }
+            });
+            Array.prototype.slice
+                .call(document.getElementsByTagName('link'))
+                .filter(function filter(link) {
+                return (link.href === 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans');
+            })
+                .forEach(function forEach(link) {
+                if (link.parentNode) {
+                    link.parentNode.removeChild(link);
+                }
+            });
+            Array.prototype.slice
+                .call(document.getElementsByTagName('style'))
+                .filter(function filter(style) {
+                return (style.innerText !== undefined &&
+                    style.innerText.length > 0 &&
+                    style.innerText.includes('.gm-'));
+            })
+                .forEach(function forEach(style) {
+                if (style.parentNode) {
+                    style.parentNode.removeChild(style);
+                }
+            });
+        };
+        this.injectScript = () => {
+            if (this.props.preventGoogleFontsLoading) {
+                preventGoogleFonts();
+            }
+            invariant_1(!!this.props.id, 'LoadScript requires "id" prop to be a string: %s', this.props.id);
+            const injectScriptOptions = {
+                id: this.props.id,
+                nonce: this.props.nonce,
+                url: makeLoadScriptUrl(this.props),
             };
-        }
-        var selectGlobalizedEntities = createDraftSafeSelector(selectState, selectEntities);
-        return {
-            selectIds: createDraftSafeSelector(selectState, selectIds),
-            selectEntities: selectGlobalizedEntities,
-            selectAll: createDraftSafeSelector(selectState, selectAll),
-            selectTotal: createDraftSafeSelector(selectState, selectTotal),
-            selectById: createDraftSafeSelector(selectGlobalizedEntities, selectId, selectById)
+            injectScript(injectScriptOptions)
+                .then(() => {
+                if (this.props.onLoad) {
+                    this.props.onLoad();
+                }
+                this.setState(function setLoaded() {
+                    return {
+                        loaded: true,
+                    };
+                });
+                return;
+            })
+                .catch(err => {
+                if (this.props.onError) {
+                    this.props.onError(err);
+                }
+                console.error(`
+          There has been an Error with loading Google Maps API script, please check that you provided correct google API key (${this
+                    .props.googleMapsApiKey || '-'}) or Client ID (${this.props.googleMapsClientId ||
+                    '-'}) to <LoadScript />
+          Otherwise it is a Network issue.
+        `);
+            });
         };
     }
-    return { getSelectors: getSelectors };
+    componentDidMount() {
+        if (isBrowser) {
+            if (window.google && window.google.maps && !cleaningUp) {
+                console.error('google api is already presented');
+                return;
+            }
+            this.isCleaningUp()
+                .then(this.injectScript)
+                .catch(function error(err) {
+                console.error('Error at injecting script after cleaning up: ', err);
+            });
+        }
+    }
+    componentDidUpdate(prevProps) {
+        if (this.props.libraries !== prevProps.libraries) {
+            console.warn('Performance warning! LoadScript has been reloaded unintentionally! You should not pass `libraries` prop as new array. Please keep an array of libraries as static class property for Components and PureComponents, or just a const variable outside of component, or somewhere in config files or ENV variables');
+        }
+        if (isBrowser && prevProps.language !== this.props.language) {
+            this.cleanup();
+            // TODO: refactor to use gDSFP maybe... wait for hooks refactoring.
+            // eslint-disable-next-line react/no-did-update-set-state
+            this.setState(function setLoaded() {
+                return {
+                    loaded: false,
+                };
+            }, this.cleanupCallback);
+        }
+    }
+    componentWillUnmount() {
+        if (isBrowser) {
+            this.cleanup();
+            const timeoutCallback = () => {
+                if (!this.check.current) {
+                    // @ts-ignore
+                    delete window.google;
+                    cleaningUp = false;
+                }
+            };
+            window.setTimeout(timeoutCallback, 1);
+            if (this.props.onUnmount) {
+                this.props.onUnmount();
+            }
+        }
+    }
+    render() {
+        return (jsxRuntime.exports.jsxs(jsxRuntime.exports.Fragment, { children: [jsxRuntime.exports.jsx("div", { ref: this.check }), this.state.loaded
+                    ? this.props.children
+                    : this.props.loadingElement || jsxRuntime.exports.jsx(DefaultLoadingElement, {})] }));
+    }
 }
-// src/entities/state_adapter.ts
+LoadScript.defaultProps = defaultLoadScriptProps;
 
-function createSingleArgumentStateOperator(mutator) {
-    var operator = createStateOperator(function (_, state) { return mutator(state); });
-    return function operation(state) {
-        return operator(state, void 0);
-    };
-}
-function createStateOperator(mutator) {
-    return function operation(state, arg) {
-        function isPayloadActionArgument(arg2) {
-            return isFSA(arg2);
-        }
-        var runMutator = function (draft) {
-            if (isPayloadActionArgument(arg)) {
-                mutator(arg.payload, draft);
-            }
-            else {
-                mutator(arg, draft);
-            }
+/* eslint-disable filenames/match-regex */
+let previouslyLoadedUrl;
+function useLoadScript({ id = defaultLoadScriptProps.id, version = defaultLoadScriptProps.version, nonce, googleMapsApiKey, googleMapsClientId, language, region, libraries, preventGoogleFontsLoading, channel, mapIds, }) {
+    const isMounted = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);
+    const [isLoaded, setLoaded] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+    const [loadError, setLoadError] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(undefined);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function trackMountedState() {
+        isMounted.current = true;
+        return () => {
+            isMounted.current = false;
         };
-        if ((0,immer__WEBPACK_IMPORTED_MODULE_2__.isDraft)(state)) {
-            runMutator(state);
-            return state;
+    }, []);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function applyPreventGoogleFonts() {
+        if (isBrowser && preventGoogleFontsLoading) {
+            preventGoogleFonts();
         }
-        else {
-            return (0,immer__WEBPACK_IMPORTED_MODULE_2__["default"])(state, runMutator);
+    }, [preventGoogleFontsLoading]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function validateLoadedState() {
+        if (isLoaded) {
+            invariant_1(!!window.google, 'useLoadScript was marked as loaded, but window.google is not present. Something went wrong.');
         }
-    };
-}
-// src/entities/utils.ts
-function selectIdValue(entity, selectId) {
-    var key = selectId(entity);
-    if ( true && key === void 0) {
-        console.warn("The entity passed to the `selectId` implementation returned undefined.", "You should probably provide your own `selectId` implementation.", "The entity that was passed:", entity, "The `selectId` implementation:", selectId.toString());
-    }
-    return key;
-}
-function ensureEntitiesArray(entities) {
-    if (!Array.isArray(entities)) {
-        entities = Object.values(entities);
-    }
-    return entities;
-}
-function splitAddedUpdatedEntities(newEntities, selectId, state) {
-    newEntities = ensureEntitiesArray(newEntities);
-    var added = [];
-    var updated = [];
-    for (var _i = 0, newEntities_1 = newEntities; _i < newEntities_1.length; _i++) {
-        var entity = newEntities_1[_i];
-        var id = selectIdValue(entity, selectId);
-        if (id in state.entities) {
-            updated.push({ id: id, changes: entity });
-        }
-        else {
-            added.push(entity);
-        }
-    }
-    return [added, updated];
-}
-// src/entities/unsorted_state_adapter.ts
-function createUnsortedStateAdapter(selectId) {
-    function addOneMutably(entity, state) {
-        var key = selectIdValue(entity, selectId);
-        if (key in state.entities) {
+    }, [isLoaded]);
+    const url = makeLoadScriptUrl({
+        version,
+        googleMapsApiKey,
+        googleMapsClientId,
+        language,
+        region,
+        libraries,
+        channel,
+        mapIds
+    });
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function loadScriptAndModifyLoadedState() {
+        if (!isBrowser) {
             return;
         }
-        state.ids.push(key);
-        state.entities[key] = entity;
-    }
-    function addManyMutably(newEntities, state) {
-        newEntities = ensureEntitiesArray(newEntities);
-        for (var _i = 0, newEntities_2 = newEntities; _i < newEntities_2.length; _i++) {
-            var entity = newEntities_2[_i];
-            addOneMutably(entity, state);
-        }
-    }
-    function setOneMutably(entity, state) {
-        var key = selectIdValue(entity, selectId);
-        if (!(key in state.entities)) {
-            state.ids.push(key);
-        }
-        state.entities[key] = entity;
-    }
-    function setManyMutably(newEntities, state) {
-        newEntities = ensureEntitiesArray(newEntities);
-        for (var _i = 0, newEntities_3 = newEntities; _i < newEntities_3.length; _i++) {
-            var entity = newEntities_3[_i];
-            setOneMutably(entity, state);
-        }
-    }
-    function setAllMutably(newEntities, state) {
-        newEntities = ensureEntitiesArray(newEntities);
-        state.ids = [];
-        state.entities = {};
-        addManyMutably(newEntities, state);
-    }
-    function removeOneMutably(key, state) {
-        return removeManyMutably([key], state);
-    }
-    function removeManyMutably(keys, state) {
-        var didMutate = false;
-        keys.forEach(function (key) {
-            if (key in state.entities) {
-                delete state.entities[key];
-                didMutate = true;
-            }
-        });
-        if (didMutate) {
-            state.ids = state.ids.filter(function (id) { return id in state.entities; });
-        }
-    }
-    function removeAllMutably(state) {
-        Object.assign(state, {
-            ids: [],
-            entities: {}
-        });
-    }
-    function takeNewKey(keys, update, state) {
-        var original2 = state.entities[update.id];
-        var updated = Object.assign({}, original2, update.changes);
-        var newKey = selectIdValue(updated, selectId);
-        var hasNewKey = newKey !== update.id;
-        if (hasNewKey) {
-            keys[update.id] = newKey;
-            delete state.entities[update.id];
-        }
-        state.entities[newKey] = updated;
-        return hasNewKey;
-    }
-    function updateOneMutably(update, state) {
-        return updateManyMutably([update], state);
-    }
-    function updateManyMutably(updates, state) {
-        var newKeys = {};
-        var updatesPerEntity = {};
-        updates.forEach(function (update) {
-            if (update.id in state.entities) {
-                updatesPerEntity[update.id] = {
-                    id: update.id,
-                    changes: __spreadValues(__spreadValues({}, updatesPerEntity[update.id] ? updatesPerEntity[update.id].changes : null), update.changes)
-                };
-            }
-        });
-        updates = Object.values(updatesPerEntity);
-        var didMutateEntities = updates.length > 0;
-        if (didMutateEntities) {
-            var didMutateIds = updates.filter(function (update) { return takeNewKey(newKeys, update, state); }).length > 0;
-            if (didMutateIds) {
-                state.ids = state.ids.map(function (id) { return newKeys[id] || id; });
+        function setLoadedIfMounted() {
+            if (isMounted.current) {
+                setLoaded(true);
+                previouslyLoadedUrl = url;
             }
         }
+        if (window.google && window.google.maps && previouslyLoadedUrl === url) {
+            setLoadedIfMounted();
+            return;
+        }
+        injectScript({ id, url, nonce })
+            .then(setLoadedIfMounted)
+            .catch(function handleInjectError(err) {
+            if (isMounted.current) {
+                setLoadError(err);
+            }
+            console.warn(`
+        There has been an Error with loading Google Maps API script, please check that you provided correct google API key (${googleMapsApiKey ||
+                '-'}) or Client ID (${googleMapsClientId || '-'})
+        Otherwise it is a Network issue.
+      `);
+            console.error(err);
+        });
+    }, [id, url, nonce]);
+    const prevLibraries = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function checkPerformance() {
+        if (prevLibraries.current && libraries !== prevLibraries.current) {
+            console.warn('Performance warning! LoadScript has been reloaded unintentionally! You should not pass `libraries` prop as new array. Please keep an array of libraries as static class property for Components and PureComponents, or just a const variable outside of component, or somewhere in config files or ENV variables');
+        }
+        prevLibraries.current = libraries;
+    }, [libraries]);
+    return { isLoaded, loadError, url };
+}
+
+const defaultLoadingElement = jsxRuntime.exports.jsx(DefaultLoadingElement, {});
+function LoadScriptNext(_a) {
+    var { loadingElement, onLoad, onError, onUnmount, children } = _a, hookOptions = __rest$1(_a, ["loadingElement", "onLoad", "onError", "onUnmount", "children"]);
+    const { isLoaded, loadError } = useLoadScript(hookOptions);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function handleOnLoad() {
+        if (isLoaded && typeof onLoad === 'function') {
+            onLoad();
+        }
+    }, [isLoaded, onLoad]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function handleOnError() {
+        if (loadError && typeof onError === 'function') {
+            onError(loadError);
+        }
+    }, [loadError, onError]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function handleOnUnmount() {
+        return () => {
+            if (onUnmount) {
+                onUnmount();
+            }
+        };
+    }, [onUnmount]);
+    return isLoaded ? children : loadingElement || defaultLoadingElement;
+}
+var LoadScriptNext$1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(LoadScriptNext);
+
+// do not edit .js files directly - edit src/index.jst
+
+
+
+var fastDeepEqual$1 = function equal(a, b) {
+  if (a === b) return true;
+
+  if (a && b && typeof a == 'object' && typeof b == 'object') {
+    if (a.constructor !== b.constructor) return false;
+
+    var length, i, keys;
+    if (Array.isArray(a)) {
+      length = a.length;
+      if (length != b.length) return false;
+      for (i = length; i-- !== 0;)
+        if (!equal(a[i], b[i])) return false;
+      return true;
     }
-    function upsertOneMutably(entity, state) {
-        return upsertManyMutably([entity], state);
+
+
+
+    if (a.constructor === RegExp) return a.source === b.source && a.flags === b.flags;
+    if (a.valueOf !== Object.prototype.valueOf) return a.valueOf() === b.valueOf();
+    if (a.toString !== Object.prototype.toString) return a.toString() === b.toString();
+
+    keys = Object.keys(a);
+    length = keys.length;
+    if (length !== Object.keys(b).length) return false;
+
+    for (i = length; i-- !== 0;)
+      if (!Object.prototype.hasOwnProperty.call(b, keys[i])) return false;
+
+    for (i = length; i-- !== 0;) {
+      var key = keys[i];
+
+      if (!equal(a[key], b[key])) return false;
     }
-    function upsertManyMutably(newEntities, state) {
-        var _c = splitAddedUpdatedEntities(newEntities, selectId, state), added = _c[0], updated = _c[1];
-        updateManyMutably(updated, state);
-        addManyMutably(added, state);
+
+    return true;
+  }
+
+  // true if both NaN, false otherwise
+  return a!==a && b!==b;
+};
+
+/**
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at.
+ *
+ *      Http://www.apache.org/licenses/LICENSE-2.0.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+const DEFAULT_ID = "__googleMapsScriptId";
+/**
+ * The status of the [[Loader]].
+ */
+var LoaderStatus;
+(function (LoaderStatus) {
+    LoaderStatus[LoaderStatus["INITIALIZED"] = 0] = "INITIALIZED";
+    LoaderStatus[LoaderStatus["LOADING"] = 1] = "LOADING";
+    LoaderStatus[LoaderStatus["SUCCESS"] = 2] = "SUCCESS";
+    LoaderStatus[LoaderStatus["FAILURE"] = 3] = "FAILURE";
+})(LoaderStatus || (LoaderStatus = {}));
+/**
+ * [[Loader]] makes it easier to add Google Maps JavaScript API to your application
+ * dynamically using
+ * [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+ * It works by dynamically creating and appending a script node to the the
+ * document head and wrapping the callback function so as to return a promise.
+ *
+ * ```
+ * const loader = new Loader({
+ *   apiKey: "",
+ *   version: "weekly",
+ *   libraries: ["places"]
+ * });
+ *
+ * loader.load().then((google) => {
+ *   const map = new google.maps.Map(...)
+ * })
+ * ```
+ */
+class Loader {
+    /**
+     * Creates an instance of Loader using [[LoaderOptions]]. No defaults are set
+     * using this library, instead the defaults are set by the Google Maps
+     * JavaScript API server.
+     *
+     * ```
+     * const loader = Loader({apiKey, version: 'weekly', libraries: ['places']});
+     * ```
+     */
+    constructor({ apiKey, authReferrerPolicy, channel, client, id = DEFAULT_ID, language, libraries = [], mapIds, nonce, region, retries = 3, url = "https://maps.googleapis.com/maps/api/js", version, }) {
+        this.CALLBACK = "__googleMapsCallback";
+        this.callbacks = [];
+        this.done = false;
+        this.loading = false;
+        this.errors = [];
+        this.apiKey = apiKey;
+        this.authReferrerPolicy = authReferrerPolicy;
+        this.channel = channel;
+        this.client = client;
+        this.id = id || DEFAULT_ID; // Do not allow empty string
+        this.language = language;
+        this.libraries = libraries;
+        this.mapIds = mapIds;
+        this.nonce = nonce;
+        this.region = region;
+        this.retries = retries;
+        this.url = url;
+        this.version = version;
+        if (Loader.instance) {
+            if (!fastDeepEqual$1(this.options, Loader.instance.options)) {
+                throw new Error(`Loader must not be called again with different options. ${JSON.stringify(this.options)} !== ${JSON.stringify(Loader.instance.options)}`);
+            }
+            return Loader.instance;
+        }
+        Loader.instance = this;
     }
+    get options() {
+        return {
+            version: this.version,
+            apiKey: this.apiKey,
+            channel: this.channel,
+            client: this.client,
+            id: this.id,
+            libraries: this.libraries,
+            language: this.language,
+            region: this.region,
+            mapIds: this.mapIds,
+            nonce: this.nonce,
+            url: this.url,
+            authReferrerPolicy: this.authReferrerPolicy,
+        };
+    }
+    get status() {
+        if (this.errors.length) {
+            return LoaderStatus.FAILURE;
+        }
+        if (this.done) {
+            return LoaderStatus.SUCCESS;
+        }
+        if (this.loading) {
+            return LoaderStatus.LOADING;
+        }
+        return LoaderStatus.INITIALIZED;
+    }
+    get failed() {
+        return this.done && !this.loading && this.errors.length >= this.retries + 1;
+    }
+    /**
+     * CreateUrl returns the Google Maps JavaScript API script url given the [[LoaderOptions]].
+     *
+     * @ignore
+     */
+    createUrl() {
+        let url = this.url;
+        url += `?callback=${this.CALLBACK}`;
+        if (this.apiKey) {
+            url += `&key=${this.apiKey}`;
+        }
+        if (this.channel) {
+            url += `&channel=${this.channel}`;
+        }
+        if (this.client) {
+            url += `&client=${this.client}`;
+        }
+        if (this.libraries.length > 0) {
+            url += `&libraries=${this.libraries.join(",")}`;
+        }
+        if (this.language) {
+            url += `&language=${this.language}`;
+        }
+        if (this.region) {
+            url += `&region=${this.region}`;
+        }
+        if (this.version) {
+            url += `&v=${this.version}`;
+        }
+        if (this.mapIds) {
+            url += `&map_ids=${this.mapIds.join(",")}`;
+        }
+        if (this.authReferrerPolicy) {
+            url += `&auth_referrer_policy=${this.authReferrerPolicy}`;
+        }
+        return url;
+    }
+    deleteScript() {
+        const script = document.getElementById(this.id);
+        if (script) {
+            script.remove();
+        }
+    }
+    /**
+     * Load the Google Maps JavaScript API script and return a Promise.
+     */
+    load() {
+        return this.loadPromise();
+    }
+    /**
+     * Load the Google Maps JavaScript API script and return a Promise.
+     *
+     * @ignore
+     */
+    loadPromise() {
+        return new Promise((resolve, reject) => {
+            this.loadCallback((err) => {
+                if (!err) {
+                    resolve(window.google);
+                }
+                else {
+                    reject(err.error);
+                }
+            });
+        });
+    }
+    /**
+     * Load the Google Maps JavaScript API script with a callback.
+     */
+    loadCallback(fn) {
+        this.callbacks.push(fn);
+        this.execute();
+    }
+    /**
+     * Set the script on document.
+     */
+    setScript() {
+        if (document.getElementById(this.id)) {
+            // TODO wrap onerror callback for cases where the script was loaded elsewhere
+            this.callback();
+            return;
+        }
+        const url = this.createUrl();
+        const script = document.createElement("script");
+        script.id = this.id;
+        script.type = "text/javascript";
+        script.src = url;
+        script.onerror = this.loadErrorCallback.bind(this);
+        script.defer = true;
+        script.async = true;
+        if (this.nonce) {
+            script.nonce = this.nonce;
+        }
+        document.head.appendChild(script);
+    }
+    /**
+     * Reset the loader state.
+     */
+    reset() {
+        this.deleteScript();
+        this.done = false;
+        this.loading = false;
+        this.errors = [];
+        this.onerrorEvent = null;
+    }
+    resetIfRetryingFailed() {
+        if (this.failed) {
+            this.reset();
+        }
+    }
+    loadErrorCallback(e) {
+        this.errors.push(e);
+        if (this.errors.length <= this.retries) {
+            const delay = this.errors.length * Math.pow(2, this.errors.length);
+            console.log(`Failed to load Google Maps script, retrying in ${delay} ms.`);
+            setTimeout(() => {
+                this.deleteScript();
+                this.setScript();
+            }, delay);
+        }
+        else {
+            this.onerrorEvent = e;
+            this.callback();
+        }
+    }
+    setCallback() {
+        window.__googleMapsCallback = this.callback.bind(this);
+    }
+    callback() {
+        this.done = true;
+        this.loading = false;
+        this.callbacks.forEach((cb) => {
+            cb(this.onerrorEvent);
+        });
+        this.callbacks = [];
+    }
+    execute() {
+        this.resetIfRetryingFailed();
+        if (this.done) {
+            this.callback();
+        }
+        else {
+            // short circuit and warn if google.maps is already loaded
+            if (window.google && window.google.maps && window.google.maps.version) {
+                console.warn("Google Maps already loaded outside @googlemaps/js-api-loader." +
+                    "This may result in undesirable behavior as options and script parameters may not match.");
+                this.callback();
+                return;
+            }
+            if (this.loading) ;
+            else {
+                this.loading = true;
+                this.setCallback();
+                this.setScript();
+            }
+        }
+    }
+}
+
+function useJsApiLoader({ id = defaultLoadScriptProps.id, version = defaultLoadScriptProps.version, nonce, googleMapsApiKey, 
+// googleMapsClientId,
+language, region, libraries, preventGoogleFontsLoading, 
+// channel,
+mapIds, }) {
+    const isMounted = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);
+    const [isLoaded, setLoaded] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+    const [loadError, setLoadError] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(undefined);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function trackMountedState() {
+        isMounted.current = true;
+        return () => {
+            isMounted.current = false;
+        };
+    }, []);
+    const loader = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function memo() {
+        return new Loader({
+            id,
+            apiKey: googleMapsApiKey,
+            version,
+            libraries,
+            language,
+            region,
+            mapIds,
+            nonce,
+        });
+    }, [id, googleMapsApiKey, version, libraries, language, region, mapIds, nonce]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function effect() {
+        if (isLoaded) {
+            return;
+        }
+        else {
+            loader.load().then(function then() {
+                if (isMounted.current)
+                    setLoaded(true);
+            })
+                .catch(function onrejected(error) {
+                setLoadError(error);
+            });
+        }
+    }, []);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function applyPreventGoogleFonts() {
+        if (isBrowser && preventGoogleFontsLoading) {
+            preventGoogleFonts();
+        }
+    }, [preventGoogleFontsLoading]);
+    const prevLibraries = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function effect() {
+        if (prevLibraries.current && libraries !== prevLibraries.current) {
+            console.warn('Performance warning! LoadScript has been reloaded unintentionally! You should not pass `libraries` prop as new array. Please keep an array of libraries as static class property for Components and PureComponents, or just a const variable outside of component, or somewhere in config files or ENV variables');
+        }
+        prevLibraries.current = libraries;
+    }, [libraries]);
+    return { isLoaded, loadError };
+}
+
+const eventMap$h = {};
+const updaterMap$h = {
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+};
+function TrafficLayerFunctional({ options, onLoad, onUnmount }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (options && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const trafficLayer = new google.maps.TrafficLayer(Object.assign(Object.assign({}, (options || {})), { map }));
+        setInstance(trafficLayer);
+        if (onLoad) {
+            onLoad(trafficLayer);
+        }
+        return () => {
+            if (instance !== null) {
+                if (onUnmount) {
+                    onUnmount(instance);
+                }
+                instance.setMap(null);
+            }
+        };
+    }, []);
+    return null;
+}
+const TrafficLayerF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(TrafficLayerFunctional);
+class TrafficLayer extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            trafficLayer: null,
+        };
+        this.setTrafficLayerCallback = () => {
+            if (this.state.trafficLayer !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.trafficLayer);
+            }
+        };
+        this.registeredEvents = [];
+    }
+    componentDidMount() {
+        const trafficLayer = new google.maps.TrafficLayer(Object.assign(Object.assign({}, (this.props.options || {})), { map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$h,
+            eventMap: eventMap$h,
+            prevProps: {},
+            nextProps: this.props,
+            instance: trafficLayer,
+        });
+        this.setState(function setTrafficLayer() {
+            return {
+                trafficLayer,
+            };
+        }, this.setTrafficLayerCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.trafficLayer !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$h,
+                eventMap: eventMap$h,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.trafficLayer,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.trafficLayer !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.trafficLayer);
+            }
+            unregisterEvents(this.registeredEvents);
+            // @ts-ignore
+            this.state.trafficLayer.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+TrafficLayer.contextType = MapContext;
+
+function BicyclingLayerFunctional({ onLoad, onUnmount }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const bicyclingLayer = new google.maps.BicyclingLayer();
+        setInstance(bicyclingLayer);
+        bicyclingLayer.setMap(map);
+        if (onLoad) {
+            onLoad(bicyclingLayer);
+        }
+        return () => {
+            if (bicyclingLayer !== null) {
+                if (onUnmount) {
+                    onUnmount(bicyclingLayer);
+                }
+                bicyclingLayer.setMap(null);
+            }
+        };
+    }, []);
+    return null;
+}
+const BicyclingLayerF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(BicyclingLayerFunctional);
+class BicyclingLayer extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            bicyclingLayer: null,
+        };
+        this.setBicyclingLayerCallback = () => {
+            if (this.state.bicyclingLayer !== null) {
+                this.state.bicyclingLayer.setMap(this.context);
+                if (this.props.onLoad) {
+                    this.props.onLoad(this.state.bicyclingLayer);
+                }
+            }
+        };
+    }
+    componentDidMount() {
+        const bicyclingLayer = new google.maps.BicyclingLayer();
+        this.setState(() => {
+            return {
+                bicyclingLayer,
+            };
+        }, this.setBicyclingLayerCallback);
+    }
+    componentWillUnmount() {
+        if (this.state.bicyclingLayer !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.bicyclingLayer);
+            }
+            this.state.bicyclingLayer.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+BicyclingLayer.contextType = MapContext;
+
+function TransitLayerFunctional({ onLoad, onUnmount }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const transitLayer = new google.maps.TransitLayer();
+        setInstance(transitLayer);
+        transitLayer.setMap(map);
+        if (onLoad) {
+            onLoad(transitLayer);
+        }
+        return () => {
+            if (instance !== null) {
+                if (onUnmount) {
+                    onUnmount(instance);
+                }
+                // @ts-ignore
+                this.state.transitLayer.setMap(null);
+            }
+        };
+    }, []);
+    return null;
+}
+const TransitLayerF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(TransitLayerFunctional);
+class TransitLayer extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            transitLayer: null,
+        };
+        this.setTransitLayerCallback = () => {
+            if (this.state.transitLayer !== null) {
+                // @ts-ignore
+                this.state.transitLayer.setMap(this.context);
+                if (this.props.onLoad) {
+                    // @ts-ignore
+                    this.props.onLoad(this.state.transitLayer);
+                }
+            }
+        };
+    }
+    componentDidMount() {
+        const transitLayer = new google.maps.TransitLayer();
+        this.setState(function setTransitLayer() {
+            return {
+                transitLayer,
+            };
+        }, this.setTransitLayerCallback);
+    }
+    componentWillUnmount() {
+        if (this.state.transitLayer !== null) {
+            if (this.props.onUnmount) {
+                // @ts-ignore
+                this.props.onUnmount(this.state.transitLayer);
+            }
+            // @ts-ignore
+            this.state.transitLayer.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+TransitLayer.contextType = MapContext;
+
+/* globals google */
+const eventMap$g = {
+    onCircleComplete: 'circlecomplete',
+    onMarkerComplete: 'markercomplete',
+    onOverlayComplete: 'overlaycomplete',
+    onPolygonComplete: 'polygoncomplete',
+    onPolylineComplete: 'polylinecomplete',
+    onRectangleComplete: 'rectanglecomplete',
+};
+const updaterMap$g = {
+    drawingMode(instance, drawingMode) {
+        instance.setDrawingMode(drawingMode);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+};
+function DrawingManagerFunctional({ options, drawingMode, onCircleComplete, onMarkerComplete, onOverlayComplete, onPolylineComplete, onRectangleComplete, onLoad, onUnmount }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [circlecompleteListener, setCircleCompleteListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [markercompleteListener, setMarkerCompleteListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [overlaycompleteListener, setOverlayCompleteListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [polygoncompleteListener, setPolygonCompleteListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [rectanglecompleteListener, setRectangleCompleteListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (options && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (drawingMode && instance !== null) {
+            instance.setDrawingMode(drawingMode);
+        }
+    }, [instance, drawingMode]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onCircleComplete) {
+            if (circlecompleteListener !== null) {
+                google.maps.event.removeListener(circlecompleteListener);
+            }
+            setCircleCompleteListener(google.maps.event.addListener(instance, 'circlecomplete', onCircleComplete));
+        }
+    }, [instance, onCircleComplete]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMarkerComplete) {
+            if (markercompleteListener !== null) {
+                google.maps.event.removeListener(markercompleteListener);
+            }
+            setMarkerCompleteListener(google.maps.event.addListener(instance, 'markercomplete', onMarkerComplete));
+        }
+    }, [instance, onMarkerComplete]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onOverlayComplete) {
+            if (overlaycompleteListener !== null) {
+                google.maps.event.removeListener(overlaycompleteListener);
+            }
+            setOverlayCompleteListener(google.maps.event.addListener(instance, 'overlaycomplete', onOverlayComplete));
+        }
+    }, [instance, onOverlayComplete]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onPolylineComplete) {
+            if (polygoncompleteListener !== null) {
+                google.maps.event.removeListener(polygoncompleteListener);
+            }
+            setPolygonCompleteListener(google.maps.event.addListener(instance, 'polygoncomplete', onPolylineComplete));
+        }
+    }, [instance, onPolylineComplete]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRectangleComplete) {
+            if (rectanglecompleteListener !== null) {
+                google.maps.event.removeListener(rectanglecompleteListener);
+            }
+            setRectangleCompleteListener(google.maps.event.addListener(instance, 'rectanglecomplete', onRectangleComplete));
+        }
+    }, [instance, onRectangleComplete]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        invariant_1(!!google.maps.drawing, `Did you include prop libraries={['drawing']} in the URL? %s`, google.maps.drawing);
+        const drawingManager = new google.maps.drawing.DrawingManager(Object.assign(Object.assign({}, (options || {})), { map }));
+        if (drawingMode) {
+            drawingManager.setDrawingMode(drawingMode);
+        }
+        if (onCircleComplete) {
+            setCircleCompleteListener(google.maps.event.addListener(drawingManager, 'circlecomplete', onCircleComplete));
+        }
+        if (onMarkerComplete) {
+            setMarkerCompleteListener(google.maps.event.addListener(drawingManager, 'markercomplete', onMarkerComplete));
+        }
+        if (onOverlayComplete) {
+            setOverlayCompleteListener(google.maps.event.addListener(drawingManager, 'overlaycomplete', onOverlayComplete));
+        }
+        if (onPolylineComplete) {
+            setPolygonCompleteListener(google.maps.event.addListener(drawingManager, 'polygoncomplete', onPolylineComplete));
+        }
+        if (onRectangleComplete) {
+            setRectangleCompleteListener(google.maps.event.addListener(drawingManager, 'rectanglecomplete', onRectangleComplete));
+        }
+        setInstance(drawingManager);
+        if (onLoad) {
+            onLoad(drawingManager);
+        }
+        return () => {
+            if (instance !== null) {
+                if (circlecompleteListener) {
+                    google.maps.event.removeListener(circlecompleteListener);
+                }
+                if (markercompleteListener) {
+                    google.maps.event.removeListener(markercompleteListener);
+                }
+                if (overlaycompleteListener) {
+                    google.maps.event.removeListener(overlaycompleteListener);
+                }
+                if (polygoncompleteListener) {
+                    google.maps.event.removeListener(polygoncompleteListener);
+                }
+                if (rectanglecompleteListener) {
+                    google.maps.event.removeListener(rectanglecompleteListener);
+                }
+                if (onUnmount) {
+                    onUnmount(instance);
+                }
+                instance.setMap(null);
+            }
+        };
+    }, []);
+    return null;
+}
+const DrawingManagerF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(DrawingManagerFunctional);
+class DrawingManager extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor(props) {
+        super(props);
+        this.registeredEvents = [];
+        this.state = {
+            drawingManager: null,
+        };
+        this.setDrawingManagerCallback = () => {
+            if (this.state.drawingManager !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.drawingManager);
+            }
+        };
+        invariant_1(!!google.maps.drawing, `Did you include prop libraries={['drawing']} in the URL? %s`, google.maps.drawing);
+    }
+    componentDidMount() {
+        const drawingManager = new google.maps.drawing.DrawingManager(Object.assign(Object.assign({}, (this.props.options || {})), { map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$g,
+            eventMap: eventMap$g,
+            prevProps: {},
+            nextProps: this.props,
+            instance: drawingManager,
+        });
+        this.setState(function setDrawingManager() {
+            return {
+                drawingManager,
+            };
+        }, this.setDrawingManagerCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.drawingManager !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$g,
+                eventMap: eventMap$g,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.drawingManager,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.drawingManager !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.drawingManager);
+            }
+            unregisterEvents(this.registeredEvents);
+            this.state.drawingManager.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+DrawingManager.contextType = MapContext;
+
+const eventMap$f = {
+    onAnimationChanged: 'animation_changed',
+    onClick: 'click',
+    onClickableChanged: 'clickable_changed',
+    onCursorChanged: 'cursor_changed',
+    onDblClick: 'dblclick',
+    onDrag: 'drag',
+    onDragEnd: 'dragend',
+    onDraggableChanged: 'draggable_changed',
+    onDragStart: 'dragstart',
+    onFlatChanged: 'flat_changed',
+    onIconChanged: 'icon_changed',
+    onMouseDown: 'mousedown',
+    onMouseOut: 'mouseout',
+    onMouseOver: 'mouseover',
+    onMouseUp: 'mouseup',
+    onPositionChanged: 'position_changed',
+    onRightClick: 'rightclick',
+    onShapeChanged: 'shape_changed',
+    onTitleChanged: 'title_changed',
+    onVisibleChanged: 'visible_changed',
+    onZindexChanged: 'zindex_changed',
+};
+const updaterMap$f = {
+    animation(instance, animation) {
+        instance.setAnimation(animation);
+    },
+    clickable(instance, clickable) {
+        instance.setClickable(clickable);
+    },
+    cursor(instance, cursor) {
+        instance.setCursor(cursor);
+    },
+    draggable(instance, draggable) {
+        instance.setDraggable(draggable);
+    },
+    icon(instance, icon) {
+        instance.setIcon(icon);
+    },
+    label(instance, label) {
+        instance.setLabel(label);
+    },
+    map(instance, map) {
+        instance.setMap(map);
+    },
+    opacity(instance, opacity) {
+        instance.setOpacity(opacity);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    position(instance, position) {
+        instance.setPosition(position);
+    },
+    shape(instance, shape) {
+        instance.setShape(shape);
+    },
+    title(instance, title) {
+        instance.setTitle(title);
+    },
+    visible(instance, visible) {
+        instance.setVisible(visible);
+    },
+    zIndex(instance, zIndex) {
+        instance.setZIndex(zIndex);
+    },
+};
+const defaultOptions$4 = {};
+function MarkerFunctional({ position, options, clusterer, noClustererRedraw, children, draggable, visible, animation, clickable, cursor, icon, label, opacity, shape, title, zIndex, onClick, onDblClick, onDrag, onDragEnd, onDragStart, onMouseOut, onMouseOver, onMouseUp, onMouseDown, onRightClick, onClickableChanged, onCursorChanged, onAnimationChanged, onDraggableChanged, onFlatChanged, onIconChanged, onPositionChanged, onShapeChanged, onTitleChanged, onVisibleChanged, onZindexChanged, onLoad, onUnmount }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dblclickListener, setDblclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragendListener, setDragendListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragstartListener, setDragstartListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousedownListener, setMousedownListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoutListener, setMouseoutListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoverListener, setMouseoverListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseupListener, setMouseupListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [rightclickListener, setRightclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [clickListener, setClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragListener, setDragListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [clickableChangedListener, setClickableChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [cursorChangedListener, setCursorChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [animationChangedListener, setAnimationChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [draggableChangedListener, setDraggableChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [flatChangedListener, setFlatChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [iconChangedListener, setIconChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [positionChangedListener, setPositionChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [shapeChangedListener, setShapeChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [titleChangedListener, setTitleChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [visibleChangedListener, setVisibleChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [zIndexChangedListener, setZindexChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof options !== 'undefined' && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof draggable !== 'undefined' && instance !== null) {
+            instance.setDraggable(draggable);
+        }
+    }, [instance, draggable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (position && instance !== null) {
+            instance.setPosition(position);
+        }
+    }, [instance, position]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof visible !== 'undefined' && instance !== null) {
+            instance.setVisible(visible);
+        }
+    }, [instance, visible]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (animation && instance !== null) {
+            instance.setAnimation(animation);
+        }
+    }, [instance, animation]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDblClick) {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            setDblclickListener(google.maps.event.addListener(instance, 'dblclick', onDblClick));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragEnd) {
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            setDragendListener(google.maps.event.addListener(instance, 'dragend', onDragEnd));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragStart) {
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            setDragstartListener(google.maps.event.addListener(instance, 'dragstart', onDragStart));
+        }
+    }, [onDragStart]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseDown) {
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            setMousedownListener(google.maps.event.addListener(instance, 'mousedown', onMouseDown));
+        }
+    }, [onMouseDown]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOut) {
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            setMouseoutListener(google.maps.event.addListener(instance, 'mouseout', onMouseOut));
+        }
+    }, [onMouseOut]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOver) {
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            setMouseoverListener(google.maps.event.addListener(instance, 'mouseover', onMouseOver));
+        }
+    }, [onMouseOver]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseUp) {
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            setMouseupListener(google.maps.event.addListener(instance, 'mouseup', onMouseUp));
+        }
+    }, [onMouseUp]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRightClick) {
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            setRightclickListener(google.maps.event.addListener(instance, 'rightclick', onRightClick));
+        }
+    }, [onRightClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onClick) {
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            setClickListener(google.maps.event.addListener(instance, 'click', onClick));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDrag) {
+            if (dragListener !== null) {
+                google.maps.event.removeListener(dragListener);
+            }
+            setDragListener(google.maps.event.addListener(instance, 'drag', onDrag));
+        }
+    }, [onDrag]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onClickableChanged) {
+            if (clickableChangedListener !== null) {
+                google.maps.event.removeListener(clickableChangedListener);
+            }
+            setClickableChangedListener(google.maps.event.addListener(instance, 'clickable_changed', onClickableChanged));
+        }
+    }, [onClickableChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onCursorChanged) {
+            if (cursorChangedListener !== null) {
+                google.maps.event.removeListener(cursorChangedListener);
+            }
+            setCursorChangedListener(google.maps.event.addListener(instance, 'cursor_changed', onCursorChanged));
+        }
+    }, [onCursorChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onAnimationChanged) {
+            if (animationChangedListener !== null) {
+                google.maps.event.removeListener(animationChangedListener);
+            }
+            setAnimationChangedListener(google.maps.event.addListener(instance, 'animation_changed', onAnimationChanged));
+        }
+    }, [onAnimationChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDraggableChanged) {
+            if (draggableChangedListener !== null) {
+                google.maps.event.removeListener(draggableChangedListener);
+            }
+            setDraggableChangedListener(google.maps.event.addListener(instance, 'draggable_changed', onDraggableChanged));
+        }
+    }, [onDraggableChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onFlatChanged) {
+            if (flatChangedListener !== null) {
+                google.maps.event.removeListener(flatChangedListener);
+            }
+            setFlatChangedListener(google.maps.event.addListener(instance, 'flat_changed', onFlatChanged));
+        }
+    }, [onFlatChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onIconChanged) {
+            if (iconChangedListener !== null) {
+                google.maps.event.removeListener(iconChangedListener);
+            }
+            setIconChangedListener(google.maps.event.addListener(instance, 'icon_changed', onIconChanged));
+        }
+    }, [onIconChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onPositionChanged) {
+            if (positionChangedListener !== null) {
+                google.maps.event.removeListener(positionChangedListener);
+            }
+            setPositionChangedListener(google.maps.event.addListener(instance, 'position_changed', onPositionChanged));
+        }
+    }, [onPositionChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onShapeChanged) {
+            if (shapeChangedListener !== null) {
+                google.maps.event.removeListener(shapeChangedListener);
+            }
+            setShapeChangedListener(google.maps.event.addListener(instance, 'shape_changed', onShapeChanged));
+        }
+    }, [onShapeChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onTitleChanged) {
+            if (titleChangedListener !== null) {
+                google.maps.event.removeListener(titleChangedListener);
+            }
+            setTitleChangedListener(google.maps.event.addListener(instance, 'title_changed', onTitleChanged));
+        }
+    }, [onTitleChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onVisibleChanged) {
+            if (visibleChangedListener !== null) {
+                google.maps.event.removeListener(visibleChangedListener);
+            }
+            setVisibleChangedListener(google.maps.event.addListener(instance, 'visible_changed', onVisibleChanged));
+        }
+    }, [onVisibleChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onZindexChanged) {
+            if (zIndexChangedListener !== null) {
+                google.maps.event.removeListener(zIndexChangedListener);
+            }
+            setZindexChangedListener(google.maps.event.addListener(instance, 'zindex_changed', onZindexChanged));
+        }
+    }, [onZindexChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const markerOptions = Object.assign(Object.assign(Object.assign({}, (options || defaultOptions$4)), (clusterer ? defaultOptions$4 : { map })), { position: position });
+        const marker = new google.maps.Marker(markerOptions);
+        if (clusterer) {
+            clusterer.addMarker(marker, !!noClustererRedraw);
+        }
+        else {
+            marker.setMap(map);
+        }
+        if (position) {
+            marker.setPosition(position);
+        }
+        if (typeof visible !== 'undefined') {
+            marker.setVisible(visible);
+        }
+        if (typeof draggable !== 'undefined') {
+            marker.setDraggable(draggable);
+        }
+        if (typeof clickable !== 'undefined') {
+            marker.setClickable(clickable);
+        }
+        if (typeof cursor === 'string') {
+            marker.setCursor(cursor);
+        }
+        if (icon) {
+            marker.setIcon(icon);
+        }
+        if (typeof label !== 'undefined') {
+            marker.setLabel(label);
+        }
+        if (typeof opacity !== 'undefined') {
+            marker.setOpacity(opacity);
+        }
+        if (shape) {
+            marker.setShape(shape);
+        }
+        if (typeof title === 'string') {
+            marker.setTitle(title);
+        }
+        if (typeof zIndex === 'number') {
+            marker.setZIndex(zIndex);
+        }
+        if (onDblClick) {
+            setDblclickListener(google.maps.event.addListener(marker, 'dblclick', onDblClick));
+        }
+        if (onDragEnd) {
+            setDragendListener(google.maps.event.addListener(marker, 'dragend', onDragEnd));
+        }
+        if (onDragStart) {
+            setDragstartListener(google.maps.event.addListener(marker, 'dragstart', onDragStart));
+        }
+        if (onMouseDown) {
+            setMousedownListener(google.maps.event.addListener(marker, 'mousedown', onMouseDown));
+        }
+        if (onMouseOut) {
+            setMouseoutListener(google.maps.event.addListener(marker, 'mouseout', onMouseOut));
+        }
+        if (onMouseOver) {
+            setMouseoverListener(google.maps.event.addListener(marker, 'mouseover', onMouseOver));
+        }
+        if (onMouseUp) {
+            setMouseupListener(google.maps.event.addListener(marker, 'mouseup', onMouseUp));
+        }
+        if (onRightClick) {
+            setRightclickListener(google.maps.event.addListener(marker, 'rightclick', onRightClick));
+        }
+        if (onClick) {
+            setClickListener(google.maps.event.addListener(marker, 'click', onClick));
+        }
+        if (onDrag) {
+            setDragListener(google.maps.event.addListener(marker, 'drag', onDrag));
+        }
+        if (onClickableChanged) {
+            setClickableChangedListener(google.maps.event.addListener(marker, 'clickable_changed', onClickableChanged));
+        }
+        if (onCursorChanged) {
+            setCursorChangedListener(google.maps.event.addListener(marker, 'cursor_changed', onCursorChanged));
+        }
+        if (onAnimationChanged) {
+            setAnimationChangedListener(google.maps.event.addListener(marker, 'animation_changed', onAnimationChanged));
+        }
+        if (onDraggableChanged) {
+            setDraggableChangedListener(google.maps.event.addListener(marker, 'draggable_changed', onDraggableChanged));
+        }
+        if (onFlatChanged) {
+            setFlatChangedListener(google.maps.event.addListener(marker, 'flat_changed', onFlatChanged));
+        }
+        if (onIconChanged) {
+            setIconChangedListener(google.maps.event.addListener(marker, 'icon_changed', onIconChanged));
+        }
+        if (onPositionChanged) {
+            setPositionChangedListener(google.maps.event.addListener(marker, 'position_changed', onPositionChanged));
+        }
+        if (onShapeChanged) {
+            setShapeChangedListener(google.maps.event.addListener(marker, 'shape_changed', onShapeChanged));
+        }
+        if (onTitleChanged) {
+            setTitleChangedListener(google.maps.event.addListener(marker, 'title_changed', onTitleChanged));
+        }
+        if (onVisibleChanged) {
+            setVisibleChangedListener(google.maps.event.addListener(marker, 'visible_changed', onVisibleChanged));
+        }
+        if (onZindexChanged) {
+            setZindexChangedListener(google.maps.event.addListener(marker, 'zindex_changed', onZindexChanged));
+        }
+        setInstance(marker);
+        if (onLoad) {
+            onLoad(marker);
+        }
+        return () => {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            if (clickableChangedListener !== null) {
+                google.maps.event.removeListener(clickableChangedListener);
+            }
+            if (cursorChangedListener !== null) {
+                google.maps.event.removeListener(cursorChangedListener);
+            }
+            if (animationChangedListener !== null) {
+                google.maps.event.removeListener(animationChangedListener);
+            }
+            if (draggableChangedListener !== null) {
+                google.maps.event.removeListener(draggableChangedListener);
+            }
+            if (flatChangedListener !== null) {
+                google.maps.event.removeListener(flatChangedListener);
+            }
+            if (iconChangedListener !== null) {
+                google.maps.event.removeListener(iconChangedListener);
+            }
+            if (positionChangedListener !== null) {
+                google.maps.event.removeListener(positionChangedListener);
+            }
+            if (titleChangedListener !== null) {
+                google.maps.event.removeListener(titleChangedListener);
+            }
+            if (visibleChangedListener !== null) {
+                google.maps.event.removeListener(visibleChangedListener);
+            }
+            if (zIndexChangedListener !== null) {
+                google.maps.event.removeListener(zIndexChangedListener);
+            }
+            if (onUnmount) {
+                onUnmount(marker);
+            }
+            if (clusterer) {
+                clusterer.removeMarker(marker, !!noClustererRedraw);
+            }
+            else if (marker) {
+                marker.setMap(null);
+            }
+        };
+    }, []);
+    const chx = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
+        return children
+            ? react__WEBPACK_IMPORTED_MODULE_0__.Children.map(children, child => {
+                if (!(0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(child)) {
+                    return child;
+                }
+                const elementChild = child;
+                return (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(elementChild, { anchor: instance });
+            })
+            : null;
+    }, [children, instance]);
+    return jsxRuntime.exports.jsx(jsxRuntime.exports.Fragment, { children: chx }) || null;
+}
+const MarkerF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(MarkerFunctional);
+class Marker extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+    }
+    componentDidMount() {
+        const markerOptions = Object.assign(Object.assign(Object.assign({}, (this.props.options || defaultOptions$4)), (this.props.clusterer ? defaultOptions$4 : { map: this.context })), { position: this.props.position });
+        // Unfortunately we can't just do this in the contstructor, because the
+        // `MapContext` might not be filled in yet.
+        this.marker = new google.maps.Marker(markerOptions);
+        if (this.props.clusterer) {
+            this.props.clusterer.addMarker(this.marker, !!this.props.noClustererRedraw);
+        }
+        else {
+            this.marker.setMap(this.context);
+        }
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$f,
+            eventMap: eventMap$f,
+            prevProps: {},
+            nextProps: this.props,
+            instance: this.marker,
+        });
+        if (this.props.onLoad) {
+            this.props.onLoad(this.marker);
+        }
+    }
+    componentDidUpdate(prevProps) {
+        if (this.marker) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$f,
+                eventMap: eventMap$f,
+                prevProps,
+                nextProps: this.props,
+                instance: this.marker,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.marker) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.marker);
+            }
+            unregisterEvents(this.registeredEvents);
+            if (this.props.clusterer) {
+                this.props.clusterer.removeMarker(this.marker, !!this.props.noClustererRedraw);
+            }
+            else {
+                this.marker && this.marker.setMap(null);
+            }
+        }
+    }
+    render() {
+        let children = null;
+        if (this.props.children) {
+            children = react__WEBPACK_IMPORTED_MODULE_0__.Children.map(this.props.children, child => {
+                if (!(0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(child)) {
+                    return child;
+                }
+                let elementChild = child;
+                return (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(elementChild, { anchor: this.marker });
+            });
+        }
+        return children || null;
+    }
+}
+Marker.contextType = MapContext;
+
+var ClusterIcon = /** @class */ (function () {
+    function ClusterIcon(cluster, styles) {
+        cluster.getClusterer().extend(ClusterIcon, google.maps.OverlayView);
+        this.cluster = cluster;
+        this.clusterClassName = this.cluster.getClusterer().getClusterClass();
+        this.className = this.clusterClassName;
+        this.styles = styles;
+        this.center = undefined;
+        this.div = null;
+        this.sums = null;
+        this.visible = false;
+        this.boundsChangedListener = null;
+        this.url = '';
+        this.height = 0;
+        this.width = 0;
+        this.anchorText = [0, 0];
+        this.anchorIcon = [0, 0];
+        this.textColor = 'black';
+        this.textSize = 11;
+        this.textDecoration = 'none';
+        this.fontWeight = 'bold';
+        this.fontStyle = 'normal';
+        this.fontFamily = 'Arial,sans-serif';
+        this.backgroundPosition = '0 0';
+        this.cMouseDownInCluster = null;
+        this.cDraggingMapByCluster = null;
+        this.timeOut = null;
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.setMap(cluster.getMap()); // Note: this causes onAdd to be called
+    }
+    ClusterIcon.prototype.onBoundsChanged = function () {
+        this.cDraggingMapByCluster = this.cMouseDownInCluster;
+    };
+    ClusterIcon.prototype.onMouseDown = function () {
+        this.cMouseDownInCluster = true;
+        this.cDraggingMapByCluster = false;
+    };
+    ClusterIcon.prototype.onClick = function (event) {
+        this.cMouseDownInCluster = false;
+        if (!this.cDraggingMapByCluster) {
+            var markerClusterer_1 = this.cluster.getClusterer();
+            /**
+             * This event is fired when a cluster marker is clicked.
+             * @name MarkerClusterer#click
+             * @param {Cluster} c The cluster that was clicked.
+             * @event
+             */
+            google.maps.event.trigger(markerClusterer_1, 'click', this.cluster);
+            google.maps.event.trigger(markerClusterer_1, 'clusterclick', this.cluster); // deprecated name
+            // The default click handler follows. Disable it by setting
+            // the zoomOnClick property to false.
+            if (markerClusterer_1.getZoomOnClick()) {
+                // Zoom into the cluster.
+                var maxZoom_1 = markerClusterer_1.getMaxZoom();
+                var bounds_1 = this.cluster.getBounds();
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                markerClusterer_1.getMap().fitBounds(bounds_1);
+                // There is a fix for Issue 170 here:
+                this.timeOut = window.setTimeout(function () {
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
+                    markerClusterer_1.getMap().fitBounds(bounds_1);
+                    // Don't zoom beyond the max zoom level
+                    if (maxZoom_1 !== null &&
+                        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                        // @ts-ignore
+                        markerClusterer_1.getMap().getZoom() > maxZoom_1) {
+                        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                        // @ts-ignore
+                        markerClusterer_1.getMap().setZoom(maxZoom_1 + 1);
+                    }
+                }, 100);
+            }
+            // Prevent event propagation to the map:
+            event.cancelBubble = true;
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+        }
+    };
+    ClusterIcon.prototype.onMouseOver = function () {
+        /**
+         * This event is fired when the mouse moves over a cluster marker.
+         * @name MarkerClusterer#mouseover
+         * @param {Cluster} c The cluster that the mouse moved over.
+         * @event
+         */
+        google.maps.event.trigger(this.cluster.getClusterer(), 'mouseover', this.cluster);
+    };
+    ClusterIcon.prototype.onMouseOut = function () {
+        /**
+         * This event is fired when the mouse moves out of a cluster marker.
+         * @name MarkerClusterer#mouseout
+         * @param {Cluster} c The cluster that the mouse moved out of.
+         * @event
+         */
+        google.maps.event.trigger(this.cluster.getClusterer(), 'mouseout', this.cluster);
+    };
+    ClusterIcon.prototype.onAdd = function () {
+        this.div = document.createElement('div');
+        this.div.className = this.className;
+        if (this.visible) {
+            this.show();
+        }
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.getPanes().overlayMouseTarget.appendChild(this.div);
+        // Fix for Issue 157
+        this.boundsChangedListener = google.maps.event.addListener(
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.getMap(), 'bounds_changed', this.onBoundsChanged);
+        this.div.addEventListener('mousedown', this.onMouseDown);
+        this.div.addEventListener('click', this.onClick);
+        this.div.addEventListener('mouseover', this.onMouseOver);
+        this.div.addEventListener('mouseout', this.onMouseOut);
+    };
+    ClusterIcon.prototype.onRemove = function () {
+        if (this.div && this.div.parentNode) {
+            this.hide();
+            if (this.boundsChangedListener !== null) {
+                google.maps.event.removeListener(this.boundsChangedListener);
+            }
+            this.div.removeEventListener('mousedown', this.onMouseDown);
+            this.div.removeEventListener('click', this.onClick);
+            this.div.removeEventListener('mouseover', this.onMouseOver);
+            this.div.removeEventListener('mouseout', this.onMouseOut);
+            this.div.parentNode.removeChild(this.div);
+            if (this.timeOut !== null) {
+                window.clearTimeout(this.timeOut);
+                this.timeOut = null;
+            }
+            this.div = null;
+        }
+    };
+    ClusterIcon.prototype.draw = function () {
+        if (this.visible && this.div !== null && this.center) {
+            var _a = this.getPosFromLatLng(this.center), x = _a.x, y = _a.y;
+            this.div.style.top = "".concat(y, "px");
+            this.div.style.left = "".concat(x, "px");
+        }
+    };
+    ClusterIcon.prototype.hide = function () {
+        if (this.div) {
+            this.div.style.display = 'none';
+        }
+        this.visible = false;
+    };
+    ClusterIcon.prototype.show = function () {
+        var _a;
+        if (this.div && this.center) {
+            var divTitle = '';
+            // NOTE: values must be specified in px units
+            var bp = this.backgroundPosition.split(' ');
+            var spriteH = parseInt(bp[0].replace(/^\s+|\s+$/g, ''), 10);
+            var spriteV = parseInt(bp[1].replace(/^\s+|\s+$/g, ''), 10);
+            var pos = this.getPosFromLatLng(this.center);
+            if (this.sums === null ||
+                typeof this.sums.title === 'undefined' ||
+                this.sums.title === '') {
+                divTitle = this.cluster.getClusterer().getTitle();
+            }
+            else {
+                divTitle = this.sums.title;
+            }
+            this.div.style.cursor = 'pointer';
+            this.div.style.position = 'absolute';
+            this.div.style.top = "".concat(pos.y, "px");
+            this.div.style.left = "".concat(pos.x, "px");
+            this.div.style.width = "".concat(this.width, "px");
+            this.div.style.height = "".concat(this.height, "px");
+            var img = document.createElement('img');
+            img.alt = divTitle;
+            img.src = this.url;
+            img.style.position = 'absolute';
+            img.style.top = "".concat(spriteV, "px");
+            img.style.left = "".concat(spriteH, "px");
+            if (!this.cluster.getClusterer().enableRetinaIcons) {
+                img.style.clip = "rect(-".concat(spriteV, "px, -").concat(spriteH + this.width, "px, -").concat(spriteV + this.height, ", -").concat(spriteH, ")");
+            }
+            var textElm = document.createElement('div');
+            textElm.style.position = 'absolute';
+            textElm.style.top = "".concat(this.anchorText[0], "px");
+            textElm.style.left = "".concat(this.anchorText[1], "px");
+            textElm.style.color = this.textColor;
+            textElm.style.fontSize = "".concat(this.textSize, "px");
+            textElm.style.fontFamily = this.fontFamily;
+            textElm.style.fontWeight = this.fontWeight;
+            textElm.style.fontStyle = this.fontStyle;
+            textElm.style.textDecoration = this.textDecoration;
+            textElm.style.textAlign = 'center';
+            textElm.style.width = "".concat(this.width, "px");
+            textElm.style.lineHeight = "".concat(this.height, "px");
+            textElm.innerText = "".concat((_a = this.sums) === null || _a === void 0 ? void 0 : _a.text);
+            this.div.innerHTML = '';
+            this.div.appendChild(img);
+            this.div.appendChild(textElm);
+            this.div.title = divTitle;
+            this.div.style.display = '';
+        }
+        this.visible = true;
+    };
+    ClusterIcon.prototype.useStyle = function (sums) {
+        this.sums = sums;
+        var styles = this.cluster.getClusterer().getStyles();
+        var style = styles[Math.min(styles.length - 1, Math.max(0, sums.index - 1))];
+        this.url = style.url;
+        this.height = style.height;
+        this.width = style.width;
+        if (style.className)
+            this.className = "".concat(this.clusterClassName, " ").concat(style.className);
+        this.anchorText = style.anchorText || [0, 0];
+        this.anchorIcon = style.anchorIcon || [this.height / 2, this.width / 2];
+        this.textColor = style.textColor || 'black';
+        this.textSize = style.textSize || 11;
+        this.textDecoration = style.textDecoration || 'none';
+        this.fontWeight = style.fontWeight || 'bold';
+        this.fontStyle = style.fontStyle || 'normal';
+        this.fontFamily = style.fontFamily || 'Arial,sans-serif';
+        this.backgroundPosition = style.backgroundPosition || '0 0';
+    };
+    ClusterIcon.prototype.setCenter = function (center) {
+        this.center = center;
+    };
+    ClusterIcon.prototype.getPosFromLatLng = function (latlng) {
+        // @ts-ignore
+        var pos = this.getProjection().fromLatLngToDivPixel(latlng);
+        pos.x -= this.anchorIcon[1];
+        pos.y -= this.anchorIcon[0];
+        return pos;
+    };
+    return ClusterIcon;
+}());
+
+var Cluster$1 = /** @class */ (function () {
+    function Cluster(markerClusterer) {
+        this.markerClusterer = markerClusterer;
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.map = this.markerClusterer.getMap();
+        this.gridSize = this.markerClusterer.getGridSize();
+        this.minClusterSize = this.markerClusterer.getMinimumClusterSize();
+        this.averageCenter = this.markerClusterer.getAverageCenter();
+        this.markers = [];
+        this.center = undefined;
+        this.bounds = null;
+        this.clusterIcon = new ClusterIcon(this, this.markerClusterer.getStyles());
+    }
+    Cluster.prototype.getSize = function () {
+        return this.markers.length;
+    };
+    Cluster.prototype.getMarkers = function () {
+        return this.markers;
+    };
+    Cluster.prototype.getCenter = function () {
+        return this.center;
+    };
+    Cluster.prototype.getMap = function () {
+        return this.map;
+    };
+    Cluster.prototype.getClusterer = function () {
+        return this.markerClusterer;
+    };
+    Cluster.prototype.getBounds = function () {
+        var bounds = new google.maps.LatLngBounds(this.center, this.center);
+        var markers = this.getMarkers();
+        for (var i = 0; i < markers.length; i++) {
+            var position = markers[i].getPosition();
+            if (position) {
+                bounds.extend(position);
+            }
+        }
+        return bounds;
+    };
+    Cluster.prototype.remove = function () {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.clusterIcon.setMap(null);
+        this.markers = [];
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        delete this.markers;
+    };
+    Cluster.prototype.addMarker = function (marker) {
+        if (this.isMarkerAlreadyAdded(marker)) {
+            return false;
+        }
+        if (!this.center) {
+            var position = marker.getPosition();
+            if (position) {
+                this.center = position;
+                this.calculateBounds();
+            }
+        }
+        else {
+            if (this.averageCenter) {
+                var position = marker.getPosition();
+                if (position) {
+                    var length_1 = this.markers.length + 1;
+                    this.center = new google.maps.LatLng((this.center.lat() * (length_1 - 1) + position.lat()) / length_1, (this.center.lng() * (length_1 - 1) + position.lng()) / length_1);
+                    this.calculateBounds();
+                }
+            }
+        }
+        marker.isAdded = true;
+        this.markers.push(marker);
+        var mCount = this.markers.length;
+        var maxZoom = this.markerClusterer.getMaxZoom();
+        var zoom = this.map.getZoom();
+        if (maxZoom !== null && typeof zoom !== 'undefined' && zoom > maxZoom) {
+            // Zoomed in past max zoom, so show the marker.
+            if (marker.getMap() !== this.map) {
+                marker.setMap(this.map);
+            }
+        }
+        else if (mCount < this.minClusterSize) {
+            // Min cluster size not reached so show the marker.
+            if (marker.getMap() !== this.map) {
+                marker.setMap(this.map);
+            }
+        }
+        else if (mCount === this.minClusterSize) {
+            // Hide the markers that were showing.
+            for (var i = 0; i < mCount; i++) {
+                this.markers[i].setMap(null);
+            }
+        }
+        else {
+            marker.setMap(null);
+        }
+        return true;
+    };
+    Cluster.prototype.isMarkerInClusterBounds = function (marker) {
+        if (this.bounds !== null) {
+            var position = marker.getPosition();
+            if (position) {
+                return this.bounds.contains(position);
+            }
+        }
+        return false;
+    };
+    Cluster.prototype.calculateBounds = function () {
+        this.bounds = this.markerClusterer.getExtendedBounds(new google.maps.LatLngBounds(this.center, this.center));
+    };
+    Cluster.prototype.updateIcon = function () {
+        var mCount = this.markers.length;
+        var maxZoom = this.markerClusterer.getMaxZoom();
+        var zoom = this.map.getZoom();
+        if (maxZoom !== null && typeof zoom !== 'undefined' && zoom > maxZoom) {
+            this.clusterIcon.hide();
+            return;
+        }
+        if (mCount < this.minClusterSize) {
+            // Min cluster size not yet reached.
+            this.clusterIcon.hide();
+            return;
+        }
+        if (this.center) {
+            this.clusterIcon.setCenter(this.center);
+        }
+        this.clusterIcon.useStyle(this.markerClusterer.getCalculator()(this.markers, this.markerClusterer.getStyles().length));
+        this.clusterIcon.show();
+    };
+    Cluster.prototype.isMarkerAlreadyAdded = function (marker) {
+        if (this.markers.includes) {
+            return this.markers.includes(marker);
+        }
+        for (var i = 0; i < this.markers.length; i++) {
+            if (marker === this.markers[i]) {
+                return true;
+            }
+        }
+        return false;
+    };
+    return Cluster;
+}());
+
+/* global google */
+/**
+ * Supports up to 9007199254740991 (Number.MAX_SAFE_INTEGER) markers
+ * which is not a problem as max array length is 4294967296 (2**32)
+ */
+var CALCULATOR = function CALCULATOR(markers, numStyles) {
+    var count = markers.length;
+    var numberOfDigits = count.toString().length;
+    var index = Math.min(numberOfDigits, numStyles);
     return {
-        removeAll: createSingleArgumentStateOperator(removeAllMutably),
-        addOne: createStateOperator(addOneMutably),
-        addMany: createStateOperator(addManyMutably),
-        setOne: createStateOperator(setOneMutably),
-        setMany: createStateOperator(setManyMutably),
-        setAll: createStateOperator(setAllMutably),
-        updateOne: createStateOperator(updateOneMutably),
-        updateMany: createStateOperator(updateManyMutably),
-        upsertOne: createStateOperator(upsertOneMutably),
-        upsertMany: createStateOperator(upsertManyMutably),
-        removeOne: createStateOperator(removeOneMutably),
-        removeMany: createStateOperator(removeManyMutably)
+        text: count.toString(),
+        index: index,
+        title: '',
+    };
+};
+var BATCH_SIZE = 2000;
+var BATCH_SIZE_IE = 500;
+var IMAGE_PATH = 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m';
+var IMAGE_EXTENSION = 'png';
+var IMAGE_SIZES = [53, 56, 66, 78, 90];
+var CLUSTERER_CLASS = 'cluster';
+var Clusterer = /** @class */ (function () {
+    function Clusterer(map, optMarkers, optOptions) {
+        if (optMarkers === void 0) { optMarkers = []; }
+        if (optOptions === void 0) { optOptions = {}; }
+        this.extend(Clusterer, google.maps.OverlayView);
+        this.markers = [];
+        this.clusters = [];
+        this.listeners = [];
+        this.activeMap = null;
+        this.ready = false;
+        this.gridSize = optOptions.gridSize || 60;
+        this.minClusterSize = optOptions.minimumClusterSize || 2;
+        this.maxZoom = optOptions.maxZoom || null;
+        this.styles = optOptions.styles || [];
+        this.title = optOptions.title || '';
+        this.zoomOnClick = true;
+        if (optOptions.zoomOnClick !== undefined) {
+            this.zoomOnClick = optOptions.zoomOnClick;
+        }
+        this.averageCenter = false;
+        if (optOptions.averageCenter !== undefined) {
+            this.averageCenter = optOptions.averageCenter;
+        }
+        this.ignoreHidden = false;
+        if (optOptions.ignoreHidden !== undefined) {
+            this.ignoreHidden = optOptions.ignoreHidden;
+        }
+        this.enableRetinaIcons = false;
+        if (optOptions.enableRetinaIcons !== undefined) {
+            this.enableRetinaIcons = optOptions.enableRetinaIcons;
+        }
+        this.imagePath = optOptions.imagePath || IMAGE_PATH;
+        this.imageExtension = optOptions.imageExtension || IMAGE_EXTENSION;
+        this.imageSizes = optOptions.imageSizes || IMAGE_SIZES;
+        this.calculator = optOptions.calculator || CALCULATOR;
+        this.batchSize = optOptions.batchSize || BATCH_SIZE;
+        this.batchSizeIE = optOptions.batchSizeIE || BATCH_SIZE_IE;
+        this.clusterClass = optOptions.clusterClass || CLUSTERER_CLASS;
+        if (navigator.userAgent.toLowerCase().indexOf('msie') !== -1) {
+            // Try to avoid IE timeout when processing a huge number of markers:
+            this.batchSize = this.batchSizeIE;
+        }
+        this.timerRefStatic = null;
+        this.setupStyles();
+        this.addMarkers(optMarkers, true);
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.setMap(map); // Note: this causes onAdd to be called
+    }
+    Clusterer.prototype.onAdd = function () {
+        var _this = this;
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.activeMap = this.getMap();
+        this.ready = true;
+        this.repaint();
+        // Add the map event listeners
+        this.listeners = [
+            google.maps.event.addListener(
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            this.getMap(), 'zoom_changed', function () {
+                _this.resetViewport(false);
+                // Workaround for this Google bug: when map is at level 0 and "-" of
+                // zoom slider is clicked, a "zoom_changed" event is fired even though
+                // the map doesn't zoom out any further. In this situation, no "idle"
+                // event is triggered so the cluster markers that have been removed
+                // do not get redrawn. Same goes for a zoom in at maxZoom.
+                if (
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                _this.getMap().getZoom() === (_this.get('minZoom') || 0) ||
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
+                    _this.getMap().getZoom() === _this.get('maxZoom')) {
+                    google.maps.event.trigger(_this, 'idle');
+                }
+            }),
+            google.maps.event.addListener(
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            this.getMap(), 'idle', function () {
+                _this.redraw();
+            }),
+        ];
+    };
+    Clusterer.prototype.onRemove = function () {
+        // Put all the managed markers back on the map:
+        for (var i = 0; i < this.markers.length; i++) {
+            if (this.markers[i].getMap() !== this.activeMap) {
+                this.markers[i].setMap(this.activeMap);
+            }
+        }
+        // Remove all clusters:
+        for (var i = 0; i < this.clusters.length; i++) {
+            this.clusters[i].remove();
+        }
+        this.clusters = [];
+        // Remove map event listeners:
+        for (var i = 0; i < this.listeners.length; i++) {
+            google.maps.event.removeListener(this.listeners[i]);
+        }
+        this.listeners = [];
+        this.activeMap = null;
+        this.ready = false;
+    };
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    Clusterer.prototype.draw = function () { };
+    Clusterer.prototype.setupStyles = function () {
+        if (this.styles.length > 0) {
+            return;
+        }
+        for (var i = 0; i < this.imageSizes.length; i++) {
+            this.styles.push({
+                url: this.imagePath + (i + 1) + '.' + this.imageExtension,
+                height: this.imageSizes[i],
+                width: this.imageSizes[i],
+            });
+        }
+    };
+    Clusterer.prototype.fitMapToMarkers = function () {
+        var markers = this.getMarkers();
+        var bounds = new google.maps.LatLngBounds();
+        for (var i = 0; i < markers.length; i++) {
+            var position = markers[i].getPosition();
+            if (position) {
+                bounds.extend(position);
+            }
+        }
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.getMap().fitBounds(bounds);
+    };
+    Clusterer.prototype.getGridSize = function () {
+        return this.gridSize;
+    };
+    Clusterer.prototype.setGridSize = function (gridSize) {
+        this.gridSize = gridSize;
+    };
+    Clusterer.prototype.getMinimumClusterSize = function () {
+        return this.minClusterSize;
+    };
+    Clusterer.prototype.setMinimumClusterSize = function (minimumClusterSize) {
+        this.minClusterSize = minimumClusterSize;
+    };
+    Clusterer.prototype.getMaxZoom = function () {
+        return this.maxZoom;
+    };
+    Clusterer.prototype.setMaxZoom = function (maxZoom) {
+        this.maxZoom = maxZoom;
+    };
+    Clusterer.prototype.getStyles = function () {
+        return this.styles;
+    };
+    Clusterer.prototype.setStyles = function (styles) {
+        this.styles = styles;
+    };
+    Clusterer.prototype.getTitle = function () {
+        return this.title;
+    };
+    Clusterer.prototype.setTitle = function (title) {
+        this.title = title;
+    };
+    Clusterer.prototype.getZoomOnClick = function () {
+        return this.zoomOnClick;
+    };
+    Clusterer.prototype.setZoomOnClick = function (zoomOnClick) {
+        this.zoomOnClick = zoomOnClick;
+    };
+    Clusterer.prototype.getAverageCenter = function () {
+        return this.averageCenter;
+    };
+    Clusterer.prototype.setAverageCenter = function (averageCenter) {
+        this.averageCenter = averageCenter;
+    };
+    Clusterer.prototype.getIgnoreHidden = function () {
+        return this.ignoreHidden;
+    };
+    Clusterer.prototype.setIgnoreHidden = function (ignoreHidden) {
+        this.ignoreHidden = ignoreHidden;
+    };
+    Clusterer.prototype.getEnableRetinaIcons = function () {
+        return this.enableRetinaIcons;
+    };
+    Clusterer.prototype.setEnableRetinaIcons = function (enableRetinaIcons) {
+        this.enableRetinaIcons = enableRetinaIcons;
+    };
+    Clusterer.prototype.getImageExtension = function () {
+        return this.imageExtension;
+    };
+    Clusterer.prototype.setImageExtension = function (imageExtension) {
+        this.imageExtension = imageExtension;
+    };
+    Clusterer.prototype.getImagePath = function () {
+        return this.imagePath;
+    };
+    Clusterer.prototype.setImagePath = function (imagePath) {
+        this.imagePath = imagePath;
+    };
+    Clusterer.prototype.getImageSizes = function () {
+        return this.imageSizes;
+    };
+    Clusterer.prototype.setImageSizes = function (imageSizes) {
+        this.imageSizes = imageSizes;
+    };
+    Clusterer.prototype.getCalculator = function () {
+        return this.calculator;
+    };
+    Clusterer.prototype.setCalculator = function (calculator) {
+        this.calculator = calculator;
+    };
+    Clusterer.prototype.getBatchSizeIE = function () {
+        return this.batchSizeIE;
+    };
+    Clusterer.prototype.setBatchSizeIE = function (batchSizeIE) {
+        this.batchSizeIE = batchSizeIE;
+    };
+    Clusterer.prototype.getClusterClass = function () {
+        return this.clusterClass;
+    };
+    Clusterer.prototype.setClusterClass = function (clusterClass) {
+        this.clusterClass = clusterClass;
+    };
+    Clusterer.prototype.getMarkers = function () {
+        return this.markers;
+    };
+    Clusterer.prototype.getTotalMarkers = function () {
+        return this.markers.length;
+    };
+    Clusterer.prototype.getClusters = function () {
+        return this.clusters;
+    };
+    Clusterer.prototype.getTotalClusters = function () {
+        return this.clusters.length;
+    };
+    Clusterer.prototype.addMarker = function (marker, optNoDraw) {
+        this.pushMarkerTo(marker);
+        if (!optNoDraw) {
+            this.redraw();
+        }
+    };
+    Clusterer.prototype.addMarkers = function (markers, optNoDraw) {
+        for (var key in markers) {
+            if (Object.prototype.hasOwnProperty.call(markers, key)) {
+                this.pushMarkerTo(markers[key]);
+            }
+        }
+        if (!optNoDraw) {
+            this.redraw();
+        }
+    };
+    Clusterer.prototype.pushMarkerTo = function (marker) {
+        var _this = this;
+        // If the marker is draggable add a listener so we can update the clusters on the dragend:
+        if (marker.getDraggable()) {
+            google.maps.event.addListener(marker, 'dragend', function () {
+                if (_this.ready) {
+                    marker.isAdded = false;
+                    _this.repaint();
+                }
+            });
+        }
+        marker.isAdded = false;
+        this.markers.push(marker);
+    };
+    Clusterer.prototype.removeMarker_ = function (marker) {
+        var index = -1;
+        if (this.markers.indexOf) {
+            index = this.markers.indexOf(marker);
+        }
+        else {
+            for (var i = 0; i < this.markers.length; i++) {
+                if (marker === this.markers[i]) {
+                    index = i;
+                    break;
+                }
+            }
+        }
+        if (index === -1) {
+            // Marker is not in our list of markers, so do nothing:
+            return false;
+        }
+        marker.setMap(null);
+        this.markers.splice(index, 1); // Remove the marker from the list of managed markers
+        return true;
+    };
+    Clusterer.prototype.removeMarker = function (marker, optNoDraw) {
+        var removed = this.removeMarker_(marker);
+        if (!optNoDraw && removed) {
+            this.repaint();
+        }
+        return removed;
+    };
+    Clusterer.prototype.removeMarkers = function (markers, optNoDraw) {
+        var removed = false;
+        for (var i = 0; i < markers.length; i++) {
+            removed = removed || this.removeMarker_(markers[i]);
+        }
+        if (!optNoDraw && removed) {
+            this.repaint();
+        }
+        return removed;
+    };
+    Clusterer.prototype.clearMarkers = function () {
+        this.resetViewport(true);
+        this.markers = [];
+    };
+    Clusterer.prototype.repaint = function () {
+        var oldClusters = this.clusters.slice();
+        this.clusters = [];
+        this.resetViewport(false);
+        this.redraw();
+        // Remove the old clusters.
+        // Do it in a timeout to prevent blinking effect.
+        setTimeout(function timeout() {
+            for (var i = 0; i < oldClusters.length; i++) {
+                oldClusters[i].remove();
+            }
+        }, 0);
+    };
+    Clusterer.prototype.getExtendedBounds = function (bounds) {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        var projection = this.getProjection();
+        // Convert the points to pixels and the extend out by the grid size.
+        var trPix = projection.fromLatLngToDivPixel(
+        // Turn the bounds into latlng.
+        new google.maps.LatLng(bounds.getNorthEast().lat(), bounds.getNorthEast().lng()));
+        trPix.x += this.gridSize;
+        trPix.y -= this.gridSize;
+        var blPix = projection.fromLatLngToDivPixel(
+        // Turn the bounds into latlng.
+        new google.maps.LatLng(bounds.getSouthWest().lat(), bounds.getSouthWest().lng()));
+        blPix.x -= this.gridSize;
+        blPix.y += this.gridSize;
+        // Extend the bounds to contain the new bounds.
+        bounds.extend(
+        // Convert the pixel points back to LatLng nw
+        projection.fromDivPixelToLatLng(trPix));
+        bounds.extend(
+        // Convert the pixel points back to LatLng sw
+        projection.fromDivPixelToLatLng(blPix));
+        return bounds;
+    };
+    Clusterer.prototype.redraw = function () {
+        // Redraws all the clusters.
+        this.createClusters(0);
+    };
+    Clusterer.prototype.resetViewport = function (optHide) {
+        // Remove all the clusters
+        for (var i = 0; i < this.clusters.length; i++) {
+            this.clusters[i].remove();
+        }
+        this.clusters = [];
+        // Reset the markers to not be added and to be removed from the map.
+        for (var i = 0; i < this.markers.length; i++) {
+            var marker = this.markers[i];
+            marker.isAdded = false;
+            if (optHide) {
+                marker.setMap(null);
+            }
+        }
+    };
+    Clusterer.prototype.distanceBetweenPoints = function (p1, p2) {
+        var R = 6371; // Radius of the Earth in km
+        var dLat = ((p2.lat() - p1.lat()) * Math.PI) / 180;
+        var dLon = ((p2.lng() - p1.lng()) * Math.PI) / 180;
+        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos((p1.lat() * Math.PI) / 180) *
+                Math.cos((p2.lat() * Math.PI) / 180) *
+                Math.sin(dLon / 2) *
+                Math.sin(dLon / 2);
+        return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
+    };
+    Clusterer.prototype.isMarkerInBounds = function (marker, bounds) {
+        var position = marker.getPosition();
+        if (position) {
+            return bounds.contains(position);
+        }
+        return false;
+    };
+    Clusterer.prototype.addToClosestCluster = function (marker) {
+        var cluster;
+        var distance = 40000; // Some large number
+        var clusterToAddTo = null;
+        for (var i = 0; i < this.clusters.length; i++) {
+            cluster = this.clusters[i];
+            var center = cluster.getCenter();
+            var position = marker.getPosition();
+            if (center && position) {
+                var d = this.distanceBetweenPoints(center, position);
+                if (d < distance) {
+                    distance = d;
+                    clusterToAddTo = cluster;
+                }
+            }
+        }
+        if (clusterToAddTo && clusterToAddTo.isMarkerInClusterBounds(marker)) {
+            clusterToAddTo.addMarker(marker);
+        }
+        else {
+            cluster = new Cluster$1(this);
+            cluster.addMarker(marker);
+            this.clusters.push(cluster);
+        }
+    };
+    Clusterer.prototype.createClusters = function (iFirst) {
+        var _this = this;
+        if (!this.ready) {
+            return;
+        }
+        // Cancel previous batch processing if we're working on the first batch:
+        if (iFirst === 0) {
+            /**
+             * This event is fired when the <code>Clusterer</code> begins
+             *  clustering markers.
+             * @name Clusterer#clusteringbegin
+             * @param {Clusterer} mc The Clusterer whose markers are being clustered.
+             * @event
+             */
+            google.maps.event.trigger(this, 'clusteringbegin', this);
+            if (this.timerRefStatic !== null) {
+                window.clearTimeout(this.timerRefStatic);
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                delete this.timerRefStatic;
+            }
+        }
+        // Get our current map view bounds.
+        // Create a new bounds object so we don't affect the map.
+        //
+        // See Comments 9 & 11 on Issue 3651 relating to this workaround for a Google Maps bug:
+        var mapBounds = 
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.getMap().getZoom() > 3
+            ? new google.maps.LatLngBounds(
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            this.getMap()
+                .getBounds()
+                .getSouthWest(), 
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            this.getMap()
+                .getBounds()
+                .getNorthEast())
+            : new google.maps.LatLngBounds(new google.maps.LatLng(85.02070771743472, -178.48388434375), new google.maps.LatLng(-85.08136444384544, 178.00048865625));
+        var bounds = this.getExtendedBounds(mapBounds);
+        var iLast = Math.min(iFirst + this.batchSize, this.markers.length);
+        for (var i = iFirst; i < iLast; i++) {
+            var marker = this.markers[i];
+            if (!marker.isAdded && this.isMarkerInBounds(marker, bounds) && (!this.ignoreHidden || (this.ignoreHidden && marker.getVisible()))) {
+                this.addToClosestCluster(marker);
+            }
+        }
+        if (iLast < this.markers.length) {
+            this.timerRefStatic = window.setTimeout(function () {
+                _this.createClusters(iLast);
+            }, 0);
+        }
+        else {
+            this.timerRefStatic = null;
+            /**
+             * This event is fired when the <code>Clusterer</code> stops
+             *  clustering markers.
+             * @name Clusterer#clusteringend
+             * @param {Clusterer} mc The Clusterer whose markers are being clustered.
+             * @event
+             */
+            google.maps.event.trigger(this, 'clusteringend', this);
+            for (var i = 0; i < this.clusters.length; i++) {
+                this.clusters[i].updateIcon();
+            }
+        }
+    };
+    Clusterer.prototype.extend = function (obj1, obj2) {
+        return function applyExtend(object) {
+            // eslint-disable-next-line guard-for-in
+            for (var property in object.prototype) {
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                this.prototype[property] = object.prototype[property];
+            }
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            return this;
+        }.apply(obj1, [obj2]);
+    };
+    return Clusterer;
+}());
+
+const eventMap$e = {
+    onClick: 'click',
+    onClusteringBegin: 'clusteringbegin',
+    onClusteringEnd: 'clusteringend',
+    onMouseOut: 'mouseout',
+    onMouseOver: 'mouseover',
+};
+const updaterMap$e = {
+    averageCenter(instance, averageCenter) {
+        instance.setAverageCenter(averageCenter);
+    },
+    batchSizeIE(instance, batchSizeIE) {
+        instance.setBatchSizeIE(batchSizeIE);
+    },
+    calculator(instance, calculator) {
+        instance.setCalculator(calculator);
+    },
+    clusterClass(instance, clusterClass) {
+        instance.setClusterClass(clusterClass);
+    },
+    enableRetinaIcons(instance, enableRetinaIcons) {
+        instance.setEnableRetinaIcons(enableRetinaIcons);
+    },
+    gridSize(instance, gridSize) {
+        instance.setGridSize(gridSize);
+    },
+    ignoreHidden(instance, ignoreHidden) {
+        instance.setIgnoreHidden(ignoreHidden);
+    },
+    imageExtension(instance, imageExtension) {
+        instance.setImageExtension(imageExtension);
+    },
+    imagePath(instance, imagePath) {
+        instance.setImagePath(imagePath);
+    },
+    imageSizes(instance, imageSizes) {
+        instance.setImageSizes(imageSizes);
+    },
+    maxZoom(instance, maxZoom) {
+        instance.setMaxZoom(maxZoom);
+    },
+    minimumClusterSize(instance, minimumClusterSize) {
+        instance.setMinimumClusterSize(minimumClusterSize);
+    },
+    styles(instance, styles) {
+        instance.setStyles(styles);
+    },
+    title(instance, title) {
+        instance.setTitle(title);
+    },
+    zoomOnClick(instance, zoomOnClick) {
+        instance.setZoomOnClick(zoomOnClick);
+    },
+};
+function MarkerClustererFunctional({ children,
+// options,
+// averageCenter,
+// batchSizeIE,
+// calculator,
+// clusterClass,
+// enableRetinaIcons,
+// gridSize,
+// ignoreHidden,
+// imageExtension,
+// imagePath,
+// imageSizes,
+// maxZoom,
+// minimumClusterSize,
+// styles,
+// title,
+// zoomOnClick,
+// onClick,
+// onClusteringBegin,
+// onClusteringEnd,
+// onMouseOver,
+// onMouseOut,
+// onLoad,
+// onUnmount,
+ }) {
+    const [instance, /* setInstance */] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // TODO!
+    return instance !== null
+        ? children(instance) || null
+        : null;
+}
+(0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(MarkerClustererFunctional);
+class ClustererComponent extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            markerClusterer: null,
+        };
+        this.setClustererCallback = () => {
+            if (this.state.markerClusterer !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.markerClusterer);
+            }
+        };
+    }
+    componentDidMount() {
+        if (this.context) {
+            const markerClusterer = new Clusterer(this.context, [], this.props.options);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$e,
+                eventMap: eventMap$e,
+                prevProps: {},
+                nextProps: this.props,
+                instance: markerClusterer,
+            });
+            this.setState(() => {
+                return {
+                    markerClusterer,
+                };
+            }, this.setClustererCallback);
+        }
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.markerClusterer) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$e,
+                eventMap: eventMap$e,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.markerClusterer,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.markerClusterer !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.markerClusterer);
+            }
+            unregisterEvents(this.registeredEvents);
+            // @ts-ignore
+            this.state.markerClusterer.setMap(null);
+        }
+    }
+    render() {
+        return this.state.markerClusterer !== null
+            ? this.props.children(this.state.markerClusterer)
+            : null;
+    }
+}
+ClustererComponent.contextType = MapContext;
+
+var InfoBox = /** @class */ (function () {
+    function InfoBox(options) {
+        if (options === void 0) { options = {}; }
+        this.extend(InfoBox, google.maps.OverlayView);
+        // Standard options (in common with google.maps.InfoWindow):
+        this.content = options.content || '';
+        this.disableAutoPan = options.disableAutoPan || false;
+        this.maxWidth = options.maxWidth || 0;
+        this.pixelOffset = options.pixelOffset || new google.maps.Size(0, 0);
+        this.position = options.position || new google.maps.LatLng(0, 0);
+        this.zIndex = options.zIndex || null;
+        // Additional options (unique to InfoBox):
+        this.boxClass = options.boxClass || 'infoBox';
+        this.boxStyle = options.boxStyle || {};
+        this.closeBoxMargin = options.closeBoxMargin || '2px';
+        this.closeBoxURL = options.closeBoxURL || 'http://www.google.com/intl/en_us/mapfiles/close.gif';
+        if (options.closeBoxURL === '') {
+            this.closeBoxURL = '';
+        }
+        this.infoBoxClearance = options.infoBoxClearance || new google.maps.Size(1, 1);
+        if (typeof options.visible === 'undefined') {
+            if (typeof options.isHidden === 'undefined') {
+                options.visible = true;
+            }
+            else {
+                options.visible = !options.isHidden;
+            }
+        }
+        this.isHidden = !options.visible;
+        this.alignBottom = options.alignBottom || false;
+        this.pane = options.pane || 'floatPane';
+        this.enableEventPropagation = options.enableEventPropagation || false;
+        this.div = null;
+        this.closeListener = null;
+        this.moveListener = null;
+        this.mapListener = null;
+        this.contextListener = null;
+        this.eventListeners = null;
+        this.fixedWidthSet = null;
+    }
+    InfoBox.prototype.createInfoBoxDiv = function () {
+        var _this = this;
+        // This handler prevents an event in the InfoBox from being passed on to the map.
+        function cancelHandler(event) {
+            event.cancelBubble = true;
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+        }
+        // This handler ignores the current event in the InfoBox and conditionally prevents
+        // the event from being passed on to the map. It is used for the contextmenu event.
+        var ignoreHandler = function (event) {
+            event.returnValue = false;
+            if (event.preventDefault) {
+                event.preventDefault();
+            }
+            if (!_this.enableEventPropagation) {
+                cancelHandler(event);
+            }
+        };
+        if (!this.div) {
+            this.div = document.createElement('div');
+            this.setBoxStyle();
+            if (typeof this.content === 'string') {
+                this.div.innerHTML = this.getCloseBoxImg() + this.content;
+            }
+            else {
+                this.div.innerHTML = this.getCloseBoxImg();
+                this.div.appendChild(this.content);
+            }
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            var panes = this.getPanes();
+            panes[this.pane].appendChild(this.div); // Add the InfoBox div to the DOM
+            this.addClickHandler();
+            if (this.div.style.width) {
+                this.fixedWidthSet = true;
+            }
+            else {
+                if (this.maxWidth !== 0 && this.div.offsetWidth > this.maxWidth) {
+                    this.div.style.width = this.maxWidth + 'px';
+                    this.fixedWidthSet = true;
+                }
+                else {
+                    // The following code is needed to overcome problems with MSIE
+                    var bw = this.getBoxWidths();
+                    this.div.style.width = this.div.offsetWidth - bw.left - bw.right + 'px';
+                    this.fixedWidthSet = false;
+                }
+            }
+            this.panBox(this.disableAutoPan);
+            if (!this.enableEventPropagation) {
+                this.eventListeners = [];
+                // Cancel event propagation.
+                // Note: mousemove not included (to resolve Issue 152)
+                var events = [
+                    'mousedown',
+                    'mouseover',
+                    'mouseout',
+                    'mouseup',
+                    'click',
+                    'dblclick',
+                    'touchstart',
+                    'touchend',
+                    'touchmove',
+                ];
+                for (var i = 0; i < events.length; i++) {
+                    this.eventListeners.push(google.maps.event.addListener(this.div, events[i], cancelHandler));
+                }
+                // Workaround for Google bug that causes the cursor to change to a pointer
+                // when the mouse moves over a marker underneath InfoBox.
+                this.eventListeners.push(google.maps.event.addListener(this.div, 'mouseover', function () {
+                    if (_this.div) {
+                        _this.div.style.cursor = 'default';
+                    }
+                }));
+            }
+            this.contextListener = google.maps.event.addListener(this.div, 'contextmenu', ignoreHandler);
+            /**
+             * This event is fired when the DIV containing the InfoBox's content is attached to the DOM.
+             * @name InfoBox#domready
+             * @event
+             */
+            google.maps.event.trigger(this, 'domready');
+        }
+    };
+    InfoBox.prototype.getCloseBoxImg = function () {
+        var img = '';
+        if (this.closeBoxURL !== '') {
+            img = '<img alt=""';
+            img += ' aria-hidden="true"';
+            img += " src='" + this.closeBoxURL + "'";
+            img += ' align=right'; // Do this because Opera chokes on style='float: right;'
+            img += " style='";
+            img += ' position: relative;'; // Required by MSIE
+            img += ' cursor: pointer;';
+            img += ' margin: ' + this.closeBoxMargin + ';';
+            img += "'>";
+        }
+        return img;
+    };
+    InfoBox.prototype.addClickHandler = function () {
+        if (this.div && this.div.firstChild && this.closeBoxURL !== '') {
+            var closeBox = this.div.firstChild;
+            this.closeListener = google.maps.event.addListener(closeBox, 'click', this.getCloseClickHandler());
+        }
+        else {
+            this.closeListener = null;
+        }
+    };
+    InfoBox.prototype.getCloseClickHandler = function () {
+        var _this = this;
+        return function (event) {
+            // 1.0.3 fix: Always prevent propagation of a close box click to the map:
+            event.cancelBubble = true;
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            /**
+             * This event is fired when the InfoBox's close box is clicked.
+             * @name InfoBox#closeclick
+             * @event
+             */
+            google.maps.event.trigger(_this, 'closeclick');
+            _this.close();
+        };
+    };
+    InfoBox.prototype.panBox = function (disablePan) {
+        if (this.div && !disablePan) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            var map = this.getMap();
+            // Only pan if attached to map, not panorama
+            if (map instanceof google.maps.Map) {
+                var xOffset = 0;
+                var yOffset = 0;
+                var bounds = map.getBounds();
+                if (bounds && !bounds.contains(this.position)) {
+                    // Marker not in visible area of map, so set center
+                    // of map to the marker position first.
+                    map.setCenter(this.position);
+                }
+                var mapDiv = map.getDiv();
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                var mapWidth = mapDiv.offsetWidth;
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                var mapHeight = mapDiv.offsetHeight;
+                var iwOffsetX = this.pixelOffset.width;
+                var iwOffsetY = this.pixelOffset.height;
+                var iwWidth = this.div.offsetWidth;
+                var iwHeight = this.div.offsetHeight;
+                var padX = this.infoBoxClearance.width;
+                var padY = this.infoBoxClearance.height;
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                var projection = this.getProjection();
+                var pixPosition = projection.fromLatLngToContainerPixel(this.position);
+                if (pixPosition !== null) {
+                    if (pixPosition.x < -iwOffsetX + padX) {
+                        xOffset = pixPosition.x + iwOffsetX - padX;
+                    }
+                    else if (pixPosition.x + iwWidth + iwOffsetX + padX > mapWidth) {
+                        xOffset = pixPosition.x + iwWidth + iwOffsetX + padX - mapWidth;
+                    }
+                    if (this.alignBottom) {
+                        if (pixPosition.y < -iwOffsetY + padY + iwHeight) {
+                            yOffset = pixPosition.y + iwOffsetY - padY - iwHeight;
+                        }
+                        else if (pixPosition.y + iwOffsetY + padY > mapHeight) {
+                            yOffset = pixPosition.y + iwOffsetY + padY - mapHeight;
+                        }
+                    }
+                    else {
+                        if (pixPosition.y < -iwOffsetY + padY) {
+                            yOffset = pixPosition.y + iwOffsetY - padY;
+                        }
+                        else if (pixPosition.y + iwHeight + iwOffsetY + padY > mapHeight) {
+                            yOffset = pixPosition.y + iwHeight + iwOffsetY + padY - mapHeight;
+                        }
+                    }
+                }
+                if (!(xOffset === 0 && yOffset === 0)) {
+                    // Move the map to the shifted center.
+                    map.panBy(xOffset, yOffset);
+                }
+            }
+        }
+    };
+    InfoBox.prototype.setBoxStyle = function () {
+        if (this.div) {
+            // Apply style values from the style sheet defined in the boxClass parameter:
+            this.div.className = this.boxClass;
+            // Clear existing inline style values:
+            this.div.style.cssText = '';
+            // Apply style values defined in the boxStyle parameter:
+            var boxStyle = this.boxStyle;
+            for (var i in boxStyle) {
+                if (Object.prototype.hasOwnProperty.call(boxStyle, i)) {
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
+                    this.div.style[i] = boxStyle[i];
+                }
+            }
+            // Fix for iOS disappearing InfoBox problem
+            // See http://stackoverflow.com/questions/9229535/google-maps-markers-disappear-at-certain-zoom-level-only-on-iphone-ipad
+            this.div.style.webkitTransform = 'translateZ(0)';
+            // Fix up opacity style for benefit of MSIE
+            if (typeof this.div.style.opacity !== 'undefined' && this.div.style.opacity !== '') {
+                // See http://www.quirksmode.org/css/opacity.html
+                var opacity = parseFloat(this.div.style.opacity || '');
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                this.div.style.msFilter =
+                    '"progid:DXImageTransform.Microsoft.Alpha(Opacity=' + opacity * 100 + ')"';
+                this.div.style.filter = 'alpha(opacity=' + opacity * 100 + ')';
+            }
+            // Apply required styles
+            this.div.style.position = 'absolute';
+            this.div.style.visibility = 'hidden';
+            if (this.zIndex !== null) {
+                this.div.style.zIndex = this.zIndex + '';
+            }
+            if (!this.div.style.overflow) {
+                this.div.style.overflow = 'auto';
+            }
+        }
+    };
+    InfoBox.prototype.getBoxWidths = function () {
+        var bw = { top: 0, bottom: 0, left: 0, right: 0 };
+        if (!this.div) {
+            return bw;
+        }
+        if (document.defaultView) {
+            var ownerDocument = this.div.ownerDocument;
+            var computedStyle = ownerDocument && ownerDocument.defaultView
+                ? ownerDocument.defaultView.getComputedStyle(this.div, '')
+                : null;
+            if (computedStyle) {
+                // The computed styles are always in pixel units (good!)
+                bw.top = parseInt(computedStyle.borderTopWidth || '', 10) || 0;
+                bw.bottom = parseInt(computedStyle.borderBottomWidth || '', 10) || 0;
+                bw.left = parseInt(computedStyle.borderLeftWidth || '', 10) || 0;
+                bw.right = parseInt(computedStyle.borderRightWidth || '', 10) || 0;
+            }
+        }
+        else if (
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        document.documentElement.currentStyle // MSIE
+        ) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            var currentStyle = this.div.currentStyle;
+            if (currentStyle) {
+                // The current styles may not be in pixel units, but assume they are (bad!)
+                bw.top = parseInt(currentStyle.borderTopWidth || '', 10) || 0;
+                bw.bottom = parseInt(currentStyle.borderBottomWidth || '', 10) || 0;
+                bw.left = parseInt(currentStyle.borderLeftWidth || '', 10) || 0;
+                bw.right = parseInt(currentStyle.borderRightWidth || '', 10) || 0;
+            }
+        }
+        return bw;
+    };
+    InfoBox.prototype.onRemove = function () {
+        if (this.div && this.div.parentNode) {
+            this.div.parentNode.removeChild(this.div);
+            this.div = null;
+        }
+    };
+    InfoBox.prototype.draw = function () {
+        this.createInfoBoxDiv();
+        if (this.div) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            var projection = this.getProjection();
+            var pixPosition = projection.fromLatLngToDivPixel(this.position);
+            if (pixPosition !== null) {
+                this.div.style.left = pixPosition.x + this.pixelOffset.width + 'px';
+                if (this.alignBottom) {
+                    this.div.style.bottom = -(pixPosition.y + this.pixelOffset.height) + 'px';
+                }
+                else {
+                    this.div.style.top = pixPosition.y + this.pixelOffset.height + 'px';
+                }
+            }
+            if (this.isHidden) {
+                this.div.style.visibility = 'hidden';
+            }
+            else {
+                this.div.style.visibility = 'visible';
+            }
+        }
+    };
+    InfoBox.prototype.setOptions = function (options) {
+        if (options === void 0) { options = {}; }
+        if (typeof options.boxClass !== 'undefined') {
+            // Must be first
+            this.boxClass = options.boxClass;
+            this.setBoxStyle();
+        }
+        if (typeof options.boxStyle !== 'undefined') {
+            // Must be second
+            this.boxStyle = options.boxStyle;
+            this.setBoxStyle();
+        }
+        if (typeof options.content !== 'undefined') {
+            this.setContent(options.content);
+        }
+        if (typeof options.disableAutoPan !== 'undefined') {
+            this.disableAutoPan = options.disableAutoPan;
+        }
+        if (typeof options.maxWidth !== 'undefined') {
+            this.maxWidth = options.maxWidth;
+        }
+        if (typeof options.pixelOffset !== 'undefined') {
+            this.pixelOffset = options.pixelOffset;
+        }
+        if (typeof options.alignBottom !== 'undefined') {
+            this.alignBottom = options.alignBottom;
+        }
+        if (typeof options.position !== 'undefined') {
+            this.setPosition(options.position);
+        }
+        if (typeof options.zIndex !== 'undefined') {
+            this.setZIndex(options.zIndex);
+        }
+        if (typeof options.closeBoxMargin !== 'undefined') {
+            this.closeBoxMargin = options.closeBoxMargin;
+        }
+        if (typeof options.closeBoxURL !== 'undefined') {
+            this.closeBoxURL = options.closeBoxURL;
+        }
+        if (typeof options.infoBoxClearance !== 'undefined') {
+            this.infoBoxClearance = options.infoBoxClearance;
+        }
+        if (typeof options.isHidden !== 'undefined') {
+            this.isHidden = options.isHidden;
+        }
+        if (typeof options.visible !== 'undefined') {
+            this.isHidden = !options.visible;
+        }
+        if (typeof options.enableEventPropagation !== 'undefined') {
+            this.enableEventPropagation = options.enableEventPropagation;
+        }
+        if (this.div) {
+            this.draw();
+        }
+    };
+    InfoBox.prototype.setContent = function (content) {
+        this.content = content;
+        if (this.div) {
+            if (this.closeListener) {
+                google.maps.event.removeListener(this.closeListener);
+                this.closeListener = null;
+            }
+            // Odd code required to make things work with MSIE.
+            if (!this.fixedWidthSet) {
+                this.div.style.width = '';
+            }
+            if (typeof content === 'string') {
+                this.div.innerHTML = this.getCloseBoxImg() + content;
+            }
+            else {
+                this.div.innerHTML = this.getCloseBoxImg();
+                this.div.appendChild(content);
+            }
+            // Perverse code required to make things work with MSIE.
+            // (Ensures the close box does, in fact, float to the right.)
+            if (!this.fixedWidthSet) {
+                this.div.style.width = this.div.offsetWidth + 'px';
+                if (typeof content === 'string') {
+                    this.div.innerHTML = this.getCloseBoxImg() + content;
+                }
+                else {
+                    this.div.innerHTML = this.getCloseBoxImg();
+                    this.div.appendChild(content);
+                }
+            }
+            this.addClickHandler();
+        }
+        /**
+         * This event is fired when the content of the InfoBox changes.
+         * @name InfoBox#content_changed
+         * @event
+         */
+        google.maps.event.trigger(this, 'content_changed');
+    };
+    InfoBox.prototype.setPosition = function (latLng) {
+        this.position = latLng;
+        if (this.div) {
+            this.draw();
+        }
+        /**
+         * This event is fired when the position of the InfoBox changes.
+         * @name InfoBox#position_changed
+         * @event
+         */
+        google.maps.event.trigger(this, 'position_changed');
+    };
+    InfoBox.prototype.setVisible = function (isVisible) {
+        this.isHidden = !isVisible;
+        if (this.div) {
+            this.div.style.visibility = this.isHidden ? 'hidden' : 'visible';
+        }
+    };
+    InfoBox.prototype.setZIndex = function (index) {
+        this.zIndex = index;
+        if (this.div) {
+            this.div.style.zIndex = index + '';
+        }
+        /**
+         * This event is fired when the zIndex of the InfoBox changes.
+         * @name InfoBox#zindex_changed
+         * @event
+         */
+        google.maps.event.trigger(this, 'zindex_changed');
+    };
+    InfoBox.prototype.getContent = function () {
+        return this.content;
+    };
+    InfoBox.prototype.getPosition = function () {
+        return this.position;
+    };
+    InfoBox.prototype.getZIndex = function () {
+        return this.zIndex;
+    };
+    InfoBox.prototype.getVisible = function () {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        var map = this.getMap();
+        var isVisible;
+        if (typeof map === 'undefined' || map === null) {
+            isVisible = false;
+        }
+        else {
+            isVisible = !this.isHidden;
+        }
+        return isVisible;
+    };
+    InfoBox.prototype.show = function () {
+        this.isHidden = false;
+        if (this.div) {
+            this.div.style.visibility = 'visible';
+        }
+    };
+    InfoBox.prototype.hide = function () {
+        this.isHidden = true;
+        if (this.div) {
+            this.div.style.visibility = 'hidden';
+        }
+    };
+    InfoBox.prototype.open = function (map, anchor) {
+        var _this = this;
+        if (anchor) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            this.position = anchor.getPosition();
+            this.moveListener = google.maps.event.addListener(anchor, 'position_changed', function () {
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                var position = anchor.getPosition();
+                _this.setPosition(position);
+            });
+            this.mapListener = google.maps.event.addListener(anchor, 'map_changed', function () {
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                _this.setMap(anchor.map);
+            });
+        }
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.setMap(map);
+        if (this.div) {
+            this.panBox();
+        }
+    };
+    InfoBox.prototype.close = function () {
+        if (this.closeListener) {
+            google.maps.event.removeListener(this.closeListener);
+            this.closeListener = null;
+        }
+        if (this.eventListeners) {
+            for (var i = 0; i < this.eventListeners.length; i++) {
+                google.maps.event.removeListener(this.eventListeners[i]);
+            }
+            this.eventListeners = null;
+        }
+        if (this.moveListener) {
+            google.maps.event.removeListener(this.moveListener);
+            this.moveListener = null;
+        }
+        if (this.mapListener) {
+            google.maps.event.removeListener(this.mapListener);
+            this.mapListener = null;
+        }
+        if (this.contextListener) {
+            google.maps.event.removeListener(this.contextListener);
+            this.contextListener = null;
+        }
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        this.setMap(null);
+    };
+    InfoBox.prototype.extend = function (obj1, obj2) {
+        return function applyExtend(object) {
+            // eslint-disable-next-line guard-for-in
+            for (var property in object.prototype) {
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                if (!Object.prototype.hasOwnProperty.call(this, property)) {
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
+                    this.prototype[property] = object.prototype[property];
+                }
+            }
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            return this;
+        }.apply(obj1, [obj2]);
+    };
+    return InfoBox;
+}());
+
+const eventMap$d = {
+    onCloseClick: 'closeclick',
+    onContentChanged: 'content_changed',
+    onDomReady: 'domready',
+    onPositionChanged: 'position_changed',
+    onZindexChanged: 'zindex_changed',
+};
+const updaterMap$d = {
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    position(instance, position) {
+        if (position instanceof google.maps.LatLng) {
+            instance.setPosition(position);
+        }
+        else {
+            instance.setPosition(new google.maps.LatLng(position.lat, position.lng));
+        }
+    },
+    visible(instance, visible) {
+        instance.setVisible(visible);
+    },
+    zIndex(instance, zIndex) {
+        instance.setZIndex(zIndex);
+    },
+};
+const defaultOptions$3 = {};
+function InfoBoxFunctional({ children, anchor, options, position, zIndex, onCloseClick, onDomReady, onContentChanged, onPositionChanged, onZindexChanged, onLoad, onUnmount }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [closeclickListener, setCloseClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [domreadyclickListener, setDomReadyClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [contentchangedclickListener, setContentChangedClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [positionchangedclickListener, setPositionChangedClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [zindexchangedclickListener, setZindexChangedClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const containerElementRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && instance !== null) {
+            instance.close();
+            if (anchor) {
+                instance.open(map, anchor);
+            }
+            else if (instance.getPosition()) {
+                instance.open(map);
+            }
+        }
+    }, [map, instance, anchor]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (options && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (position && instance !== null) {
+            const positionLatLng = position instanceof google.maps.LatLng
+                ? position
+                // @ts-ignore
+                : new google.maps.LatLng(position.lat, position.lng);
+            instance.setPosition(positionLatLng);
+        }
+    }, [position]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof zIndex === 'number' && instance !== null) {
+            instance.setZIndex(zIndex);
+        }
+    }, [zIndex]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onCloseClick) {
+            if (closeclickListener !== null) {
+                google.maps.event.removeListener(closeclickListener);
+            }
+            setCloseClickListener(google.maps.event.addListener(instance, 'closeclick', onCloseClick));
+        }
+    }, [onCloseClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDomReady) {
+            if (domreadyclickListener !== null) {
+                google.maps.event.removeListener(domreadyclickListener);
+            }
+            setDomReadyClickListener(google.maps.event.addListener(instance, 'domready', onDomReady));
+        }
+    }, [onDomReady]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onContentChanged) {
+            if (contentchangedclickListener !== null) {
+                google.maps.event.removeListener(contentchangedclickListener);
+            }
+            setContentChangedClickListener(google.maps.event.addListener(instance, 'content_changed', onContentChanged));
+        }
+    }, [onContentChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onPositionChanged) {
+            if (positionchangedclickListener !== null) {
+                google.maps.event.removeListener(positionchangedclickListener);
+            }
+            setPositionChangedClickListener(google.maps.event.addListener(instance, 'position_changed', onPositionChanged));
+        }
+    }, [onPositionChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onZindexChanged) {
+            if (zindexchangedclickListener !== null) {
+                google.maps.event.removeListener(zindexchangedclickListener);
+            }
+            setZindexChangedClickListener(google.maps.event.addListener(instance, 'zindex_changed', onZindexChanged));
+        }
+    }, [onZindexChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map) {
+            const _a = options || defaultOptions$3, { position } = _a, infoBoxOptions = __rest$1(_a, ["position"]);
+            let positionLatLng;
+            if (position && !(position instanceof google.maps.LatLng)) {
+                // @ts-ignore
+                positionLatLng = new google.maps.LatLng(position.lat, position.lng);
+            }
+            const infoBox = new InfoBox(Object.assign(Object.assign({}, infoBoxOptions), (positionLatLng ? { position: positionLatLng } : {})));
+            containerElementRef.current = document.createElement('div');
+            setInstance(infoBox);
+            if (onCloseClick) {
+                setCloseClickListener(google.maps.event.addListener(infoBox, 'circlecomplete', onCloseClick));
+            }
+            if (onDomReady) {
+                setDomReadyClickListener(google.maps.event.addListener(infoBox, 'domready', onDomReady));
+            }
+            if (onContentChanged) {
+                setContentChangedClickListener(google.maps.event.addListener(infoBox, 'content_changed', onContentChanged));
+            }
+            if (onPositionChanged) {
+                setPositionChangedClickListener(google.maps.event.addListener(infoBox, 'position_changed', onPositionChanged));
+            }
+            if (onZindexChanged) {
+                setZindexChangedClickListener(google.maps.event.addListener(infoBox, 'zindex_changed', onZindexChanged));
+            }
+            infoBox.setContent(containerElementRef.current);
+            if (anchor) {
+                infoBox.open(map, anchor);
+            }
+            else if (infoBox.getPosition()) {
+                infoBox.open(map);
+            }
+            else {
+                invariant_1(false, 'You must provide either an anchor or a position prop for <InfoBox>.');
+            }
+            if (onLoad) {
+                onLoad(infoBox);
+            }
+        }
+        return () => {
+            if (instance !== null) {
+                if (closeclickListener) {
+                    google.maps.event.removeListener(closeclickListener);
+                }
+                if (contentchangedclickListener) {
+                    google.maps.event.removeListener(contentchangedclickListener);
+                }
+                if (domreadyclickListener) {
+                    google.maps.event.removeListener(domreadyclickListener);
+                }
+                if (positionchangedclickListener) {
+                    google.maps.event.removeListener(positionchangedclickListener);
+                }
+                if (zindexchangedclickListener) {
+                    google.maps.event.removeListener(zindexchangedclickListener);
+                }
+                if (onUnmount) {
+                    onUnmount(instance);
+                }
+                instance.close();
+            }
+        };
+    }, []);
+    return containerElementRef.current ? (0,react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal)(react__WEBPACK_IMPORTED_MODULE_0__.Children.only(children), containerElementRef.current) : null;
+}
+const InfoBoxF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(InfoBoxFunctional);
+class InfoBoxComponent extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.containerElement = null;
+        this.state = {
+            infoBox: null,
+        };
+        this.open = (infoBox, anchor) => {
+            if (anchor) {
+                // @ts-ignore
+                infoBox.open(this.context, anchor);
+            }
+            else if (infoBox.getPosition()) {
+                // @ts-ignore
+                infoBox.open(this.context);
+            }
+            else {
+                invariant_1(false, 'You must provide either an anchor or a position prop for <InfoBox>.');
+            }
+        };
+        this.setInfoBoxCallback = () => {
+            if (this.state.infoBox !== null && this.containerElement !== null) {
+                this.state.infoBox.setContent(this.containerElement);
+                this.open(this.state.infoBox, this.props.anchor);
+                if (this.props.onLoad) {
+                    this.props.onLoad(this.state.infoBox);
+                }
+            }
+        };
+    }
+    componentDidMount() {
+        const _a = this.props.options || {}, { position } = _a, infoBoxOptions = __rest$1(_a, ["position"]);
+        let positionLatLng;
+        if (position && !(position instanceof google.maps.LatLng)) {
+            // @ts-ignore
+            positionLatLng = new google.maps.LatLng(position.lat, position.lng);
+        }
+        const infoBox = new InfoBox(Object.assign(Object.assign({}, infoBoxOptions), (positionLatLng ? { position: positionLatLng } : {})));
+        this.containerElement = document.createElement('div');
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$d,
+            eventMap: eventMap$d,
+            prevProps: {},
+            nextProps: this.props,
+            instance: infoBox,
+        });
+        this.setState({ infoBox }, this.setInfoBoxCallback);
+    }
+    componentDidUpdate(prevProps) {
+        const { infoBox } = this.state;
+        if (infoBox !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$d,
+                eventMap: eventMap$d,
+                prevProps,
+                nextProps: this.props,
+                instance: infoBox,
+            });
+        }
+    }
+    componentWillUnmount() {
+        const { onUnmount } = this.props;
+        const { infoBox } = this.state;
+        if (infoBox !== null) {
+            if (onUnmount) {
+                onUnmount(infoBox);
+            }
+            unregisterEvents(this.registeredEvents);
+            infoBox.close();
+        }
+    }
+    render() {
+        return this.containerElement ? (0,react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal)(react__WEBPACK_IMPORTED_MODULE_0__.Children.only(this.props.children), this.containerElement) : null;
+    }
+}
+InfoBoxComponent.contextType = MapContext;
+
+var kdbush = {exports: {}};
+
+(function (module, exports) {
+	(function (global, factory) {
+	module.exports = factory() ;
+	}(commonjsGlobal, (function () {
+	function sortKD(ids, coords, nodeSize, left, right, depth) {
+	    if (right - left <= nodeSize) { return; }
+
+	    var m = (left + right) >> 1;
+
+	    select(ids, coords, m, left, right, depth % 2);
+
+	    sortKD(ids, coords, nodeSize, left, m - 1, depth + 1);
+	    sortKD(ids, coords, nodeSize, m + 1, right, depth + 1);
+	}
+
+	function select(ids, coords, k, left, right, inc) {
+
+	    while (right > left) {
+	        if (right - left > 600) {
+	            var n = right - left + 1;
+	            var m = k - left + 1;
+	            var z = Math.log(n);
+	            var s = 0.5 * Math.exp(2 * z / 3);
+	            var sd = 0.5 * Math.sqrt(z * s * (n - s) / n) * (m - n / 2 < 0 ? -1 : 1);
+	            var newLeft = Math.max(left, Math.floor(k - m * s / n + sd));
+	            var newRight = Math.min(right, Math.floor(k + (n - m) * s / n + sd));
+	            select(ids, coords, k, newLeft, newRight, inc);
+	        }
+
+	        var t = coords[2 * k + inc];
+	        var i = left;
+	        var j = right;
+
+	        swapItem(ids, coords, left, k);
+	        if (coords[2 * right + inc] > t) { swapItem(ids, coords, left, right); }
+
+	        while (i < j) {
+	            swapItem(ids, coords, i, j);
+	            i++;
+	            j--;
+	            while (coords[2 * i + inc] < t) { i++; }
+	            while (coords[2 * j + inc] > t) { j--; }
+	        }
+
+	        if (coords[2 * left + inc] === t) { swapItem(ids, coords, left, j); }
+	        else {
+	            j++;
+	            swapItem(ids, coords, j, right);
+	        }
+
+	        if (j <= k) { left = j + 1; }
+	        if (k <= j) { right = j - 1; }
+	    }
+	}
+
+	function swapItem(ids, coords, i, j) {
+	    swap(ids, i, j);
+	    swap(coords, 2 * i, 2 * j);
+	    swap(coords, 2 * i + 1, 2 * j + 1);
+	}
+
+	function swap(arr, i, j) {
+	    var tmp = arr[i];
+	    arr[i] = arr[j];
+	    arr[j] = tmp;
+	}
+
+	function range(ids, coords, minX, minY, maxX, maxY, nodeSize) {
+	    var stack = [0, ids.length - 1, 0];
+	    var result = [];
+	    var x, y;
+
+	    while (stack.length) {
+	        var axis = stack.pop();
+	        var right = stack.pop();
+	        var left = stack.pop();
+
+	        if (right - left <= nodeSize) {
+	            for (var i = left; i <= right; i++) {
+	                x = coords[2 * i];
+	                y = coords[2 * i + 1];
+	                if (x >= minX && x <= maxX && y >= minY && y <= maxY) { result.push(ids[i]); }
+	            }
+	            continue;
+	        }
+
+	        var m = Math.floor((left + right) / 2);
+
+	        x = coords[2 * m];
+	        y = coords[2 * m + 1];
+
+	        if (x >= minX && x <= maxX && y >= minY && y <= maxY) { result.push(ids[m]); }
+
+	        var nextAxis = (axis + 1) % 2;
+
+	        if (axis === 0 ? minX <= x : minY <= y) {
+	            stack.push(left);
+	            stack.push(m - 1);
+	            stack.push(nextAxis);
+	        }
+	        if (axis === 0 ? maxX >= x : maxY >= y) {
+	            stack.push(m + 1);
+	            stack.push(right);
+	            stack.push(nextAxis);
+	        }
+	    }
+
+	    return result;
+	}
+
+	function within(ids, coords, qx, qy, r, nodeSize) {
+	    var stack = [0, ids.length - 1, 0];
+	    var result = [];
+	    var r2 = r * r;
+
+	    while (stack.length) {
+	        var axis = stack.pop();
+	        var right = stack.pop();
+	        var left = stack.pop();
+
+	        if (right - left <= nodeSize) {
+	            for (var i = left; i <= right; i++) {
+	                if (sqDist(coords[2 * i], coords[2 * i + 1], qx, qy) <= r2) { result.push(ids[i]); }
+	            }
+	            continue;
+	        }
+
+	        var m = Math.floor((left + right) / 2);
+
+	        var x = coords[2 * m];
+	        var y = coords[2 * m + 1];
+
+	        if (sqDist(x, y, qx, qy) <= r2) { result.push(ids[m]); }
+
+	        var nextAxis = (axis + 1) % 2;
+
+	        if (axis === 0 ? qx - r <= x : qy - r <= y) {
+	            stack.push(left);
+	            stack.push(m - 1);
+	            stack.push(nextAxis);
+	        }
+	        if (axis === 0 ? qx + r >= x : qy + r >= y) {
+	            stack.push(m + 1);
+	            stack.push(right);
+	            stack.push(nextAxis);
+	        }
+	    }
+
+	    return result;
+	}
+
+	function sqDist(ax, ay, bx, by) {
+	    var dx = ax - bx;
+	    var dy = ay - by;
+	    return dx * dx + dy * dy;
+	}
+
+	var defaultGetX = function (p) { return p[0]; };
+	var defaultGetY = function (p) { return p[1]; };
+
+	var KDBush = function KDBush(points, getX, getY, nodeSize, ArrayType) {
+	    if ( getX === void 0 ) getX = defaultGetX;
+	    if ( getY === void 0 ) getY = defaultGetY;
+	    if ( nodeSize === void 0 ) nodeSize = 64;
+	    if ( ArrayType === void 0 ) ArrayType = Float64Array;
+
+	    this.nodeSize = nodeSize;
+	    this.points = points;
+
+	    var IndexArrayType = points.length < 65536 ? Uint16Array : Uint32Array;
+
+	    var ids = this.ids = new IndexArrayType(points.length);
+	    var coords = this.coords = new ArrayType(points.length * 2);
+
+	    for (var i = 0; i < points.length; i++) {
+	        ids[i] = i;
+	        coords[2 * i] = getX(points[i]);
+	        coords[2 * i + 1] = getY(points[i]);
+	    }
+
+	    sortKD(ids, coords, nodeSize, 0, ids.length - 1, 0);
+	};
+
+	KDBush.prototype.range = function range$1 (minX, minY, maxX, maxY) {
+	    return range(this.ids, this.coords, minX, minY, maxX, maxY, this.nodeSize);
+	};
+
+	KDBush.prototype.within = function within$1 (x, y, r) {
+	    return within(this.ids, this.coords, x, y, r, this.nodeSize);
+	};
+
+	return KDBush;
+
+	})));
+} (kdbush));
+
+var KDBush = kdbush.exports;
+
+const defaultOptions$2 = {
+    minZoom: 0,   // min zoom to generate clusters on
+    maxZoom: 16,  // max zoom level to cluster the points on
+    minPoints: 2, // minimum points to form a cluster
+    radius: 40,   // cluster radius in pixels
+    extent: 512,  // tile extent (radius is calculated relative to it)
+    nodeSize: 64, // size of the KD-tree leaf node, affects performance
+    log: false,   // whether to log timing info
+
+    // whether to generate numeric ids for input features (in vector tiles)
+    generateId: false,
+
+    // a reduce function for calculating custom cluster properties
+    reduce: null, // (accumulated, props) => { accumulated.sum += props.sum; }
+
+    // properties to use for individual points when running the reducer
+    map: props => props // props => ({sum: props.my_value})
+};
+
+const fround = Math.fround || (tmp => ((x) => { tmp[0] = +x; return tmp[0]; }))(new Float32Array(1));
+
+class Supercluster {
+    constructor(options) {
+        this.options = extend$1(Object.create(defaultOptions$2), options);
+        this.trees = new Array(this.options.maxZoom + 1);
+    }
+
+    load(points) {
+        const {log, minZoom, maxZoom, nodeSize} = this.options;
+
+        if (log) console.time('total time');
+
+        const timerId = `prepare ${  points.length  } points`;
+        if (log) console.time(timerId);
+
+        this.points = points;
+
+        // generate a cluster object for each point and index input points into a KD-tree
+        let clusters = [];
+        for (let i = 0; i < points.length; i++) {
+            if (!points[i].geometry) continue;
+            clusters.push(createPointCluster(points[i], i));
+        }
+        this.trees[maxZoom + 1] = new KDBush(clusters, getX, getY, nodeSize, Float32Array);
+
+        if (log) console.timeEnd(timerId);
+
+        // cluster points on max zoom, then cluster the results on previous zoom, etc.;
+        // results in a cluster hierarchy across zoom levels
+        for (let z = maxZoom; z >= minZoom; z--) {
+            const now = +Date.now();
+
+            // create a new set of clusters for the zoom and index them with a KD-tree
+            clusters = this._cluster(clusters, z);
+            this.trees[z] = new KDBush(clusters, getX, getY, nodeSize, Float32Array);
+
+            if (log) console.log('z%d: %d clusters in %dms', z, clusters.length, +Date.now() - now);
+        }
+
+        if (log) console.timeEnd('total time');
+
+        return this;
+    }
+
+    getClusters(bbox, zoom) {
+        let minLng = ((bbox[0] + 180) % 360 + 360) % 360 - 180;
+        const minLat = Math.max(-90, Math.min(90, bbox[1]));
+        let maxLng = bbox[2] === 180 ? 180 : ((bbox[2] + 180) % 360 + 360) % 360 - 180;
+        const maxLat = Math.max(-90, Math.min(90, bbox[3]));
+
+        if (bbox[2] - bbox[0] >= 360) {
+            minLng = -180;
+            maxLng = 180;
+        } else if (minLng > maxLng) {
+            const easternHem = this.getClusters([minLng, minLat, 180, maxLat], zoom);
+            const westernHem = this.getClusters([-180, minLat, maxLng, maxLat], zoom);
+            return easternHem.concat(westernHem);
+        }
+
+        const tree = this.trees[this._limitZoom(zoom)];
+        const ids = tree.range(lngX(minLng), latY(maxLat), lngX(maxLng), latY(minLat));
+        const clusters = [];
+        for (const id of ids) {
+            const c = tree.points[id];
+            clusters.push(c.numPoints ? getClusterJSON(c) : this.points[c.index]);
+        }
+        return clusters;
+    }
+
+    getChildren(clusterId) {
+        const originId = this._getOriginId(clusterId);
+        const originZoom = this._getOriginZoom(clusterId);
+        const errorMsg = 'No cluster with the specified id.';
+
+        const index = this.trees[originZoom];
+        if (!index) throw new Error(errorMsg);
+
+        const origin = index.points[originId];
+        if (!origin) throw new Error(errorMsg);
+
+        const r = this.options.radius / (this.options.extent * Math.pow(2, originZoom - 1));
+        const ids = index.within(origin.x, origin.y, r);
+        const children = [];
+        for (const id of ids) {
+            const c = index.points[id];
+            if (c.parentId === clusterId) {
+                children.push(c.numPoints ? getClusterJSON(c) : this.points[c.index]);
+            }
+        }
+
+        if (children.length === 0) throw new Error(errorMsg);
+
+        return children;
+    }
+
+    getLeaves(clusterId, limit, offset) {
+        limit = limit || 10;
+        offset = offset || 0;
+
+        const leaves = [];
+        this._appendLeaves(leaves, clusterId, limit, offset, 0);
+
+        return leaves;
+    }
+
+    getTile(z, x, y) {
+        const tree = this.trees[this._limitZoom(z)];
+        const z2 = Math.pow(2, z);
+        const {extent, radius} = this.options;
+        const p = radius / extent;
+        const top = (y - p) / z2;
+        const bottom = (y + 1 + p) / z2;
+
+        const tile = {
+            features: []
+        };
+
+        this._addTileFeatures(
+            tree.range((x - p) / z2, top, (x + 1 + p) / z2, bottom),
+            tree.points, x, y, z2, tile);
+
+        if (x === 0) {
+            this._addTileFeatures(
+                tree.range(1 - p / z2, top, 1, bottom),
+                tree.points, z2, y, z2, tile);
+        }
+        if (x === z2 - 1) {
+            this._addTileFeatures(
+                tree.range(0, top, p / z2, bottom),
+                tree.points, -1, y, z2, tile);
+        }
+
+        return tile.features.length ? tile : null;
+    }
+
+    getClusterExpansionZoom(clusterId) {
+        let expansionZoom = this._getOriginZoom(clusterId) - 1;
+        while (expansionZoom <= this.options.maxZoom) {
+            const children = this.getChildren(clusterId);
+            expansionZoom++;
+            if (children.length !== 1) break;
+            clusterId = children[0].properties.cluster_id;
+        }
+        return expansionZoom;
+    }
+
+    _appendLeaves(result, clusterId, limit, offset, skipped) {
+        const children = this.getChildren(clusterId);
+
+        for (const child of children) {
+            const props = child.properties;
+
+            if (props && props.cluster) {
+                if (skipped + props.point_count <= offset) {
+                    // skip the whole cluster
+                    skipped += props.point_count;
+                } else {
+                    // enter the cluster
+                    skipped = this._appendLeaves(result, props.cluster_id, limit, offset, skipped);
+                    // exit the cluster
+                }
+            } else if (skipped < offset) {
+                // skip a single point
+                skipped++;
+            } else {
+                // add a single point
+                result.push(child);
+            }
+            if (result.length === limit) break;
+        }
+
+        return skipped;
+    }
+
+    _addTileFeatures(ids, points, x, y, z2, tile) {
+        for (const i of ids) {
+            const c = points[i];
+            const isCluster = c.numPoints;
+
+            let tags, px, py;
+            if (isCluster) {
+                tags = getClusterProperties(c);
+                px = c.x;
+                py = c.y;
+            } else {
+                const p = this.points[c.index];
+                tags = p.properties;
+                px = lngX(p.geometry.coordinates[0]);
+                py = latY(p.geometry.coordinates[1]);
+            }
+
+            const f = {
+                type: 1,
+                geometry: [[
+                    Math.round(this.options.extent * (px * z2 - x)),
+                    Math.round(this.options.extent * (py * z2 - y))
+                ]],
+                tags
+            };
+
+            // assign id
+            let id;
+            if (isCluster) {
+                id = c.id;
+            } else if (this.options.generateId) {
+                // optionally generate id
+                id = c.index;
+            } else if (this.points[c.index].id) {
+                // keep id if already assigned
+                id = this.points[c.index].id;
+            }
+
+            if (id !== undefined) f.id = id;
+
+            tile.features.push(f);
+        }
+    }
+
+    _limitZoom(z) {
+        return Math.max(this.options.minZoom, Math.min(+z, this.options.maxZoom + 1));
+    }
+
+    _cluster(points, zoom) {
+        const clusters = [];
+        const {radius, extent, reduce, minPoints} = this.options;
+        const r = radius / (extent * Math.pow(2, zoom));
+
+        // loop through each point
+        for (let i = 0; i < points.length; i++) {
+            const p = points[i];
+            // if we've already visited the point at this zoom level, skip it
+            if (p.zoom <= zoom) continue;
+            p.zoom = zoom;
+
+            // find all nearby points
+            const tree = this.trees[zoom + 1];
+            const neighborIds = tree.within(p.x, p.y, r);
+
+            const numPointsOrigin = p.numPoints || 1;
+            let numPoints = numPointsOrigin;
+
+            // count the number of points in a potential cluster
+            for (const neighborId of neighborIds) {
+                const b = tree.points[neighborId];
+                // filter out neighbors that are already processed
+                if (b.zoom > zoom) numPoints += b.numPoints || 1;
+            }
+
+            // if there were neighbors to merge, and there are enough points to form a cluster
+            if (numPoints > numPointsOrigin && numPoints >= minPoints) {
+                let wx = p.x * numPointsOrigin;
+                let wy = p.y * numPointsOrigin;
+
+                let clusterProperties = reduce && numPointsOrigin > 1 ? this._map(p, true) : null;
+
+                // encode both zoom and point index on which the cluster originated -- offset by total length of features
+                const id = (i << 5) + (zoom + 1) + this.points.length;
+
+                for (const neighborId of neighborIds) {
+                    const b = tree.points[neighborId];
+
+                    if (b.zoom <= zoom) continue;
+                    b.zoom = zoom; // save the zoom (so it doesn't get processed twice)
+
+                    const numPoints2 = b.numPoints || 1;
+                    wx += b.x * numPoints2; // accumulate coordinates for calculating weighted center
+                    wy += b.y * numPoints2;
+
+                    b.parentId = id;
+
+                    if (reduce) {
+                        if (!clusterProperties) clusterProperties = this._map(p, true);
+                        reduce(clusterProperties, this._map(b));
+                    }
+                }
+
+                p.parentId = id;
+                clusters.push(createCluster(wx / numPoints, wy / numPoints, id, numPoints, clusterProperties));
+
+            } else { // left points as unclustered
+                clusters.push(p);
+
+                if (numPoints > 1) {
+                    for (const neighborId of neighborIds) {
+                        const b = tree.points[neighborId];
+                        if (b.zoom <= zoom) continue;
+                        b.zoom = zoom;
+                        clusters.push(b);
+                    }
+                }
+            }
+        }
+
+        return clusters;
+    }
+
+    // get index of the point from which the cluster originated
+    _getOriginId(clusterId) {
+        return (clusterId - this.points.length) >> 5;
+    }
+
+    // get zoom of the point from which the cluster originated
+    _getOriginZoom(clusterId) {
+        return (clusterId - this.points.length) % 32;
+    }
+
+    _map(point, clone) {
+        if (point.numPoints) {
+            return clone ? extend$1({}, point.properties) : point.properties;
+        }
+        const original = this.points[point.index].properties;
+        const result = this.options.map(original);
+        return clone && result === original ? extend$1({}, result) : result;
+    }
+}
+
+function createCluster(x, y, id, numPoints, properties) {
+    return {
+        x: fround(x), // weighted cluster center; round for consistency with Float32Array index
+        y: fround(y),
+        zoom: Infinity, // the last zoom the cluster was processed at
+        id, // encodes index of the first child of the cluster and its zoom level
+        parentId: -1, // parent cluster id
+        numPoints,
+        properties
     };
 }
-// src/entities/sorted_state_adapter.ts
-function createSortedStateAdapter(selectId, sort) {
-    var _c = createUnsortedStateAdapter(selectId), removeOne = _c.removeOne, removeMany = _c.removeMany, removeAll = _c.removeAll;
-    function addOneMutably(entity, state) {
-        return addManyMutably([entity], state);
-    }
-    function addManyMutably(newEntities, state) {
-        newEntities = ensureEntitiesArray(newEntities);
-        var models = newEntities.filter(function (model) { return !(selectIdValue(model, selectId) in state.entities); });
-        if (models.length !== 0) {
-            merge(models, state);
+
+function createPointCluster(p, id) {
+    const [x, y] = p.geometry.coordinates;
+    return {
+        x: fround(lngX(x)), // projected point coordinates
+        y: fround(latY(y)),
+        zoom: Infinity, // the last zoom the point was processed at
+        index: id, // index of the source feature in the original input array,
+        parentId: -1 // parent cluster id
+    };
+}
+
+function getClusterJSON(cluster) {
+    return {
+        type: 'Feature',
+        id: cluster.id,
+        properties: getClusterProperties(cluster),
+        geometry: {
+            type: 'Point',
+            coordinates: [xLng(cluster.x), yLat(cluster.y)]
         }
+    };
+}
+
+function getClusterProperties(cluster) {
+    const count = cluster.numPoints;
+    const abbrev =
+        count >= 10000 ? `${Math.round(count / 1000)  }k` :
+        count >= 1000 ? `${Math.round(count / 100) / 10  }k` : count;
+    return extend$1(extend$1({}, cluster.properties), {
+        cluster: true,
+        cluster_id: cluster.id,
+        point_count: count,
+        point_count_abbreviated: abbrev
+    });
+}
+
+// longitude/latitude to spherical mercator in [0..1] range
+function lngX(lng) {
+    return lng / 360 + 0.5;
+}
+function latY(lat) {
+    const sin = Math.sin(lat * Math.PI / 180);
+    const y = (0.5 - 0.25 * Math.log((1 + sin) / (1 - sin)) / Math.PI);
+    return y < 0 ? 0 : y > 1 ? 1 : y;
+}
+
+// spherical mercator to longitude/latitude
+function xLng(x) {
+    return (x - 0.5) * 360;
+}
+function yLat(y) {
+    const y2 = (180 - y * 360) * Math.PI / 180;
+    return 360 * Math.atan(Math.exp(y2)) / Math.PI - 90;
+}
+
+function extend$1(dest, src) {
+    for (const id in src) dest[id] = src[id];
+    return dest;
+}
+
+function getX(p) {
+    return p.x;
+}
+function getY(p) {
+    return p.y;
+}
+
+// do not edit .js files directly - edit src/index.jst
+
+
+
+var fastDeepEqual = function equal(a, b) {
+  if (a === b) return true;
+
+  if (a && b && typeof a == 'object' && typeof b == 'object') {
+    if (a.constructor !== b.constructor) return false;
+
+    var length, i, keys;
+    if (Array.isArray(a)) {
+      length = a.length;
+      if (length != b.length) return false;
+      for (i = length; i-- !== 0;)
+        if (!equal(a[i], b[i])) return false;
+      return true;
     }
-    function setOneMutably(entity, state) {
-        return setManyMutably([entity], state);
+
+
+
+    if (a.constructor === RegExp) return a.source === b.source && a.flags === b.flags;
+    if (a.valueOf !== Object.prototype.valueOf) return a.valueOf() === b.valueOf();
+    if (a.toString !== Object.prototype.toString) return a.toString() === b.toString();
+
+    keys = Object.keys(a);
+    length = keys.length;
+    if (length !== Object.keys(b).length) return false;
+
+    for (i = length; i-- !== 0;)
+      if (!Object.prototype.hasOwnProperty.call(b, keys[i])) return false;
+
+    for (i = length; i-- !== 0;) {
+      var key = keys[i];
+
+      if (!equal(a[key], b[key])) return false;
     }
-    function setManyMutably(newEntities, state) {
-        newEntities = ensureEntitiesArray(newEntities);
-        if (newEntities.length !== 0) {
-            merge(newEntities, state);
+
+    return true;
+  }
+
+  // true if both NaN, false otherwise
+  return a!==a && b!==b;
+};
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
         }
-    }
-    function setAllMutably(newEntities, state) {
-        newEntities = ensureEntitiesArray(newEntities);
-        state.entities = {};
-        state.ids = [];
-        addManyMutably(newEntities, state);
-    }
-    function updateOneMutably(update, state) {
-        return updateManyMutably([update], state);
-    }
-    function takeUpdatedModel(models, update, state) {
-        if (!(update.id in state.entities)) {
-            return false;
-        }
-        var original2 = state.entities[update.id];
-        var updated = Object.assign({}, original2, update.changes);
-        var newKey = selectIdValue(updated, selectId);
-        delete state.entities[update.id];
-        models.push(updated);
-        return newKey !== update.id;
-    }
-    function updateManyMutably(updates, state) {
-        var models = [];
-        updates.forEach(function (update) { return takeUpdatedModel(models, update, state); });
-        if (models.length !== 0) {
-            merge(models, state);
-        }
-    }
-    function upsertOneMutably(entity, state) {
-        return upsertManyMutably([entity], state);
-    }
-    function upsertManyMutably(newEntities, state) {
-        var _c = splitAddedUpdatedEntities(newEntities, selectId, state), added = _c[0], updated = _c[1];
-        updateManyMutably(updated, state);
-        addManyMutably(added, state);
-    }
-    function areArraysEqual(a, b) {
-        if (a.length !== b.length) {
-            return false;
-        }
-        for (var i = 0; i < a.length && i < b.length; i++) {
-            if (a[i] === b[i]) {
-                continue;
+    return t;
+}
+
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+class Cluster {
+    constructor({ markers, position }) {
+        this.markers = markers;
+        if (position) {
+            if (position instanceof google.maps.LatLng) {
+                this._position = position;
             }
+            else {
+                this._position = new google.maps.LatLng(position);
+            }
+        }
+    }
+    get bounds() {
+        if (this.markers.length === 0 && !this._position) {
+            return undefined;
+        }
+        return this.markers.reduce((bounds, marker) => {
+            return bounds.extend(marker.getPosition());
+        }, new google.maps.LatLngBounds(this._position, this._position));
+    }
+    get position() {
+        return this._position || this.bounds.getCenter();
+    }
+    /**
+     * Get the count of **visible** markers.
+     */
+    get count() {
+        return this.markers.filter((m) => m.getVisible())
+            .length;
+    }
+    /**
+     * Add a marker to the cluster.
+     */
+    push(marker) {
+        this.markers.push(marker);
+    }
+    /**
+     * Cleanup references and remove marker from map.
+     */
+    delete() {
+        if (this.marker) {
+            this.marker.setMap(null);
+            delete this.marker;
+        }
+        this.markers.length = 0;
+    }
+}
+
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+const filterMarkersToPaddedViewport = (map, mapCanvasProjection, markers, viewportPadding) => {
+    const extendedMapBounds = extendBoundsToPaddedViewport(map.getBounds(), mapCanvasProjection, viewportPadding);
+    return markers.filter((marker) => extendedMapBounds.contains(marker.getPosition()));
+};
+/**
+ * Extends a bounds by a number of pixels in each direction.
+ */
+const extendBoundsToPaddedViewport = (bounds, projection, pixels) => {
+    const { northEast, southWest } = latLngBoundsToPixelBounds(bounds, projection);
+    const extendedPixelBounds = extendPixelBounds({ northEast, southWest }, pixels);
+    return pixelBoundsToLatLngBounds(extendedPixelBounds, projection);
+};
+/**
+ * @hidden
+ */
+const distanceBetweenPoints = (p1, p2) => {
+    const R = 6371; // Radius of the Earth in km
+    const dLat = ((p2.lat - p1.lat) * Math.PI) / 180;
+    const dLon = ((p2.lng - p1.lng) * Math.PI) / 180;
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos((p1.lat * Math.PI) / 180) *
+            Math.cos((p2.lat * Math.PI) / 180) *
+            Math.sin(dLon / 2) *
+            Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+};
+/**
+ * @hidden
+ */
+const latLngBoundsToPixelBounds = (bounds, projection) => {
+    return {
+        northEast: projection.fromLatLngToDivPixel(bounds.getNorthEast()),
+        southWest: projection.fromLatLngToDivPixel(bounds.getSouthWest()),
+    };
+};
+/**
+ * @hidden
+ */
+const extendPixelBounds = ({ northEast, southWest }, pixels) => {
+    northEast.x += pixels;
+    northEast.y -= pixels;
+    southWest.x -= pixels;
+    southWest.y += pixels;
+    return { northEast, southWest };
+};
+/**
+ * @hidden
+ */
+const pixelBoundsToLatLngBounds = ({ northEast, southWest }, projection) => {
+    const bounds = new google.maps.LatLngBounds();
+    bounds.extend(projection.fromDivPixelToLatLng(northEast));
+    bounds.extend(projection.fromDivPixelToLatLng(southWest));
+    return bounds;
+};
+
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * @hidden
+ */
+class AbstractAlgorithm {
+    constructor({ maxZoom = 16 }) {
+        this.maxZoom = maxZoom;
+    }
+    /**
+     * Helper function to bypass clustering based upon some map state such as
+     * zoom, number of markers, etc.
+     *
+     * ```typescript
+     *  cluster({markers, map}: AlgorithmInput): Cluster[] {
+     *    if (shouldBypassClustering(map)) {
+     *      return this.noop({markers, map})
+     *    }
+     * }
+     * ```
+     */
+    noop({ markers }) {
+        return noop$1(markers);
+    }
+}
+/**
+ * Abstract viewport algorithm proves a class to filter markers by a padded
+ * viewport. This is a common optimization.
+ *
+ * @hidden
+ */
+class AbstractViewportAlgorithm extends AbstractAlgorithm {
+    constructor(_a) {
+        var { viewportPadding = 60 } = _a, options = __rest(_a, ["viewportPadding"]);
+        super(options);
+        this.viewportPadding = 60;
+        this.viewportPadding = viewportPadding;
+    }
+    calculate({ markers, map, mapCanvasProjection, }) {
+        if (map.getZoom() >= this.maxZoom) {
+            return {
+                clusters: this.noop({
+                    markers,
+                    map,
+                    mapCanvasProjection,
+                }),
+                changed: false,
+            };
+        }
+        return {
+            clusters: this.cluster({
+                markers: filterMarkersToPaddedViewport(map, mapCanvasProjection, markers, this.viewportPadding),
+                map,
+                mapCanvasProjection,
+            }),
+        };
+    }
+}
+/**
+ * @hidden
+ */
+const noop$1 = (markers) => {
+    const clusters = markers.map((marker) => new Cluster({
+        position: marker.getPosition(),
+        markers: [marker],
+    }));
+    return clusters;
+};
+
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * The default Grid algorithm historically used in Google Maps marker
+ * clustering.
+ *
+ * The Grid algorithm does not implement caching and markers may flash as the
+ * viewport changes. Instead use {@link SuperClusterAlgorithm}.
+ */
+class GridAlgorithm extends AbstractViewportAlgorithm {
+    constructor(_a) {
+        var { maxDistance = 40000, gridSize = 40 } = _a, options = __rest(_a, ["maxDistance", "gridSize"]);
+        super(options);
+        this.clusters = [];
+        this.maxDistance = maxDistance;
+        this.gridSize = gridSize;
+    }
+    cluster({ markers, map, mapCanvasProjection, }) {
+        this.clusters = [];
+        markers.forEach((marker) => {
+            this.addToClosestCluster(marker, map, mapCanvasProjection);
+        });
+        return this.clusters;
+    }
+    addToClosestCluster(marker, map, projection) {
+        let maxDistance = this.maxDistance; // Some large number
+        let cluster = null;
+        for (let i = 0; i < this.clusters.length; i++) {
+            const candidate = this.clusters[i];
+            const distance = distanceBetweenPoints(candidate.bounds.getCenter().toJSON(), marker.getPosition().toJSON());
+            if (distance < maxDistance) {
+                maxDistance = distance;
+                cluster = candidate;
+            }
+        }
+        if (cluster &&
+            extendBoundsToPaddedViewport(cluster.bounds, projection, this.gridSize).contains(marker.getPosition())) {
+            cluster.push(marker);
+        }
+        else {
+            const cluster = new Cluster({ markers: [marker] });
+            this.clusters.push(cluster);
+        }
+    }
+}
+
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * Noop algorithm does not generate any clusters or filter markers by the an extended viewport.
+ */
+class NoopAlgorithm extends AbstractAlgorithm {
+    constructor(_a) {
+        var options = __rest(_a, []);
+        super(options);
+    }
+    calculate({ markers, map, mapCanvasProjection, }) {
+        return {
+            clusters: this.cluster({ markers, map, mapCanvasProjection }),
+            changed: false,
+        };
+    }
+    cluster(input) {
+        return this.noop(input);
+    }
+}
+
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * A very fast JavaScript algorithm for geospatial point clustering using KD trees.
+ *
+ * @see https://www.npmjs.com/package/supercluster for more information on options.
+ */
+class SuperClusterAlgorithm extends AbstractAlgorithm {
+    constructor(_a) {
+        var { maxZoom, radius = 60 } = _a, options = __rest(_a, ["maxZoom", "radius"]);
+        super({ maxZoom });
+        this.superCluster = new Supercluster(Object.assign({ maxZoom: this.maxZoom, radius }, options));
+        this.state = { zoom: null };
+    }
+    calculate(input) {
+        let changed = false;
+        if (!fastDeepEqual(input.markers, this.markers)) {
+            changed = true;
+            // TODO use proxy to avoid copy?
+            this.markers = [...input.markers];
+            const points = this.markers.map((marker) => {
+                return {
+                    type: "Feature",
+                    geometry: {
+                        type: "Point",
+                        coordinates: [
+                            marker.getPosition().lng(),
+                            marker.getPosition().lat(),
+                        ],
+                    },
+                    properties: { marker },
+                };
+            });
+            this.superCluster.load(points);
+        }
+        const state = { zoom: input.map.getZoom() };
+        if (!changed) {
+            if (this.state.zoom > this.maxZoom && state.zoom > this.maxZoom) ;
+            else {
+                changed = changed || !fastDeepEqual(this.state, state);
+            }
+        }
+        this.state = state;
+        if (changed) {
+            this.clusters = this.cluster(input);
+        }
+        return { clusters: this.clusters, changed };
+    }
+    cluster({ map }) {
+        return this.superCluster
+            .getClusters([-180, -90, 180, 90], Math.round(map.getZoom()))
+            .map(this.transformCluster.bind(this));
+    }
+    transformCluster({ geometry: { coordinates: [lng, lat], }, properties, }) {
+        if (properties.cluster) {
+            return new Cluster({
+                markers: this.superCluster
+                    .getLeaves(properties.cluster_id, Infinity)
+                    .map((leaf) => leaf.properties.marker),
+                position: new google.maps.LatLng({ lat, lng }),
+            });
+        }
+        else {
+            const marker = properties.marker;
+            return new Cluster({
+                markers: [marker],
+                position: marker.getPosition(),
+            });
+        }
+    }
+}
+
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * Provides statistics on all clusters in the current render cycle for use in {@link Renderer.render}.
+ */
+class ClusterStats {
+    constructor(markers, clusters) {
+        this.markers = { sum: markers.length };
+        const clusterMarkerCounts = clusters.map((a) => a.count);
+        const clusterMarkerSum = clusterMarkerCounts.reduce((a, b) => a + b, 0);
+        this.clusters = {
+            count: clusters.length,
+            markers: {
+                mean: clusterMarkerSum / clusters.length,
+                sum: clusterMarkerSum,
+                min: Math.min(...clusterMarkerCounts),
+                max: Math.max(...clusterMarkerCounts),
+            },
+        };
+    }
+}
+class DefaultRenderer {
+    /**
+     * The default render function for the library used by {@link MarkerClusterer}.
+     *
+     * Currently set to use the following:
+     *
+     * ```typescript
+     * // change color if this cluster has more markers than the mean cluster
+     * const color =
+     *   count > Math.max(10, stats.clusters.markers.mean)
+     *     ? "#ff0000"
+     *     : "#0000ff";
+     *
+     * // create svg url with fill color
+     * const svg = window.btoa(`
+     * <svg fill="${color}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+     *   <circle cx="120" cy="120" opacity=".6" r="70" />
+     *   <circle cx="120" cy="120" opacity=".3" r="90" />
+     *   <circle cx="120" cy="120" opacity=".2" r="110" />
+     *   <circle cx="120" cy="120" opacity=".1" r="130" />
+     * </svg>`);
+     *
+     * // create marker using svg icon
+     * return new google.maps.Marker({
+     *   position,
+     *   icon: {
+     *     url: `data:image/svg+xml;base64,${svg}`,
+     *     scaledSize: new google.maps.Size(45, 45),
+     *   },
+     *   label: {
+     *     text: String(count),
+     *     color: "rgba(255,255,255,0.9)",
+     *     fontSize: "12px",
+     *   },
+     *   // adjust zIndex to be above other markers
+     *   zIndex: 1000 + count,
+     * });
+     * ```
+     */
+    render({ count, position }, stats) {
+        // change color if this cluster has more markers than the mean cluster
+        const color = count > Math.max(10, stats.clusters.markers.mean) ? "#ff0000" : "#0000ff";
+        // create svg url with fill color
+        const svg = window.btoa(`
+  <svg fill="${color}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+    <circle cx="120" cy="120" opacity=".6" r="70" />
+    <circle cx="120" cy="120" opacity=".3" r="90" />
+    <circle cx="120" cy="120" opacity=".2" r="110" />
+  </svg>`);
+        // create marker using svg icon
+        return new google.maps.Marker({
+            position,
+            icon: {
+                url: `data:image/svg+xml;base64,${svg}`,
+                scaledSize: new google.maps.Size(45, 45),
+            },
+            label: {
+                text: String(count),
+                color: "rgba(255,255,255,0.9)",
+                fontSize: "12px",
+            },
+            title: `Cluster of ${count} markers`,
+            // adjust zIndex to be above other markers
+            zIndex: Number(google.maps.Marker.MAX_ZINDEX) + count,
+        });
+    }
+}
+
+/**
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * Extends an object's prototype by another's.
+ *
+ * @param type1 The Type to be extended.
+ * @param type2 The Type to extend with.
+ * @ignore
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function extend(type1, type2) {
+    /* istanbul ignore next */
+    // eslint-disable-next-line prefer-const
+    for (let property in type2.prototype) {
+        type1.prototype[property] = type2.prototype[property];
+    }
+}
+/**
+ * @ignore
+ */
+class OverlayViewSafe {
+    constructor() {
+        // MarkerClusterer implements google.maps.OverlayView interface. We use the
+        // extend function to extend MarkerClusterer with google.maps.OverlayView
+        // because it might not always be available when the code is defined so we
+        // look for it at the last possible moment. If it doesn't exist now then
+        // there is no point going ahead :)
+        extend(OverlayViewSafe, google.maps.OverlayView);
+    }
+}
+
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+var MarkerClustererEvents;
+(function (MarkerClustererEvents) {
+    MarkerClustererEvents["CLUSTERING_BEGIN"] = "clusteringbegin";
+    MarkerClustererEvents["CLUSTERING_END"] = "clusteringend";
+    MarkerClustererEvents["CLUSTER_CLICK"] = "click";
+})(MarkerClustererEvents || (MarkerClustererEvents = {}));
+const defaultOnClusterClickHandler = (_, cluster, map) => {
+    map.fitBounds(cluster.bounds);
+};
+/**
+ * MarkerClusterer creates and manages per-zoom-level clusters for large amounts
+ * of markers. See {@link MarkerClustererOptions} for more details.
+ *
+ */
+class MarkerClusterer extends OverlayViewSafe {
+    constructor({ map, markers = [], algorithm = new SuperClusterAlgorithm({}), renderer = new DefaultRenderer(), onClusterClick = defaultOnClusterClickHandler, }) {
+        super();
+        this.markers = [...markers];
+        this.clusters = [];
+        this.algorithm = algorithm;
+        this.renderer = renderer;
+        this.onClusterClick = onClusterClick;
+        if (map) {
+            this.setMap(map);
+        }
+    }
+    addMarker(marker, noDraw) {
+        if (this.markers.includes(marker)) {
+            return;
+        }
+        this.markers.push(marker);
+        if (!noDraw) {
+            this.render();
+        }
+    }
+    addMarkers(markers, noDraw) {
+        markers.forEach((marker) => {
+            this.addMarker(marker, true);
+        });
+        if (!noDraw) {
+            this.render();
+        }
+    }
+    removeMarker(marker, noDraw) {
+        const index = this.markers.indexOf(marker);
+        if (index === -1) {
+            // Marker is not in our list of markers, so do nothing:
             return false;
+        }
+        marker.setMap(null);
+        this.markers.splice(index, 1); // Remove the marker from the list of managed markers
+        if (!noDraw) {
+            this.render();
         }
         return true;
     }
-    function merge(models, state) {
-        models.forEach(function (model) {
-            state.entities[selectId(model)] = model;
+    removeMarkers(markers, noDraw) {
+        let removed = false;
+        markers.forEach((marker) => {
+            removed = this.removeMarker(marker, true) || removed;
         });
-        var allEntities = Object.values(state.entities);
-        allEntities.sort(sort);
-        var newSortedIds = allEntities.map(selectId);
-        var ids = state.ids;
-        if (!areArraysEqual(ids, newSortedIds)) {
-            state.ids = newSortedIds;
+        if (removed && !noDraw) {
+            this.render();
+        }
+        return removed;
+    }
+    clearMarkers(noDraw) {
+        this.markers.length = 0;
+        if (!noDraw) {
+            this.render();
         }
     }
-    return {
-        removeOne: removeOne,
-        removeMany: removeMany,
-        removeAll: removeAll,
-        addOne: createStateOperator(addOneMutably),
-        updateOne: createStateOperator(updateOneMutably),
-        upsertOne: createStateOperator(upsertOneMutably),
-        setOne: createStateOperator(setOneMutably),
-        setMany: createStateOperator(setManyMutably),
-        setAll: createStateOperator(setAllMutably),
-        addMany: createStateOperator(addManyMutably),
-        updateMany: createStateOperator(updateManyMutably),
-        upsertMany: createStateOperator(upsertManyMutably)
-    };
-}
-// src/entities/create_adapter.ts
-function createEntityAdapter(options) {
-    if (options === void 0) { options = {}; }
-    var _c = __spreadValues({
-        sortComparer: false,
-        selectId: function (instance) { return instance.id; }
-    }, options), selectId = _c.selectId, sortComparer = _c.sortComparer;
-    var stateFactory = createInitialStateFactory();
-    var selectorsFactory = createSelectorsFactory();
-    var stateAdapter = sortComparer ? createSortedStateAdapter(selectId, sortComparer) : createUnsortedStateAdapter(selectId);
-    return __spreadValues(__spreadValues(__spreadValues({
-        selectId: selectId,
-        sortComparer: sortComparer
-    }, stateFactory), selectorsFactory), stateAdapter);
-}
-// src/nanoid.ts
-var urlAlphabet = "ModuleSymbhasOwnPr-0123456789ABCDEFGHNRVfgctiUvz_KqYTJkLxpZXIjQW";
-var nanoid = function (size) {
-    if (size === void 0) { size = 21; }
-    var id = "";
-    var i = size;
-    while (i--) {
-        id += urlAlphabet[Math.random() * 64 | 0];
-    }
-    return id;
-};
-// src/createAsyncThunk.ts
-var commonProperties = [
-    "name",
-    "message",
-    "stack",
-    "code"
-];
-var RejectWithValue = /** @class */ (function () {
-    function RejectWithValue(payload, meta) {
-        this.payload = payload;
-        this.meta = meta;
-    }
-    return RejectWithValue;
-}());
-var FulfillWithMeta = /** @class */ (function () {
-    function FulfillWithMeta(payload, meta) {
-        this.payload = payload;
-        this.meta = meta;
-    }
-    return FulfillWithMeta;
-}());
-var miniSerializeError = function (value) {
-    if (typeof value === "object" && value !== null) {
-        var simpleError = {};
-        for (var _i = 0, commonProperties_1 = commonProperties; _i < commonProperties_1.length; _i++) {
-            var property = commonProperties_1[_i];
-            if (typeof value[property] === "string") {
-                simpleError[property] = value[property];
-            }
-        }
-        return simpleError;
-    }
-    return { message: String(value) };
-};
-function createAsyncThunk(typePrefix, payloadCreator, options) {
-    var fulfilled = createAction(typePrefix + "/fulfilled", function (payload, requestId, arg, meta) { return ({
-        payload: payload,
-        meta: __spreadProps(__spreadValues({}, meta || {}), {
-            arg: arg,
-            requestId: requestId,
-            requestStatus: "fulfilled"
-        })
-    }); });
-    var pending = createAction(typePrefix + "/pending", function (requestId, arg, meta) { return ({
-        payload: void 0,
-        meta: __spreadProps(__spreadValues({}, meta || {}), {
-            arg: arg,
-            requestId: requestId,
-            requestStatus: "pending"
-        })
-    }); });
-    var rejected = createAction(typePrefix + "/rejected", function (error, requestId, arg, payload, meta) { return ({
-        payload: payload,
-        error: (options && options.serializeError || miniSerializeError)(error || "Rejected"),
-        meta: __spreadProps(__spreadValues({}, meta || {}), {
-            arg: arg,
-            requestId: requestId,
-            rejectedWithValue: !!payload,
-            requestStatus: "rejected",
-            aborted: (error == null ? void 0 : error.name) === "AbortError",
-            condition: (error == null ? void 0 : error.name) === "ConditionError"
-        })
-    }); });
-    var displayedWarning = false;
-    var AC = typeof AbortController !== "undefined" ? AbortController : /** @class */ (function () {
-        function class_1() {
-            this.signal = {
-                aborted: false,
-                addEventListener: function () {
-                },
-                dispatchEvent: function () {
-                    return false;
-                },
-                onabort: function () {
-                },
-                removeEventListener: function () {
-                }
-            };
-        }
-        class_1.prototype.abort = function () {
-            if (true) {
-                if (!displayedWarning) {
-                    displayedWarning = true;
-                    console.info("This platform does not implement AbortController. \nIf you want to use the AbortController to react to `abort` events, please consider importing a polyfill like 'abortcontroller-polyfill/dist/abortcontroller-polyfill-only'.");
-                }
-            }
-        };
-        return class_1;
-    }());
-    function actionCreator(arg) {
-        return function (dispatch, getState, extra) {
-            var requestId = (options == null ? void 0 : options.idGenerator) ? options.idGenerator(arg) : nanoid();
-            var abortController = new AC();
-            var abortReason;
-            var abortedPromise = new Promise(function (_, reject) { return abortController.signal.addEventListener("abort", function () { return reject({ name: "AbortError", message: abortReason || "Aborted" }); }); });
-            var started = false;
-            function abort(reason) {
-                if (started) {
-                    abortReason = reason;
-                    abortController.abort();
-                }
-            }
-            var promise = function () {
-                return __async(this, null, function () {
-                    var _a, _b, finalAction, conditionResult, err_1, skipDispatch;
-                    return __generator(this, function (_c) {
-                        switch (_c.label) {
-                            case 0:
-                                _c.trys.push([0, 4, , 5]);
-                                conditionResult = (_a = options == null ? void 0 : options.condition) == null ? void 0 : _a.call(options, arg, { getState: getState, extra: extra });
-                                if (!isThenable(conditionResult)) return [3 /*break*/, 2];
-                                return [4 /*yield*/, conditionResult];
-                            case 1:
-                                conditionResult = _c.sent();
-                                _c.label = 2;
-                            case 2:
-                                if (conditionResult === false) {
-                                    throw {
-                                        name: "ConditionError",
-                                        message: "Aborted due to condition callback returning false."
-                                    };
-                                }
-                                started = true;
-                                dispatch(pending(requestId, arg, (_b = options == null ? void 0 : options.getPendingMeta) == null ? void 0 : _b.call(options, { requestId: requestId, arg: arg }, { getState: getState, extra: extra })));
-                                return [4 /*yield*/, Promise.race([
-                                        abortedPromise,
-                                        Promise.resolve(payloadCreator(arg, {
-                                            dispatch: dispatch,
-                                            getState: getState,
-                                            extra: extra,
-                                            requestId: requestId,
-                                            signal: abortController.signal,
-                                            rejectWithValue: function (value, meta) {
-                                                return new RejectWithValue(value, meta);
-                                            },
-                                            fulfillWithValue: function (value, meta) {
-                                                return new FulfillWithMeta(value, meta);
-                                            }
-                                        })).then(function (result) {
-                                            if (result instanceof RejectWithValue) {
-                                                throw result;
-                                            }
-                                            if (result instanceof FulfillWithMeta) {
-                                                return fulfilled(result.payload, requestId, arg, result.meta);
-                                            }
-                                            return fulfilled(result, requestId, arg);
-                                        })
-                                    ])];
-                            case 3:
-                                finalAction = _c.sent();
-                                return [3 /*break*/, 5];
-                            case 4:
-                                err_1 = _c.sent();
-                                finalAction = err_1 instanceof RejectWithValue ? rejected(null, requestId, arg, err_1.payload, err_1.meta) : rejected(err_1, requestId, arg);
-                                return [3 /*break*/, 5];
-                            case 5:
-                                skipDispatch = options && !options.dispatchConditionRejection && rejected.match(finalAction) && finalAction.meta.condition;
-                                if (!skipDispatch) {
-                                    dispatch(finalAction);
-                                }
-                                return [2 /*return*/, finalAction];
-                        }
-                    });
-                });
-            }();
-            return Object.assign(promise, {
-                abort: abort,
-                requestId: requestId,
-                arg: arg,
-                unwrap: function () {
-                    return promise.then(unwrapResult);
-                }
+    /**
+     * Recalculates and draws all the marker clusters.
+     */
+    render() {
+        const map = this.getMap();
+        if (map instanceof google.maps.Map && this.getProjection()) {
+            google.maps.event.trigger(this, MarkerClustererEvents.CLUSTERING_BEGIN, this);
+            const { clusters, changed } = this.algorithm.calculate({
+                markers: this.markers,
+                map,
+                mapCanvasProjection: this.getProjection(),
             });
-        };
-    }
-    return Object.assign(actionCreator, {
-        pending: pending,
-        rejected: rejected,
-        fulfilled: fulfilled,
-        typePrefix: typePrefix
-    });
-}
-function unwrapResult(action) {
-    if (action.meta && action.meta.rejectedWithValue) {
-        throw action.payload;
-    }
-    if (action.error) {
-        throw action.error;
-    }
-    return action.payload;
-}
-function isThenable(value) {
-    return value !== null && typeof value === "object" && typeof value.then === "function";
-}
-// src/tsHelpers.ts
-var hasMatchFunction = function (v) {
-    return v && typeof v.match === "function";
-};
-// src/matchers.ts
-var matches = function (matcher, action) {
-    if (hasMatchFunction(matcher)) {
-        return matcher.match(action);
-    }
-    else {
-        return matcher(action);
-    }
-};
-function isAnyOf() {
-    var matchers = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        matchers[_i] = arguments[_i];
-    }
-    return function (action) {
-        return matchers.some(function (matcher) { return matches(matcher, action); });
-    };
-}
-function isAllOf() {
-    var matchers = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        matchers[_i] = arguments[_i];
-    }
-    return function (action) {
-        return matchers.every(function (matcher) { return matches(matcher, action); });
-    };
-}
-function hasExpectedRequestMetadata(action, validStatus) {
-    if (!action || !action.meta)
-        return false;
-    var hasValidRequestId = typeof action.meta.requestId === "string";
-    var hasValidRequestStatus = validStatus.indexOf(action.meta.requestStatus) > -1;
-    return hasValidRequestId && hasValidRequestStatus;
-}
-function isAsyncThunkArray(a) {
-    return typeof a[0] === "function" && "pending" in a[0] && "fulfilled" in a[0] && "rejected" in a[0];
-}
-function isPending() {
-    var asyncThunks = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        asyncThunks[_i] = arguments[_i];
-    }
-    if (asyncThunks.length === 0) {
-        return function (action) { return hasExpectedRequestMetadata(action, ["pending"]); };
-    }
-    if (!isAsyncThunkArray(asyncThunks)) {
-        return isPending()(asyncThunks[0]);
-    }
-    return function (action) {
-        var matchers = asyncThunks.map(function (asyncThunk) { return asyncThunk.pending; });
-        var combinedMatcher = isAnyOf.apply(void 0, matchers);
-        return combinedMatcher(action);
-    };
-}
-function isRejected() {
-    var asyncThunks = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        asyncThunks[_i] = arguments[_i];
-    }
-    if (asyncThunks.length === 0) {
-        return function (action) { return hasExpectedRequestMetadata(action, ["rejected"]); };
-    }
-    if (!isAsyncThunkArray(asyncThunks)) {
-        return isRejected()(asyncThunks[0]);
-    }
-    return function (action) {
-        var matchers = asyncThunks.map(function (asyncThunk) { return asyncThunk.rejected; });
-        var combinedMatcher = isAnyOf.apply(void 0, matchers);
-        return combinedMatcher(action);
-    };
-}
-function isRejectedWithValue() {
-    var asyncThunks = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        asyncThunks[_i] = arguments[_i];
-    }
-    var hasFlag = function (action) {
-        return action && action.meta && action.meta.rejectedWithValue;
-    };
-    if (asyncThunks.length === 0) {
-        return function (action) {
-            var combinedMatcher = isAllOf(isRejected.apply(void 0, asyncThunks), hasFlag);
-            return combinedMatcher(action);
-        };
-    }
-    if (!isAsyncThunkArray(asyncThunks)) {
-        return isRejectedWithValue()(asyncThunks[0]);
-    }
-    return function (action) {
-        var combinedMatcher = isAllOf(isRejected.apply(void 0, asyncThunks), hasFlag);
-        return combinedMatcher(action);
-    };
-}
-function isFulfilled() {
-    var asyncThunks = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        asyncThunks[_i] = arguments[_i];
-    }
-    if (asyncThunks.length === 0) {
-        return function (action) { return hasExpectedRequestMetadata(action, ["fulfilled"]); };
-    }
-    if (!isAsyncThunkArray(asyncThunks)) {
-        return isFulfilled()(asyncThunks[0]);
-    }
-    return function (action) {
-        var matchers = asyncThunks.map(function (asyncThunk) { return asyncThunk.fulfilled; });
-        var combinedMatcher = isAnyOf.apply(void 0, matchers);
-        return combinedMatcher(action);
-    };
-}
-function isAsyncThunkAction() {
-    var asyncThunks = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        asyncThunks[_i] = arguments[_i];
-    }
-    if (asyncThunks.length === 0) {
-        return function (action) { return hasExpectedRequestMetadata(action, ["pending", "fulfilled", "rejected"]); };
-    }
-    if (!isAsyncThunkArray(asyncThunks)) {
-        return isAsyncThunkAction()(asyncThunks[0]);
-    }
-    return function (action) {
-        var matchers = [];
-        for (var _i = 0, asyncThunks_1 = asyncThunks; _i < asyncThunks_1.length; _i++) {
-            var asyncThunk = asyncThunks_1[_i];
-            matchers.push(asyncThunk.pending, asyncThunk.rejected, asyncThunk.fulfilled);
+            // allow algorithms to return flag on whether the clusters/markers have changed
+            if (changed || changed == undefined) {
+                // reset visibility of markers and clusters
+                this.reset();
+                // store new clusters
+                this.clusters = clusters;
+                this.renderClusters();
+            }
+            google.maps.event.trigger(this, MarkerClustererEvents.CLUSTERING_END, this);
         }
-        var combinedMatcher = isAnyOf.apply(void 0, matchers);
-        return combinedMatcher(action);
-    };
-}
-// src/listenerMiddleware/utils.ts
-var assertFunction = function (func, expected) {
-    if (typeof func !== "function") {
-        throw new TypeError(expected + " is not a function");
     }
-};
-var noop = function () {
-};
-var catchRejection = function (promise, onError) {
-    if (onError === void 0) { onError = noop; }
-    promise.catch(onError);
-    return promise;
-};
-var addAbortSignalListener = function (abortSignal, callback) {
-    abortSignal.addEventListener("abort", callback, { once: true });
-};
-var abortControllerWithReason = function (abortController, reason) {
-    var signal = abortController.signal;
-    if (signal.aborted) {
-        return;
+    onAdd() {
+        this.idleListener = this.getMap().addListener("idle", this.render.bind(this));
+        this.render();
     }
-    if (!("reason" in signal)) {
-        Object.defineProperty(signal, "reason", {
-            enumerable: true,
-            value: reason,
-            configurable: true,
-            writable: true
+    onRemove() {
+        google.maps.event.removeListener(this.idleListener);
+        this.reset();
+    }
+    reset() {
+        this.markers.forEach((marker) => marker.setMap(null));
+        this.clusters.forEach((cluster) => cluster.delete());
+        this.clusters = [];
+    }
+    renderClusters() {
+        // generate stats to pass to renderers
+        const stats = new ClusterStats(this.markers, this.clusters);
+        const map = this.getMap();
+        this.clusters.forEach((cluster) => {
+            if (cluster.markers.length === 1) {
+                cluster.marker = cluster.markers[0];
+            }
+            else {
+                cluster.marker = this.renderer.render(cluster, stats);
+                if (this.onClusterClick) {
+                    cluster.marker.addListener("click", 
+                    /* istanbul ignore next */
+                    (event) => {
+                        google.maps.event.trigger(this, MarkerClustererEvents.CLUSTER_CLICK, cluster);
+                        this.onClusterClick(event, cluster, map);
+                    });
+                }
+            }
+            cluster.marker.setMap(map);
         });
     }
-    ;
-    abortController.abort(reason);
+}
+
+var index_esm = /*#__PURE__*/Object.freeze({
+	__proto__: null,
+	AbstractAlgorithm: AbstractAlgorithm,
+	AbstractViewportAlgorithm: AbstractViewportAlgorithm,
+	Cluster: Cluster,
+	ClusterStats: ClusterStats,
+	DefaultRenderer: DefaultRenderer,
+	GridAlgorithm: GridAlgorithm,
+	MarkerClusterer: MarkerClusterer,
+	get MarkerClustererEvents () { return MarkerClustererEvents; },
+	NoopAlgorithm: NoopAlgorithm,
+	SuperClusterAlgorithm: SuperClusterAlgorithm,
+	defaultOnClusterClickHandler: defaultOnClusterClickHandler,
+	distanceBetweenPoints: distanceBetweenPoints,
+	extendBoundsToPaddedViewport: extendBoundsToPaddedViewport,
+	extendPixelBounds: extendPixelBounds,
+	filterMarkersToPaddedViewport: filterMarkersToPaddedViewport,
+	noop: noop$1,
+	pixelBoundsToLatLngBounds: pixelBoundsToLatLngBounds
+});
+
+function useGoogleMarkerClusterer(options) {
+    const map = useGoogleMap();
+    const [markerClusterer, setMarkerClusterer] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map && markerClusterer === null) {
+            const markerCluster = new MarkerClusterer(Object.assign(Object.assign({}, options), { map }));
+            setMarkerClusterer(markerCluster);
+        }
+    }, [map]);
+    return markerClusterer;
+}
+/** Wrapper around [@googlemaps/markerclusterer](https://github.com/googlemaps/js-markerclusterer)
+ *
+ * Accepts {@link  MarkerClustererOptionsSubset} which is a subset of  {@link MarkerClustererOptions}
+ */
+function GoogleMarkerClusterer({ children, options }) {
+    const markerClusterer = useGoogleMarkerClusterer(options);
+    return markerClusterer !== null ? children(markerClusterer) : null;
+}
+var GoogleMarkerClusterer$1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(GoogleMarkerClusterer);
+
+/* global google */
+const eventMap$c = {
+    onCloseClick: 'closeclick',
+    onContentChanged: 'content_changed',
+    onDomReady: 'domready',
+    onPositionChanged: 'position_changed',
+    onZindexChanged: 'zindex_changed',
 };
-// src/listenerMiddleware/exceptions.ts
-var task = "task";
-var listener = "listener";
-var completed = "completed";
-var cancelled = "cancelled";
-var taskCancelled = "task-" + cancelled;
-var taskCompleted = "task-" + completed;
-var listenerCancelled = listener + "-" + cancelled;
-var listenerCompleted = listener + "-" + completed;
-var TaskAbortError = /** @class */ (function () {
-    function TaskAbortError(code) {
-        this.code = code;
-        this.name = "TaskAbortError";
-        this.message = task + " " + cancelled + " (reason: " + code + ")";
-    }
-    return TaskAbortError;
-}());
-// src/listenerMiddleware/task.ts
-var validateActive = function (signal) {
-    if (signal.aborted) {
-        throw new TaskAbortError(signal.reason);
-    }
+const updaterMap$c = {
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    position(instance, position) {
+        instance.setPosition(position);
+    },
+    zIndex(instance, zIndex) {
+        instance.setZIndex(zIndex);
+    },
 };
-var promisifyAbortSignal = function (signal) {
-    return catchRejection(new Promise(function (_, reject) {
-        var notifyRejection = function () { return reject(new TaskAbortError(signal.reason)); };
-        if (signal.aborted) {
-            notifyRejection();
+function InfoWindowFunctional({ children, anchor, options, position, zIndex, onCloseClick, onDomReady, onContentChanged, onPositionChanged, onZindexChanged, onLoad, onUnmount }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [closeclickListener, setCloseClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [domreadyclickListener, setDomReadyClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [contentchangedclickListener, setContentChangedClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [positionchangedclickListener, setPositionChangedClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [zindexchangedclickListener, setZindexChangedClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const containerElementRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.close();
+            if (anchor) {
+                instance.open(map, anchor);
+            }
+            else if (instance.getPosition()) {
+                instance.open(map);
+            }
+        }
+    }, [map, instance, anchor]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (options && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (position && instance !== null) {
+            instance.setPosition(position);
+        }
+    }, [position]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof zIndex === 'number' && instance !== null) {
+            instance.setZIndex(zIndex);
+        }
+    }, [zIndex]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onCloseClick) {
+            if (closeclickListener !== null) {
+                google.maps.event.removeListener(closeclickListener);
+            }
+            setCloseClickListener(google.maps.event.addListener(instance, 'closeclick', onCloseClick));
+        }
+    }, [onCloseClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDomReady) {
+            if (domreadyclickListener !== null) {
+                google.maps.event.removeListener(domreadyclickListener);
+            }
+            setDomReadyClickListener(google.maps.event.addListener(instance, 'domready', onDomReady));
+        }
+    }, [onDomReady]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onContentChanged) {
+            if (contentchangedclickListener !== null) {
+                google.maps.event.removeListener(contentchangedclickListener);
+            }
+            setContentChangedClickListener(google.maps.event.addListener(instance, 'content_changed', onContentChanged));
+        }
+    }, [onContentChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onPositionChanged) {
+            if (positionchangedclickListener !== null) {
+                google.maps.event.removeListener(positionchangedclickListener);
+            }
+            setPositionChangedClickListener(google.maps.event.addListener(instance, 'position_changed', onPositionChanged));
+        }
+    }, [onPositionChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onZindexChanged) {
+            if (zindexchangedclickListener !== null) {
+                google.maps.event.removeListener(zindexchangedclickListener);
+            }
+            setZindexChangedClickListener(google.maps.event.addListener(instance, 'zindex_changed', onZindexChanged));
+        }
+    }, [onZindexChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const infoWindow = new google.maps.InfoWindow(Object.assign({}, (options || {})));
+        setInstance(infoWindow);
+        containerElementRef.current = document.createElement('div');
+        if (onCloseClick) {
+            setCloseClickListener(google.maps.event.addListener(infoWindow, 'circlecomplete', onCloseClick));
+        }
+        if (onDomReady) {
+            setDomReadyClickListener(google.maps.event.addListener(infoWindow, 'domready', onDomReady));
+        }
+        if (onContentChanged) {
+            setContentChangedClickListener(google.maps.event.addListener(infoWindow, 'content_changed', onContentChanged));
+        }
+        if (onPositionChanged) {
+            setPositionChangedClickListener(google.maps.event.addListener(infoWindow, 'position_changed', onPositionChanged));
+        }
+        if (onZindexChanged) {
+            setZindexChangedClickListener(google.maps.event.addListener(infoWindow, 'zindex_changed', onZindexChanged));
+        }
+        infoWindow.setContent(containerElementRef.current);
+        if (position) {
+            infoWindow.setPosition(position);
+        }
+        if (zIndex) {
+            infoWindow.setZIndex(zIndex);
+        }
+        if (anchor) {
+            infoWindow.open(map, anchor);
+        }
+        else if (infoWindow.getPosition()) {
+            infoWindow.open(map);
         }
         else {
-            addAbortSignalListener(signal, notifyRejection);
+            invariant_1(false, `You must provide either an anchor (typically render it inside a <Marker>) or a position props for <InfoWindow>.`);
         }
-    }));
-};
-var runTask = function (task2, cleanUp) { return __async(void 0, null, function () {
-    var value, error_1;
-    return __generator(this, function (_c) {
-        switch (_c.label) {
-            case 0:
-                _c.trys.push([0, 3, 4, 5]);
-                return [4 /*yield*/, Promise.resolve()];
-            case 1:
-                _c.sent();
-                return [4 /*yield*/, task2()];
-            case 2:
-                value = _c.sent();
-                return [2 /*return*/, {
-                        status: "ok",
-                        value: value
-                    }];
-            case 3:
-                error_1 = _c.sent();
-                return [2 /*return*/, {
-                        status: error_1 instanceof TaskAbortError ? "cancelled" : "rejected",
-                        error: error_1
-                    }];
-            case 4:
-                cleanUp == null ? void 0 : cleanUp();
-                return [7 /*endfinally*/];
-            case 5: return [2 /*return*/];
+        if (onLoad) {
+            onLoad(infoWindow);
         }
-    });
-}); };
-var createPause = function (signal) {
-    return function (promise) {
-        return catchRejection(Promise.race([promisifyAbortSignal(signal), promise]).then(function (output) {
-            validateActive(signal);
-            return output;
-        }));
-    };
-};
-var createDelay = function (signal) {
-    var pause = createPause(signal);
-    return function (timeoutMs) {
-        return pause(new Promise(function (resolve) { return setTimeout(resolve, timeoutMs); }));
-    };
-};
-// src/listenerMiddleware/index.ts
-var assign = Object.assign;
-var INTERNAL_NIL_TOKEN = {};
-var alm = "listenerMiddleware";
-var createFork = function (parentAbortSignal) {
-    var linkControllers = function (controller) { return addAbortSignalListener(parentAbortSignal, function () { return abortControllerWithReason(controller, parentAbortSignal.reason); }); };
-    return function (taskExecutor) {
-        assertFunction(taskExecutor, "taskExecutor");
-        var childAbortController = new AbortController();
-        linkControllers(childAbortController);
-        var result = runTask(function () { return __async(void 0, null, function () {
-            var result2;
-            return __generator(this, function (_c) {
-                switch (_c.label) {
-                    case 0:
-                        validateActive(parentAbortSignal);
-                        validateActive(childAbortController.signal);
-                        return [4 /*yield*/, taskExecutor({
-                                pause: createPause(childAbortController.signal),
-                                delay: createDelay(childAbortController.signal),
-                                signal: childAbortController.signal
-                            })];
-                    case 1:
-                        result2 = _c.sent();
-                        validateActive(childAbortController.signal);
-                        return [2 /*return*/, result2];
+        return () => {
+            if (closeclickListener) {
+                google.maps.event.removeListener(closeclickListener);
+            }
+            if (contentchangedclickListener) {
+                google.maps.event.removeListener(contentchangedclickListener);
+            }
+            if (domreadyclickListener) {
+                google.maps.event.removeListener(domreadyclickListener);
+            }
+            if (positionchangedclickListener) {
+                google.maps.event.removeListener(positionchangedclickListener);
+            }
+            if (zindexchangedclickListener) {
+                google.maps.event.removeListener(zindexchangedclickListener);
+            }
+            if (onUnmount) {
+                onUnmount(infoWindow);
+            }
+            infoWindow.close();
+        };
+    }, []);
+    return containerElementRef.current ? ((0,react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal)(react__WEBPACK_IMPORTED_MODULE_0__.Children.only(children), containerElementRef.current)) : (null);
+}
+const InfoWindowF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(InfoWindowFunctional);
+class InfoWindow extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.containerElement = null;
+        this.state = {
+            infoWindow: null,
+        };
+        this.open = (infoWindow, anchor) => {
+            if (anchor) {
+                infoWindow.open(this.context, anchor);
+            }
+            else if (infoWindow.getPosition()) {
+                // @ts-ignore
+                infoWindow.open(this.context);
+            }
+            else {
+                invariant_1(false, `You must provide either an anchor (typically render it inside a <Marker>) or a position props for <InfoWindow>.`);
+            }
+        };
+        this.setInfoWindowCallback = () => {
+            if (this.state.infoWindow !== null && this.containerElement !== null) {
+                this.state.infoWindow.setContent(this.containerElement);
+                this.open(this.state.infoWindow, this.props.anchor);
+                if (this.props.onLoad) {
+                    this.props.onLoad(this.state.infoWindow);
                 }
+            }
+        };
+    }
+    componentDidMount() {
+        const infoWindow = new google.maps.InfoWindow(Object.assign({}, (this.props.options || {})));
+        this.containerElement = document.createElement('div');
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$c,
+            eventMap: eventMap$c,
+            prevProps: {},
+            nextProps: this.props,
+            instance: infoWindow,
+        });
+        this.setState(() => {
+            return {
+                infoWindow,
+            };
+        }, this.setInfoWindowCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.infoWindow !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$c,
+                eventMap: eventMap$c,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.infoWindow,
             });
-        }); }, function () { return abortControllerWithReason(childAbortController, taskCompleted); });
-        return {
-            result: createPause(parentAbortSignal)(result),
-            cancel: function () {
-                abortControllerWithReason(childAbortController, taskCancelled);
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.infoWindow !== null) {
+            unregisterEvents(this.registeredEvents);
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.infoWindow);
+            }
+            this.state.infoWindow.close();
+        }
+    }
+    render() {
+        return this.containerElement ? ((0,react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal)(react__WEBPACK_IMPORTED_MODULE_0__.Children.only(this.props.children), this.containerElement)) : (null);
+    }
+}
+InfoWindow.contextType = MapContext;
+
+const eventMap$b = {
+    onClick: 'click',
+    onDblClick: 'dblclick',
+    onDrag: 'drag',
+    onDragEnd: 'dragend',
+    onDragStart: 'dragstart',
+    onMouseDown: 'mousedown',
+    onMouseMove: 'mousemove',
+    onMouseOut: 'mouseout',
+    onMouseOver: 'mouseover',
+    onMouseUp: 'mouseup',
+    onRightClick: 'rightclick',
+};
+const updaterMap$b = {
+    draggable(instance, draggable) {
+        instance.setDraggable(draggable);
+    },
+    editable(instance, editable) {
+        instance.setEditable(editable);
+    },
+    map(instance, map) {
+        instance.setMap(map);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    path(instance, path) {
+        instance.setPath(path);
+    },
+    visible(instance, visible) {
+        instance.setVisible(visible);
+    },
+};
+const defaultOptions$1 = {};
+function PolylineFunctional({ options, draggable, editable, visible, path, onDblClick, onDragEnd, onDragStart, onMouseDown, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onRightClick, onClick, onDrag, onLoad, onUnmount, }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dblclickListener, setDblclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragendListener, setDragendListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragstartListener, setDragstartListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousedownListener, setMousedownListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousemoveListener, setMousemoveListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoutListener, setMouseoutListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoverListener, setMouseoverListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseupListener, setMouseupListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [rightclickListener, setRightclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [clickListener, setClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragListener, setDragListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof options !== 'undefined' && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof draggable !== 'undefined' && instance !== null) {
+            instance.setDraggable(draggable);
+        }
+    }, [instance, draggable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof editable !== 'undefined' && instance !== null) {
+            instance.setEditable(editable);
+        }
+    }, [instance, editable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof visible !== 'undefined' && instance !== null) {
+            instance.setVisible(visible);
+        }
+    }, [instance, visible]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof path !== 'undefined' && instance !== null) {
+            instance.setPath(path);
+        }
+    }, [instance, path]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDblClick) {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            setDblclickListener(google.maps.event.addListener(instance, 'dblclick', onDblClick));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragEnd) {
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            setDragendListener(google.maps.event.addListener(instance, 'dragend', onDragEnd));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragStart) {
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            setDragstartListener(google.maps.event.addListener(instance, 'dragstart', onDragStart));
+        }
+    }, [onDragStart]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseDown) {
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            setMousedownListener(google.maps.event.addListener(instance, 'mousedown', onMouseDown));
+        }
+    }, [onMouseDown]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseMove) {
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            setMousemoveListener(google.maps.event.addListener(instance, 'mousemove', onMouseMove));
+        }
+    }, [onMouseMove]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOut) {
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            setMouseoutListener(google.maps.event.addListener(instance, 'mouseout', onMouseOut));
+        }
+    }, [onMouseOut]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOver) {
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            setMouseoverListener(google.maps.event.addListener(instance, 'mouseover', onMouseOver));
+        }
+    }, [onMouseOver]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseUp) {
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            setMouseupListener(google.maps.event.addListener(instance, 'mouseup', onMouseUp));
+        }
+    }, [onMouseUp]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRightClick) {
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            setRightclickListener(google.maps.event.addListener(instance, 'rightclick', onRightClick));
+        }
+    }, [onRightClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onClick) {
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            setClickListener(google.maps.event.addListener(instance, 'click', onClick));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDrag) {
+            if (dragListener !== null) {
+                google.maps.event.removeListener(dragListener);
+            }
+            setDragListener(google.maps.event.addListener(instance, 'drag', onDrag));
+        }
+    }, [onDrag]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const polyline = new google.maps.Polyline(Object.assign(Object.assign({}, (options || defaultOptions$1)), { map }));
+        if (path) {
+            polyline.setPath(path);
+        }
+        if (typeof visible !== 'undefined') {
+            polyline.setVisible(visible);
+        }
+        if (typeof editable !== 'undefined') {
+            polyline.setEditable(editable);
+        }
+        if (typeof draggable !== 'undefined') {
+            polyline.setDraggable(draggable);
+        }
+        if (onDblClick) {
+            setDblclickListener(google.maps.event.addListener(polyline, 'dblclick', onDblClick));
+        }
+        if (onDragEnd) {
+            setDragendListener(google.maps.event.addListener(polyline, 'dragend', onDragEnd));
+        }
+        if (onDragStart) {
+            setDragstartListener(google.maps.event.addListener(polyline, 'dragstart', onDragStart));
+        }
+        if (onMouseDown) {
+            setMousedownListener(google.maps.event.addListener(polyline, 'mousedown', onMouseDown));
+        }
+        if (onMouseMove) {
+            setMousemoveListener(google.maps.event.addListener(polyline, 'mousemove', onMouseMove));
+        }
+        if (onMouseOut) {
+            setMouseoutListener(google.maps.event.addListener(polyline, 'mouseout', onMouseOut));
+        }
+        if (onMouseOver) {
+            setMouseoverListener(google.maps.event.addListener(polyline, 'mouseover', onMouseOver));
+        }
+        if (onMouseUp) {
+            setMouseupListener(google.maps.event.addListener(polyline, 'mouseup', onMouseUp));
+        }
+        if (onRightClick) {
+            setRightclickListener(google.maps.event.addListener(polyline, 'rightclick', onRightClick));
+        }
+        if (onClick) {
+            setClickListener(google.maps.event.addListener(polyline, 'click', onClick));
+        }
+        if (onDrag) {
+            setDragListener(google.maps.event.addListener(polyline, 'drag', onDrag));
+        }
+        setInstance(polyline);
+        if (onLoad) {
+            onLoad(polyline);
+        }
+        return () => {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            if (onUnmount) {
+                onUnmount(polyline);
+            }
+            polyline.setMap(null);
+        };
+    }, []);
+    return null;
+}
+const PolylineF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(PolylineFunctional);
+class Polyline extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            polyline: null,
+        };
+        this.setPolylineCallback = () => {
+            if (this.state.polyline !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.polyline);
             }
         };
-    };
-};
-var createTakePattern = function (startListening, signal) {
-    var take = function (predicate, timeout) { return __async(void 0, null, function () {
-        var unsubscribe, tuplePromise, promises, output;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
-                case 0:
-                    validateActive(signal);
-                    unsubscribe = function () {
-                    };
-                    tuplePromise = new Promise(function (resolve) {
-                        unsubscribe = startListening({
-                            predicate: predicate,
-                            effect: function (action, listenerApi) {
-                                listenerApi.unsubscribe();
-                                resolve([
-                                    action,
-                                    listenerApi.getState(),
-                                    listenerApi.getOriginalState()
-                                ]);
-                            }
-                        });
-                    });
-                    promises = [
-                        promisifyAbortSignal(signal),
-                        tuplePromise
-                    ];
-                    if (timeout != null) {
-                        promises.push(new Promise(function (resolve) { return setTimeout(resolve, timeout, null); }));
-                    }
-                    _c.label = 1;
-                case 1:
-                    _c.trys.push([1, , 3, 4]);
-                    return [4 /*yield*/, Promise.race(promises)];
-                case 2:
-                    output = _c.sent();
-                    validateActive(signal);
-                    return [2 /*return*/, output];
-                case 3:
-                    unsubscribe();
-                    return [7 /*endfinally*/];
-                case 4: return [2 /*return*/];
-            }
+    }
+    componentDidMount() {
+        const polyline = new google.maps.Polyline(Object.assign(Object.assign({}, (this.props.options || {})), { map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$b,
+            eventMap: eventMap$b,
+            prevProps: {},
+            nextProps: this.props,
+            instance: polyline,
         });
-    }); };
-    return function (predicate, timeout) { return catchRejection(take(predicate, timeout)); };
-};
-var getListenerEntryPropsFrom = function (options) {
-    var type = options.type, actionCreator = options.actionCreator, matcher = options.matcher, predicate = options.predicate, effect = options.effect;
-    if (type) {
-        predicate = createAction(type).match;
+        this.setState(function setPolyline() {
+            return {
+                polyline,
+            };
+        }, this.setPolylineCallback);
     }
-    else if (actionCreator) {
-        type = actionCreator.type;
-        predicate = actionCreator.match;
-    }
-    else if (matcher) {
-        predicate = matcher;
-    }
-    else if (predicate) {
-    }
-    else {
-        throw new Error("Creating or removing a listener requires one of the known fields for matching an action");
-    }
-    assertFunction(effect, "options.listener");
-    return { predicate: predicate, type: type, effect: effect };
-};
-var createListenerEntry = function (options) {
-    var _c = getListenerEntryPropsFrom(options), type = _c.type, predicate = _c.predicate, effect = _c.effect;
-    var id = nanoid();
-    var entry = {
-        id: id,
-        effect: effect,
-        type: type,
-        predicate: predicate,
-        pending: new Set(),
-        unsubscribe: function () {
-            throw new Error("Unsubscribe not initialized");
+    componentDidUpdate(prevProps) {
+        if (this.state.polyline !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$b,
+                eventMap: eventMap$b,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.polyline,
+            });
         }
-    };
-    return entry;
-};
-var createClearListenerMiddleware = function (listenerMap) {
-    return function () {
-        listenerMap.forEach(cancelActiveListeners);
-        listenerMap.clear();
-    };
-};
-var safelyNotifyError = function (errorHandler, errorToNotify, errorInfo) {
-    try {
-        errorHandler(errorToNotify, errorInfo);
     }
-    catch (errorHandlerError) {
-        setTimeout(function () {
-            throw errorHandlerError;
-        }, 0);
+    componentWillUnmount() {
+        if (this.state.polyline !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.polyline);
+            }
+            unregisterEvents(this.registeredEvents);
+            this.state.polyline.setMap(null);
+        }
     }
-};
-var addListener = createAction(alm + "/add");
-var clearAllListeners = createAction(alm + "/removeAll");
-var removeListener = createAction(alm + "/remove");
-var defaultErrorHandler = function () {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
+    render() {
+        return null;
     }
-    console.error.apply(console, __spreadArray([alm + "/error"], args));
+}
+Polyline.contextType = MapContext;
+
+/* global google */
+const eventMap$a = {
+    onClick: 'click',
+    onDblClick: 'dblclick',
+    onDrag: 'drag',
+    onDragEnd: 'dragend',
+    onDragStart: 'dragstart',
+    onMouseDown: 'mousedown',
+    onMouseMove: 'mousemove',
+    onMouseOut: 'mouseout',
+    onMouseOver: 'mouseover',
+    onMouseUp: 'mouseup',
+    onRightClick: 'rightclick',
 };
-var cancelActiveListeners = function (entry) {
-    entry.pending.forEach(function (controller) {
-        abortControllerWithReason(controller, listenerCancelled);
-    });
+const updaterMap$a = {
+    draggable(instance, draggable) {
+        instance.setDraggable(draggable);
+    },
+    editable(instance, editable) {
+        instance.setEditable(editable);
+    },
+    map(instance, map) {
+        instance.setMap(map);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    path(instance, path) {
+        instance.setPath(path);
+    },
+    paths(instance, paths) {
+        instance.setPaths(paths);
+    },
+    visible(instance, visible) {
+        instance.setVisible(visible);
+    },
 };
-function createListenerMiddleware(middlewareOptions) {
-    var _this = this;
-    if (middlewareOptions === void 0) { middlewareOptions = {}; }
-    var listenerMap = new Map();
-    var extra = middlewareOptions.extra, _c = middlewareOptions.onError, onError = _c === void 0 ? defaultErrorHandler : _c;
-    assertFunction(onError, "onError");
-    var insertEntry = function (entry) {
-        entry.unsubscribe = function () { return listenerMap.delete(entry.id); };
-        listenerMap.set(entry.id, entry);
-        return function (cancelOptions) {
-            entry.unsubscribe();
-            if (cancelOptions == null ? void 0 : cancelOptions.cancelActive) {
-                cancelActiveListeners(entry);
+function PolygonFunctional({ options, draggable, editable, visible, path, onDblClick, onDragEnd, onDragStart, onMouseDown, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onRightClick, onClick, onDrag, onLoad, onUnmount, }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dblclickListener, setDblclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragendListener, setDragendListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragstartListener, setDragstartListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousedownListener, setMousedownListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousemoveListener, setMousemoveListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoutListener, setMouseoutListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoverListener, setMouseoverListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseupListener, setMouseupListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [rightclickListener, setRightclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [clickListener, setClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragListener, setDragListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof options !== 'undefined' && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof draggable !== 'undefined' && instance !== null) {
+            instance.setDraggable(draggable);
+        }
+    }, [instance, draggable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof editable !== 'undefined' && instance !== null) {
+            instance.setEditable(editable);
+        }
+    }, [instance, editable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof visible !== 'undefined' && instance !== null) {
+            instance.setVisible(visible);
+        }
+    }, [instance, visible]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof path !== 'undefined' && instance !== null) {
+            instance.setPath(path);
+        }
+    }, [instance, path]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDblClick) {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            setDblclickListener(google.maps.event.addListener(instance, 'dblclick', onDblClick));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragEnd) {
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            setDragendListener(google.maps.event.addListener(instance, 'dragend', onDragEnd));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragStart) {
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            setDragstartListener(google.maps.event.addListener(instance, 'dragstart', onDragStart));
+        }
+    }, [onDragStart]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseDown) {
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            setMousedownListener(google.maps.event.addListener(instance, 'mousedown', onMouseDown));
+        }
+    }, [onMouseDown]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseMove) {
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            setMousemoveListener(google.maps.event.addListener(instance, 'mousemove', onMouseMove));
+        }
+    }, [onMouseMove]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOut) {
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            setMouseoutListener(google.maps.event.addListener(instance, 'mouseout', onMouseOut));
+        }
+    }, [onMouseOut]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOver) {
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            setMouseoverListener(google.maps.event.addListener(instance, 'mouseover', onMouseOver));
+        }
+    }, [onMouseOver]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseUp) {
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            setMouseupListener(google.maps.event.addListener(instance, 'mouseup', onMouseUp));
+        }
+    }, [onMouseUp]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRightClick) {
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            setRightclickListener(google.maps.event.addListener(instance, 'rightclick', onRightClick));
+        }
+    }, [onRightClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onClick) {
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            setClickListener(google.maps.event.addListener(instance, 'click', onClick));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDrag) {
+            if (dragListener !== null) {
+                google.maps.event.removeListener(dragListener);
+            }
+            setDragListener(google.maps.event.addListener(instance, 'drag', onDrag));
+        }
+    }, [onDrag]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const polygon = new google.maps.Polygon(Object.assign(Object.assign({}, (options || {})), { map }));
+        if (path) {
+            polygon.setPath(path);
+        }
+        if (typeof visible !== 'undefined') {
+            polygon.setVisible(visible);
+        }
+        if (typeof editable !== 'undefined') {
+            polygon.setEditable(editable);
+        }
+        if (typeof draggable !== 'undefined') {
+            polygon.setDraggable(draggable);
+        }
+        if (onDblClick) {
+            setDblclickListener(google.maps.event.addListener(polygon, 'dblclick', onDblClick));
+        }
+        if (onDragEnd) {
+            setDragendListener(google.maps.event.addListener(polygon, 'dragend', onDragEnd));
+        }
+        if (onDragStart) {
+            setDragstartListener(google.maps.event.addListener(polygon, 'dragstart', onDragStart));
+        }
+        if (onMouseDown) {
+            setMousedownListener(google.maps.event.addListener(polygon, 'mousedown', onMouseDown));
+        }
+        if (onMouseMove) {
+            setMousemoveListener(google.maps.event.addListener(polygon, 'mousemove', onMouseMove));
+        }
+        if (onMouseOut) {
+            setMouseoutListener(google.maps.event.addListener(polygon, 'mouseout', onMouseOut));
+        }
+        if (onMouseOver) {
+            setMouseoverListener(google.maps.event.addListener(polygon, 'mouseover', onMouseOver));
+        }
+        if (onMouseUp) {
+            setMouseupListener(google.maps.event.addListener(polygon, 'mouseup', onMouseUp));
+        }
+        if (onRightClick) {
+            setRightclickListener(google.maps.event.addListener(polygon, 'rightclick', onRightClick));
+        }
+        if (onClick) {
+            setClickListener(google.maps.event.addListener(polygon, 'click', onClick));
+        }
+        if (onDrag) {
+            setDragListener(google.maps.event.addListener(polygon, 'drag', onDrag));
+        }
+        setInstance(polygon);
+        if (onLoad) {
+            onLoad(polygon);
+        }
+        return () => {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            if (onUnmount) {
+                onUnmount(polygon);
+            }
+            polygon.setMap(null);
+        };
+    }, []);
+    return null;
+}
+const PolygonF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(PolygonFunctional);
+class Polygon extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            polygon: null,
+        };
+        this.setPolygonCallback = () => {
+            if (this.state.polygon !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.polygon);
             }
         };
-    };
-    var findListenerEntry = function (comparator) {
-        for (var _i = 0, _c = listenerMap.values(); _i < _c.length; _i++) {
-            var entry = _c[_i];
-            if (comparator(entry)) {
-                return entry;
-            }
-        }
-        return void 0;
-    };
-    var startListening = function (options) {
-        var entry = findListenerEntry(function (existingEntry) { return existingEntry.effect === options.effect; });
-        if (!entry) {
-            entry = createListenerEntry(options);
-        }
-        return insertEntry(entry);
-    };
-    var stopListening = function (options) {
-        var _c = getListenerEntryPropsFrom(options), type = _c.type, effect = _c.effect, predicate = _c.predicate;
-        var entry = findListenerEntry(function (entry2) {
-            var matchPredicateOrType = typeof type === "string" ? entry2.type === type : entry2.predicate === predicate;
-            return matchPredicateOrType && entry2.effect === effect;
+    }
+    componentDidMount() {
+        const polygon = new google.maps.Polygon(Object.assign(Object.assign({}, (this.props.options || {})), { 
+            // @ts-ignore
+            map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$a,
+            eventMap: eventMap$a,
+            prevProps: {},
+            nextProps: this.props,
+            instance: polygon,
         });
-        if (entry) {
-            entry.unsubscribe();
-            if (options.cancelActive) {
-                cancelActiveListeners(entry);
+        this.setState(function setPolygon() {
+            return {
+                polygon,
+            };
+        }, this.setPolygonCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.polygon !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$a,
+                eventMap: eventMap$a,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.polygon,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.polygon !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.polygon);
             }
+            unregisterEvents(this.registeredEvents);
+            this.state.polygon && this.state.polygon.setMap(null);
         }
-        return !!entry;
-    };
-    var notifyListener = function (entry, action, api, getOriginalState) { return __async(_this, null, function () {
-        var internalTaskController, take, listenerError_1;
-        return __generator(this, function (_c) {
-            switch (_c.label) {
-                case 0:
-                    internalTaskController = new AbortController();
-                    take = createTakePattern(startListening, internalTaskController.signal);
-                    _c.label = 1;
-                case 1:
-                    _c.trys.push([1, 3, 4, 5]);
-                    entry.pending.add(internalTaskController);
-                    return [4 /*yield*/, Promise.resolve(entry.effect(action, assign({}, api, {
-                            getOriginalState: getOriginalState,
-                            condition: function (predicate, timeout) { return take(predicate, timeout).then(Boolean); },
-                            take: take,
-                            delay: createDelay(internalTaskController.signal),
-                            pause: createPause(internalTaskController.signal),
-                            extra: extra,
-                            signal: internalTaskController.signal,
-                            fork: createFork(internalTaskController.signal),
-                            unsubscribe: entry.unsubscribe,
-                            subscribe: function () {
-                                listenerMap.set(entry.id, entry);
-                            },
-                            cancelActiveListeners: function () {
-                                entry.pending.forEach(function (controller, _, set) {
-                                    if (controller !== internalTaskController) {
-                                        abortControllerWithReason(controller, listenerCancelled);
-                                        set.delete(controller);
-                                    }
-                                });
-                            }
-                        })))];
-                case 2:
-                    _c.sent();
-                    return [3 /*break*/, 5];
-                case 3:
-                    listenerError_1 = _c.sent();
-                    if (!(listenerError_1 instanceof TaskAbortError)) {
-                        safelyNotifyError(onError, listenerError_1, {
-                            raisedBy: "effect"
-                        });
-                    }
-                    return [3 /*break*/, 5];
-                case 4:
-                    abortControllerWithReason(internalTaskController, listenerCompleted);
-                    entry.pending.delete(internalTaskController);
-                    return [7 /*endfinally*/];
-                case 5: return [2 /*return*/];
+    }
+    render() {
+        return null;
+    }
+}
+Polygon.contextType = MapContext;
+
+const eventMap$9 = {
+    onBoundsChanged: 'bounds_changed',
+    onClick: 'click',
+    onDblClick: 'dblclick',
+    onDrag: 'drag',
+    onDragEnd: 'dragend',
+    onDragStart: 'dragstart',
+    onMouseDown: 'mousedown',
+    onMouseMove: 'mousemove',
+    onMouseOut: 'mouseout',
+    onMouseOver: 'mouseover',
+    onMouseUp: 'mouseup',
+    onRightClick: 'rightclick',
+};
+const updaterMap$9 = {
+    bounds(instance, bounds) {
+        instance.setBounds(bounds);
+    },
+    draggable(instance, draggable) {
+        instance.setDraggable(draggable);
+    },
+    editable(instance, editable) {
+        instance.setEditable(editable);
+    },
+    map(instance, map) {
+        instance.setMap(map);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    visible(instance, visible) {
+        instance.setVisible(visible);
+    },
+};
+function RectangleFunctional({ options, bounds, draggable, editable, visible, onDblClick, onDragEnd, onDragStart, onMouseDown, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onRightClick, onClick, onDrag, onBoundsChanged, onLoad, onUnmount, }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dblclickListener, setDblclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragendListener, setDragendListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragstartListener, setDragstartListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousedownListener, setMousedownListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousemoveListener, setMousemoveListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoutListener, setMouseoutListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoverListener, setMouseoverListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseupListener, setMouseupListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [rightclickListener, setRightclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [clickListener, setClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragListener, setDragListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [boundsChangedListener, setBoundsChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof options !== 'undefined' && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof draggable !== 'undefined' && instance !== null) {
+            instance.setDraggable(draggable);
+        }
+    }, [instance, draggable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof editable !== 'undefined' && instance !== null) {
+            instance.setEditable(editable);
+        }
+    }, [instance, editable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof visible !== 'undefined' && instance !== null) {
+            instance.setVisible(visible);
+        }
+    }, [instance, visible]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof bounds !== 'undefined' && instance !== null) {
+            instance.setBounds(bounds);
+        }
+    }, [instance, bounds]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDblClick) {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
             }
-        });
-    }); };
-    var clearListenerMiddleware = createClearListenerMiddleware(listenerMap);
-    var middleware = function (api) { return function (next) { return function (action) {
-        if (addListener.match(action)) {
-            return startListening(action.payload);
+            setDblclickListener(google.maps.event.addListener(instance, 'dblclick', onDblClick));
         }
-        if (clearAllListeners.match(action)) {
-            clearListenerMiddleware();
-            return;
-        }
-        if (removeListener.match(action)) {
-            return stopListening(action.payload);
-        }
-        var originalState = api.getState();
-        var getOriginalState = function () {
-            if (originalState === INTERNAL_NIL_TOKEN) {
-                throw new Error(alm + ": getOriginalState can only be called synchronously");
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragEnd) {
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
             }
-            return originalState;
+            setDragendListener(google.maps.event.addListener(instance, 'dragend', onDragEnd));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragStart) {
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            setDragstartListener(google.maps.event.addListener(instance, 'dragstart', onDragStart));
+        }
+    }, [onDragStart]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseDown) {
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            setMousedownListener(google.maps.event.addListener(instance, 'mousedown', onMouseDown));
+        }
+    }, [onMouseDown]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseMove) {
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            setMousemoveListener(google.maps.event.addListener(instance, 'mousemove', onMouseMove));
+        }
+    }, [onMouseMove]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOut) {
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            setMouseoutListener(google.maps.event.addListener(instance, 'mouseout', onMouseOut));
+        }
+    }, [onMouseOut]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOver) {
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            setMouseoverListener(google.maps.event.addListener(instance, 'mouseover', onMouseOver));
+        }
+    }, [onMouseOver]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseUp) {
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            setMouseupListener(google.maps.event.addListener(instance, 'mouseup', onMouseUp));
+        }
+    }, [onMouseUp]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRightClick) {
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            setRightclickListener(google.maps.event.addListener(instance, 'rightclick', onRightClick));
+        }
+    }, [onRightClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onClick) {
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            setClickListener(google.maps.event.addListener(instance, 'click', onClick));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDrag) {
+            if (dragListener !== null) {
+                google.maps.event.removeListener(dragListener);
+            }
+            setDragListener(google.maps.event.addListener(instance, 'drag', onDrag));
+        }
+    }, [onDrag]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onBoundsChanged) {
+            if (boundsChangedListener !== null) {
+                google.maps.event.removeListener(boundsChangedListener);
+            }
+            setBoundsChangedListener(google.maps.event.addListener(instance, 'bounds_changed', onBoundsChanged));
+        }
+    }, [onBoundsChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const rectangle = new google.maps.Rectangle(Object.assign(Object.assign({}, (options || {})), { map }));
+        if (typeof visible !== 'undefined') {
+            rectangle.setVisible(visible);
+        }
+        if (typeof editable !== 'undefined') {
+            rectangle.setEditable(editable);
+        }
+        if (typeof draggable !== 'undefined') {
+            rectangle.setDraggable(draggable);
+        }
+        if (typeof bounds !== 'undefined') {
+            rectangle.setBounds(bounds);
+        }
+        if (onDblClick) {
+            setDblclickListener(google.maps.event.addListener(rectangle, 'dblclick', onDblClick));
+        }
+        if (onDragEnd) {
+            setDragendListener(google.maps.event.addListener(rectangle, 'dragend', onDragEnd));
+        }
+        if (onDragStart) {
+            setDragstartListener(google.maps.event.addListener(rectangle, 'dragstart', onDragStart));
+        }
+        if (onMouseDown) {
+            setMousedownListener(google.maps.event.addListener(rectangle, 'mousedown', onMouseDown));
+        }
+        if (onMouseMove) {
+            setMousemoveListener(google.maps.event.addListener(rectangle, 'mousemove', onMouseMove));
+        }
+        if (onMouseOut) {
+            setMouseoutListener(google.maps.event.addListener(rectangle, 'mouseout', onMouseOut));
+        }
+        if (onMouseOver) {
+            setMouseoverListener(google.maps.event.addListener(rectangle, 'mouseover', onMouseOver));
+        }
+        if (onMouseUp) {
+            setMouseupListener(google.maps.event.addListener(rectangle, 'mouseup', onMouseUp));
+        }
+        if (onRightClick) {
+            setRightclickListener(google.maps.event.addListener(rectangle, 'rightclick', onRightClick));
+        }
+        if (onClick) {
+            setClickListener(google.maps.event.addListener(rectangle, 'click', onClick));
+        }
+        if (onDrag) {
+            setDragListener(google.maps.event.addListener(rectangle, 'drag', onDrag));
+        }
+        if (onBoundsChanged) {
+            setBoundsChangedListener(google.maps.event.addListener(rectangle, 'bounds_changed', onBoundsChanged));
+        }
+        setInstance(rectangle);
+        if (onLoad) {
+            onLoad(rectangle);
+        }
+        return () => {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            if (dragListener !== null) {
+                google.maps.event.removeListener(dragListener);
+            }
+            if (boundsChangedListener !== null) {
+                google.maps.event.removeListener(boundsChangedListener);
+            }
+            if (onUnmount) {
+                onUnmount(rectangle);
+            }
+            rectangle.setMap(null);
         };
-        var result;
-        try {
-            result = next(action);
-            if (listenerMap.size > 0) {
-                var currentState = api.getState();
-                var listenerEntries = Array.from(listenerMap.values());
-                for (var _i = 0, listenerEntries_1 = listenerEntries; _i < listenerEntries_1.length; _i++) {
-                    var entry = listenerEntries_1[_i];
-                    var runListener = false;
-                    try {
-                        runListener = entry.predicate(action, currentState, originalState);
-                    }
-                    catch (predicateError) {
-                        runListener = false;
-                        safelyNotifyError(onError, predicateError, {
-                            raisedBy: "predicate"
-                        });
-                    }
-                    if (!runListener) {
-                        continue;
-                    }
-                    notifyListener(entry, action, api, getOriginalState);
+    }, []);
+    return null;
+}
+const RectangleF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(RectangleFunctional);
+class Rectangle extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            rectangle: null,
+        };
+        this.setRectangleCallback = () => {
+            if (this.state.rectangle !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.rectangle);
+            }
+        };
+    }
+    componentDidMount() {
+        const rectangle = new google.maps.Rectangle(Object.assign(Object.assign({}, (this.props.options || {})), { 
+            // @ts-ignore
+            map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$9,
+            eventMap: eventMap$9,
+            prevProps: {},
+            nextProps: this.props,
+            instance: rectangle,
+        });
+        this.setState(function setRectangle() {
+            return {
+                rectangle,
+            };
+        }, this.setRectangleCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.rectangle !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$9,
+                eventMap: eventMap$9,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.rectangle,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.rectangle !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.rectangle);
+            }
+            unregisterEvents(this.registeredEvents);
+            this.state.rectangle.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+Rectangle.contextType = MapContext;
+
+const eventMap$8 = {
+    onCenterChanged: 'center_changed',
+    onRadiusChanged: 'radius_changed',
+    onClick: 'click',
+    onDblClick: 'dblclick',
+    onDrag: 'drag',
+    onDragEnd: 'dragend',
+    onDragStart: 'dragstart',
+    onMouseDown: 'mousedown',
+    onMouseMove: 'mousemove',
+    onMouseOut: 'mouseout',
+    onMouseOver: 'mouseover',
+    onMouseUp: 'mouseup',
+    onRightClick: 'rightclick',
+};
+const updaterMap$8 = {
+    center(instance, center) {
+        instance.setCenter(center);
+    },
+    draggable(instance, draggable) {
+        instance.setDraggable(draggable);
+    },
+    editable(instance, editable) {
+        instance.setEditable(editable);
+    },
+    map(instance, map) {
+        instance.setMap(map);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    radius(instance, radius) {
+        instance.setRadius(radius);
+    },
+    visible(instance, visible) {
+        instance.setVisible(visible);
+    },
+};
+const defaultOptions = {};
+function CircleFunctional({ options, center, radius, draggable, editable, visible, onDblClick, onDragEnd, onDragStart, onMouseDown, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onRightClick, onClick, onDrag, onCenterChanged, onRadiusChanged, onLoad, onUnmount, }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dblclickListener, setDblclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragendListener, setDragendListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragstartListener, setDragstartListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousedownListener, setMousedownListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousemoveListener, setMousemoveListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoutListener, setMouseoutListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoverListener, setMouseoverListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseupListener, setMouseupListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [rightclickListener, setRightclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [clickListener, setClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dragListener, setDragListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [centerChangedListener, setCenterChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [radiusChangedListener, setRadiusChangedListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof options !== 'undefined' && instance !== null) {
+            instance.setOptions(options);
+        }
+    }, [instance, options]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof draggable !== 'undefined' && instance !== null) {
+            instance.setDraggable(draggable);
+        }
+    }, [instance, draggable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof editable !== 'undefined' && instance !== null) {
+            instance.setEditable(editable);
+        }
+    }, [instance, editable]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof visible !== 'undefined' && instance !== null) {
+            instance.setVisible(visible);
+        }
+    }, [instance, visible]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof radius === 'number' && instance !== null) {
+            instance.setRadius(radius);
+        }
+    }, [instance, radius]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (typeof center !== 'undefined' && instance !== null) {
+            instance.setCenter(center);
+        }
+    }, [instance, center]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDblClick) {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            setDblclickListener(google.maps.event.addListener(instance, 'dblclick', onDblClick));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragEnd) {
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            setDragendListener(google.maps.event.addListener(instance, 'dragend', onDragEnd));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDragStart) {
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            setDragstartListener(google.maps.event.addListener(instance, 'dragstart', onDragStart));
+        }
+    }, [onDragStart]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseDown) {
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            setMousedownListener(google.maps.event.addListener(instance, 'mousedown', onMouseDown));
+        }
+    }, [onMouseDown]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseMove) {
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            setMousemoveListener(google.maps.event.addListener(instance, 'mousemove', onMouseMove));
+        }
+    }, [onMouseMove]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOut) {
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            setMouseoutListener(google.maps.event.addListener(instance, 'mouseout', onMouseOut));
+        }
+    }, [onMouseOut]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOver) {
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            setMouseoverListener(google.maps.event.addListener(instance, 'mouseover', onMouseOver));
+        }
+    }, [onMouseOver]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseUp) {
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            setMouseupListener(google.maps.event.addListener(instance, 'mouseup', onMouseUp));
+        }
+    }, [onMouseUp]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRightClick) {
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            setRightclickListener(google.maps.event.addListener(instance, 'rightclick', onRightClick));
+        }
+    }, [onRightClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onClick) {
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            setClickListener(google.maps.event.addListener(instance, 'click', onClick));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDrag) {
+            if (dragListener !== null) {
+                google.maps.event.removeListener(dragListener);
+            }
+            setDragListener(google.maps.event.addListener(instance, 'drag', onDrag));
+        }
+    }, [onDrag]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onCenterChanged) {
+            if (centerChangedListener !== null) {
+                google.maps.event.removeListener(centerChangedListener);
+            }
+            setCenterChangedListener(google.maps.event.addListener(instance, 'center_changed', onCenterChanged));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRadiusChanged) {
+            if (radiusChangedListener !== null) {
+                google.maps.event.removeListener(radiusChangedListener);
+            }
+            setRadiusChangedListener(google.maps.event.addListener(instance, 'radius_changed', onRadiusChanged));
+        }
+    }, [onRadiusChanged]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const circle = new google.maps.Circle(Object.assign(Object.assign({}, (options || defaultOptions)), { map }));
+        if (typeof radius === 'number') {
+            circle.setRadius(radius);
+        }
+        if (typeof center !== 'undefined') {
+            circle.setCenter(center);
+        }
+        if (typeof radius === 'number') {
+            circle.setRadius(radius);
+        }
+        if (typeof visible !== 'undefined') {
+            circle.setVisible(visible);
+        }
+        if (typeof editable !== 'undefined') {
+            circle.setEditable(editable);
+        }
+        if (typeof draggable !== 'undefined') {
+            circle.setDraggable(draggable);
+        }
+        if (onDblClick) {
+            setDblclickListener(google.maps.event.addListener(circle, 'dblclick', onDblClick));
+        }
+        if (onDragEnd) {
+            setDragendListener(google.maps.event.addListener(circle, 'dragend', onDragEnd));
+        }
+        if (onDragStart) {
+            setDragstartListener(google.maps.event.addListener(circle, 'dragstart', onDragStart));
+        }
+        if (onMouseDown) {
+            setMousedownListener(google.maps.event.addListener(circle, 'mousedown', onMouseDown));
+        }
+        if (onMouseMove) {
+            setMousemoveListener(google.maps.event.addListener(circle, 'mousemove', onMouseMove));
+        }
+        if (onMouseOut) {
+            setMouseoutListener(google.maps.event.addListener(circle, 'mouseout', onMouseOut));
+        }
+        if (onMouseOver) {
+            setMouseoverListener(google.maps.event.addListener(circle, 'mouseover', onMouseOver));
+        }
+        if (onMouseUp) {
+            setMouseupListener(google.maps.event.addListener(circle, 'mouseup', onMouseUp));
+        }
+        if (onRightClick) {
+            setRightclickListener(google.maps.event.addListener(circle, 'rightclick', onRightClick));
+        }
+        if (onClick) {
+            setClickListener(google.maps.event.addListener(circle, 'click', onClick));
+        }
+        if (onDrag) {
+            setDragListener(google.maps.event.addListener(circle, 'drag', onDrag));
+        }
+        if (onCenterChanged) {
+            setCenterChangedListener(google.maps.event.addListener(circle, 'center_changed', onCenterChanged));
+        }
+        if (onRadiusChanged) {
+            setRadiusChangedListener(google.maps.event.addListener(circle, 'radius_changed', onRadiusChanged));
+        }
+        setInstance(circle);
+        if (onLoad) {
+            onLoad(circle);
+        }
+        return () => {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            if (dragendListener !== null) {
+                google.maps.event.removeListener(dragendListener);
+            }
+            if (dragstartListener !== null) {
+                google.maps.event.removeListener(dragstartListener);
+            }
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            if (centerChangedListener !== null) {
+                google.maps.event.removeListener(centerChangedListener);
+            }
+            if (radiusChangedListener !== null) {
+                google.maps.event.removeListener(radiusChangedListener);
+            }
+            if (onUnmount) {
+                onUnmount(circle);
+            }
+            circle.setMap(null);
+        };
+    }, []);
+    return null;
+}
+const CircleF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(CircleFunctional);
+class Circle extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            circle: null,
+        };
+        this.setCircleCallback = () => {
+            if (this.state.circle !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.circle);
+            }
+        };
+    }
+    componentDidMount() {
+        const circle = new google.maps.Circle(Object.assign(Object.assign({}, (this.props.options || {})), { 
+            // @ts-ignore
+            map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$8,
+            eventMap: eventMap$8,
+            prevProps: {},
+            nextProps: this.props,
+            instance: circle,
+        });
+        this.setState(function setCircle() {
+            return {
+                circle,
+            };
+        }, this.setCircleCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.circle !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$8,
+                eventMap: eventMap$8,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.circle,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.circle !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.circle);
+            }
+            unregisterEvents(this.registeredEvents);
+            this.state.circle && this.state.circle.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+Circle.contextType = MapContext;
+
+const eventMap$7 = {
+    onClick: 'click',
+    onDblClick: 'dblclick',
+    onMouseDown: 'mousedown',
+    onMouseOut: 'mouseout',
+    onMouseOver: 'mouseover',
+    onMouseUp: 'mouseup',
+    onRightClick: 'rightclick',
+    onAddFeature: 'addfeature',
+    onRemoveFeature: 'removefeature',
+    onRemoveProperty: 'removeproperty',
+    onSetGeometry: 'setgeometry',
+    onSetProperty: 'setproperty',
+};
+const updaterMap$7 = {
+    add(instance, feature) {
+        instance.add(feature);
+    },
+    addgeojson(instance, geojson, options) {
+        instance.addGeoJson(geojson, options);
+    },
+    contains(instance, feature) {
+        instance.contains(feature);
+    },
+    foreach(instance, callback) {
+        instance.forEach(callback);
+    },
+    loadgeojson(instance, url, options, callback) {
+        instance.loadGeoJson(url, options, callback);
+    },
+    overridestyle(instance, feature, style) {
+        instance.overrideStyle(feature, style);
+    },
+    remove(instance, feature) {
+        instance.remove(feature);
+    },
+    revertstyle(instance, feature) {
+        instance.revertStyle(feature);
+    },
+    controlposition(instance, controlPosition) {
+        instance.setControlPosition(controlPosition);
+    },
+    controls(instance, controls) {
+        instance.setControls(controls);
+    },
+    drawingmode(instance, mode) {
+        instance.setDrawingMode(mode);
+    },
+    map(instance, map) {
+        instance.setMap(map);
+    },
+    style(instance, style) {
+        instance.setStyle(style);
+    },
+    togeojson(instance, callback) {
+        instance.toGeoJson(callback);
+    },
+};
+function DataFunctional({ options, onClick, onDblClick, onMouseDown, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onRightClick, onAddFeature, onRemoveFeature, onRemoveProperty, onSetGeometry, onSetProperty, onLoad, onUnmount, }) {
+    const map = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(MapContext);
+    const [instance, setInstance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [dblclickListener, setDblclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousedownListener, setMousedownListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mousemoveListener, setMousemoveListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoutListener, setMouseoutListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseoverListener, setMouseoverListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [mouseupListener, setMouseupListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [rightclickListener, setRightclickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [clickListener, setClickListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [addFeatureListener, setAddFeatureListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [removeFeatureListener, setRemoveFeatureListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [removePropertyListener, setRemovePropertyListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [setGeometryListener, setSetGeometryListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    const [setPropertyListener, setSetPropertyListener] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+    // Order does matter
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance !== null) {
+            instance.setMap(map);
+        }
+    }, [map]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onDblClick) {
+            if (dblclickListener !== null) {
+                google.maps.event.removeListener(dblclickListener);
+            }
+            setDblclickListener(google.maps.event.addListener(instance, 'dblclick', onDblClick));
+        }
+    }, [onDblClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseDown) {
+            if (mousedownListener !== null) {
+                google.maps.event.removeListener(mousedownListener);
+            }
+            setMousedownListener(google.maps.event.addListener(instance, 'mousedown', onMouseDown));
+        }
+    }, [onMouseDown]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseMove) {
+            if (mousemoveListener !== null) {
+                google.maps.event.removeListener(mousemoveListener);
+            }
+            setMousemoveListener(google.maps.event.addListener(instance, 'mousemove', onMouseMove));
+        }
+    }, [onMouseMove]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOut) {
+            if (mouseoutListener !== null) {
+                google.maps.event.removeListener(mouseoutListener);
+            }
+            setMouseoutListener(google.maps.event.addListener(instance, 'mouseout', onMouseOut));
+        }
+    }, [onMouseOut]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseOver) {
+            if (mouseoverListener !== null) {
+                google.maps.event.removeListener(mouseoverListener);
+            }
+            setMouseoverListener(google.maps.event.addListener(instance, 'mouseover', onMouseOver));
+        }
+    }, [onMouseOver]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onMouseUp) {
+            if (mouseupListener !== null) {
+                google.maps.event.removeListener(mouseupListener);
+            }
+            setMouseupListener(google.maps.event.addListener(instance, 'mouseup', onMouseUp));
+        }
+    }, [onMouseUp]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRightClick) {
+            if (rightclickListener !== null) {
+                google.maps.event.removeListener(rightclickListener);
+            }
+            setRightclickListener(google.maps.event.addListener(instance, 'rightclick', onRightClick));
+        }
+    }, [onRightClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onClick) {
+            if (clickListener !== null) {
+                google.maps.event.removeListener(clickListener);
+            }
+            setClickListener(google.maps.event.addListener(instance, 'click', onClick));
+        }
+    }, [onClick]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onAddFeature) {
+            if (addFeatureListener !== null) {
+                google.maps.event.removeListener(addFeatureListener);
+            }
+            setAddFeatureListener(google.maps.event.addListener(instance, 'addfeature', onAddFeature));
+        }
+    }, [onAddFeature]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRemoveFeature) {
+            if (removeFeatureListener !== null) {
+                google.maps.event.removeListener(removeFeatureListener);
+            }
+            setRemoveFeatureListener(google.maps.event.addListener(instance, 'removefeature', onRemoveFeature));
+        }
+    }, [onRemoveFeature]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onRemoveProperty) {
+            if (removePropertyListener !== null) {
+                google.maps.event.removeListener(removePropertyListener);
+            }
+            setRemovePropertyListener(google.maps.event.addListener(instance, 'removeproperty', onRemoveProperty));
+        }
+    }, [onRemoveProperty]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onSetGeometry) {
+            if (setGeometryListener !== null) {
+                google.maps.event.removeListener(setGeometryListener);
+            }
+            setSetGeometryListener(google.maps.event.addListener(instance, 'setgeometry', onSetGeometry));
+        }
+    }, [onSetGeometry]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (instance && onSetProperty) {
+            if (setPropertyListener !== null) {
+                google.maps.event.removeListener(setPropertyListener);
+            }
+            setSetPropertyListener(google.maps.event.addListener(instance, 'setproperty', onSetProperty));
+        }
+    }, [onSetProperty]);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        if (map !== null) {
+            const data = new google.maps.Data(Object.assign(Object.assign({}, (options || {})), { map }));
+            if (onDblClick) {
+                setDblclickListener(google.maps.event.addListener(data, 'dblclick', onDblClick));
+            }
+            if (onMouseDown) {
+                setMousedownListener(google.maps.event.addListener(data, 'mousedown', onMouseDown));
+            }
+            if (onMouseMove) {
+                setMousemoveListener(google.maps.event.addListener(data, 'mousemove', onMouseMove));
+            }
+            if (onMouseOut) {
+                setMouseoutListener(google.maps.event.addListener(data, 'mouseout', onMouseOut));
+            }
+            if (onMouseOver) {
+                setMouseoverListener(google.maps.event.addListener(data, 'mouseover', onMouseOver));
+            }
+            if (onMouseUp) {
+                setMouseupListener(google.maps.event.addListener(data, 'mouseup', onMouseUp));
+            }
+            if (onRightClick) {
+                setRightclickListener(google.maps.event.addListener(data, 'rightclick', onRightClick));
+            }
+            if (onClick) {
+                setClickListener(google.maps.event.addListener(data, 'click', onClick));
+            }
+            if (onAddFeature) {
+                setAddFeatureListener(google.maps.event.addListener(data, 'addfeature', onAddFeature));
+            }
+            if (onRemoveFeature) {
+                setRemoveFeatureListener(google.maps.event.addListener(data, 'removefeature', onRemoveFeature));
+            }
+            if (onRemoveProperty) {
+                setRemovePropertyListener(google.maps.event.addListener(data, 'removeproperty', onRemoveProperty));
+            }
+            if (onSetGeometry) {
+                setSetGeometryListener(google.maps.event.addListener(data, 'setgeometry', onSetGeometry));
+            }
+            if (onSetProperty) {
+                setSetPropertyListener(google.maps.event.addListener(data, 'setproperty', onSetProperty));
+            }
+            setInstance(data);
+            if (onLoad) {
+                onLoad(data);
+            }
+        }
+        return () => {
+            if (instance) {
+                if (dblclickListener !== null) {
+                    google.maps.event.removeListener(dblclickListener);
                 }
+                if (mousedownListener !== null) {
+                    google.maps.event.removeListener(mousedownListener);
+                }
+                if (mousemoveListener !== null) {
+                    google.maps.event.removeListener(mousemoveListener);
+                }
+                if (mouseoutListener !== null) {
+                    google.maps.event.removeListener(mouseoutListener);
+                }
+                if (mouseoverListener !== null) {
+                    google.maps.event.removeListener(mouseoverListener);
+                }
+                if (mouseupListener !== null) {
+                    google.maps.event.removeListener(mouseupListener);
+                }
+                if (rightclickListener !== null) {
+                    google.maps.event.removeListener(rightclickListener);
+                }
+                if (clickListener !== null) {
+                    google.maps.event.removeListener(clickListener);
+                }
+                if (addFeatureListener !== null) {
+                    google.maps.event.removeListener(addFeatureListener);
+                }
+                if (removeFeatureListener !== null) {
+                    google.maps.event.removeListener(removeFeatureListener);
+                }
+                if (removePropertyListener !== null) {
+                    google.maps.event.removeListener(removePropertyListener);
+                }
+                if (setGeometryListener !== null) {
+                    google.maps.event.removeListener(setGeometryListener);
+                }
+                if (setPropertyListener !== null) {
+                    google.maps.event.removeListener(setPropertyListener);
+                }
+                if (onUnmount) {
+                    onUnmount(instance);
+                }
+                instance.setMap(null);
+            }
+        };
+    }, []);
+    return null;
+}
+const DataF = (0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(DataFunctional);
+class Data extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            data: null,
+        };
+        this.setDataCallback = () => {
+            if (this.state.data !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.data);
+            }
+        };
+    }
+    componentDidMount() {
+        if (this.context !== null) {
+            const data = new google.maps.Data(Object.assign(Object.assign({}, (this.props.options || {})), { map: this.context }));
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$7,
+                eventMap: eventMap$7,
+                prevProps: {},
+                nextProps: this.props,
+                instance: data,
+            });
+            this.setState(() => {
+                return {
+                    data,
+                };
+            }, this.setDataCallback);
+        }
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.data !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$7,
+                eventMap: eventMap$7,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.data,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.data !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.data);
+            }
+            unregisterEvents(this.registeredEvents);
+            if (this.state.data) {
+                this.state.data.setMap(null);
             }
         }
-        finally {
-            originalState = INTERNAL_NIL_TOKEN;
+    }
+    render() {
+        return null;
+    }
+}
+Data.contextType = MapContext;
+
+const eventMap$6 = {
+    onClick: 'click',
+    onDefaultViewportChanged: 'defaultviewport_changed',
+    onStatusChanged: 'status_changed',
+};
+const updaterMap$6 = {
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    url(instance, url) {
+        instance.setUrl(url);
+    },
+    zIndex(instance, zIndex) {
+        instance.setZIndex(zIndex);
+    },
+};
+class KmlLayer extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            kmlLayer: null,
+        };
+        this.setKmlLayerCallback = () => {
+            if (this.state.kmlLayer !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.kmlLayer);
+            }
+        };
+    }
+    componentDidMount() {
+        const kmlLayer = new google.maps.KmlLayer(Object.assign(Object.assign({}, this.props.options), { map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$6,
+            eventMap: eventMap$6,
+            prevProps: {},
+            nextProps: this.props,
+            instance: kmlLayer,
+        });
+        this.setState(function setLmlLayer() {
+            return {
+                kmlLayer,
+            };
+        }, this.setKmlLayerCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.kmlLayer !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$6,
+                eventMap: eventMap$6,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.kmlLayer,
+            });
         }
-        return result;
-    }; }; };
+    }
+    componentWillUnmount() {
+        if (this.state.kmlLayer !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.kmlLayer);
+            }
+            unregisterEvents(this.registeredEvents);
+            this.state.kmlLayer.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+KmlLayer.contextType = MapContext;
+
+function getOffsetOverride(containerElement, getPixelPositionOffset) {
+    return typeof getPixelPositionOffset === 'function'
+        ? getPixelPositionOffset(containerElement.offsetWidth, containerElement.offsetHeight)
+        : {};
+}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function createLatLng(inst, Type) { return new Type(inst.lat, inst.lng); }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function createLatLngBounds(inst, Type) {
+    return new Type(new google.maps.LatLng(inst.ne.lat, inst.ne.lng), new google.maps.LatLng(inst.sw.lat, inst.sw.lng));
+}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function ensureOfType(inst, type, factory) {
+    return inst instanceof type ? inst : factory(inst, type);
+}
+function ensureOfTypeBounds(inst, type, factory) {
+    return inst instanceof type ? inst : factory(inst, type);
+}
+function getLayoutStylesByBounds(mapCanvasProjection, offset, bounds) {
+    const ne = mapCanvasProjection && mapCanvasProjection.fromLatLngToDivPixel(bounds.getNorthEast());
+    const sw = mapCanvasProjection && mapCanvasProjection.fromLatLngToDivPixel(bounds.getSouthWest());
+    if (ne && sw) {
+        return {
+            left: `${sw.x + offset.x}px`,
+            top: `${ne.y + offset.y}px`,
+            width: `${ne.x - sw.x - offset.x}px`,
+            height: `${sw.y - ne.y - offset.y}px`,
+        };
+    }
     return {
-        middleware: middleware,
-        startListening: startListening,
-        stopListening: stopListening,
-        clearListeners: clearListenerMiddleware
+        left: '-9999px',
+        top: '-9999px',
     };
 }
-// src/index.ts
-(0,immer__WEBPACK_IMPORTED_MODULE_2__.enableES5)();
+function getLayoutStylesByPosition(mapCanvasProjection, offset, position) {
+    const point = mapCanvasProjection && mapCanvasProjection.fromLatLngToDivPixel(position);
+    if (point) {
+        const { x, y } = point;
+        return {
+            left: `${x + offset.x}px`,
+            top: `${y + offset.y}px`,
+        };
+    }
+    return {
+        left: '-9999px',
+        top: '-9999px',
+    };
+}
+function getLayoutStyles(mapCanvasProjection, offset, bounds, position) {
+    return bounds !== undefined
+        ? getLayoutStylesByBounds(mapCanvasProjection, offset, ensureOfTypeBounds(bounds, google.maps.LatLngBounds, createLatLngBounds))
+        : getLayoutStylesByPosition(mapCanvasProjection, offset, ensureOfType(position, google.maps.LatLng, createLatLng));
+}
+function arePositionsEqual(currentPosition, previousPosition) {
+    return currentPosition.left === previousPosition.left
+        && currentPosition.top === previousPosition.top
+        && currentPosition.width === previousPosition.height
+        && currentPosition.height === previousPosition.height;
+}
 
-//# sourceMappingURL=redux-toolkit.esm.js.map
+function convertToLatLngString(latLngLike) {
+    if (!latLngLike) {
+        return '';
+    }
+    const latLng = latLngLike instanceof google.maps.LatLng
+        ? latLngLike
+        : new google.maps.LatLng(latLngLike.lat, latLngLike.lng);
+    return latLng + '';
+}
+function convertToLatLngBoundsString(latLngBoundsLike) {
+    if (!latLngBoundsLike) {
+        return '';
+    }
+    const latLngBounds = latLngBoundsLike instanceof google.maps.LatLngBounds
+        ? latLngBoundsLike
+        : new google.maps.LatLngBounds(new google.maps.LatLng(latLngBoundsLike.south, latLngBoundsLike.east), new google.maps.LatLng(latLngBoundsLike.north, latLngBoundsLike.west));
+    return latLngBounds + '';
+}
+class OverlayView extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor(props) {
+        super(props);
+        this.state = {
+            paneEl: null,
+            containerStyle: {
+                // set initial position
+                position: 'absolute'
+            },
+        };
+        this.updatePane = () => {
+            const mapPaneName = this.props.mapPaneName;
+            // https://developers.google.com/maps/documentation/javascript/3.exp/reference#MapPanes
+            const mapPanes = this.overlayView.getPanes();
+            invariant_1(!!mapPaneName, `OverlayView requires props.mapPaneName but got %s`, mapPaneName);
+            if (mapPanes) {
+                this.setState({
+                    paneEl: mapPanes[mapPaneName]
+                });
+            }
+            else {
+                this.setState({
+                    paneEl: null
+                });
+            }
+        };
+        this.onAdd = () => {
+            var _a, _b;
+            this.updatePane();
+            (_b = (_a = this.props).onLoad) === null || _b === void 0 ? void 0 : _b.call(_a, this.overlayView);
+        };
+        this.onPositionElement = () => {
+            const mapCanvasProjection = this.overlayView.getProjection();
+            const offset = Object.assign({ x: 0, y: 0 }, (this.containerRef.current
+                ? getOffsetOverride(this.containerRef.current, this.props.getPixelPositionOffset)
+                : {}));
+            const layoutStyles = getLayoutStyles(mapCanvasProjection, offset, this.props.bounds, this.props.position);
+            const { left, top, width, height } = this.state.containerStyle;
+            if (!arePositionsEqual(layoutStyles, { left, top, width, height })) {
+                this.setState({
+                    containerStyle: Object.assign(Object.assign({}, layoutStyles), { position: 'absolute' }),
+                });
+            }
+        };
+        this.draw = () => {
+            this.onPositionElement();
+        };
+        this.onRemove = () => {
+            var _a, _b;
+            this.setState(() => ({
+                paneEl: null
+            }));
+            // this.mapPaneEl = null
+            (_b = (_a = this.props).onUnmount) === null || _b === void 0 ? void 0 : _b.call(_a, this.overlayView);
+        };
+        this.containerRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.createRef)();
+        // You must implement three methods: onAdd(), draw(), and onRemove().
+        const overlayView = new google.maps.OverlayView();
+        overlayView.onAdd = this.onAdd;
+        overlayView.draw = this.draw;
+        overlayView.onRemove = this.onRemove;
+        this.overlayView = overlayView;
+    }
+    componentDidMount() {
+        // You must call setMap() with a valid Map object to trigger the call to
+        // the onAdd() method and setMap(null) in order to trigger the onRemove() method.
+        // @ts-ignore
+        this.overlayView.setMap(this.context);
+    }
+    componentDidUpdate(prevProps) {
+        const prevPositionString = convertToLatLngString(prevProps.position);
+        const positionString = convertToLatLngString(this.props.position);
+        const prevBoundsString = convertToLatLngBoundsString(prevProps.bounds);
+        const boundsString = convertToLatLngBoundsString(this.props.bounds);
+        if (prevPositionString !== positionString || prevBoundsString !== boundsString) {
+            this.overlayView.draw();
+        }
+        if (prevProps.mapPaneName !== this.props.mapPaneName) {
+            this.updatePane();
+        }
+    }
+    componentWillUnmount() {
+        this.overlayView.setMap(null);
+    }
+    render() {
+        const paneEl = this.state.paneEl;
+        if (paneEl) {
+            return react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal(jsxRuntime.exports.jsx("div", Object.assign({ ref: this.containerRef, style: this.state.containerStyle }, { children: react__WEBPACK_IMPORTED_MODULE_0__.Children.only(this.props.children) })), paneEl);
+        }
+        else {
+            return null;
+        }
+    }
+}
+OverlayView.FLOAT_PANE = `floatPane`;
+OverlayView.MAP_PANE = `mapPane`;
+OverlayView.MARKER_LAYER = `markerLayer`;
+OverlayView.OVERLAY_LAYER = `overlayLayer`;
+OverlayView.OVERLAY_MOUSE_TARGET = `overlayMouseTarget`;
+OverlayView.contextType = MapContext;
+
+function noop() { return; }
+
+const eventMap$5 = {
+    onDblClick: 'dblclick',
+    onClick: 'click',
+};
+const updaterMap$5 = {
+    opacity(instance, opacity) {
+        instance.setOpacity(opacity);
+    },
+};
+class GroundOverlay extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            groundOverlay: null,
+        };
+        this.setGroundOverlayCallback = () => {
+            if (this.state.groundOverlay !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.groundOverlay);
+            }
+        };
+    }
+    componentDidMount() {
+        invariant_1(!!this.props.url || !!this.props.bounds, `For GroundOverlay, url and bounds are passed in to constructor and are immutable after instantiated. This is the behavior of Google Maps JavaScript API v3 ( See https://developers.google.com/maps/documentation/javascript/reference#GroundOverlay) Hence, use the corresponding two props provided by \`react-google-maps-api\`, url and bounds. In some cases, you'll need the GroundOverlay component to reflect the changes of url and bounds. You can leverage the React's key property to remount the component. Typically, just \`key={url}\` would serve your need. See https://github.com/tomchentw/react-google-maps/issues/655`);
+        const groundOverlay = new google.maps.GroundOverlay(this.props.url, this.props.bounds, Object.assign(Object.assign({}, this.props.options), { 
+            // @ts-ignore
+            map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$5,
+            eventMap: eventMap$5,
+            prevProps: {},
+            nextProps: this.props,
+            instance: groundOverlay,
+        });
+        this.setState(function setGroundOverlay() {
+            return {
+                groundOverlay,
+            };
+        }, this.setGroundOverlayCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.groundOverlay !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$5,
+                eventMap: eventMap$5,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.groundOverlay,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.groundOverlay) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.groundOverlay);
+            }
+            this.state.groundOverlay.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+GroundOverlay.defaultProps = {
+    onLoad: noop,
+};
+GroundOverlay.contextType = MapContext;
+
+const eventMap$4 = {};
+const updaterMap$4 = {
+    data(instance, data) {
+        instance.setData(data);
+    },
+    map(instance, map) {
+        instance.setMap(map);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+};
+class HeatmapLayer extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            heatmapLayer: null,
+        };
+        this.setHeatmapLayerCallback = () => {
+            if (this.state.heatmapLayer !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.heatmapLayer);
+            }
+        };
+    }
+    componentDidMount() {
+        invariant_1(!!google.maps.visualization, 'Did you include prop libraries={["visualization"]} to <LoadScript />? %s', google.maps.visualization);
+        invariant_1(!!this.props.data, 'data property is required in HeatmapLayer %s', this.props.data);
+        const heatmapLayer = new google.maps.visualization.HeatmapLayer(Object.assign(Object.assign({}, (this.props.options || {})), { data: this.props.data, 
+            // @ts-ignore
+            map: this.context }));
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$4,
+            eventMap: eventMap$4,
+            prevProps: {},
+            nextProps: this.props,
+            instance: heatmapLayer,
+        });
+        this.setState(function setHeatmapLayer() {
+            return {
+                heatmapLayer,
+            };
+        }, this.setHeatmapLayerCallback);
+    }
+    componentDidUpdate(prevProps) {
+        unregisterEvents(this.registeredEvents);
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$4,
+            eventMap: eventMap$4,
+            prevProps,
+            nextProps: this.props,
+            instance: this.state.heatmapLayer,
+        });
+    }
+    componentWillUnmount() {
+        if (this.state.heatmapLayer !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.heatmapLayer);
+            }
+            unregisterEvents(this.registeredEvents);
+            this.state.heatmapLayer.setMap(null);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+HeatmapLayer.contextType = MapContext;
+
+const eventMap$3 = {
+    onCloseClick: 'closeclick',
+    onPanoChanged: 'pano_changed',
+    onPositionChanged: 'position_changed',
+    onPovChanged: 'pov_changed',
+    onResize: 'resize',
+    onStatusChanged: 'status_changed',
+    onVisibleChanged: 'visible_changed',
+    onZoomChanged: 'zoom_changed',
+};
+const updaterMap$3 = {
+    register(instance, provider, options) {
+        instance.registerPanoProvider(provider, options);
+    },
+    links(instance, links) {
+        instance.setLinks(links);
+    },
+    motionTracking(instance, motionTracking) {
+        instance.setMotionTracking(motionTracking);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    pano(instance, pano) {
+        instance.setPano(pano);
+    },
+    position(instance, position) {
+        instance.setPosition(position);
+    },
+    pov(instance, pov) {
+        instance.setPov(pov);
+    },
+    visible(instance, visible) {
+        instance.setVisible(visible);
+    },
+    zoom(instance, zoom) {
+        instance.setZoom(zoom);
+    },
+};
+class StreetViewPanorama extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            streetViewPanorama: null,
+        };
+        this.setStreetViewPanoramaCallback = () => {
+            if (this.state.streetViewPanorama !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.streetViewPanorama);
+            }
+        };
+    }
+    componentDidMount() {
+        // @ts-ignore
+        const streetViewPanorama = this.context.getStreetView();
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$3,
+            eventMap: eventMap$3,
+            prevProps: {},
+            nextProps: this.props,
+            instance: streetViewPanorama,
+        });
+        this.setState(() => {
+            return {
+                streetViewPanorama,
+            };
+        }, this.setStreetViewPanoramaCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.streetViewPanorama !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$3,
+                eventMap: eventMap$3,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.streetViewPanorama,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.streetViewPanorama !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.streetViewPanorama);
+            }
+            unregisterEvents(this.registeredEvents);
+            this.state.streetViewPanorama.setVisible(false);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+StreetViewPanorama.contextType = MapContext;
+
+class StreetViewService extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            streetViewService: null,
+        };
+        this.setStreetViewServiceCallback = () => {
+            if (this.state.streetViewService !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.streetViewService);
+            }
+        };
+    }
+    componentDidMount() {
+        const streetViewService = new google.maps.StreetViewService();
+        this.setState(function setStreetViewService() {
+            return {
+                streetViewService,
+            };
+        }, this.setStreetViewServiceCallback);
+    }
+    componentWillUnmount() {
+        if (this.state.streetViewService !== null && this.props.onUnmount) {
+            this.props.onUnmount(this.state.streetViewService);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+StreetViewService.contextType = MapContext;
+
+class DirectionsService extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            directionsService: null,
+        };
+        this.setDirectionsServiceCallback = () => {
+            if (this.state.directionsService !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.directionsService);
+            }
+        };
+    }
+    componentDidMount() {
+        invariant_1(!!this.props.options, 'DirectionsService expected options object as parameter, but got %s', this.props.options);
+        const directionsService = new google.maps.DirectionsService();
+        this.setState(function setDirectionsService() {
+            return {
+                directionsService,
+            };
+        }, this.setDirectionsServiceCallback);
+    }
+    componentDidUpdate() {
+        if (this.state.directionsService !== null) {
+            this.state.directionsService.route(this.props.options, this.props.callback);
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.directionsService !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.directionsService);
+            }
+        }
+    }
+    render() {
+        return null;
+    }
+}
+
+const eventMap$2 = {
+    onDirectionsChanged: 'directions_changed',
+};
+const updaterMap$2 = {
+    directions(instance, directions) {
+        instance.setDirections(directions);
+    },
+    map(instance, map) {
+        instance.setMap(map);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    panel(instance, panel) {
+        instance.setPanel(panel);
+    },
+    routeIndex(instance, routeIndex) {
+        instance.setRouteIndex(routeIndex);
+    },
+};
+class DirectionsRenderer extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.state = {
+            directionsRenderer: null,
+        };
+        this.setDirectionsRendererCallback = () => {
+            if (this.state.directionsRenderer !== null) {
+                // @ts-ignore
+                this.state.directionsRenderer.setMap(this.context);
+                if (this.props.onLoad) {
+                    this.props.onLoad(this.state.directionsRenderer);
+                }
+            }
+        };
+    }
+    componentDidMount() {
+        const directionsRenderer = new google.maps.DirectionsRenderer(this.props.options);
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap: updaterMap$2,
+            eventMap: eventMap$2,
+            prevProps: {},
+            nextProps: this.props,
+            instance: directionsRenderer,
+        });
+        this.setState(function setDirectionsRenderer() {
+            return {
+                directionsRenderer,
+            };
+        }, this.setDirectionsRendererCallback);
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.directionsRenderer !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$2,
+                eventMap: eventMap$2,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.directionsRenderer,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.directionsRenderer !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.directionsRenderer);
+            }
+            unregisterEvents(this.registeredEvents);
+            if (this.state.directionsRenderer) {
+                this.state.directionsRenderer.setMap(null);
+            }
+        }
+    }
+    render() {
+        return jsxRuntime.exports.jsx(jsxRuntime.exports.Fragment, {});
+    }
+}
+DirectionsRenderer.contextType = MapContext;
+
+class DistanceMatrixService extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            distanceMatrixService: null,
+        };
+        this.setDistanceMatrixServiceCallback = () => {
+            if (this.state.distanceMatrixService !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.distanceMatrixService);
+            }
+        };
+    }
+    componentDidMount() {
+        invariant_1(!!this.props.options, 'DistanceMatrixService expected options object as parameter, but go %s', this.props.options);
+        const distanceMatrixService = new google.maps.DistanceMatrixService();
+        this.setState(function setDistanceMatrixService() {
+            return {
+                distanceMatrixService,
+            };
+        }, this.setDistanceMatrixServiceCallback);
+    }
+    componentDidUpdate() {
+        if (this.state.distanceMatrixService !== null) {
+            this.state.distanceMatrixService.getDistanceMatrix(this.props.options, this.props.callback);
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.distanceMatrixService !== null && this.props.onUnmount) {
+            this.props.onUnmount(this.state.distanceMatrixService);
+        }
+    }
+    render() {
+        return null;
+    }
+}
+
+const eventMap$1 = {
+    onPlacesChanged: 'places_changed',
+};
+const updaterMap$1 = {
+    bounds(instance, bounds) {
+        instance.setBounds(bounds);
+    },
+};
+class StandaloneSearchBox extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.containerElement = (0,react__WEBPACK_IMPORTED_MODULE_0__.createRef)();
+        this.state = {
+            searchBox: null,
+        };
+        this.setSearchBoxCallback = () => {
+            if (this.state.searchBox !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.searchBox);
+            }
+        };
+    }
+    componentDidMount() {
+        invariant_1(!!google.maps.places, 'You need to provide libraries={["places"]} prop to <LoadScript /> component %s', google.maps.places);
+        if (this.containerElement !== null && this.containerElement.current !== null) {
+            const input = this.containerElement.current.querySelector('input');
+            if (input !== null) {
+                const searchBox = new google.maps.places.SearchBox(input, this.props.options);
+                this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                    updaterMap: updaterMap$1,
+                    eventMap: eventMap$1,
+                    prevProps: {},
+                    nextProps: this.props,
+                    instance: searchBox,
+                });
+                this.setState(function setSearchBox() {
+                    return {
+                        searchBox,
+                    };
+                }, this.setSearchBoxCallback);
+            }
+        }
+    }
+    componentDidUpdate(prevProps) {
+        if (this.state.searchBox !== null) {
+            unregisterEvents(this.registeredEvents);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap: updaterMap$1,
+                eventMap: eventMap$1,
+                prevProps,
+                nextProps: this.props,
+                instance: this.state.searchBox,
+            });
+        }
+    }
+    componentWillUnmount() {
+        if (this.state.searchBox !== null) {
+            if (this.props.onUnmount) {
+                this.props.onUnmount(this.state.searchBox);
+            }
+            unregisterEvents(this.registeredEvents);
+        }
+    }
+    render() {
+        return jsxRuntime.exports.jsx("div", Object.assign({ ref: this.containerElement }, { children: react__WEBPACK_IMPORTED_MODULE_0__.Children.only(this.props.children) }));
+    }
+}
+StandaloneSearchBox.contextType = MapContext;
+
+const eventMap = {
+    onPlaceChanged: 'place_changed',
+};
+const updaterMap = {
+    bounds(instance, bounds) {
+        instance.setBounds(bounds);
+    },
+    restrictions(instance, restrictions) {
+        instance.setComponentRestrictions(restrictions);
+    },
+    fields(instance, fields) {
+        instance.setFields(fields);
+    },
+    options(instance, options) {
+        instance.setOptions(options);
+    },
+    types(instance, types) {
+        instance.setTypes(types);
+    },
+};
+class Autocomplete extends react__WEBPACK_IMPORTED_MODULE_0__.PureComponent {
+    constructor() {
+        super(...arguments);
+        this.registeredEvents = [];
+        this.containerElement = (0,react__WEBPACK_IMPORTED_MODULE_0__.createRef)();
+        this.state = {
+            autocomplete: null,
+        };
+        this.setAutocompleteCallback = () => {
+            if (this.state.autocomplete !== null && this.props.onLoad) {
+                this.props.onLoad(this.state.autocomplete);
+            }
+        };
+    }
+    componentDidMount() {
+        invariant_1(!!google.maps.places, 'You need to provide libraries={["places"]} prop to <LoadScript /> component %s', google.maps.places);
+        // TODO: why current could be equal null?
+        // @ts-ignore
+        const input = this.containerElement.current.querySelector('input');
+        if (input) {
+            const autocomplete = new google.maps.places.Autocomplete(input, this.props.options);
+            this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+                updaterMap,
+                eventMap,
+                prevProps: {},
+                nextProps: this.props,
+                instance: autocomplete,
+            });
+            this.setState(() => {
+                return {
+                    autocomplete,
+                };
+            }, this.setAutocompleteCallback);
+        }
+    }
+    componentDidUpdate(prevProps) {
+        unregisterEvents(this.registeredEvents);
+        this.registeredEvents = applyUpdatersToPropsAndRegisterEvents({
+            updaterMap,
+            eventMap,
+            prevProps,
+            nextProps: this.props,
+            instance: this.state.autocomplete,
+        });
+    }
+    componentWillUnmount() {
+        if (this.state.autocomplete !== null) {
+            unregisterEvents(this.registeredEvents);
+        }
+    }
+    render() {
+        return jsxRuntime.exports.jsx("div", Object.assign({ ref: this.containerElement, className: this.props.className }, { children: react__WEBPACK_IMPORTED_MODULE_0__.Children.only(this.props.children) }));
+    }
+}
+Autocomplete.defaultProps = {
+    className: ''
+};
+Autocomplete.contextType = MapContext;
+
+
+//# sourceMappingURL=esm.js.map
+
 
 /***/ }),
 
@@ -4299,12 +12084,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _RoutesManager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RoutesManager */ "./client/RoutesManager.js");
 /* harmony import */ var _store_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store/auth */ "./client/store/auth.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store */ "./client/store/index.js");
+
 
 
 
 
 
 class App extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+  componentDidMount() {
+    this.props.fetchSearches;
+  }
+
   render() {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_RoutesManager__WEBPACK_IMPORTED_MODULE_2__["default"], null));
   }
@@ -4313,7 +12104,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    auth: dispatch(_store_auth__WEBPACK_IMPORTED_MODULE_3__["default"])
+    fetchSearches: dispatch((0,_store__WEBPACK_IMPORTED_MODULE_4__.fetchSearches)())
   };
 };
 
@@ -4334,10 +12125,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _components_Pickup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Pickup */ "./client/components/Pickup.js");
-/* harmony import */ var _components_Uber__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Uber */ "./client/components/Uber.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store */ "./client/store/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _components_Dropoff__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Dropoff */ "./client/components/Dropoff.js");
+/* harmony import */ var _components_Pickup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Pickup */ "./client/components/Pickup.js");
+/* harmony import */ var _components_Uber__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Uber */ "./client/components/Uber.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store */ "./client/store/index.js");
+
 
 
 
@@ -4347,15 +12140,105 @@ __webpack_require__.r(__webpack_exports__);
 
 class RoutesManager extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
       path: "/",
-      component: _components_Pickup__WEBPACK_IMPORTED_MODULE_2__["default"]
+      component: _components_Pickup__WEBPACK_IMPORTED_MODULE_3__["default"]
     }));
   }
 
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.withRouter)(RoutesManager));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.withRouter)(RoutesManager));
+
+/***/ }),
+
+/***/ "./client/components/Dropoff.js":
+/*!**************************************!*\
+  !*** ./client/components/Dropoff.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _react_google_maps_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @react-google-maps/api */ "./node_modules/@react-google-maps/api/dist/esm.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config */ "./client/config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+const center = {
+  lat: 40.7618288,
+  lng: -73.9682155
+};
+
+function Dropoff() {
+  const {
+    isLoaded
+  } = (0,_react_google_maps_api__WEBPACK_IMPORTED_MODULE_2__.useJsApiLoader)({
+    googleMapsApiKey: _config__WEBPACK_IMPORTED_MODULE_1__.googleApiKey
+  });
+  const [map, setMap] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(
+  /** @type google.maps.Map */
+  null);
+  const [directionsResponse, setDirectionsResponse] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const [distance, setDistance] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const [duration, setDuration] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  /** @type React.MutableRefObject<HTMLInputElement> */
+
+  const originRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  /** @type React.MutableRefObject<HTMLInputElement> */
+
+  const destiantionRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+
+  async function calculateRoute() {
+    if (originRef.current.value === "" || destiantionRef.current.value === "") {
+      return;
+    } // eslint-disable-next-line no-undef
+
+
+    const directionsService = new google.maps.DirectionsService();
+    const results = await directionsService.route({
+      origin: originRef.current.value,
+      destination: destiantionRef.current.value,
+      // eslint-disable-next-line no-undef
+      travelMode: google.maps.TravelMode.DRIVING
+    });
+    setDirectionsResponse(results);
+    setDistance(results.routes[0].legs[0].distance.text);
+    setDuration(results.routes[0].legs[0].duration.text);
+  }
+
+  function clearRoute() {
+    setDirectionsResponse(null);
+    setDistance("");
+    setDuration("");
+    originRef.current.value = "";
+    destiantionRef.current.value = "";
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_react_google_maps_api__WEBPACK_IMPORTED_MODULE_2__.GoogleMap, {
+    center: center,
+    zoom: 15,
+    mapContainerStyle: {
+      width: "100%",
+      height: "100%"
+    },
+    options: {
+      zoomControl: false,
+      streetViewControl: false,
+      mapTypeControl: false,
+      fullscreenControl: false
+    },
+    onLoad: map => setMap(map)
+  }));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dropoff);
 
 /***/ }),
 
@@ -4410,103 +12293,60 @@ class Lyft extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "GoogleMap": () => (/* binding */ GoogleMap),
+/* harmony export */   "FullMap": () => (/* binding */ FullMap),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
-/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config */ "./client/config.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! google-maps-react */ "./node_modules/google-maps-react/dist/index.js");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./client/config.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
-class GoogleMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
+
+
+class FullMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   constructor(props) {
     super(props);
-    const {
-      lat,
-      lng
-    } = this.props.text;
     this.state = {
       stores: [{
-        latitude: this.props.text ? lat : null,
-        longitude: this.props.text ? lng : null
+        latitudeFrom: this.props.search.latFrom,
+        longitudeFrom: this.props.search.lngFrom
+      }, {
+        latitudeTo: this.props.search.latTo,
+        longitudeTo: this.props.search.lngTo
       }]
     };
     this.displayMarkers = this.displayMarkers.bind(this);
-    this.recenterMap = this.recenterMap.bind(this);
-    this.loadMap = this.loadMap.bind(this);
+    this.handleDrawMarkers = this.handleDrawMarkers.bind(this);
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log(`HERE IS PREV PROPS ---> ${prevProps.text.lat}`);
-
-    if (prevProps.google !== this.props.google) {
-      this.loadMap();
-    }
-
-    if (prevProps.text.lat !== this.state.stores[0].latitude) {
-      this.recenterMap();
-    }
-  } // ...
-
-
-  loadMap() {
-    if (this.props && this.props.google) {
-      // checks if google is available
-      const {
-        google
-      } = this.props;
-      const maps = google.maps;
-      const mapRef = this.refs.map; // reference to the actual DOM element
-
-      const node = ReactDOM.findDOMNode(mapRef);
-      let {
-        zoom
-      } = this.props;
-      const {
-        lat,
-        lng
-      } = this.state.stores[0];
-      const center = new maps.LatLng(lat, lng);
-      const mapConfig = Object.assign({}, {
-        center: center,
-        zoom: zoom
-      }); // maps.Map() is constructor that instantiates the map
-
-      this.map = new maps.Map(node, mapConfig);
-    }
-  } // ...
-
-
-  recenterMap() {
-    const map = this.map;
-    const current = this.state.stores[0];
-    const google = this.props.google;
-    const maps = google.maps;
-
-    if (map) {
-      let center = new maps.LatLng(current.latitude, current.longitude);
-      map.panTo(center);
-    }
-  }
-
-  displayMarkers = () => {
+  handleDrawMarkers = (latitude, longitude) => {
+    const {
+      stores
+    } = this.state;
+    new google.maps.Marker({
+      position: (latitude, longitude),
+      map: this.map
+    });
+  };
+  displayMarkers = (latitude, longitude) => {
     return this.state.stores.map((store, index) => {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_2__.Marker, {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Marker, {
         key: index,
         id: index,
         position: {
-          lat: store.latitude,
-          lng: store.longitude
+          lat: latitude,
+          lng: longitude
         }
       });
     });
   };
 
   render() {
-    console.log(`HERE IS MAP PROPS----> ${this.props.text.lat} ${this.props.text.lng}`);
     const mapStyles = {
       maxWidth: "550px",
       height: "550px",
@@ -4519,25 +12359,34 @@ class GoogleMap extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       marginLeft: "50vw",
       marginTop: "80px"
     };
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_2__.Map, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__.Map, {
       google: this.props.google,
-      zoom: 16,
+      zoom: 14,
       style: mapStyles,
       containerStyle: containerStyle,
-      initialCenter: this.props.text.lat ? {
-        lat: this.props.text.lat,
-        lng: this.props.text.lng
-      } : {
-        lat: 40.632769,
-        lng: -73.90728
+      initialCenter: {
+        lat: `${this.props.search.latFrom}` * 1.0,
+        lng: `${this.props.search.lngFrom}` * 1.0
       }
-    }, this.displayMarkers());
+    }, this.displayMarkers(parseFloat(`${this.props.search.latFrom}`), parseFloat(`${this.props.search.longFrom}`)), this.displayMarkers(parseFloat(`${this.props.search.latTo}`), parseFloat(`${this.props.search.longTo}`)));
   }
 
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,google_maps_react__WEBPACK_IMPORTED_MODULE_2__.GoogleApiWrapper)({
-  apiKey: _config__WEBPACK_IMPORTED_MODULE_1__.googleApiKey
-})(GoogleMap));
+
+const mapStateToProps = state => {
+  const {
+    searches
+  } = state;
+  const lastElement = searches.length;
+  const search = searches.filter(_search => _search.id === lastElement)[0];
+  return {
+    search
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(mapStateToProps)((0,google_maps_react__WEBPACK_IMPORTED_MODULE_4__.GoogleApiWrapper)({
+  apiKey: _config__WEBPACK_IMPORTED_MODULE_3__.googleApiKey
+})(FullMap)));
 
 /***/ }),
 
@@ -4553,7 +12402,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../store */ "./client/store/index.js");
+/* harmony import */ var _store_searches__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../store/searches */ "./client/store/searches.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _Maps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Maps */ "./client/components/Maps.js");
 /* harmony import */ var _Uber__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Uber */ "./client/components/Uber.js");
@@ -4572,15 +12421,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class Pickup extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      address: "",
-      city: "",
-      state: "",
-      zip: "",
-      lat: "",
-      lng: ""
+      addressFrom: "",
+      cityFrom: "",
+      stateFrom: "",
+      zipFrom: "",
+      latFrom: 0,
+      lngFrom: 0,
+      addressTo: "",
+      cityTo: "",
+      stateTo: "",
+      zipTo: "",
+      latTo: 0,
+      lngTo: 0
     };
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
@@ -4608,60 +12463,109 @@ class Pickup extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   async onSubmit(ev) {
     ev.preventDefault();
     const {
-      address,
-      city,
-      state,
-      zip
+      addressFrom,
+      cityFrom,
+      stateFrom,
+      zipFrom,
+      addressTo,
+      cityTo,
+      stateTo,
+      zipTo
     } = this.state;
-    const {
-      lat,
-      lng
-    } = await this.geocodingQuery(address, city, state);
+    const latlng1 = await this.geocodingQuery(addressFrom, cityFrom, stateFrom);
+    const latlng2 = await this.geocodingQuery(addressTo, cityTo, stateTo);
     this.setState({
-      address: address,
-      city: city,
-      state: state,
-      zip: zip,
-      lat: lat,
-      lng: lng
+      addressFrom: addressFrom,
+      cityFrom: cityFrom,
+      stateFrom: stateFrom,
+      zipFrom: zipFrom,
+      latFrom: latlng1["lat"],
+      lngFrom: latlng1["lng"],
+      addressTo: addressTo,
+      cityTo: cityTo,
+      stateTo: stateTo,
+      zipTo: zipTo,
+      latTo: latlng2["lat"],
+      lngTo: latlng2["lng"]
     });
+    this.props.addSearches(this.state);
   }
 
   render() {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
       onSubmit: this.onSubmit
     }, "Pickup Location:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-      name: "address",
+      name: "addressFrom",
       type: "text",
-      value: this.state.address,
+      value: this.state.addressFrom,
       onChange: this.onChange,
       placeholder: "Address"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-      name: "city",
+      name: "cityFrom",
       type: "text",
-      value: this.state.city,
+      value: this.state.cityFrom,
       onChange: this.onChange,
       placeholder: "City"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-      name: "state",
+      name: "stateFrom",
       type: "text",
-      value: this.state.state,
+      value: this.state.stateFrom,
       onChange: this.onChange,
       placeholder: "State"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-      name: "zip",
+      name: "zipFrom",
       type: "text",
-      value: this.state.zip,
+      value: this.state.zipFrom,
       onChange: this.onChange,
       placeholder: "Zip Code"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", null, "Submit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Maps__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      text: this.state
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Uber__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Lyft__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "DropOff Location:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+      name: "addressTo",
+      type: "text",
+      value: this.state.addressTo,
+      onChange: this.onChange,
+      placeholder: "Address"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+      name: "cityTo",
+      type: "text",
+      value: this.state.cityTo,
+      onChange: this.onChange,
+      placeholder: "City"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+      name: "stateTo",
+      type: "text",
+      value: this.state.stateTo,
+      onChange: this.onChange,
+      placeholder: "State"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+      name: "zipTo",
+      type: "text",
+      value: this.state.zipTo,
+      onChange: this.onChange,
+      placeholder: "Zip Code"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", null, "Submit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Maps__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Uber__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Lyft__WEBPACK_IMPORTED_MODULE_5__["default"], null));
   }
 
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pickup);
+const mapStateToProps = state => {
+  const {
+    searches
+  } = state;
+  const lastElement = searches.length;
+  const search = searches.filter(_search => _search.id === lastElement)[0];
+  return {
+    search
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchSearches: () => dispatch((0,_store_searches__WEBPACK_IMPORTED_MODULE_1__.fetchSearches)()),
+    addSearches: searches => dispatch((0,_store_searches__WEBPACK_IMPORTED_MODULE_1__.addSearches)(searches))
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(mapStateToProps, mapDispatchToProps)(Pickup));
 
 /***/ }),
 
@@ -4789,13 +12693,17 @@ const me = () => async dispatch => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "addSearches": () => (/* reexport safe */ _searches__WEBPACK_IMPORTED_MODULE_3__.addSearches),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "fetchSearches": () => (/* reexport safe */ _searches__WEBPACK_IMPORTED_MODULE_3__.fetchSearches)
 /* harmony export */ });
-/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @reduxjs/toolkit */ "./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var redux_logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-logger */ "./node_modules/redux-logger/dist/redux-logger.js");
 /* harmony import */ var redux_logger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux_logger__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
 /* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
 /* harmony import */ var _auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth */ "./client/store/auth.js");
+/* harmony import */ var _searches__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./searches */ "./client/store/searches.js");
 
 
 
@@ -4803,10 +12711,67 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_3__.configureStore)({
-  reducer: _auth__WEBPACK_IMPORTED_MODULE_2__["default"]
+const reducer = (0,redux__WEBPACK_IMPORTED_MODULE_4__.combineReducers)({
+  auth: _auth__WEBPACK_IMPORTED_MODULE_2__["default"],
+  searches: _searches__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
+const middleware = (0,redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__.composeWithDevTools)((0,redux__WEBPACK_IMPORTED_MODULE_4__.applyMiddleware)(redux_thunk__WEBPACK_IMPORTED_MODULE_5__["default"], (0,redux_logger__WEBPACK_IMPORTED_MODULE_0__.createLogger)({
+  collapsed: true
+})));
+const store = (0,redux__WEBPACK_IMPORTED_MODULE_4__.createStore)(reducer, middleware);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (store);
+
+
+/***/ }),
+
+/***/ "./client/store/searches.js":
+/*!**********************************!*\
+  !*** ./client/store/searches.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "addSearches": () => (/* binding */ addSearches),
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "fetchSearches": () => (/* binding */ fetchSearches)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+const FETCH_SEARCHES = "FETCH_SEARCHES";
+const ADD_SEARCHES = "ADD_SEARCHES";
+const fetchSearches = () => {
+  return async dispatch => {
+    const searches = (await axios__WEBPACK_IMPORTED_MODULE_0___default().get("/api/searches")).data;
+    dispatch({
+      type: FETCH_SEARCHES,
+      searches
+    });
+  };
+};
+const addSearches = searches => {
+  return async dispatch => {
+    const search = (await axios__WEBPACK_IMPORTED_MODULE_0___default().post("/api/searches/", searches)).data;
+    dispatch({
+      type: ADD_SEARCHES,
+      search
+    });
+  };
+};
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(state = [], action) {
+  switch (action.type) {
+    case FETCH_SEARCHES:
+      return action.searches;
+
+    case ADD_SEARCHES:
+      return [...state, action.search];
+
+    default:
+      return state;
+  }
+}
 
 /***/ }),
 
@@ -39102,8 +47067,7 @@ if (false) {} else {
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-/**
- * @license React
+/** @license React v17.0.2
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -39118,40 +47082,59 @@ if (true) {
   (function() {
 'use strict';
 
-// -----------------------------------------------------------------------------
+// ATTENTION
+// When adding new symbols to this file,
+// Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var REACT_ELEMENT_TYPE = 0xeac7;
+var REACT_PORTAL_TYPE = 0xeaca;
+var REACT_FRAGMENT_TYPE = 0xeacb;
+var REACT_STRICT_MODE_TYPE = 0xeacc;
+var REACT_PROFILER_TYPE = 0xead2;
+var REACT_PROVIDER_TYPE = 0xeacd;
+var REACT_CONTEXT_TYPE = 0xeace;
+var REACT_FORWARD_REF_TYPE = 0xead0;
+var REACT_SUSPENSE_TYPE = 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = 0xead8;
+var REACT_MEMO_TYPE = 0xead3;
+var REACT_LAZY_TYPE = 0xead4;
+var REACT_BLOCK_TYPE = 0xead9;
+var REACT_SERVER_BLOCK_TYPE = 0xeada;
+var REACT_FUNDAMENTAL_TYPE = 0xead5;
+var REACT_SCOPE_TYPE = 0xead7;
+var REACT_OPAQUE_ID_TYPE = 0xeae0;
+var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
+var REACT_OFFSCREEN_TYPE = 0xeae2;
+var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
+
+if (typeof Symbol === 'function' && Symbol.for) {
+  var symbolFor = Symbol.for;
+  REACT_ELEMENT_TYPE = symbolFor('react.element');
+  REACT_PORTAL_TYPE = symbolFor('react.portal');
+  REACT_FRAGMENT_TYPE = symbolFor('react.fragment');
+  REACT_STRICT_MODE_TYPE = symbolFor('react.strict_mode');
+  REACT_PROFILER_TYPE = symbolFor('react.profiler');
+  REACT_PROVIDER_TYPE = symbolFor('react.provider');
+  REACT_CONTEXT_TYPE = symbolFor('react.context');
+  REACT_FORWARD_REF_TYPE = symbolFor('react.forward_ref');
+  REACT_SUSPENSE_TYPE = symbolFor('react.suspense');
+  REACT_SUSPENSE_LIST_TYPE = symbolFor('react.suspense_list');
+  REACT_MEMO_TYPE = symbolFor('react.memo');
+  REACT_LAZY_TYPE = symbolFor('react.lazy');
+  REACT_BLOCK_TYPE = symbolFor('react.block');
+  REACT_SERVER_BLOCK_TYPE = symbolFor('react.server.block');
+  REACT_FUNDAMENTAL_TYPE = symbolFor('react.fundamental');
+  REACT_SCOPE_TYPE = symbolFor('react.scope');
+  REACT_OPAQUE_ID_TYPE = symbolFor('react.opaque.id');
+  REACT_DEBUG_TRACING_MODE_TYPE = symbolFor('react.debug_trace_mode');
+  REACT_OFFSCREEN_TYPE = symbolFor('react.offscreen');
+  REACT_LEGACY_HIDDEN_TYPE = symbolFor('react.legacy_hidden');
+}
+
+// Filter certain DOM attributes (e.g. src, href) if their values are empty strings.
 
 var enableScopeAPI = false; // Experimental Create Event Handle API.
-var enableCacheElement = false;
-var enableTransitionTracing = false; // No known bugs, but needs performance testing
-
-var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
-// stuff. Intended to enable React core members to more easily debug scheduling
-// issues in DEV builds.
-
-var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
-
-// ATTENTION
-
-var REACT_ELEMENT_TYPE =  Symbol.for('react.element');
-var REACT_PORTAL_TYPE =  Symbol.for('react.portal');
-var REACT_FRAGMENT_TYPE =  Symbol.for('react.fragment');
-var REACT_STRICT_MODE_TYPE =  Symbol.for('react.strict_mode');
-var REACT_PROFILER_TYPE =  Symbol.for('react.profiler');
-var REACT_PROVIDER_TYPE =  Symbol.for('react.provider');
-var REACT_CONTEXT_TYPE =  Symbol.for('react.context');
-var REACT_SERVER_CONTEXT_TYPE =  Symbol.for('react.server_context');
-var REACT_FORWARD_REF_TYPE =  Symbol.for('react.forward_ref');
-var REACT_SUSPENSE_TYPE =  Symbol.for('react.suspense');
-var REACT_SUSPENSE_LIST_TYPE =  Symbol.for('react.suspense_list');
-var REACT_MEMO_TYPE =  Symbol.for('react.memo');
-var REACT_LAZY_TYPE =  Symbol.for('react.lazy');
-var REACT_OFFSCREEN_TYPE =  Symbol.for('react.offscreen');
-
-var REACT_MODULE_REFERENCE;
-
-{
-  REACT_MODULE_REFERENCE = Symbol.for('react.module.reference');
-}
 
 function isValidElementType(type) {
   if (typeof type === 'string' || typeof type === 'function') {
@@ -39159,16 +47142,12 @@ function isValidElementType(type) {
   } // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
 
 
-  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing  || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden  || type === REACT_OFFSCREEN_TYPE || enableScopeAPI  || enableCacheElement  || enableTransitionTracing ) {
+  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_DEBUG_TRACING_MODE_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_LEGACY_HIDDEN_TYPE || enableScopeAPI ) {
     return true;
   }
 
   if (typeof type === 'object' && type !== null) {
-    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
-    // types supported by any Flight configuration anywhere since
-    // we don't know which Flight build this will end up being used
-    // with.
-    type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) {
+    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_BLOCK_TYPE || type[0] === REACT_SERVER_BLOCK_TYPE) {
       return true;
     }
   }
@@ -39196,7 +47175,6 @@ function typeOf(object) {
             var $$typeofType = type && type.$$typeof;
 
             switch ($$typeofType) {
-              case REACT_SERVER_CONTEXT_TYPE:
               case REACT_CONTEXT_TYPE:
               case REACT_FORWARD_REF_TYPE:
               case REACT_LAZY_TYPE:
@@ -39228,7 +47206,6 @@ var Portal = REACT_PORTAL_TYPE;
 var Profiler = REACT_PROFILER_TYPE;
 var StrictMode = REACT_STRICT_MODE_TYPE;
 var Suspense = REACT_SUSPENSE_TYPE;
-var SuspenseList = REACT_SUSPENSE_LIST_TYPE;
 var hasWarnedAboutDeprecatedIsAsyncMode = false;
 var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
 
@@ -39287,9 +47264,6 @@ function isStrictMode(object) {
 function isSuspense(object) {
   return typeOf(object) === REACT_SUSPENSE_TYPE;
 }
-function isSuspenseList(object) {
-  return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
-}
 
 exports.ContextConsumer = ContextConsumer;
 exports.ContextProvider = ContextProvider;
@@ -39302,7 +47276,6 @@ exports.Portal = Portal;
 exports.Profiler = Profiler;
 exports.StrictMode = StrictMode;
 exports.Suspense = Suspense;
-exports.SuspenseList = SuspenseList;
 exports.isAsyncMode = isAsyncMode;
 exports.isConcurrentMode = isConcurrentMode;
 exports.isContextConsumer = isContextConsumer;
@@ -39316,7 +47289,6 @@ exports.isPortal = isPortal;
 exports.isProfiler = isProfiler;
 exports.isStrictMode = isStrictMode;
 exports.isSuspense = isSuspense;
-exports.isSuspenseList = isSuspenseList;
 exports.isValidElementType = isValidElementType;
 exports.typeOf = typeOf;
   })();
@@ -39355,7 +47327,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-const ReactReduxContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+var ReactReduxContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 
 if (true) {
   ReactReduxContext.displayName = 'ReactRedux';
@@ -39377,6 +47349,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Context */ "./node_modules/react-redux/es/components/Context.js");
 /* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
 /* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
@@ -39385,25 +47359,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Provider({
-  store,
-  context,
-  children,
-  serverState
-}) {
-  const contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
-    const subscription = (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_2__.createSubscription)(store);
+
+function Provider(_ref) {
+  var store = _ref.store,
+      context = _ref.context,
+      children = _ref.children;
+  var contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    var subscription = (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_2__.createSubscription)(store);
     return {
-      store,
-      subscription,
-      getServerState: serverState ? () => serverState : undefined
+      store: store,
+      subscription: subscription
     };
-  }, [store, serverState]);
-  const previousState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => store.getState(), [store]);
-  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__.useIsomorphicLayoutEffect)(() => {
-    const {
-      subscription
-    } = contextValue;
+  }, [store]);
+  var previousState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    return store.getState();
+  }, [store]);
+  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__.useIsomorphicLayoutEffect)(function () {
+    var subscription = contextValue.subscription;
     subscription.onStateChange = subscription.notifyNestedSubs;
     subscription.trySubscribe();
 
@@ -39411,33 +47383,43 @@ function Provider({
       subscription.notifyNestedSubs();
     }
 
-    return () => {
+    return function () {
       subscription.tryUnsubscribe();
-      subscription.onStateChange = undefined;
+      subscription.onStateChange = null;
     };
   }, [contextValue, previousState]);
-  const Context = context || _Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext; // @ts-ignore 'AnyAction' is assignable to the constraint of type 'A', but 'A' could be instantiated with a different subtype
-
+  var Context = context || _Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Context.Provider, {
     value: contextValue
   }, children);
+}
+
+if (true) {
+  Provider.propTypes = {
+    store: prop_types__WEBPACK_IMPORTED_MODULE_4___default().shape({
+      subscribe: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func.isRequired),
+      dispatch: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func.isRequired),
+      getState: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func.isRequired)
+    }),
+    context: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
+    children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().any)
+  };
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Provider);
 
 /***/ }),
 
-/***/ "./node_modules/react-redux/es/components/connect.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/react-redux/es/components/connect.js ***!
-  \***********************************************************/
+/***/ "./node_modules/react-redux/es/components/connectAdvanced.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/react-redux/es/components/connectAdvanced.js ***!
+  \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "initializeConnect": () => (/* binding */ initializeConnect)
+/* harmony export */   "default": () => (/* binding */ connectAdvanced)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
@@ -39445,42 +47427,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-/* harmony import */ var _connect_selectorFactory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../connect/selectorFactory */ "./node_modules/react-redux/es/connect/selectorFactory.js");
-/* harmony import */ var _connect_mapDispatchToProps__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../connect/mapDispatchToProps */ "./node_modules/react-redux/es/connect/mapDispatchToProps.js");
-/* harmony import */ var _connect_mapStateToProps__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../connect/mapStateToProps */ "./node_modules/react-redux/es/connect/mapStateToProps.js");
-/* harmony import */ var _connect_mergeProps__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../connect/mergeProps */ "./node_modules/react-redux/es/connect/mergeProps.js");
-/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
-/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
-/* harmony import */ var _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/shallowEqual */ "./node_modules/react-redux/es/utils/shallowEqual.js");
-/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Context */ "./node_modules/react-redux/es/components/Context.js");
-/* harmony import */ var _utils_useSyncExternalStore__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/useSyncExternalStore */ "./node_modules/react-redux/es/utils/useSyncExternalStore.js");
+/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
+/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Context */ "./node_modules/react-redux/es/components/Context.js");
 
 
-const _excluded = ["reactReduxForwardedRef"];
-
-/* eslint-disable valid-jsdoc, @typescript-eslint/no-unused-vars */
+var _excluded = ["getDisplayName", "methodName", "renderCountProp", "shouldHandleStateChanges", "storeKey", "withRef", "forwardRef", "context"],
+    _excluded2 = ["reactReduxForwardedRef"];
 
 
 
 
 
+ // Define some constant arrays just to avoid re-creating these
 
+var EMPTY_ARRAY = [];
+var NO_SUBSCRIPTION_ARRAY = [null, null];
 
-
-
-
-
-
-let useSyncExternalStore = _utils_useSyncExternalStore__WEBPACK_IMPORTED_MODULE_13__.notInitialized;
-const initializeConnect = fn => {
-  useSyncExternalStore = fn;
-}; // Define some constant arrays just to avoid re-creating these
-
-const EMPTY_ARRAY = [null, 0];
-const NO_SUBSCRIPTION_ARRAY = [null, null]; // Attempts to stringify whatever not-really-a-component value we were given
-// for logging in an error message
-
-const stringifyComponent = Comp => {
+var stringifyComponent = function stringifyComponent(Comp) {
   try {
     return JSON.stringify(Comp);
   } catch (err) {
@@ -39488,47 +47452,45 @@ const stringifyComponent = Comp => {
   }
 };
 
-// This is "just" a `useLayoutEffect`, but with two modifications:
-// - we need to fall back to `useEffect` in SSR to avoid annoying warnings
-// - we extract this to a separate function to avoid closing over values
-//   and causing memory leaks
+function storeStateUpdatesReducer(state, action) {
+  var updateCount = state[1];
+  return [action.payload, updateCount + 1];
+}
+
 function useIsomorphicLayoutEffectWithArgs(effectFunc, effectArgs, dependencies) {
-  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_10__.useIsomorphicLayoutEffect)(() => effectFunc(...effectArgs), dependencies);
-} // Effect callback, extracted: assign the latest props values to refs for later usage
+  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_6__.useIsomorphicLayoutEffect)(function () {
+    return effectFunc.apply(void 0, effectArgs);
+  }, dependencies);
+}
 
-
-function captureWrapperProps(lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, // actualChildProps: unknown,
-childPropsFromStoreUpdate, notifyNestedSubs) {
+function captureWrapperProps(lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, actualChildProps, childPropsFromStoreUpdate, notifyNestedSubs) {
   // We want to capture the wrapper props and child props we used for later comparisons
   lastWrapperProps.current = wrapperProps;
+  lastChildProps.current = actualChildProps;
   renderIsScheduled.current = false; // If the render was from a store update, clear out that reference and cascade the subscriber update
 
   if (childPropsFromStoreUpdate.current) {
     childPropsFromStoreUpdate.current = null;
     notifyNestedSubs();
   }
-} // Effect callback, extracted: subscribe to the Redux store or nearest connected ancestor,
-// check for updates after dispatched actions, and trigger re-renders.
+}
 
-
-function subscribeUpdates(shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, isMounted, childPropsFromStoreUpdate, notifyNestedSubs, // forceComponentUpdateDispatch: React.Dispatch<any>,
-additionalSubscribeListener) {
+function subscribeUpdates(shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, childPropsFromStoreUpdate, notifyNestedSubs, forceComponentUpdateDispatch) {
   // If we're not subscribed to the store, nothing to do here
-  if (!shouldHandleStateChanges) return () => {}; // Capture values for checking if and when this component unmounts
+  if (!shouldHandleStateChanges) return; // Capture values for checking if and when this component unmounts
 
-  let didUnsubscribe = false;
-  let lastThrownError = null; // We'll run this callback every time a store subscription update propagates to this component
+  var didUnsubscribe = false;
+  var lastThrownError = null; // We'll run this callback every time a store subscription update propagates to this component
 
-  const checkForUpdates = () => {
-    if (didUnsubscribe || !isMounted.current) {
+  var checkForUpdates = function checkForUpdates() {
+    if (didUnsubscribe) {
       // Don't run stale listeners.
       // Redux doesn't guarantee unsubscriptions happen until next dispatch.
       return;
-    } // TODO We're currently calling getState ourselves here, rather than letting `uSES` do it
+    }
 
-
-    const latestStoreState = store.getState();
-    let newChildProps, error;
+    var latestStoreState = store.getState();
+    var newChildProps, error;
 
     try {
       // Actually run the selector with the most recent store state and wrapper props
@@ -39555,10 +47517,14 @@ additionalSubscribeListener) {
       // forcing another re-render, which we don't want.
       lastChildProps.current = newChildProps;
       childPropsFromStoreUpdate.current = newChildProps;
-      renderIsScheduled.current = true; // TODO This is hacky and not how `uSES` is meant to be used
-      // Trigger the React `useSyncExternalStore` subscriber
+      renderIsScheduled.current = true; // If the child props _did_ change (or we caught an error), this wrapper component needs to re-render
 
-      additionalSubscribeListener();
+      forceComponentUpdateDispatch({
+        type: 'STORE_UPDATED',
+        payload: {
+          error: error
+        }
+      });
     }
   }; // Actually subscribe to the nearest connected ancestor (or store)
 
@@ -39569,7 +47535,7 @@ additionalSubscribeListener) {
 
   checkForUpdates();
 
-  const unsubscribeWrapper = () => {
+  var unsubscribeWrapper = function unsubscribeWrapper() {
     didUnsubscribe = true;
     subscription.tryUnsubscribe();
     subscription.onStateChange = null;
@@ -39585,140 +47551,166 @@ additionalSubscribeListener) {
   };
 
   return unsubscribeWrapper;
-} // Reducer initial state creation for our update reducer
-
-
-const initStateUpdates = () => EMPTY_ARRAY;
-
-function strictEqual(a, b) {
-  return a === b;
 }
-/**
- * Infers the type of props that a connector will inject into a component.
- */
 
+var initStateUpdates = function initStateUpdates() {
+  return [null, 0];
+};
 
-/**
- * Connects a React component to a Redux store.
- *
- * - Without arguments, just wraps the component, without changing the behavior / props
- *
- * - If 2 params are passed (3rd param, mergeProps, is skipped), default behavior
- * is to override ownProps (as stated in the docs), so what remains is everything that's
- * not a state or dispatch prop
- *
- * - When 3rd param is passed, we don't know if ownProps propagate and whether they
- * should be valid component props, because it depends on mergeProps implementation.
- * As such, it is the user's responsibility to extend ownProps interface from state or
- * dispatch props or both when applicable
- *
- * @param mapStateToProps A function that extracts values from state
- * @param mapDispatchToProps Setup for dispatching actions
- * @param mergeProps Optional callback to merge state and dispatch props together
- * @param options Options for configuring the connection
- *
- */
-function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
-  // The `pure` option has been removed, so TS doesn't like us destructuring this to check its existence.
-  // @ts-ignore
-  pure,
-  areStatesEqual = strictEqual,
-  areOwnPropsEqual = _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_11__["default"],
-  areStatePropsEqual = _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_11__["default"],
-  areMergedPropsEqual = _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_11__["default"],
-  // use React's forwardRef to expose a ref of the wrapped component
-  forwardRef = false,
-  // the context consumer to use
-  context = _Context__WEBPACK_IMPORTED_MODULE_12__.ReactReduxContext
-} = {}) {
+function connectAdvanced(
+/*
+  selectorFactory is a func that is responsible for returning the selector function used to
+  compute new props from state, props, and dispatch. For example:
+      export default connectAdvanced((dispatch, options) => (state, props) => ({
+      thing: state.things[props.thingId],
+      saveThing: fields => dispatch(actionCreators.saveThing(props.thingId, fields)),
+    }))(YourComponent)
+    Access to dispatch is provided to the factory so selectorFactories can bind actionCreators
+  outside of their selector as an optimization. Options passed to connectAdvanced are passed to
+  the selectorFactory, along with displayName and WrappedComponent, as the second argument.
+    Note that selectorFactory is responsible for all caching/memoization of inbound and outbound
+  props. Do not use connectAdvanced directly without memoizing results between calls to your
+  selector, otherwise the Connect component will re-render on every state or props change.
+*/
+selectorFactory, // options object:
+_ref) {
+  if (_ref === void 0) {
+    _ref = {};
+  }
+
+  var _ref2 = _ref,
+      _ref2$getDisplayName = _ref2.getDisplayName,
+      getDisplayName = _ref2$getDisplayName === void 0 ? function (name) {
+    return "ConnectAdvanced(" + name + ")";
+  } : _ref2$getDisplayName,
+      _ref2$methodName = _ref2.methodName,
+      methodName = _ref2$methodName === void 0 ? 'connectAdvanced' : _ref2$methodName,
+      _ref2$renderCountProp = _ref2.renderCountProp,
+      renderCountProp = _ref2$renderCountProp === void 0 ? undefined : _ref2$renderCountProp,
+      _ref2$shouldHandleSta = _ref2.shouldHandleStateChanges,
+      shouldHandleStateChanges = _ref2$shouldHandleSta === void 0 ? true : _ref2$shouldHandleSta,
+      _ref2$storeKey = _ref2.storeKey,
+      storeKey = _ref2$storeKey === void 0 ? 'store' : _ref2$storeKey,
+      _ref2$withRef = _ref2.withRef,
+      withRef = _ref2$withRef === void 0 ? false : _ref2$withRef,
+      _ref2$forwardRef = _ref2.forwardRef,
+      forwardRef = _ref2$forwardRef === void 0 ? false : _ref2$forwardRef,
+      _ref2$context = _ref2.context,
+      context = _ref2$context === void 0 ? _Context__WEBPACK_IMPORTED_MODULE_7__.ReactReduxContext : _ref2$context,
+      connectOptions = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref2, _excluded);
+
   if (true) {
-    if (pure !== undefined) {
-      throw new Error('The `pure` option has been removed. `connect` is now always a "pure/memoized" component');
+    if (renderCountProp !== undefined) {
+      throw new Error("renderCountProp is removed. render counting is built into the latest React Dev Tools profiling extension");
+    }
+
+    if (withRef) {
+      throw new Error('withRef is removed. To access the wrapped instance, use a ref on the connected component');
+    }
+
+    var customStoreWarningMessage = 'To use a custom Redux store for specific components, create a custom React context with ' + "React.createContext(), and pass the context object to React Redux's Provider and specific components" + ' like: <Provider context={MyContext}><ConnectedComponent context={MyContext} /></Provider>. ' + 'You may also pass a {context : MyContext} option to connect';
+
+    if (storeKey !== 'store') {
+      throw new Error('storeKey has been removed and does not do anything. ' + customStoreWarningMessage);
     }
   }
 
-  const Context = context;
-  const initMapStateToProps = (0,_connect_mapStateToProps__WEBPACK_IMPORTED_MODULE_7__.mapStateToPropsFactory)(mapStateToProps);
-  const initMapDispatchToProps = (0,_connect_mapDispatchToProps__WEBPACK_IMPORTED_MODULE_6__.mapDispatchToPropsFactory)(mapDispatchToProps);
-  const initMergeProps = (0,_connect_mergeProps__WEBPACK_IMPORTED_MODULE_8__.mergePropsFactory)(mergeProps);
-  const shouldHandleStateChanges = Boolean(mapStateToProps);
-
-  const wrapWithConnect = WrappedComponent => {
+  var Context = context;
+  return function wrapWithConnect(WrappedComponent) {
     if ( true && !(0,react_is__WEBPACK_IMPORTED_MODULE_4__.isValidElementType)(WrappedComponent)) {
-      throw new Error(`You must pass a component to the function returned by connect. Instead received ${stringifyComponent(WrappedComponent)}`);
+      throw new Error("You must pass a component to the function returned by " + (methodName + ". Instead received " + stringifyComponent(WrappedComponent)));
     }
 
-    const wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
-    const displayName = `Connect(${wrappedComponentName})`;
-    const selectorFactoryOptions = {
-      shouldHandleStateChanges,
-      displayName,
-      wrappedComponentName,
-      WrappedComponent,
-      // @ts-ignore
-      initMapStateToProps,
-      // @ts-ignore
-      initMapDispatchToProps,
-      initMergeProps,
-      areStatesEqual,
-      areStatePropsEqual,
-      areOwnPropsEqual,
-      areMergedPropsEqual
+    var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
+    var displayName = getDisplayName(wrappedComponentName);
+
+    var selectorFactoryOptions = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, connectOptions, {
+      getDisplayName: getDisplayName,
+      methodName: methodName,
+      renderCountProp: renderCountProp,
+      shouldHandleStateChanges: shouldHandleStateChanges,
+      storeKey: storeKey,
+      displayName: displayName,
+      wrappedComponentName: wrappedComponentName,
+      WrappedComponent: WrappedComponent
+    });
+
+    var pure = connectOptions.pure;
+
+    function createChildSelector(store) {
+      return selectorFactory(store.dispatch, selectorFactoryOptions);
+    } // If we aren't running in "pure" mode, we don't want to memoize values.
+    // To avoid conditionally calling hooks, we fall back to a tiny wrapper
+    // that just executes the given callback immediately.
+
+
+    var usePureOnlyMemo = pure ? react__WEBPACK_IMPORTED_MODULE_3__.useMemo : function (callback) {
+      return callback();
     };
 
     function ConnectFunction(props) {
-      const [propsContext, reactReduxForwardedRef, wrapperProps] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
+      var _useMemo = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
         // Distinguish between actual "data" props that were passed to the wrapper component,
         // and values needed to control behavior (forwarded refs, alternate context instances).
         // To maintain the wrapperProps object reference, memoize this destructuring.
-        const {
-          reactReduxForwardedRef
-        } = props,
-              wrapperProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, _excluded);
+        var reactReduxForwardedRef = props.reactReduxForwardedRef,
+            wrapperProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, _excluded2);
 
         return [props.context, reactReduxForwardedRef, wrapperProps];
-      }, [props]);
-      const ContextToUse = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
+      }, [props]),
+          propsContext = _useMemo[0],
+          reactReduxForwardedRef = _useMemo[1],
+          wrapperProps = _useMemo[2];
+
+      var ContextToUse = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
         // Users may optionally pass in a custom context instance to use instead of our ReactReduxContext.
         // Memoize the check that determines which context instance we should use.
-        return propsContext && propsContext.Consumer && // @ts-ignore
-        (0,react_is__WEBPACK_IMPORTED_MODULE_4__.isContextConsumer)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(propsContext.Consumer, null)) ? propsContext : Context;
+        return propsContext && propsContext.Consumer && (0,react_is__WEBPACK_IMPORTED_MODULE_4__.isContextConsumer)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(propsContext.Consumer, null)) ? propsContext : Context;
       }, [propsContext, Context]); // Retrieve the store and ancestor subscription via context, if available
 
-      const contextValue = (0,react__WEBPACK_IMPORTED_MODULE_3__.useContext)(ContextToUse); // The store _must_ exist as either a prop or in context.
+      var contextValue = (0,react__WEBPACK_IMPORTED_MODULE_3__.useContext)(ContextToUse); // The store _must_ exist as either a prop or in context.
       // We'll check to see if it _looks_ like a Redux store first.
       // This allows us to pass through a `store` prop that is just a plain value.
 
-      const didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
-      const didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
+      var didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
+      var didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
 
       if ( true && !didStoreComeFromProps && !didStoreComeFromContext) {
-        throw new Error(`Could not find "store" in the context of ` + `"${displayName}". Either wrap the root component in a <Provider>, ` + `or pass a custom React context provider to <Provider> and the corresponding ` + `React context consumer to ${displayName} in connect options.`);
+        throw new Error("Could not find \"store\" in the context of " + ("\"" + displayName + "\". Either wrap the root component in a <Provider>, ") + "or pass a custom React context provider to <Provider> and the corresponding " + ("React context consumer to " + displayName + " in connect options."));
       } // Based on the previous check, one of these must be true
 
 
-      const store = didStoreComeFromProps ? props.store : contextValue.store;
-      const getServerState = didStoreComeFromContext ? contextValue.getServerState : store.getState;
-      const childPropsSelector = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
+      var store = didStoreComeFromProps ? props.store : contextValue.store;
+      var childPropsSelector = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
         // The child props selector needs the store reference as an input.
         // Re-create this selector whenever the store changes.
-        return (0,_connect_selectorFactory__WEBPACK_IMPORTED_MODULE_5__["default"])(store.dispatch, selectorFactoryOptions);
+        return createChildSelector(store);
       }, [store]);
-      const [subscription, notifyNestedSubs] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
+
+      var _useMemo2 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
         if (!shouldHandleStateChanges) return NO_SUBSCRIPTION_ARRAY; // This Subscription's source should match where store came from: props vs. context. A component
         // connected to the store via props shouldn't use subscription from context, or vice versa.
 
-        const subscription = (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_9__.createSubscription)(store, didStoreComeFromProps ? undefined : contextValue.subscription); // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
+        // This Subscription's source should match where store came from: props vs. context. A component
+        // connected to the store via props shouldn't use subscription from context, or vice versa.
+        var subscription = (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_5__.createSubscription)(store, didStoreComeFromProps ? null : contextValue.subscription); // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
         // the middle of the notification loop, where `subscription` will then be null. This can
         // probably be avoided if Subscription's listeners logic is changed to not call listeners
         // that have been unsubscribed in the  middle of the notification loop.
 
-        const notifyNestedSubs = subscription.notifyNestedSubs.bind(subscription);
+        // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
+        // the middle of the notification loop, where `subscription` will then be null. This can
+        // probably be avoided if Subscription's listeners logic is changed to not call listeners
+        // that have been unsubscribed in the  middle of the notification loop.
+        var notifyNestedSubs = subscription.notifyNestedSubs.bind(subscription);
         return [subscription, notifyNestedSubs];
-      }, [store, didStoreComeFromProps, contextValue]); // Determine what {store, subscription} value should be put into nested context, if necessary,
+      }, [store, didStoreComeFromProps, contextValue]),
+          subscription = _useMemo2[0],
+          notifyNestedSubs = _useMemo2[1]; // Determine what {store, subscription} value should be put into nested context, if necessary,
       // and memoize that value to avoid unnecessary context updates.
 
-      const overriddenContextValue = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
+
+      var overriddenContextValue = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
         if (didStoreComeFromProps) {
           // This component is directly subscribed to a store from props.
           // We don't want descendants reading from this store - pass down whatever
@@ -39729,95 +47721,59 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
 
 
         return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, contextValue, {
-          subscription
+          subscription: subscription
         });
-      }, [didStoreComeFromProps, contextValue, subscription]); // Set up refs to coordinate values between the subscription effect and the render logic
+      }, [didStoreComeFromProps, contextValue, subscription]); // We need to force this wrapper component to re-render whenever a Redux store update
+      // causes a change to the calculated child component props (or we caught an error in mapState)
 
-      const lastChildProps = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
-      const lastWrapperProps = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(wrapperProps);
-      const childPropsFromStoreUpdate = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
-      const renderIsScheduled = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(false);
-      const isProcessingDispatch = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(false);
-      const isMounted = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(false);
-      const latestSubscriptionCallbackError = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
-      (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_10__.useIsomorphicLayoutEffect)(() => {
-        isMounted.current = true;
-        return () => {
-          isMounted.current = false;
-        };
-      }, []);
-      const actualChildPropsSelector = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
-        const selector = () => {
-          // Tricky logic here:
-          // - This render may have been triggered by a Redux store update that produced new child props
-          // - However, we may have gotten new wrapper props after that
-          // If we have new child props, and the same wrapper props, we know we should use the new child props as-is.
-          // But, if we have new wrapper props, those might change the child props, so we have to recalculate things.
-          // So, we'll use the child props from store update only if the wrapper props are the same as last time.
-          if (childPropsFromStoreUpdate.current && wrapperProps === lastWrapperProps.current) {
-            return childPropsFromStoreUpdate.current;
-          } // TODO We're reading the store directly in render() here. Bad idea?
-          // This will likely cause Bad Things (TM) to happen in Concurrent Mode.
-          // Note that we do this because on renders _not_ caused by store updates, we need the latest store state
-          // to determine what the child props should be.
+      var _useReducer = (0,react__WEBPACK_IMPORTED_MODULE_3__.useReducer)(storeStateUpdatesReducer, EMPTY_ARRAY, initStateUpdates),
+          _useReducer$ = _useReducer[0],
+          previousStateUpdateResult = _useReducer$[0],
+          forceComponentUpdateDispatch = _useReducer[1]; // Propagate any mapState/mapDispatch errors upwards
 
 
-          return childPropsSelector(store.getState(), wrapperProps);
-        };
+      if (previousStateUpdateResult && previousStateUpdateResult.error) {
+        throw previousStateUpdateResult.error;
+      } // Set up refs to coordinate values between the subscription effect and the render logic
 
-        return selector;
-      }, [store, wrapperProps]); // We need this to execute synchronously every time we re-render. However, React warns
+
+      var lastChildProps = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
+      var lastWrapperProps = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(wrapperProps);
+      var childPropsFromStoreUpdate = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
+      var renderIsScheduled = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(false);
+      var actualChildProps = usePureOnlyMemo(function () {
+        // Tricky logic here:
+        // - This render may have been triggered by a Redux store update that produced new child props
+        // - However, we may have gotten new wrapper props after that
+        // If we have new child props, and the same wrapper props, we know we should use the new child props as-is.
+        // But, if we have new wrapper props, those might change the child props, so we have to recalculate things.
+        // So, we'll use the child props from store update only if the wrapper props are the same as last time.
+        if (childPropsFromStoreUpdate.current && wrapperProps === lastWrapperProps.current) {
+          return childPropsFromStoreUpdate.current;
+        } // TODO We're reading the store directly in render() here. Bad idea?
+        // This will likely cause Bad Things (TM) to happen in Concurrent Mode.
+        // Note that we do this because on renders _not_ caused by store updates, we need the latest store state
+        // to determine what the child props should be.
+
+
+        return childPropsSelector(store.getState(), wrapperProps);
+      }, [store, previousStateUpdateResult, wrapperProps]); // We need this to execute synchronously every time we re-render. However, React warns
       // about useLayoutEffect in SSR, so we try to detect environment and fall back to
       // just useEffect instead to avoid the warning, since neither will run anyway.
 
-      const subscribeForReact = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
-        const subscribe = reactListener => {
-          if (!subscription) {
-            return () => {};
-          }
+      useIsomorphicLayoutEffectWithArgs(captureWrapperProps, [lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, actualChildProps, childPropsFromStoreUpdate, notifyNestedSubs]); // Our re-subscribe logic only runs when the store/subscription setup changes
 
-          return subscribeUpdates(shouldHandleStateChanges, store, subscription, // @ts-ignore
-          childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, isMounted, childPropsFromStoreUpdate, notifyNestedSubs, reactListener);
-        };
-
-        return subscribe;
-      }, [subscription]);
-      useIsomorphicLayoutEffectWithArgs(captureWrapperProps, [lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, childPropsFromStoreUpdate, notifyNestedSubs]);
-      let actualChildProps;
-
-      try {
-        actualChildProps = useSyncExternalStore( // TODO We're passing through a big wrapper that does a bunch of extra side effects besides subscribing
-        subscribeForReact, // TODO This is incredibly hacky. We've already processed the store update and calculated new child props,
-        // TODO and we're just passing that through so it triggers a re-render for us rather than relying on `uSES`.
-        actualChildPropsSelector, getServerState ? () => childPropsSelector(getServerState(), wrapperProps) : actualChildPropsSelector);
-      } catch (err) {
-        if (latestSubscriptionCallbackError.current) {
-          ;
-          err.message += `\nThe error may be correlated with this previous error:\n${latestSubscriptionCallbackError.current.stack}\n\n`;
-        }
-
-        throw err;
-      }
-
-      (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_10__.useIsomorphicLayoutEffect)(() => {
-        latestSubscriptionCallbackError.current = undefined;
-        childPropsFromStoreUpdate.current = undefined;
-        lastChildProps.current = actualChildProps;
-      }); // Now that all that's done, we can finally try to actually render the child component.
+      useIsomorphicLayoutEffectWithArgs(subscribeUpdates, [shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, childPropsFromStoreUpdate, notifyNestedSubs, forceComponentUpdateDispatch], [store, subscription, childPropsSelector]); // Now that all that's done, we can finally try to actually render the child component.
       // We memoize the elements for the rendered child component as an optimization.
 
-      const renderedWrappedComponent = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
-        return (
-          /*#__PURE__*/
-          // @ts-ignore
-          react__WEBPACK_IMPORTED_MODULE_3__.createElement(WrappedComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, actualChildProps, {
-            ref: reactReduxForwardedRef
-          }))
-        );
+      var renderedWrappedComponent = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(WrappedComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, actualChildProps, {
+          ref: reactReduxForwardedRef
+        }));
       }, [reactReduxForwardedRef, WrappedComponent, actualChildProps]); // If React sees the exact same element reference as last time, it bails out of re-rendering
       // that child, same as if it was wrapped in React.memo() or returned false from shouldComponentUpdate.
 
-      const renderedChild = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
+      var renderedChild = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
         if (shouldHandleStateChanges) {
           // If this component is subscribed to store updates, we need to pass its own
           // subscription instance down to our descendants. That means rendering the same
@@ -39830,24 +47786,19 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
         return renderedWrappedComponent;
       }, [ContextToUse, renderedWrappedComponent, overriddenContextValue]);
       return renderedChild;
-    }
+    } // If we're in "pure" mode, ensure our wrapper component only re-renders when incoming props have changed.
 
-    const _Connect = react__WEBPACK_IMPORTED_MODULE_3__.memo(ConnectFunction);
 
-    // Add a hacky cast to get the right output type
-    const Connect = _Connect;
+    var Connect = pure ? react__WEBPACK_IMPORTED_MODULE_3__.memo(ConnectFunction) : ConnectFunction;
     Connect.WrappedComponent = WrappedComponent;
     Connect.displayName = ConnectFunction.displayName = displayName;
 
     if (forwardRef) {
-      const _forwarded = react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(function forwardConnectRef(props, ref) {
-        // @ts-ignore
+      var forwarded = react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(function forwardConnectRef(props, ref) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(Connect, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
           reactReduxForwardedRef: ref
         }));
       });
-
-      const forwarded = _forwarded;
       forwarded.displayName = displayName;
       forwarded.WrappedComponent = WrappedComponent;
       return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2___default()(forwarded, WrappedComponent);
@@ -39855,30 +47806,129 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
 
     return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2___default()(Connect, WrappedComponent);
   };
-
-  return wrapWithConnect;
 }
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (connect);
 
 /***/ }),
 
-/***/ "./node_modules/react-redux/es/connect/invalidArgFactory.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/react-redux/es/connect/invalidArgFactory.js ***!
-  \******************************************************************/
+/***/ "./node_modules/react-redux/es/connect/connect.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-redux/es/connect/connect.js ***!
+  \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createInvalidArgFactory": () => (/* binding */ createInvalidArgFactory)
+/* harmony export */   "createConnect": () => (/* binding */ createConnect),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function createInvalidArgFactory(arg, name) {
-  return (dispatch, options) => {
-    throw new Error(`Invalid value of type ${typeof arg} for ${name} argument when connecting component ${options.wrappedComponentName}.`);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _components_connectAdvanced__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/connectAdvanced */ "./node_modules/react-redux/es/components/connectAdvanced.js");
+/* harmony import */ var _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/shallowEqual */ "./node_modules/react-redux/es/utils/shallowEqual.js");
+/* harmony import */ var _mapDispatchToProps__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mapDispatchToProps */ "./node_modules/react-redux/es/connect/mapDispatchToProps.js");
+/* harmony import */ var _mapStateToProps__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./mapStateToProps */ "./node_modules/react-redux/es/connect/mapStateToProps.js");
+/* harmony import */ var _mergeProps__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./mergeProps */ "./node_modules/react-redux/es/connect/mergeProps.js");
+/* harmony import */ var _selectorFactory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./selectorFactory */ "./node_modules/react-redux/es/connect/selectorFactory.js");
+
+
+var _excluded = ["pure", "areStatesEqual", "areOwnPropsEqual", "areStatePropsEqual", "areMergedPropsEqual"];
+
+
+
+
+
+
+/*
+  connect is a facade over connectAdvanced. It turns its args into a compatible
+  selectorFactory, which has the signature:
+
+    (dispatch, options) => (nextState, nextOwnProps) => nextFinalProps
+  
+  connect passes its args to connectAdvanced as options, which will in turn pass them to
+  selectorFactory each time a Connect component instance is instantiated or hot reloaded.
+
+  selectorFactory returns a final props selector from its mapStateToProps,
+  mapStateToPropsFactories, mapDispatchToProps, mapDispatchToPropsFactories, mergeProps,
+  mergePropsFactories, and pure args.
+
+  The resulting final props selector is called by the Connect component instance whenever
+  it receives new props or store state.
+ */
+
+function match(arg, factories, name) {
+  for (var i = factories.length - 1; i >= 0; i--) {
+    var result = factories[i](arg);
+    if (result) return result;
+  }
+
+  return function (dispatch, options) {
+    throw new Error("Invalid value of type " + typeof arg + " for " + name + " argument when connecting component " + options.wrappedComponentName + ".");
   };
 }
+
+function strictEqual(a, b) {
+  return a === b;
+} // createConnect with default args builds the 'official' connect behavior. Calling it with
+// different options opens up some testing and extensibility scenarios
+
+
+function createConnect(_temp) {
+  var _ref = _temp === void 0 ? {} : _temp,
+      _ref$connectHOC = _ref.connectHOC,
+      connectHOC = _ref$connectHOC === void 0 ? _components_connectAdvanced__WEBPACK_IMPORTED_MODULE_2__["default"] : _ref$connectHOC,
+      _ref$mapStateToPropsF = _ref.mapStateToPropsFactories,
+      mapStateToPropsFactories = _ref$mapStateToPropsF === void 0 ? _mapStateToProps__WEBPACK_IMPORTED_MODULE_5__["default"] : _ref$mapStateToPropsF,
+      _ref$mapDispatchToPro = _ref.mapDispatchToPropsFactories,
+      mapDispatchToPropsFactories = _ref$mapDispatchToPro === void 0 ? _mapDispatchToProps__WEBPACK_IMPORTED_MODULE_4__["default"] : _ref$mapDispatchToPro,
+      _ref$mergePropsFactor = _ref.mergePropsFactories,
+      mergePropsFactories = _ref$mergePropsFactor === void 0 ? _mergeProps__WEBPACK_IMPORTED_MODULE_6__["default"] : _ref$mergePropsFactor,
+      _ref$selectorFactory = _ref.selectorFactory,
+      selectorFactory = _ref$selectorFactory === void 0 ? _selectorFactory__WEBPACK_IMPORTED_MODULE_7__["default"] : _ref$selectorFactory;
+
+  return function connect(mapStateToProps, mapDispatchToProps, mergeProps, _ref2) {
+    if (_ref2 === void 0) {
+      _ref2 = {};
+    }
+
+    var _ref3 = _ref2,
+        _ref3$pure = _ref3.pure,
+        pure = _ref3$pure === void 0 ? true : _ref3$pure,
+        _ref3$areStatesEqual = _ref3.areStatesEqual,
+        areStatesEqual = _ref3$areStatesEqual === void 0 ? strictEqual : _ref3$areStatesEqual,
+        _ref3$areOwnPropsEqua = _ref3.areOwnPropsEqual,
+        areOwnPropsEqual = _ref3$areOwnPropsEqua === void 0 ? _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_3__["default"] : _ref3$areOwnPropsEqua,
+        _ref3$areStatePropsEq = _ref3.areStatePropsEqual,
+        areStatePropsEqual = _ref3$areStatePropsEq === void 0 ? _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_3__["default"] : _ref3$areStatePropsEq,
+        _ref3$areMergedPropsE = _ref3.areMergedPropsEqual,
+        areMergedPropsEqual = _ref3$areMergedPropsE === void 0 ? _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_3__["default"] : _ref3$areMergedPropsE,
+        extraOptions = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref3, _excluded);
+
+    var initMapStateToProps = match(mapStateToProps, mapStateToPropsFactories, 'mapStateToProps');
+    var initMapDispatchToProps = match(mapDispatchToProps, mapDispatchToPropsFactories, 'mapDispatchToProps');
+    var initMergeProps = match(mergeProps, mergePropsFactories, 'mergeProps');
+    return connectHOC(selectorFactory, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      // used in error messages
+      methodName: 'connect',
+      // used to compute Connect's displayName from the wrapped component's displayName.
+      getDisplayName: function getDisplayName(name) {
+        return "Connect(" + name + ")";
+      },
+      // if mapStateToProps is falsy, the Connect component doesn't subscribe to store state changes
+      shouldHandleStateChanges: Boolean(mapStateToProps),
+      // passed through to selectorFactory
+      initMapStateToProps: initMapStateToProps,
+      initMapDispatchToProps: initMapDispatchToProps,
+      initMergeProps: initMergeProps,
+      pure: pure,
+      areStatesEqual: areStatesEqual,
+      areOwnPropsEqual: areOwnPropsEqual,
+      areStatePropsEqual: areStatePropsEqual,
+      areMergedPropsEqual: areMergedPropsEqual
+    }, extraOptions));
+  };
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/createConnect());
 
 /***/ }),
 
@@ -39891,21 +47941,31 @@ function createInvalidArgFactory(arg, name) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "mapDispatchToPropsFactory": () => (/* binding */ mapDispatchToPropsFactory)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "whenMapDispatchToPropsIsFunction": () => (/* binding */ whenMapDispatchToPropsIsFunction),
+/* harmony export */   "whenMapDispatchToPropsIsMissing": () => (/* binding */ whenMapDispatchToPropsIsMissing),
+/* harmony export */   "whenMapDispatchToPropsIsObject": () => (/* binding */ whenMapDispatchToPropsIsObject)
 /* harmony export */ });
 /* harmony import */ var _utils_bindActionCreators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/bindActionCreators */ "./node_modules/react-redux/es/utils/bindActionCreators.js");
 /* harmony import */ var _wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./wrapMapToProps */ "./node_modules/react-redux/es/connect/wrapMapToProps.js");
-/* harmony import */ var _invalidArgFactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./invalidArgFactory */ "./node_modules/react-redux/es/connect/invalidArgFactory.js");
 
 
-
-function mapDispatchToPropsFactory(mapDispatchToProps) {
-  return mapDispatchToProps && typeof mapDispatchToProps === 'object' ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsConstant)(dispatch => // @ts-ignore
-  (0,_utils_bindActionCreators__WEBPACK_IMPORTED_MODULE_0__["default"])(mapDispatchToProps, dispatch)) : !mapDispatchToProps ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsConstant)(dispatch => ({
-    dispatch
-  })) : typeof mapDispatchToProps === 'function' ? // @ts-ignore
-  (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsFunc)(mapDispatchToProps, 'mapDispatchToProps') : (0,_invalidArgFactory__WEBPACK_IMPORTED_MODULE_2__.createInvalidArgFactory)(mapDispatchToProps, 'mapDispatchToProps');
+function whenMapDispatchToPropsIsFunction(mapDispatchToProps) {
+  return typeof mapDispatchToProps === 'function' ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsFunc)(mapDispatchToProps, 'mapDispatchToProps') : undefined;
 }
+function whenMapDispatchToPropsIsMissing(mapDispatchToProps) {
+  return !mapDispatchToProps ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsConstant)(function (dispatch) {
+    return {
+      dispatch: dispatch
+    };
+  }) : undefined;
+}
+function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
+  return mapDispatchToProps && typeof mapDispatchToProps === 'object' ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsConstant)(function (dispatch) {
+    return (0,_utils_bindActionCreators__WEBPACK_IMPORTED_MODULE_0__["default"])(mapDispatchToProps, dispatch);
+  }) : undefined;
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
 
 /***/ }),
 
@@ -39918,16 +47978,21 @@ function mapDispatchToPropsFactory(mapDispatchToProps) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "mapStateToPropsFactory": () => (/* binding */ mapStateToPropsFactory)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "whenMapStateToPropsIsFunction": () => (/* binding */ whenMapStateToPropsIsFunction),
+/* harmony export */   "whenMapStateToPropsIsMissing": () => (/* binding */ whenMapStateToPropsIsMissing)
 /* harmony export */ });
 /* harmony import */ var _wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wrapMapToProps */ "./node_modules/react-redux/es/connect/wrapMapToProps.js");
-/* harmony import */ var _invalidArgFactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./invalidArgFactory */ "./node_modules/react-redux/es/connect/invalidArgFactory.js");
 
-
-function mapStateToPropsFactory(mapStateToProps) {
-  return !mapStateToProps ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__.wrapMapToPropsConstant)(() => ({})) : typeof mapStateToProps === 'function' ? // @ts-ignore
-  (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__.wrapMapToPropsFunc)(mapStateToProps, 'mapStateToProps') : (0,_invalidArgFactory__WEBPACK_IMPORTED_MODULE_1__.createInvalidArgFactory)(mapStateToProps, 'mapStateToProps');
+function whenMapStateToPropsIsFunction(mapStateToProps) {
+  return typeof mapStateToProps === 'function' ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__.wrapMapToPropsFunc)(mapStateToProps, 'mapStateToProps') : undefined;
 }
+function whenMapStateToPropsIsMissing(mapStateToProps) {
+  return !mapStateToProps ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__.wrapMapToPropsConstant)(function () {
+    return {};
+  }) : undefined;
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing]);
 
 /***/ }),
 
@@ -39940,32 +48005,31 @@ function mapStateToPropsFactory(mapStateToProps) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "defaultMergeProps": () => (/* binding */ defaultMergeProps),
-/* harmony export */   "mergePropsFactory": () => (/* binding */ mergePropsFactory),
+/* harmony export */   "whenMergePropsIsFunction": () => (/* binding */ whenMergePropsIsFunction),
+/* harmony export */   "whenMergePropsIsOmitted": () => (/* binding */ whenMergePropsIsOmitted),
 /* harmony export */   "wrapMergePropsFunc": () => (/* binding */ wrapMergePropsFunc)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _utils_verifyPlainObject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/verifyPlainObject */ "./node_modules/react-redux/es/utils/verifyPlainObject.js");
-/* harmony import */ var _invalidArgFactory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./invalidArgFactory */ "./node_modules/react-redux/es/connect/invalidArgFactory.js");
-
 
 
 function defaultMergeProps(stateProps, dispatchProps, ownProps) {
-  // @ts-ignore
   return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, ownProps, stateProps, dispatchProps);
 }
 function wrapMergePropsFunc(mergeProps) {
-  return function initMergePropsProxy(dispatch, {
-    displayName,
-    areMergedPropsEqual
-  }) {
-    let hasRunOnce = false;
-    let mergedProps;
+  return function initMergePropsProxy(dispatch, _ref) {
+    var displayName = _ref.displayName,
+        pure = _ref.pure,
+        areMergedPropsEqual = _ref.areMergedPropsEqual;
+    var hasRunOnce = false;
+    var mergedProps;
     return function mergePropsProxy(stateProps, dispatchProps, ownProps) {
-      const nextMergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+      var nextMergedProps = mergeProps(stateProps, dispatchProps, ownProps);
 
       if (hasRunOnce) {
-        if (!areMergedPropsEqual(nextMergedProps, mergedProps)) mergedProps = nextMergedProps;
+        if (!pure || !areMergedPropsEqual(nextMergedProps, mergedProps)) mergedProps = nextMergedProps;
       } else {
         hasRunOnce = true;
         mergedProps = nextMergedProps;
@@ -39976,9 +48040,15 @@ function wrapMergePropsFunc(mergeProps) {
     };
   };
 }
-function mergePropsFactory(mergeProps) {
-  return !mergeProps ? () => defaultMergeProps : typeof mergeProps === 'function' ? wrapMergePropsFunc(mergeProps) : (0,_invalidArgFactory__WEBPACK_IMPORTED_MODULE_2__.createInvalidArgFactory)(mergeProps, 'mergeProps');
+function whenMergePropsIsFunction(mergeProps) {
+  return typeof mergeProps === 'function' ? wrapMergePropsFunc(mergeProps) : undefined;
 }
+function whenMergePropsIsOmitted(mergeProps) {
+  return !mergeProps ? function () {
+    return defaultMergeProps;
+  } : undefined;
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([whenMergePropsIsFunction, whenMergePropsIsOmitted]);
 
 /***/ }),
 
@@ -39992,24 +48062,29 @@ function mergePropsFactory(mergeProps) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ finalPropsSelectorFactory),
+/* harmony export */   "impureFinalPropsSelectorFactory": () => (/* binding */ impureFinalPropsSelectorFactory),
 /* harmony export */   "pureFinalPropsSelectorFactory": () => (/* binding */ pureFinalPropsSelectorFactory)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var _verifySubselectors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./verifySubselectors */ "./node_modules/react-redux/es/connect/verifySubselectors.js");
 
-const _excluded = ["initMapStateToProps", "initMapDispatchToProps", "initMergeProps"];
+var _excluded = ["initMapStateToProps", "initMapDispatchToProps", "initMergeProps"];
 
-function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, {
-  areStatesEqual,
-  areOwnPropsEqual,
-  areStatePropsEqual
-}) {
-  let hasRunAtLeastOnce = false;
-  let state;
-  let ownProps;
-  let stateProps;
-  let dispatchProps;
-  let mergedProps;
+function impureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch) {
+  return function impureFinalPropsSelector(state, ownProps) {
+    return mergeProps(mapStateToProps(state, ownProps), mapDispatchToProps(dispatch, ownProps), ownProps);
+  };
+}
+function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, _ref) {
+  var areStatesEqual = _ref.areStatesEqual,
+      areOwnPropsEqual = _ref.areOwnPropsEqual,
+      areStatePropsEqual = _ref.areStatePropsEqual;
+  var hasRunAtLeastOnce = false;
+  var state;
+  var ownProps;
+  var stateProps;
+  var dispatchProps;
+  var mergedProps;
 
   function handleFirstCall(firstState, firstOwnProps) {
     state = firstState;
@@ -40036,16 +48111,16 @@ function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, merg
   }
 
   function handleNewState() {
-    const nextStateProps = mapStateToProps(state, ownProps);
-    const statePropsChanged = !areStatePropsEqual(nextStateProps, stateProps);
+    var nextStateProps = mapStateToProps(state, ownProps);
+    var statePropsChanged = !areStatePropsEqual(nextStateProps, stateProps);
     stateProps = nextStateProps;
     if (statePropsChanged) mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
     return mergedProps;
   }
 
   function handleSubsequentCalls(nextState, nextOwnProps) {
-    const propsChanged = !areOwnPropsEqual(nextOwnProps, ownProps);
-    const stateChanged = !areStatesEqual(nextState, state);
+    var propsChanged = !areOwnPropsEqual(nextOwnProps, ownProps);
+    var stateChanged = !areStatesEqual(nextState, state);
     state = nextState;
     ownProps = nextOwnProps;
     if (propsChanged && stateChanged) return handleNewPropsAndNewState();
@@ -40057,28 +48132,28 @@ function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, merg
   return function pureFinalPropsSelector(nextState, nextOwnProps) {
     return hasRunAtLeastOnce ? handleSubsequentCalls(nextState, nextOwnProps) : handleFirstCall(nextState, nextOwnProps);
   };
-}
-// TODO: Add more comments
-// The selector returned by selectorFactory will memoize its results,
-// allowing connect's shouldComponentUpdate to return false if final
-// props have not changed.
-function finalPropsSelectorFactory(dispatch, _ref) {
-  let {
-    initMapStateToProps,
-    initMapDispatchToProps,
-    initMergeProps
-  } = _ref,
-      options = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
+} // TODO: Add more comments
+// If pure is true, the selector returned by selectorFactory will memoize its results,
+// allowing connectAdvanced's shouldComponentUpdate to return false if final
+// props have not changed. If false, the selector will always return a new
+// object and shouldComponentUpdate will always return true.
 
-  const mapStateToProps = initMapStateToProps(dispatch, options);
-  const mapDispatchToProps = initMapDispatchToProps(dispatch, options);
-  const mergeProps = initMergeProps(dispatch, options);
+function finalPropsSelectorFactory(dispatch, _ref2) {
+  var initMapStateToProps = _ref2.initMapStateToProps,
+      initMapDispatchToProps = _ref2.initMapDispatchToProps,
+      initMergeProps = _ref2.initMergeProps,
+      options = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref2, _excluded);
+
+  var mapStateToProps = initMapStateToProps(dispatch, options);
+  var mapDispatchToProps = initMapDispatchToProps(dispatch, options);
+  var mergeProps = initMergeProps(dispatch, options);
 
   if (true) {
-    (0,_verifySubselectors__WEBPACK_IMPORTED_MODULE_1__["default"])(mapStateToProps, mapDispatchToProps, mergeProps);
+    (0,_verifySubselectors__WEBPACK_IMPORTED_MODULE_1__["default"])(mapStateToProps, mapDispatchToProps, mergeProps, options.displayName);
   }
 
-  return pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, options);
+  var selectorFactory = options.pure ? pureFinalPropsSelectorFactory : impureFinalPropsSelectorFactory;
+  return selectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, options);
 }
 
 /***/ }),
@@ -40097,20 +48172,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_warning__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/warning */ "./node_modules/react-redux/es/utils/warning.js");
 
 
-function verify(selector, methodName) {
+function verify(selector, methodName, displayName) {
   if (!selector) {
-    throw new Error(`Unexpected value for ${methodName} in connect.`);
+    throw new Error("Unexpected value for " + methodName + " in " + displayName + ".");
   } else if (methodName === 'mapStateToProps' || methodName === 'mapDispatchToProps') {
     if (!Object.prototype.hasOwnProperty.call(selector, 'dependsOnOwnProps')) {
-      (0,_utils_warning__WEBPACK_IMPORTED_MODULE_0__["default"])(`The selector for ${methodName} of connect did not specify a value for dependsOnOwnProps.`);
+      (0,_utils_warning__WEBPACK_IMPORTED_MODULE_0__["default"])("The selector for " + methodName + " of " + displayName + " did not specify a value for dependsOnOwnProps.");
     }
   }
 }
 
-function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps) {
-  verify(mapStateToProps, 'mapStateToProps');
-  verify(mapDispatchToProps, 'mapDispatchToProps');
-  verify(mergeProps, 'mergeProps');
+function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, displayName) {
+  verify(mapStateToProps, 'mapStateToProps', displayName);
+  verify(mapDispatchToProps, 'mapDispatchToProps', displayName);
+  verify(mergeProps, 'mergeProps', displayName);
 }
 
 /***/ }),
@@ -40130,14 +48205,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _utils_verifyPlainObject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/verifyPlainObject */ "./node_modules/react-redux/es/utils/verifyPlainObject.js");
 
-function wrapMapToPropsConstant( // * Note:
-//  It seems that the dispatch argument
-//  could be a dispatch function in some cases (ex: whenMapDispatchToPropsIsMissing)
-//  and a state object in some others (ex: whenMapStateToPropsIsMissing)
-// eslint-disable-next-line no-unused-vars
-getConstant) {
-  return function initConstantSelector(dispatch) {
-    const constant = getConstant(dispatch);
+function wrapMapToPropsConstant(getConstant) {
+  return function initConstantSelector(dispatch, options) {
+    var constant = getConstant(dispatch, options);
 
     function constantSelector() {
       return constant;
@@ -40153,10 +48223,9 @@ getConstant) {
 // A length of one signals that mapToProps does not depend on props from the parent component.
 // A length of zero is assumed to mean mapToProps is getting args via arguments or ...args and
 // therefore not reporting its length accurately..
-// TODO Can this get pulled out so that we can subscribe directly to the store if we don't need ownProps?
 
 function getDependsOnOwnProps(mapToProps) {
-  return mapToProps.dependsOnOwnProps ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
+  return mapToProps.dependsOnOwnProps !== null && mapToProps.dependsOnOwnProps !== undefined ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
 } // Used by whenMapStateToPropsIsFunction and whenMapDispatchToPropsIsFunction,
 // this function wraps mapToProps in a proxy function which does several things:
 //
@@ -40171,11 +48240,11 @@ function getDependsOnOwnProps(mapToProps) {
 //
 
 function wrapMapToPropsFunc(mapToProps, methodName) {
-  return function initProxySelector(dispatch, {
-    displayName
-  }) {
-    const proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
-      return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch, undefined);
+  return function initProxySelector(dispatch, _ref) {
+    var displayName = _ref.displayName;
+
+    var proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
+      return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch);
     }; // allow detectFactoryAndVerify to get ownProps
 
 
@@ -40184,7 +48253,7 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
     proxy.mapToProps = function detectFactoryAndVerify(stateOrDispatch, ownProps) {
       proxy.mapToProps = mapToProps;
       proxy.dependsOnOwnProps = getDependsOnOwnProps(mapToProps);
-      let props = proxy(stateOrDispatch, ownProps);
+      var props = proxy(stateOrDispatch, ownProps);
 
       if (typeof props === 'function') {
         proxy.mapToProps = props;
@@ -40213,23 +48282,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Provider": () => (/* reexport safe */ _components_Provider__WEBPACK_IMPORTED_MODULE_0__["default"]),
 /* harmony export */   "ReactReduxContext": () => (/* reexport safe */ _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext),
-/* harmony export */   "connect": () => (/* reexport safe */ _components_connect__WEBPACK_IMPORTED_MODULE_1__["default"]),
-/* harmony export */   "createDispatchHook": () => (/* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_3__.createDispatchHook),
-/* harmony export */   "createSelectorHook": () => (/* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__.createSelectorHook),
-/* harmony export */   "createStoreHook": () => (/* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_5__.createStoreHook),
-/* harmony export */   "shallowEqual": () => (/* reexport safe */ _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_6__["default"]),
-/* harmony export */   "useDispatch": () => (/* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_3__.useDispatch),
-/* harmony export */   "useSelector": () => (/* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__.useSelector),
-/* harmony export */   "useStore": () => (/* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_5__.useStore)
+/* harmony export */   "connect": () => (/* reexport safe */ _connect_connect__WEBPACK_IMPORTED_MODULE_3__["default"]),
+/* harmony export */   "connectAdvanced": () => (/* reexport safe */ _components_connectAdvanced__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   "createDispatchHook": () => (/* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_4__.createDispatchHook),
+/* harmony export */   "createSelectorHook": () => (/* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_5__.createSelectorHook),
+/* harmony export */   "createStoreHook": () => (/* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_6__.createStoreHook),
+/* harmony export */   "shallowEqual": () => (/* reexport safe */ _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_7__["default"]),
+/* harmony export */   "useDispatch": () => (/* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_4__.useDispatch),
+/* harmony export */   "useSelector": () => (/* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_5__.useSelector),
+/* harmony export */   "useStore": () => (/* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_6__.useStore)
 /* harmony export */ });
 /* harmony import */ var _components_Provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Provider */ "./node_modules/react-redux/es/components/Provider.js");
-/* harmony import */ var _components_connect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/connect */ "./node_modules/react-redux/es/components/connect.js");
+/* harmony import */ var _components_connectAdvanced__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/connectAdvanced */ "./node_modules/react-redux/es/components/connectAdvanced.js");
 /* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Context */ "./node_modules/react-redux/es/components/Context.js");
-/* harmony import */ var _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hooks/useDispatch */ "./node_modules/react-redux/es/hooks/useDispatch.js");
-/* harmony import */ var _hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hooks/useSelector */ "./node_modules/react-redux/es/hooks/useSelector.js");
-/* harmony import */ var _hooks_useStore__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hooks/useStore */ "./node_modules/react-redux/es/hooks/useStore.js");
-/* harmony import */ var _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/shallowEqual */ "./node_modules/react-redux/es/utils/shallowEqual.js");
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./types */ "./node_modules/react-redux/es/types.js");
+/* harmony import */ var _connect_connect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./connect/connect */ "./node_modules/react-redux/es/connect/connect.js");
+/* harmony import */ var _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hooks/useDispatch */ "./node_modules/react-redux/es/hooks/useDispatch.js");
+/* harmony import */ var _hooks_useSelector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hooks/useSelector */ "./node_modules/react-redux/es/hooks/useSelector.js");
+/* harmony import */ var _hooks_useStore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./hooks/useStore */ "./node_modules/react-redux/es/hooks/useStore.js");
+/* harmony import */ var _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utils/shallowEqual */ "./node_modules/react-redux/es/utils/shallowEqual.js");
 
 
 
@@ -40265,12 +48335,14 @@ __webpack_require__.r(__webpack_exports__);
  * @returns {Function} A `useDispatch` hook bound to the specified context.
  */
 
-function createDispatchHook(context = _components_Context__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext) {
-  const useStore = // @ts-ignore
-  context === _components_Context__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext ? _useStore__WEBPACK_IMPORTED_MODULE_1__.useStore : (0,_useStore__WEBPACK_IMPORTED_MODULE_1__.createStoreHook)(context);
-  return function useDispatch() {
-    const store = useStore(); // @ts-ignore
+function createDispatchHook(context) {
+  if (context === void 0) {
+    context = _components_Context__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext;
+  }
 
+  var useStore = context === _components_Context__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext ? _useStore__WEBPACK_IMPORTED_MODULE_1__.useStore : (0,_useStore__WEBPACK_IMPORTED_MODULE_1__.createStoreHook)(context);
+  return function useDispatch() {
+    var store = useStore();
     return store.dispatch;
   };
 }
@@ -40296,7 +48368,7 @@ function createDispatchHook(context = _components_Context__WEBPACK_IMPORTED_MODU
  * }
  */
 
-const useDispatch = /*#__PURE__*/createDispatchHook();
+var useDispatch = /*#__PURE__*/createDispatchHook();
 
 /***/ }),
 
@@ -40315,7 +48387,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
 
 
-
 /**
  * A hook to access the value of the `ReactReduxContext`. This is a low-level
  * hook that you should usually not need to call directly.
@@ -40327,13 +48398,14 @@ __webpack_require__.r(__webpack_exports__);
  * import React from 'react'
  * import { useReduxContext } from 'react-redux'
  *
- * export const CounterComponent = () => {
+ * export const CounterComponent = ({ value }) => {
  *   const { store } = useReduxContext()
  *   return <div>{store.getState()}</div>
  * }
  */
+
 function useReduxContext() {
-  const contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext);
+  var contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext);
 
   if ( true && !contextValue) {
     throw new Error('could not find react-redux context value; please ensure the component is wrapped in a <Provider>');
@@ -40354,23 +48426,102 @@ function useReduxContext() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createSelectorHook": () => (/* binding */ createSelectorHook),
-/* harmony export */   "initializeUseSelector": () => (/* binding */ initializeUseSelector),
 /* harmony export */   "useSelector": () => (/* binding */ useSelector)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _useReduxContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useReduxContext */ "./node_modules/react-redux/es/hooks/useReduxContext.js");
-/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
-/* harmony import */ var _utils_useSyncExternalStore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/useSyncExternalStore */ "./node_modules/react-redux/es/utils/useSyncExternalStore.js");
+/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
+/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
 
 
 
 
-let useSyncExternalStoreWithSelector = _utils_useSyncExternalStore__WEBPACK_IMPORTED_MODULE_3__.notInitialized;
-const initializeUseSelector = fn => {
-  useSyncExternalStoreWithSelector = fn;
+
+
+var refEquality = function refEquality(a, b) {
+  return a === b;
 };
 
-const refEquality = (a, b) => a === b;
+function useSelectorWithStoreAndSubscription(selector, equalityFn, store, contextSub) {
+  var _useReducer = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(function (s) {
+    return s + 1;
+  }, 0),
+      forceRender = _useReducer[1];
+
+  var subscription = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    return (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_2__.createSubscription)(store, contextSub);
+  }, [store, contextSub]);
+  var latestSubscriptionCallbackError = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var latestSelector = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var latestStoreState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var latestSelectedState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var storeState = store.getState();
+  var selectedState;
+
+  try {
+    if (selector !== latestSelector.current || storeState !== latestStoreState.current || latestSubscriptionCallbackError.current) {
+      var newSelectedState = selector(storeState); // ensure latest selected state is reused so that a custom equality function can result in identical references
+
+      if (latestSelectedState.current === undefined || !equalityFn(newSelectedState, latestSelectedState.current)) {
+        selectedState = newSelectedState;
+      } else {
+        selectedState = latestSelectedState.current;
+      }
+    } else {
+      selectedState = latestSelectedState.current;
+    }
+  } catch (err) {
+    if (latestSubscriptionCallbackError.current) {
+      err.message += "\nThe error may be correlated with this previous error:\n" + latestSubscriptionCallbackError.current.stack + "\n\n";
+    }
+
+    throw err;
+  }
+
+  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__.useIsomorphicLayoutEffect)(function () {
+    latestSelector.current = selector;
+    latestStoreState.current = storeState;
+    latestSelectedState.current = selectedState;
+    latestSubscriptionCallbackError.current = undefined;
+  });
+  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__.useIsomorphicLayoutEffect)(function () {
+    function checkForUpdates() {
+      try {
+        var newStoreState = store.getState(); // Avoid calling selector multiple times if the store's state has not changed
+
+        if (newStoreState === latestStoreState.current) {
+          return;
+        }
+
+        var _newSelectedState = latestSelector.current(newStoreState);
+
+        if (equalityFn(_newSelectedState, latestSelectedState.current)) {
+          return;
+        }
+
+        latestSelectedState.current = _newSelectedState;
+        latestStoreState.current = newStoreState;
+      } catch (err) {
+        // we ignore all errors here, since when the component
+        // is re-rendered, the selectors are called again, and
+        // will throw again, if neither props nor store state
+        // changed
+        latestSubscriptionCallbackError.current = err;
+      }
+
+      forceRender();
+    }
+
+    subscription.onStateChange = checkForUpdates;
+    subscription.trySubscribe();
+    checkForUpdates();
+    return function () {
+      return subscription.tryUnsubscribe();
+    };
+  }, [store, subscription]);
+  return selectedState;
+}
 /**
  * Hook factory, which creates a `useSelector` hook bound to a given context.
  *
@@ -40379,29 +48530,38 @@ const refEquality = (a, b) => a === b;
  */
 
 
-function createSelectorHook(context = _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext) {
-  const useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_1__.useReduxContext : () => (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
-  return function useSelector(selector, equalityFn = refEquality) {
+function createSelectorHook(context) {
+  if (context === void 0) {
+    context = _components_Context__WEBPACK_IMPORTED_MODULE_4__.ReactReduxContext;
+  }
+
+  var useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_4__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_1__.useReduxContext : function () {
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
+  };
+  return function useSelector(selector, equalityFn) {
+    if (equalityFn === void 0) {
+      equalityFn = refEquality;
+    }
+
     if (true) {
       if (!selector) {
-        throw new Error(`You must pass a selector to useSelector`);
+        throw new Error("You must pass a selector to useSelector");
       }
 
       if (typeof selector !== 'function') {
-        throw new Error(`You must pass a function as a selector to useSelector`);
+        throw new Error("You must pass a function as a selector to useSelector");
       }
 
       if (typeof equalityFn !== 'function') {
-        throw new Error(`You must pass a function as an equality function to useSelector`);
+        throw new Error("You must pass a function as an equality function to useSelector");
       }
     }
 
-    const {
-      store,
-      subscription,
-      getServerState
-    } = useReduxContext();
-    const selectedState = useSyncExternalStoreWithSelector(subscription.addNestedSub, store.getState, getServerState || store.getState, selector, equalityFn);
+    var _useReduxContext = useReduxContext(),
+        store = _useReduxContext.store,
+        contextSub = _useReduxContext.subscription;
+
+    var selectedState = useSelectorWithStoreAndSubscription(selector, equalityFn, store, contextSub);
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useDebugValue)(selectedState);
     return selectedState;
   };
@@ -40430,7 +48590,7 @@ function createSelectorHook(context = _components_Context__WEBPACK_IMPORTED_MODU
  * }
  */
 
-const useSelector = /*#__PURE__*/createSelectorHook();
+var useSelector = /*#__PURE__*/createSelectorHook();
 
 /***/ }),
 
@@ -40459,13 +48619,17 @@ __webpack_require__.r(__webpack_exports__);
  * @returns {Function} A `useStore` hook bound to the specified context.
  */
 
-function createStoreHook(context = _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext) {
-  const useReduxContext = // @ts-ignore
-  context === _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_2__.useReduxContext : () => (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
+function createStoreHook(context) {
+  if (context === void 0) {
+    context = _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext;
+  }
+
+  var useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_2__.useReduxContext : function () {
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
+  };
   return function useStore() {
-    const {
-      store
-    } = useReduxContext(); // @ts-ignore
+    var _useReduxContext = useReduxContext(),
+        store = _useReduxContext.store;
 
     return store;
   };
@@ -40486,7 +48650,7 @@ function createStoreHook(context = _components_Context__WEBPACK_IMPORTED_MODULE_
  * }
  */
 
-const useStore = /*#__PURE__*/createStoreHook();
+var useStore = /*#__PURE__*/createStoreHook();
 
 /***/ }),
 
@@ -40499,52 +48663,28 @@ const useStore = /*#__PURE__*/createStoreHook();
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Provider": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.Provider),
-/* harmony export */   "ReactReduxContext": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.ReactReduxContext),
-/* harmony export */   "batch": () => (/* reexport safe */ _utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_2__.unstable_batchedUpdates),
-/* harmony export */   "connect": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.connect),
-/* harmony export */   "createDispatchHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createDispatchHook),
-/* harmony export */   "createSelectorHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createSelectorHook),
-/* harmony export */   "createStoreHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createStoreHook),
-/* harmony export */   "shallowEqual": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.shallowEqual),
-/* harmony export */   "useDispatch": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useDispatch),
-/* harmony export */   "useSelector": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useSelector),
-/* harmony export */   "useStore": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useStore)
+/* harmony export */   "Provider": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.Provider),
+/* harmony export */   "ReactReduxContext": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext),
+/* harmony export */   "batch": () => (/* reexport safe */ _utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_1__.unstable_batchedUpdates),
+/* harmony export */   "connect": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.connect),
+/* harmony export */   "connectAdvanced": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.connectAdvanced),
+/* harmony export */   "createDispatchHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.createDispatchHook),
+/* harmony export */   "createSelectorHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.createSelectorHook),
+/* harmony export */   "createStoreHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.createStoreHook),
+/* harmony export */   "shallowEqual": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.shallowEqual),
+/* harmony export */   "useDispatch": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.useDispatch),
+/* harmony export */   "useSelector": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.useSelector),
+/* harmony export */   "useStore": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.useStore)
 /* harmony export */ });
-/* harmony import */ var use_sync_external_store_shim__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! use-sync-external-store/shim */ "./node_modules/use-sync-external-store/shim/index.js");
-/* harmony import */ var use_sync_external_store_shim_with_selector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! use-sync-external-store/shim/with-selector */ "./node_modules/use-sync-external-store/shim/with-selector.js");
-/* harmony import */ var _utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/reactBatchedUpdates */ "./node_modules/react-redux/es/utils/reactBatchedUpdates.js");
-/* harmony import */ var _utils_batch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/batch */ "./node_modules/react-redux/es/utils/batch.js");
-/* harmony import */ var _hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hooks/useSelector */ "./node_modules/react-redux/es/hooks/useSelector.js");
-/* harmony import */ var _components_connect__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/connect */ "./node_modules/react-redux/es/components/connect.js");
-/* harmony import */ var _exports__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./exports */ "./node_modules/react-redux/es/exports.js");
-// The primary entry point assumes we're working with standard ReactDOM/RN, but
-// older versions that do not include `useSyncExternalStore` (React 16.9 - 17.x).
-// Because of that, the useSyncExternalStore compat shim is needed.
+/* harmony import */ var _exports__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./exports */ "./node_modules/react-redux/es/exports.js");
+/* harmony import */ var _utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/reactBatchedUpdates */ "./node_modules/react-redux/es/utils/reactBatchedUpdates.js");
+/* harmony import */ var _utils_batch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/batch */ "./node_modules/react-redux/es/utils/batch.js");
 
 
-
-
-
-
-(0,_hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__.initializeUseSelector)(use_sync_external_store_shim_with_selector__WEBPACK_IMPORTED_MODULE_1__.useSyncExternalStoreWithSelector);
-(0,_components_connect__WEBPACK_IMPORTED_MODULE_5__.initializeConnect)(use_sync_external_store_shim__WEBPACK_IMPORTED_MODULE_0__.useSyncExternalStore); // Enable batched updates in our subscriptions for use
+ // Enable batched updates in our subscriptions for use
 // with standard React renderers (ReactDOM, React Native)
 
-(0,_utils_batch__WEBPACK_IMPORTED_MODULE_3__.setBatch)(_utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_2__.unstable_batchedUpdates);
-
-
-
-/***/ }),
-
-/***/ "./node_modules/react-redux/es/types.js":
-/*!**********************************************!*\
-  !*** ./node_modules/react-redux/es/types.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
+(0,_utils_batch__WEBPACK_IMPORTED_MODULE_2__.setBatch)(_utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_1__.unstable_batchedUpdates);
 
 
 /***/ }),
@@ -40566,18 +48706,17 @@ __webpack_require__.r(__webpack_exports__);
 // ancestor components re-render before descendants
 
 function createListenerCollection() {
-  const batch = (0,_batch__WEBPACK_IMPORTED_MODULE_0__.getBatch)();
-  let first = null;
-  let last = null;
+  var batch = (0,_batch__WEBPACK_IMPORTED_MODULE_0__.getBatch)();
+  var first = null;
+  var last = null;
   return {
-    clear() {
+    clear: function clear() {
       first = null;
       last = null;
     },
-
-    notify() {
-      batch(() => {
-        let listener = first;
+    notify: function notify() {
+      batch(function () {
+        var listener = first;
 
         while (listener) {
           listener.callback();
@@ -40585,10 +48724,9 @@ function createListenerCollection() {
         }
       });
     },
-
-    get() {
-      let listeners = [];
-      let listener = first;
+    get: function get() {
+      var listeners = [];
+      var listener = first;
 
       while (listener) {
         listeners.push(listener);
@@ -40597,11 +48735,10 @@ function createListenerCollection() {
 
       return listeners;
     },
-
-    subscribe(callback) {
-      let isSubscribed = true;
-      let listener = last = {
-        callback,
+    subscribe: function subscribe(callback) {
+      var isSubscribed = true;
+      var listener = last = {
+        callback: callback,
         next: null,
         prev: last
       };
@@ -40629,18 +48766,18 @@ function createListenerCollection() {
         }
       };
     }
-
   };
 }
 
-const nullListeners = {
-  notify() {},
-
-  get: () => []
+var nullListeners = {
+  notify: function notify() {},
+  get: function get() {
+    return [];
+  }
 };
 function createSubscription(store, parentSub) {
-  let unsubscribe;
-  let listeners = nullListeners;
+  var unsubscribe;
+  var listeners = nullListeners;
 
   function addNestedSub(listener) {
     trySubscribe();
@@ -40677,14 +48814,16 @@ function createSubscription(store, parentSub) {
     }
   }
 
-  const subscription = {
-    addNestedSub,
-    notifyNestedSubs,
-    handleChangeWrapper,
-    isSubscribed,
-    trySubscribe,
-    tryUnsubscribe,
-    getListeners: () => listeners
+  var subscription = {
+    addNestedSub: addNestedSub,
+    notifyNestedSubs: notifyNestedSubs,
+    handleChangeWrapper: handleChangeWrapper,
+    isSubscribed: isSubscribed,
+    trySubscribe: trySubscribe,
+    tryUnsubscribe: tryUnsubscribe,
+    getListeners: function getListeners() {
+      return listeners;
+    }
   };
   return subscription;
 }
@@ -40708,11 +48847,15 @@ function defaultNoopBatch(callback) {
   callback();
 }
 
-let batch = defaultNoopBatch; // Allow injecting another batching function later
+var batch = defaultNoopBatch; // Allow injecting another batching function later
 
-const setBatch = newBatch => batch = newBatch; // Supply a getter just to skip dealing with ESM bindings
+var setBatch = function setBatch(newBatch) {
+  return batch = newBatch;
+}; // Supply a getter just to skip dealing with ESM bindings
 
-const getBatch = () => batch;
+var getBatch = function getBatch() {
+  return batch;
+};
 
 /***/ }),
 
@@ -40728,14 +48871,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ bindActionCreators)
 /* harmony export */ });
 function bindActionCreators(actionCreators, dispatch) {
-  const boundActionCreators = {};
+  var boundActionCreators = {};
 
-  for (const key in actionCreators) {
-    const actionCreator = actionCreators[key];
+  var _loop = function _loop(key) {
+    var actionCreator = actionCreators[key];
 
     if (typeof actionCreator === 'function') {
-      boundActionCreators[key] = (...args) => dispatch(actionCreator(...args));
+      boundActionCreators[key] = function () {
+        return dispatch(actionCreator.apply(void 0, arguments));
+      };
     }
+  };
+
+  for (var key in actionCreators) {
+    _loop(key);
   }
 
   return boundActionCreators;
@@ -40760,9 +48909,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 function isPlainObject(obj) {
   if (typeof obj !== 'object' || obj === null) return false;
-  let proto = Object.getPrototypeOf(obj);
+  var proto = Object.getPrototypeOf(obj);
   if (proto === null) return true;
-  let baseProto = proto;
+  var baseProto = proto;
 
   while (Object.getPrototypeOf(baseProto) !== null) {
     baseProto = Object.getPrototypeOf(baseProto);
@@ -40785,6 +48934,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "unstable_batchedUpdates": () => (/* reexport safe */ react_dom__WEBPACK_IMPORTED_MODULE_0__.unstable_batchedUpdates)
 /* harmony export */ });
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* eslint-disable import/no-unresolved */
 
 
 /***/ }),
@@ -40815,11 +48965,11 @@ function shallowEqual(objA, objB) {
     return false;
   }
 
-  const keysA = Object.keys(objA);
-  const keysB = Object.keys(objB);
+  var keysA = Object.keys(objA);
+  var keysB = Object.keys(objB);
   if (keysA.length !== keysB.length) return false;
 
-  for (let i = 0; i < keysA.length; i++) {
+  for (var i = 0; i < keysA.length; i++) {
     if (!Object.prototype.hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
       return false;
     }
@@ -40839,7 +48989,6 @@ function shallowEqual(objA, objB) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "canUseDOM": () => (/* binding */ canUseDOM),
 /* harmony export */   "useIsomorphicLayoutEffect": () => (/* binding */ useIsomorphicLayoutEffect)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -40851,27 +49000,8 @@ __webpack_require__.r(__webpack_exports__);
 // which may cause missed updates; we also must ensure the store subscription
 // is created synchronously, otherwise a store update may occur before the
 // subscription is created and an inconsistent state may be observed
-// Matches logic in React's `shared/ExecutionEnvironment` file
 
-const canUseDOM = !!(typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined');
-const useIsomorphicLayoutEffect = canUseDOM ? react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0__.useEffect;
-
-/***/ }),
-
-/***/ "./node_modules/react-redux/es/utils/useSyncExternalStore.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/react-redux/es/utils/useSyncExternalStore.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "notInitialized": () => (/* binding */ notInitialized)
-/* harmony export */ });
-const notInitialized = () => {
-  throw new Error('uSES not initialized!');
-};
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0__.useEffect;
 
 /***/ }),
 
@@ -40892,7 +49022,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function verifyPlainObject(value, displayName, methodName) {
   if (!(0,_isPlainObject__WEBPACK_IMPORTED_MODULE_0__["default"])(value)) {
-    (0,_warning__WEBPACK_IMPORTED_MODULE_1__["default"])(`${methodName}() in ${displayName} must return a plain object. Instead received ${value}.`);
+    (0,_warning__WEBPACK_IMPORTED_MODULE_1__["default"])(methodName + "() in " + displayName + " must return a plain object. Instead received " + value + ".");
   }
 }
 
@@ -46283,318 +54413,6 @@ if ( true && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed
 
 /***/ }),
 
-/***/ "./node_modules/reselect/es/defaultMemoize.js":
-/*!****************************************************!*\
-  !*** ./node_modules/reselect/es/defaultMemoize.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createCacheKeyComparator": () => (/* binding */ createCacheKeyComparator),
-/* harmony export */   "defaultEqualityCheck": () => (/* binding */ defaultEqualityCheck),
-/* harmony export */   "defaultMemoize": () => (/* binding */ defaultMemoize)
-/* harmony export */ });
-// Cache implementation based on Erik Rasmussen's `lru-memoize`:
-// https://github.com/erikras/lru-memoize
-var NOT_FOUND = 'NOT_FOUND';
-
-function createSingletonCache(equals) {
-  var entry;
-  return {
-    get: function get(key) {
-      if (entry && equals(entry.key, key)) {
-        return entry.value;
-      }
-
-      return NOT_FOUND;
-    },
-    put: function put(key, value) {
-      entry = {
-        key: key,
-        value: value
-      };
-    },
-    getEntries: function getEntries() {
-      return entry ? [entry] : [];
-    },
-    clear: function clear() {
-      entry = undefined;
-    }
-  };
-}
-
-function createLruCache(maxSize, equals) {
-  var entries = [];
-
-  function get(key) {
-    var cacheIndex = entries.findIndex(function (entry) {
-      return equals(key, entry.key);
-    }); // We found a cached entry
-
-    if (cacheIndex > -1) {
-      var entry = entries[cacheIndex]; // Cached entry not at top of cache, move it to the top
-
-      if (cacheIndex > 0) {
-        entries.splice(cacheIndex, 1);
-        entries.unshift(entry);
-      }
-
-      return entry.value;
-    } // No entry found in cache, return sentinel
-
-
-    return NOT_FOUND;
-  }
-
-  function put(key, value) {
-    if (get(key) === NOT_FOUND) {
-      // TODO Is unshift slow?
-      entries.unshift({
-        key: key,
-        value: value
-      });
-
-      if (entries.length > maxSize) {
-        entries.pop();
-      }
-    }
-  }
-
-  function getEntries() {
-    return entries;
-  }
-
-  function clear() {
-    entries = [];
-  }
-
-  return {
-    get: get,
-    put: put,
-    getEntries: getEntries,
-    clear: clear
-  };
-}
-
-var defaultEqualityCheck = function defaultEqualityCheck(a, b) {
-  return a === b;
-};
-function createCacheKeyComparator(equalityCheck) {
-  return function areArgumentsShallowlyEqual(prev, next) {
-    if (prev === null || next === null || prev.length !== next.length) {
-      return false;
-    } // Do this in a for loop (and not a `forEach` or an `every`) so we can determine equality as fast as possible.
-
-
-    var length = prev.length;
-
-    for (var i = 0; i < length; i++) {
-      if (!equalityCheck(prev[i], next[i])) {
-        return false;
-      }
-    }
-
-    return true;
-  };
-}
-// defaultMemoize now supports a configurable cache size with LRU behavior,
-// and optional comparison of the result value with existing values
-function defaultMemoize(func, equalityCheckOrOptions) {
-  var providedOptions = typeof equalityCheckOrOptions === 'object' ? equalityCheckOrOptions : {
-    equalityCheck: equalityCheckOrOptions
-  };
-  var _providedOptions$equa = providedOptions.equalityCheck,
-      equalityCheck = _providedOptions$equa === void 0 ? defaultEqualityCheck : _providedOptions$equa,
-      _providedOptions$maxS = providedOptions.maxSize,
-      maxSize = _providedOptions$maxS === void 0 ? 1 : _providedOptions$maxS,
-      resultEqualityCheck = providedOptions.resultEqualityCheck;
-  var comparator = createCacheKeyComparator(equalityCheck);
-  var cache = maxSize === 1 ? createSingletonCache(comparator) : createLruCache(maxSize, comparator); // we reference arguments instead of spreading them for performance reasons
-
-  function memoized() {
-    var value = cache.get(arguments);
-
-    if (value === NOT_FOUND) {
-      // @ts-ignore
-      value = func.apply(null, arguments);
-
-      if (resultEqualityCheck) {
-        var entries = cache.getEntries();
-        var matchingEntry = entries.find(function (entry) {
-          return resultEqualityCheck(entry.value, value);
-        });
-
-        if (matchingEntry) {
-          value = matchingEntry.value;
-        }
-      }
-
-      cache.put(arguments, value);
-    }
-
-    return value;
-  }
-
-  memoized.clearCache = function () {
-    return cache.clear();
-  };
-
-  return memoized;
-}
-
-/***/ }),
-
-/***/ "./node_modules/reselect/es/index.js":
-/*!*******************************************!*\
-  !*** ./node_modules/reselect/es/index.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createSelector": () => (/* binding */ createSelector),
-/* harmony export */   "createSelectorCreator": () => (/* binding */ createSelectorCreator),
-/* harmony export */   "createStructuredSelector": () => (/* binding */ createStructuredSelector),
-/* harmony export */   "defaultEqualityCheck": () => (/* reexport safe */ _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__.defaultEqualityCheck),
-/* harmony export */   "defaultMemoize": () => (/* reexport safe */ _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__.defaultMemoize)
-/* harmony export */ });
-/* harmony import */ var _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultMemoize */ "./node_modules/reselect/es/defaultMemoize.js");
-
-
-
-function getDependencies(funcs) {
-  var dependencies = Array.isArray(funcs[0]) ? funcs[0] : funcs;
-
-  if (!dependencies.every(function (dep) {
-    return typeof dep === 'function';
-  })) {
-    var dependencyTypes = dependencies.map(function (dep) {
-      return typeof dep === 'function' ? "function " + (dep.name || 'unnamed') + "()" : typeof dep;
-    }).join(', ');
-    throw new Error("createSelector expects all input-selectors to be functions, but received the following types: [" + dependencyTypes + "]");
-  }
-
-  return dependencies;
-}
-
-function createSelectorCreator(memoize) {
-  for (var _len = arguments.length, memoizeOptionsFromArgs = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    memoizeOptionsFromArgs[_key - 1] = arguments[_key];
-  }
-
-  var createSelector = function createSelector() {
-    for (var _len2 = arguments.length, funcs = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-      funcs[_key2] = arguments[_key2];
-    }
-
-    var _recomputations = 0;
-
-    var _lastResult; // Due to the intricacies of rest params, we can't do an optional arg after `...funcs`.
-    // So, start by declaring the default value here.
-    // (And yes, the words 'memoize' and 'options' appear too many times in this next sequence.)
-
-
-    var directlyPassedOptions = {
-      memoizeOptions: undefined
-    }; // Normally, the result func or "output selector" is the last arg
-
-    var resultFunc = funcs.pop(); // If the result func is actually an _object_, assume it's our options object
-
-    if (typeof resultFunc === 'object') {
-      directlyPassedOptions = resultFunc; // and pop the real result func off
-
-      resultFunc = funcs.pop();
-    }
-
-    if (typeof resultFunc !== 'function') {
-      throw new Error("createSelector expects an output function after the inputs, but received: [" + typeof resultFunc + "]");
-    } // Determine which set of options we're using. Prefer options passed directly,
-    // but fall back to options given to createSelectorCreator.
-
-
-    var _directlyPassedOption = directlyPassedOptions,
-        _directlyPassedOption2 = _directlyPassedOption.memoizeOptions,
-        memoizeOptions = _directlyPassedOption2 === void 0 ? memoizeOptionsFromArgs : _directlyPassedOption2; // Simplifying assumption: it's unlikely that the first options arg of the provided memoizer
-    // is an array. In most libs I've looked at, it's an equality function or options object.
-    // Based on that, if `memoizeOptions` _is_ an array, we assume it's a full
-    // user-provided array of options. Otherwise, it must be just the _first_ arg, and so
-    // we wrap it in an array so we can apply it.
-
-    var finalMemoizeOptions = Array.isArray(memoizeOptions) ? memoizeOptions : [memoizeOptions];
-    var dependencies = getDependencies(funcs);
-    var memoizedResultFunc = memoize.apply(void 0, [function () {
-      _recomputations++; // apply arguments instead of spreading for performance.
-
-      return resultFunc.apply(null, arguments);
-    }].concat(finalMemoizeOptions)); // If a selector is called with the exact same arguments we don't need to traverse our dependencies again.
-
-    var selector = memoize(function () {
-      var params = [];
-      var length = dependencies.length;
-
-      for (var i = 0; i < length; i++) {
-        // apply arguments instead of spreading and mutate a local list of params for performance.
-        // @ts-ignore
-        params.push(dependencies[i].apply(null, arguments));
-      } // apply arguments instead of spreading for performance.
-
-
-      _lastResult = memoizedResultFunc.apply(null, params);
-      return _lastResult;
-    });
-    Object.assign(selector, {
-      resultFunc: resultFunc,
-      memoizedResultFunc: memoizedResultFunc,
-      dependencies: dependencies,
-      lastResult: function lastResult() {
-        return _lastResult;
-      },
-      recomputations: function recomputations() {
-        return _recomputations;
-      },
-      resetRecomputations: function resetRecomputations() {
-        return _recomputations = 0;
-      }
-    });
-    return selector;
-  }; // @ts-ignore
-
-
-  return createSelector;
-}
-var createSelector = /* #__PURE__ */createSelectorCreator(_defaultMemoize__WEBPACK_IMPORTED_MODULE_0__.defaultMemoize);
-// Manual definition of state and output arguments
-var createStructuredSelector = function createStructuredSelector(selectors, selectorCreator) {
-  if (selectorCreator === void 0) {
-    selectorCreator = createSelector;
-  }
-
-  if (typeof selectors !== 'object') {
-    throw new Error('createStructuredSelector expects first argument to be an object ' + ("where each property is a selector, instead received a " + typeof selectors));
-  }
-
-  var objectKeys = Object.keys(selectors);
-  var resultSelector = selectorCreator( // @ts-ignore
-  objectKeys.map(function (key) {
-    return selectors[key];
-  }), function () {
-    for (var _len3 = arguments.length, values = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-      values[_key3] = arguments[_key3];
-    }
-
-    return values.reduce(function (composition, value, index) {
-      composition[objectKeys[index]] = value;
-      return composition;
-    }, {});
-  });
-  return resultSelector;
-};
-
-/***/ }),
-
 /***/ "./node_modules/resolve-pathname/esm/resolve-pathname.js":
 /*!***************************************************************!*\
   !*** ./node_modules/resolve-pathname/esm/resolve-pathname.js ***!
@@ -48011,464 +55829,6 @@ function warning(condition, message) {
 
 /***/ }),
 
-/***/ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js ***!
-  \**********************************************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-/**
- * @license React
- * use-sync-external-store-shim.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-if (true) {
-  (function() {
-
-          'use strict';
-
-/* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
-if (
-  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
-  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart ===
-    'function'
-) {
-  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-}
-          var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-
-function error(format) {
-  {
-    {
-      for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-        args[_key2 - 1] = arguments[_key2];
-      }
-
-      printWarning('error', format, args);
-    }
-  }
-}
-
-function printWarning(level, format, args) {
-  // When changing this logic, you might want to also
-  // update consoleWithStackDev.www.js as well.
-  {
-    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-    var stack = ReactDebugCurrentFrame.getStackAddendum();
-
-    if (stack !== '') {
-      format += '%s';
-      args = args.concat([stack]);
-    } // eslint-disable-next-line react-internal/safe-string-coercion
-
-
-    var argsWithFormat = args.map(function (item) {
-      return String(item);
-    }); // Careful: RN currently depends on this prefix
-
-    argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
-    // breaks IE9: https://github.com/facebook/react/issues/13610
-    // eslint-disable-next-line react-internal/no-production-logging
-
-    Function.prototype.apply.call(console[level], console, argsWithFormat);
-  }
-}
-
-/**
- * inlined Object.is polyfill to avoid requiring consumers ship their own
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
- */
-function is(x, y) {
-  return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y // eslint-disable-line no-self-compare
-  ;
-}
-
-var objectIs = typeof Object.is === 'function' ? Object.is : is;
-
-// dispatch for CommonJS interop named imports.
-
-var useState = React.useState,
-    useEffect = React.useEffect,
-    useLayoutEffect = React.useLayoutEffect,
-    useDebugValue = React.useDebugValue;
-var didWarnOld18Alpha = false;
-var didWarnUncachedGetSnapshot = false; // Disclaimer: This shim breaks many of the rules of React, and only works
-// because of a very particular set of implementation details and assumptions
-// -- change any one of them and it will break. The most important assumption
-// is that updates are always synchronous, because concurrent rendering is
-// only available in versions of React that also have a built-in
-// useSyncExternalStore API. And we only use this shim when the built-in API
-// does not exist.
-//
-// Do not assume that the clever hacks used by this hook also work in general.
-// The point of this shim is to replace the need for hacks by other libraries.
-
-function useSyncExternalStore(subscribe, getSnapshot, // Note: The shim does not use getServerSnapshot, because pre-18 versions of
-// React do not expose a way to check if we're hydrating. So users of the shim
-// will need to track that themselves and return the correct value
-// from `getSnapshot`.
-getServerSnapshot) {
-  {
-    if (!didWarnOld18Alpha) {
-      if (React.startTransition !== undefined) {
-        didWarnOld18Alpha = true;
-
-        error('You are using an outdated, pre-release alpha of React 18 that ' + 'does not support useSyncExternalStore. The ' + 'use-sync-external-store shim will not work correctly. Upgrade ' + 'to a newer pre-release.');
-      }
-    }
-  } // Read the current snapshot from the store on every render. Again, this
-  // breaks the rules of React, and only works here because of specific
-  // implementation details, most importantly that updates are
-  // always synchronous.
-
-
-  var value = getSnapshot();
-
-  {
-    if (!didWarnUncachedGetSnapshot) {
-      var cachedValue = getSnapshot();
-
-      if (!objectIs(value, cachedValue)) {
-        error('The result of getSnapshot should be cached to avoid an infinite loop');
-
-        didWarnUncachedGetSnapshot = true;
-      }
-    }
-  } // Because updates are synchronous, we don't queue them. Instead we force a
-  // re-render whenever the subscribed state changes by updating an some
-  // arbitrary useState hook. Then, during render, we call getSnapshot to read
-  // the current value.
-  //
-  // Because we don't actually use the state returned by the useState hook, we
-  // can save a bit of memory by storing other stuff in that slot.
-  //
-  // To implement the early bailout, we need to track some things on a mutable
-  // object. Usually, we would put that in a useRef hook, but we can stash it in
-  // our useState hook instead.
-  //
-  // To force a re-render, we call forceUpdate({inst}). That works because the
-  // new object always fails an equality check.
-
-
-  var _useState = useState({
-    inst: {
-      value: value,
-      getSnapshot: getSnapshot
-    }
-  }),
-      inst = _useState[0].inst,
-      forceUpdate = _useState[1]; // Track the latest getSnapshot function with a ref. This needs to be updated
-  // in the layout phase so we can access it during the tearing check that
-  // happens on subscribe.
-
-
-  useLayoutEffect(function () {
-    inst.value = value;
-    inst.getSnapshot = getSnapshot; // Whenever getSnapshot or subscribe changes, we need to check in the
-    // commit phase if there was an interleaved mutation. In concurrent mode
-    // this can happen all the time, but even in synchronous mode, an earlier
-    // effect may have mutated the store.
-
-    if (checkIfSnapshotChanged(inst)) {
-      // Force a re-render.
-      forceUpdate({
-        inst: inst
-      });
-    }
-  }, [subscribe, value, getSnapshot]);
-  useEffect(function () {
-    // Check for changes right before subscribing. Subsequent changes will be
-    // detected in the subscription handler.
-    if (checkIfSnapshotChanged(inst)) {
-      // Force a re-render.
-      forceUpdate({
-        inst: inst
-      });
-    }
-
-    var handleStoreChange = function () {
-      // TODO: Because there is no cross-renderer API for batching updates, it's
-      // up to the consumer of this library to wrap their subscription event
-      // with unstable_batchedUpdates. Should we try to detect when this isn't
-      // the case and print a warning in development?
-      // The store changed. Check if the snapshot changed since the last time we
-      // read from the store.
-      if (checkIfSnapshotChanged(inst)) {
-        // Force a re-render.
-        forceUpdate({
-          inst: inst
-        });
-      }
-    }; // Subscribe to the store and return a clean-up function.
-
-
-    return subscribe(handleStoreChange);
-  }, [subscribe]);
-  useDebugValue(value);
-  return value;
-}
-
-function checkIfSnapshotChanged(inst) {
-  var latestGetSnapshot = inst.getSnapshot;
-  var prevValue = inst.value;
-
-  try {
-    var nextValue = latestGetSnapshot();
-    return !objectIs(prevValue, nextValue);
-  } catch (error) {
-    return true;
-  }
-}
-
-function useSyncExternalStore$1(subscribe, getSnapshot, getServerSnapshot) {
-  // Note: The shim does not use getServerSnapshot, because pre-18 versions of
-  // React do not expose a way to check if we're hydrating. So users of the shim
-  // will need to track that themselves and return the correct value
-  // from `getSnapshot`.
-  return getSnapshot();
-}
-
-var canUseDOM = !!(typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined');
-
-var isServerEnvironment = !canUseDOM;
-
-var shim = isServerEnvironment ? useSyncExternalStore$1 : useSyncExternalStore;
-var useSyncExternalStore$2 = React.useSyncExternalStore !== undefined ? React.useSyncExternalStore : shim;
-
-exports.useSyncExternalStore = useSyncExternalStore$2;
-          /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
-if (
-  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
-  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop ===
-    'function'
-) {
-  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
-}
-        
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js ***!
-  \************************************************************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-/**
- * @license React
- * use-sync-external-store-shim/with-selector.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-if (true) {
-  (function() {
-
-          'use strict';
-
-/* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
-if (
-  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
-  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart ===
-    'function'
-) {
-  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-}
-          var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-var shim = __webpack_require__(/*! use-sync-external-store/shim */ "./node_modules/use-sync-external-store/shim/index.js");
-
-/**
- * inlined Object.is polyfill to avoid requiring consumers ship their own
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
- */
-function is(x, y) {
-  return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y // eslint-disable-line no-self-compare
-  ;
-}
-
-var objectIs = typeof Object.is === 'function' ? Object.is : is;
-
-var useSyncExternalStore = shim.useSyncExternalStore;
-
-// for CommonJS interop.
-
-var useRef = React.useRef,
-    useEffect = React.useEffect,
-    useMemo = React.useMemo,
-    useDebugValue = React.useDebugValue; // Same as useSyncExternalStore, but supports selector and isEqual arguments.
-
-function useSyncExternalStoreWithSelector(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
-  // Use this to track the rendered snapshot.
-  var instRef = useRef(null);
-  var inst;
-
-  if (instRef.current === null) {
-    inst = {
-      hasValue: false,
-      value: null
-    };
-    instRef.current = inst;
-  } else {
-    inst = instRef.current;
-  }
-
-  var _useMemo = useMemo(function () {
-    // Track the memoized state using closure variables that are local to this
-    // memoized instance of a getSnapshot function. Intentionally not using a
-    // useRef hook, because that state would be shared across all concurrent
-    // copies of the hook/component.
-    var hasMemo = false;
-    var memoizedSnapshot;
-    var memoizedSelection;
-
-    var memoizedSelector = function (nextSnapshot) {
-      if (!hasMemo) {
-        // The first time the hook is called, there is no memoized result.
-        hasMemo = true;
-        memoizedSnapshot = nextSnapshot;
-
-        var _nextSelection = selector(nextSnapshot);
-
-        if (isEqual !== undefined) {
-          // Even if the selector has changed, the currently rendered selection
-          // may be equal to the new selection. We should attempt to reuse the
-          // current value if possible, to preserve downstream memoizations.
-          if (inst.hasValue) {
-            var currentSelection = inst.value;
-
-            if (isEqual(currentSelection, _nextSelection)) {
-              memoizedSelection = currentSelection;
-              return currentSelection;
-            }
-          }
-        }
-
-        memoizedSelection = _nextSelection;
-        return _nextSelection;
-      } // We may be able to reuse the previous invocation's result.
-
-
-      // We may be able to reuse the previous invocation's result.
-      var prevSnapshot = memoizedSnapshot;
-      var prevSelection = memoizedSelection;
-
-      if (objectIs(prevSnapshot, nextSnapshot)) {
-        // The snapshot is the same as last time. Reuse the previous selection.
-        return prevSelection;
-      } // The snapshot has changed, so we need to compute a new selection.
-
-
-      // The snapshot has changed, so we need to compute a new selection.
-      var nextSelection = selector(nextSnapshot); // If a custom isEqual function is provided, use that to check if the data
-      // has changed. If it hasn't, return the previous selection. That signals
-      // to React that the selections are conceptually equal, and we can bail
-      // out of rendering.
-
-      // If a custom isEqual function is provided, use that to check if the data
-      // has changed. If it hasn't, return the previous selection. That signals
-      // to React that the selections are conceptually equal, and we can bail
-      // out of rendering.
-      if (isEqual !== undefined && isEqual(prevSelection, nextSelection)) {
-        return prevSelection;
-      }
-
-      memoizedSnapshot = nextSnapshot;
-      memoizedSelection = nextSelection;
-      return nextSelection;
-    }; // Assigning this to a constant so that Flow knows it can't change.
-
-
-    // Assigning this to a constant so that Flow knows it can't change.
-    var maybeGetServerSnapshot = getServerSnapshot === undefined ? null : getServerSnapshot;
-
-    var getSnapshotWithSelector = function () {
-      return memoizedSelector(getSnapshot());
-    };
-
-    var getServerSnapshotWithSelector = maybeGetServerSnapshot === null ? undefined : function () {
-      return memoizedSelector(maybeGetServerSnapshot());
-    };
-    return [getSnapshotWithSelector, getServerSnapshotWithSelector];
-  }, [getSnapshot, getServerSnapshot, selector, isEqual]),
-      getSelection = _useMemo[0],
-      getServerSelection = _useMemo[1];
-
-  var value = useSyncExternalStore(subscribe, getSelection, getServerSelection);
-  useEffect(function () {
-    inst.hasValue = true;
-    inst.value = value;
-  }, [value]);
-  useDebugValue(value);
-  return value;
-}
-
-exports.useSyncExternalStoreWithSelector = useSyncExternalStoreWithSelector;
-          /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
-if (
-  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
-  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop ===
-    'function'
-) {
-  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
-}
-        
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/use-sync-external-store/shim/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/use-sync-external-store/shim/index.js ***!
-  \************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ../cjs/use-sync-external-store-shim.development.js */ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js");
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/use-sync-external-store/shim/with-selector.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/use-sync-external-store/shim/with-selector.js ***!
-  \********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ../cjs/use-sync-external-store-shim/with-selector.development.js */ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js");
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/value-equal/esm/value-equal.js":
 /*!*****************************************************!*\
   !*** ./node_modules/value-equal/esm/value-equal.js ***!
@@ -48689,44 +56049,6 @@ function _setPrototypeOf(o, p) {
 
   return _setPrototypeOf(o, p);
 }
-
-/***/ }),
-
-/***/ "./node_modules/immer/dist/immer.esm.mjs":
-/*!***********************************************!*\
-  !*** ./node_modules/immer/dist/immer.esm.mjs ***!
-  \***********************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Immer": () => (/* binding */ un),
-/* harmony export */   "applyPatches": () => (/* binding */ pn),
-/* harmony export */   "castDraft": () => (/* binding */ K),
-/* harmony export */   "castImmutable": () => (/* binding */ $),
-/* harmony export */   "createDraft": () => (/* binding */ ln),
-/* harmony export */   "current": () => (/* binding */ D),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "enableAllPlugins": () => (/* binding */ J),
-/* harmony export */   "enableES5": () => (/* binding */ N),
-/* harmony export */   "enableMapSet": () => (/* binding */ C),
-/* harmony export */   "enablePatches": () => (/* binding */ T),
-/* harmony export */   "finishDraft": () => (/* binding */ dn),
-/* harmony export */   "freeze": () => (/* binding */ d),
-/* harmony export */   "immerable": () => (/* binding */ L),
-/* harmony export */   "isDraft": () => (/* binding */ r),
-/* harmony export */   "isDraftable": () => (/* binding */ t),
-/* harmony export */   "nothing": () => (/* binding */ H),
-/* harmony export */   "original": () => (/* binding */ e),
-/* harmony export */   "produce": () => (/* binding */ fn),
-/* harmony export */   "produceWithPatches": () => (/* binding */ cn),
-/* harmony export */   "setAutoFreeze": () => (/* binding */ sn),
-/* harmony export */   "setUseProxies": () => (/* binding */ vn)
-/* harmony export */ });
-function n(n){for(var r=arguments.length,t=Array(r>1?r-1:0),e=1;e<r;e++)t[e-1]=arguments[e];if(true){var i=Y[n],o=i?"function"==typeof i?i.apply(null,t):i:"unknown error nr: "+n;throw Error("[Immer] "+o)}throw Error("[Immer] minified error nr: "+n+(t.length?" "+t.map((function(n){return"'"+n+"'"})).join(","):"")+". Find the full error at: https://bit.ly/3cXEKWf")}function r(n){return!!n&&!!n[Q]}function t(n){return!!n&&(function(n){if(!n||"object"!=typeof n)return!1;var r=Object.getPrototypeOf(n);if(null===r)return!0;var t=Object.hasOwnProperty.call(r,"constructor")&&r.constructor;return t===Object||"function"==typeof t&&Function.toString.call(t)===Z}(n)||Array.isArray(n)||!!n[L]||!!n.constructor[L]||s(n)||v(n))}function e(t){return r(t)||n(23,t),t[Q].t}function i(n,r,t){void 0===t&&(t=!1),0===o(n)?(t?Object.keys:nn)(n).forEach((function(e){t&&"symbol"==typeof e||r(e,n[e],n)})):n.forEach((function(t,e){return r(e,t,n)}))}function o(n){var r=n[Q];return r?r.i>3?r.i-4:r.i:Array.isArray(n)?1:s(n)?2:v(n)?3:0}function u(n,r){return 2===o(n)?n.has(r):Object.prototype.hasOwnProperty.call(n,r)}function a(n,r){return 2===o(n)?n.get(r):n[r]}function f(n,r,t){var e=o(n);2===e?n.set(r,t):3===e?(n.delete(r),n.add(t)):n[r]=t}function c(n,r){return n===r?0!==n||1/n==1/r:n!=n&&r!=r}function s(n){return X&&n instanceof Map}function v(n){return q&&n instanceof Set}function p(n){return n.o||n.t}function l(n){if(Array.isArray(n))return Array.prototype.slice.call(n);var r=rn(n);delete r[Q];for(var t=nn(r),e=0;e<t.length;e++){var i=t[e],o=r[i];!1===o.writable&&(o.writable=!0,o.configurable=!0),(o.get||o.set)&&(r[i]={configurable:!0,writable:!0,enumerable:o.enumerable,value:n[i]})}return Object.create(Object.getPrototypeOf(n),r)}function d(n,e){return void 0===e&&(e=!1),y(n)||r(n)||!t(n)?n:(o(n)>1&&(n.set=n.add=n.clear=n.delete=h),Object.freeze(n),e&&i(n,(function(n,r){return d(r,!0)}),!0),n)}function h(){n(2)}function y(n){return null==n||"object"!=typeof n||Object.isFrozen(n)}function b(r){var t=tn[r];return t||n(18,r),t}function m(n,r){tn[n]||(tn[n]=r)}function _(){return false||U||n(0),U}function j(n,r){r&&(b("Patches"),n.u=[],n.s=[],n.v=r)}function O(n){g(n),n.p.forEach(S),n.p=null}function g(n){n===U&&(U=n.l)}function w(n){return U={p:[],l:U,h:n,m:!0,_:0}}function S(n){var r=n[Q];0===r.i||1===r.i?r.j():r.O=!0}function P(r,e){e._=e.p.length;var i=e.p[0],o=void 0!==r&&r!==i;return e.h.g||b("ES5").S(e,r,o),o?(i[Q].P&&(O(e),n(4)),t(r)&&(r=M(e,r),e.l||x(e,r)),e.u&&b("Patches").M(i[Q].t,r,e.u,e.s)):r=M(e,i,[]),O(e),e.u&&e.v(e.u,e.s),r!==H?r:void 0}function M(n,r,t){if(y(r))return r;var e=r[Q];if(!e)return i(r,(function(i,o){return A(n,e,r,i,o,t)}),!0),r;if(e.A!==n)return r;if(!e.P)return x(n,e.t,!0),e.t;if(!e.I){e.I=!0,e.A._--;var o=4===e.i||5===e.i?e.o=l(e.k):e.o;i(3===e.i?new Set(o):o,(function(r,i){return A(n,e,o,r,i,t)})),x(n,o,!1),t&&n.u&&b("Patches").R(e,t,n.u,n.s)}return e.o}function A(e,i,o,a,c,s){if( true&&c===o&&n(5),r(c)){var v=M(e,c,s&&i&&3!==i.i&&!u(i.D,a)?s.concat(a):void 0);if(f(o,a,v),!r(v))return;e.m=!1}if(t(c)&&!y(c)){if(!e.h.F&&e._<1)return;M(e,c),i&&i.A.l||x(e,c)}}function x(n,r,t){void 0===t&&(t=!1),n.h.F&&n.m&&d(r,t)}function z(n,r){var t=n[Q];return(t?p(t):n)[r]}function I(n,r){if(r in n)for(var t=Object.getPrototypeOf(n);t;){var e=Object.getOwnPropertyDescriptor(t,r);if(e)return e;t=Object.getPrototypeOf(t)}}function k(n){n.P||(n.P=!0,n.l&&k(n.l))}function E(n){n.o||(n.o=l(n.t))}function R(n,r,t){var e=s(r)?b("MapSet").N(r,t):v(r)?b("MapSet").T(r,t):n.g?function(n,r){var t=Array.isArray(n),e={i:t?1:0,A:r?r.A:_(),P:!1,I:!1,D:{},l:r,t:n,k:null,o:null,j:null,C:!1},i=e,o=en;t&&(i=[e],o=on);var u=Proxy.revocable(i,o),a=u.revoke,f=u.proxy;return e.k=f,e.j=a,f}(r,t):b("ES5").J(r,t);return(t?t.A:_()).p.push(e),e}function D(e){return r(e)||n(22,e),function n(r){if(!t(r))return r;var e,u=r[Q],c=o(r);if(u){if(!u.P&&(u.i<4||!b("ES5").K(u)))return u.t;u.I=!0,e=F(r,c),u.I=!1}else e=F(r,c);return i(e,(function(r,t){u&&a(u.t,r)===t||f(e,r,n(t))})),3===c?new Set(e):e}(e)}function F(n,r){switch(r){case 2:return new Map(n);case 3:return Array.from(n)}return l(n)}function N(){function t(n,r){var t=s[n];return t?t.enumerable=r:s[n]=t={configurable:!0,enumerable:r,get:function(){var r=this[Q];return true&&f(r),en.get(r,n)},set:function(r){var t=this[Q]; true&&f(t),en.set(t,n,r)}},t}function e(n){for(var r=n.length-1;r>=0;r--){var t=n[r][Q];if(!t.P)switch(t.i){case 5:a(t)&&k(t);break;case 4:o(t)&&k(t)}}}function o(n){for(var r=n.t,t=n.k,e=nn(t),i=e.length-1;i>=0;i--){var o=e[i];if(o!==Q){var a=r[o];if(void 0===a&&!u(r,o))return!0;var f=t[o],s=f&&f[Q];if(s?s.t!==a:!c(f,a))return!0}}var v=!!r[Q];return e.length!==nn(r).length+(v?0:1)}function a(n){var r=n.k;if(r.length!==n.t.length)return!0;var t=Object.getOwnPropertyDescriptor(r,r.length-1);if(t&&!t.get)return!0;for(var e=0;e<r.length;e++)if(!r.hasOwnProperty(e))return!0;return!1}function f(r){r.O&&n(3,JSON.stringify(p(r)))}var s={};m("ES5",{J:function(n,r){var e=Array.isArray(n),i=function(n,r){if(n){for(var e=Array(r.length),i=0;i<r.length;i++)Object.defineProperty(e,""+i,t(i,!0));return e}var o=rn(r);delete o[Q];for(var u=nn(o),a=0;a<u.length;a++){var f=u[a];o[f]=t(f,n||!!o[f].enumerable)}return Object.create(Object.getPrototypeOf(r),o)}(e,n),o={i:e?5:4,A:r?r.A:_(),P:!1,I:!1,D:{},l:r,t:n,k:i,o:null,O:!1,C:!1};return Object.defineProperty(i,Q,{value:o,writable:!0}),i},S:function(n,t,o){o?r(t)&&t[Q].A===n&&e(n.p):(n.u&&function n(r){if(r&&"object"==typeof r){var t=r[Q];if(t){var e=t.t,o=t.k,f=t.D,c=t.i;if(4===c)i(o,(function(r){r!==Q&&(void 0!==e[r]||u(e,r)?f[r]||n(o[r]):(f[r]=!0,k(t)))})),i(e,(function(n){void 0!==o[n]||u(o,n)||(f[n]=!1,k(t))}));else if(5===c){if(a(t)&&(k(t),f.length=!0),o.length<e.length)for(var s=o.length;s<e.length;s++)f[s]=!1;else for(var v=e.length;v<o.length;v++)f[v]=!0;for(var p=Math.min(o.length,e.length),l=0;l<p;l++)o.hasOwnProperty(l)||(f[l]=!0),void 0===f[l]&&n(o[l])}}}}(n.p[0]),e(n.p))},K:function(n){return 4===n.i?o(n):a(n)}})}function T(){function e(n){if(!t(n))return n;if(Array.isArray(n))return n.map(e);if(s(n))return new Map(Array.from(n.entries()).map((function(n){return[n[0],e(n[1])]})));if(v(n))return new Set(Array.from(n).map(e));var r=Object.create(Object.getPrototypeOf(n));for(var i in n)r[i]=e(n[i]);return u(n,L)&&(r[L]=n[L]),r}function f(n){return r(n)?e(n):n}var c="add";m("Patches",{$:function(r,t){return t.forEach((function(t){for(var i=t.path,u=t.op,f=r,s=0;s<i.length-1;s++){var v=o(f),p=""+i[s];0!==v&&1!==v||"__proto__"!==p&&"constructor"!==p||n(24),"function"==typeof f&&"prototype"===p&&n(24),"object"!=typeof(f=a(f,p))&&n(15,i.join("/"))}var l=o(f),d=e(t.value),h=i[i.length-1];switch(u){case"replace":switch(l){case 2:return f.set(h,d);case 3:n(16);default:return f[h]=d}case c:switch(l){case 1:return"-"===h?f.push(d):f.splice(h,0,d);case 2:return f.set(h,d);case 3:return f.add(d);default:return f[h]=d}case"remove":switch(l){case 1:return f.splice(h,1);case 2:return f.delete(h);case 3:return f.delete(t.value);default:return delete f[h]}default:n(17,u)}})),r},R:function(n,r,t,e){switch(n.i){case 0:case 4:case 2:return function(n,r,t,e){var o=n.t,s=n.o;i(n.D,(function(n,i){var v=a(o,n),p=a(s,n),l=i?u(o,n)?"replace":c:"remove";if(v!==p||"replace"!==l){var d=r.concat(n);t.push("remove"===l?{op:l,path:d}:{op:l,path:d,value:p}),e.push(l===c?{op:"remove",path:d}:"remove"===l?{op:c,path:d,value:f(v)}:{op:"replace",path:d,value:f(v)})}}))}(n,r,t,e);case 5:case 1:return function(n,r,t,e){var i=n.t,o=n.D,u=n.o;if(u.length<i.length){var a=[u,i];i=a[0],u=a[1];var s=[e,t];t=s[0],e=s[1]}for(var v=0;v<i.length;v++)if(o[v]&&u[v]!==i[v]){var p=r.concat([v]);t.push({op:"replace",path:p,value:f(u[v])}),e.push({op:"replace",path:p,value:f(i[v])})}for(var l=i.length;l<u.length;l++){var d=r.concat([l]);t.push({op:c,path:d,value:f(u[l])})}i.length<u.length&&e.push({op:"replace",path:r.concat(["length"]),value:i.length})}(n,r,t,e);case 3:return function(n,r,t,e){var i=n.t,o=n.o,u=0;i.forEach((function(n){if(!o.has(n)){var i=r.concat([u]);t.push({op:"remove",path:i,value:n}),e.unshift({op:c,path:i,value:n})}u++})),u=0,o.forEach((function(n){if(!i.has(n)){var o=r.concat([u]);t.push({op:c,path:o,value:n}),e.unshift({op:"remove",path:o,value:n})}u++}))}(n,r,t,e)}},M:function(n,r,t,e){t.push({op:"replace",path:[],value:r===H?void 0:r}),e.push({op:"replace",path:[],value:n})}})}function C(){function r(n,r){function t(){this.constructor=n}a(n,r),n.prototype=(t.prototype=r.prototype,new t)}function e(n){n.o||(n.D=new Map,n.o=new Map(n.t))}function o(n){n.o||(n.o=new Set,n.t.forEach((function(r){if(t(r)){var e=R(n.A.h,r,n);n.p.set(r,e),n.o.add(e)}else n.o.add(r)})))}function u(r){r.O&&n(3,JSON.stringify(p(r)))}var a=function(n,r){return(a=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,r){n.__proto__=r}||function(n,r){for(var t in r)r.hasOwnProperty(t)&&(n[t]=r[t])})(n,r)},f=function(){function n(n,r){return this[Q]={i:2,l:r,A:r?r.A:_(),P:!1,I:!1,o:void 0,D:void 0,t:n,k:this,C:!1,O:!1},this}r(n,Map);var o=n.prototype;return Object.defineProperty(o,"size",{get:function(){return p(this[Q]).size}}),o.has=function(n){return p(this[Q]).has(n)},o.set=function(n,r){var t=this[Q];return u(t),p(t).has(n)&&p(t).get(n)===r||(e(t),k(t),t.D.set(n,!0),t.o.set(n,r),t.D.set(n,!0)),this},o.delete=function(n){if(!this.has(n))return!1;var r=this[Q];return u(r),e(r),k(r),r.t.has(n)?r.D.set(n,!1):r.D.delete(n),r.o.delete(n),!0},o.clear=function(){var n=this[Q];u(n),p(n).size&&(e(n),k(n),n.D=new Map,i(n.t,(function(r){n.D.set(r,!1)})),n.o.clear())},o.forEach=function(n,r){var t=this;p(this[Q]).forEach((function(e,i){n.call(r,t.get(i),i,t)}))},o.get=function(n){var r=this[Q];u(r);var i=p(r).get(n);if(r.I||!t(i))return i;if(i!==r.t.get(n))return i;var o=R(r.A.h,i,r);return e(r),r.o.set(n,o),o},o.keys=function(){return p(this[Q]).keys()},o.values=function(){var n,r=this,t=this.keys();return(n={})[V]=function(){return r.values()},n.next=function(){var n=t.next();return n.done?n:{done:!1,value:r.get(n.value)}},n},o.entries=function(){var n,r=this,t=this.keys();return(n={})[V]=function(){return r.entries()},n.next=function(){var n=t.next();if(n.done)return n;var e=r.get(n.value);return{done:!1,value:[n.value,e]}},n},o[V]=function(){return this.entries()},n}(),c=function(){function n(n,r){return this[Q]={i:3,l:r,A:r?r.A:_(),P:!1,I:!1,o:void 0,t:n,k:this,p:new Map,O:!1,C:!1},this}r(n,Set);var t=n.prototype;return Object.defineProperty(t,"size",{get:function(){return p(this[Q]).size}}),t.has=function(n){var r=this[Q];return u(r),r.o?!!r.o.has(n)||!(!r.p.has(n)||!r.o.has(r.p.get(n))):r.t.has(n)},t.add=function(n){var r=this[Q];return u(r),this.has(n)||(o(r),k(r),r.o.add(n)),this},t.delete=function(n){if(!this.has(n))return!1;var r=this[Q];return u(r),o(r),k(r),r.o.delete(n)||!!r.p.has(n)&&r.o.delete(r.p.get(n))},t.clear=function(){var n=this[Q];u(n),p(n).size&&(o(n),k(n),n.o.clear())},t.values=function(){var n=this[Q];return u(n),o(n),n.o.values()},t.entries=function(){var n=this[Q];return u(n),o(n),n.o.entries()},t.keys=function(){return this.values()},t[V]=function(){return this.values()},t.forEach=function(n,r){for(var t=this.values(),e=t.next();!e.done;)n.call(r,e.value,e.value,this),e=t.next()},n}();m("MapSet",{N:function(n,r){return new f(n,r)},T:function(n,r){return new c(n,r)}})}function J(){N(),C(),T()}function K(n){return n}function $(n){return n}var G,U,W="undefined"!=typeof Symbol&&"symbol"==typeof Symbol("x"),X="undefined"!=typeof Map,q="undefined"!=typeof Set,B="undefined"!=typeof Proxy&&void 0!==Proxy.revocable&&"undefined"!=typeof Reflect,H=W?Symbol.for("immer-nothing"):((G={})["immer-nothing"]=!0,G),L=W?Symbol.for("immer-draftable"):"__$immer_draftable",Q=W?Symbol.for("immer-state"):"__$immer_state",V="undefined"!=typeof Symbol&&Symbol.iterator||"@@iterator",Y={0:"Illegal state",1:"Immer drafts cannot have computed properties",2:"This object has been frozen and should not be mutated",3:function(n){return"Cannot use a proxy that has been revoked. Did you pass an object from inside an immer function to an async process? "+n},4:"An immer producer returned a new value *and* modified its draft. Either return a new value *or* modify the draft.",5:"Immer forbids circular references",6:"The first or second argument to `produce` must be a function",7:"The third argument to `produce` must be a function or undefined",8:"First argument to `createDraft` must be a plain object, an array, or an immerable object",9:"First argument to `finishDraft` must be a draft returned by `createDraft`",10:"The given draft is already finalized",11:"Object.defineProperty() cannot be used on an Immer draft",12:"Object.setPrototypeOf() cannot be used on an Immer draft",13:"Immer only supports deleting array indices",14:"Immer only supports setting array indices and the 'length' property",15:function(n){return"Cannot apply patch, path doesn't resolve: "+n},16:'Sets cannot have "replace" patches.',17:function(n){return"Unsupported patch operation: "+n},18:function(n){return"The plugin for '"+n+"' has not been loaded into Immer. To enable the plugin, import and call `enable"+n+"()` when initializing your application."},20:"Cannot use proxies if Proxy, Proxy.revocable or Reflect are not available",21:function(n){return"produce can only be called on things that are draftable: plain objects, arrays, Map, Set or classes that are marked with '[immerable]: true'. Got '"+n+"'"},22:function(n){return"'current' expects a draft, got: "+n},23:function(n){return"'original' expects a draft, got: "+n},24:"Patching reserved attributes like __proto__, prototype and constructor is not allowed"},Z=""+Object.prototype.constructor,nn="undefined"!=typeof Reflect&&Reflect.ownKeys?Reflect.ownKeys:void 0!==Object.getOwnPropertySymbols?function(n){return Object.getOwnPropertyNames(n).concat(Object.getOwnPropertySymbols(n))}:Object.getOwnPropertyNames,rn=Object.getOwnPropertyDescriptors||function(n){var r={};return nn(n).forEach((function(t){r[t]=Object.getOwnPropertyDescriptor(n,t)})),r},tn={},en={get:function(n,r){if(r===Q)return n;var e=p(n);if(!u(e,r))return function(n,r,t){var e,i=I(r,t);return i?"value"in i?i.value:null===(e=i.get)||void 0===e?void 0:e.call(n.k):void 0}(n,e,r);var i=e[r];return n.I||!t(i)?i:i===z(n.t,r)?(E(n),n.o[r]=R(n.A.h,i,n)):i},has:function(n,r){return r in p(n)},ownKeys:function(n){return Reflect.ownKeys(p(n))},set:function(n,r,t){var e=I(p(n),r);if(null==e?void 0:e.set)return e.set.call(n.k,t),!0;if(!n.P){var i=z(p(n),r),o=null==i?void 0:i[Q];if(o&&o.t===t)return n.o[r]=t,n.D[r]=!1,!0;if(c(t,i)&&(void 0!==t||u(n.t,r)))return!0;E(n),k(n)}return n.o[r]===t&&"number"!=typeof t&&(void 0!==t||r in n.o)||(n.o[r]=t,n.D[r]=!0,!0)},deleteProperty:function(n,r){return void 0!==z(n.t,r)||r in n.t?(n.D[r]=!1,E(n),k(n)):delete n.D[r],n.o&&delete n.o[r],!0},getOwnPropertyDescriptor:function(n,r){var t=p(n),e=Reflect.getOwnPropertyDescriptor(t,r);return e?{writable:!0,configurable:1!==n.i||"length"!==r,enumerable:e.enumerable,value:t[r]}:e},defineProperty:function(){n(11)},getPrototypeOf:function(n){return Object.getPrototypeOf(n.t)},setPrototypeOf:function(){n(12)}},on={};i(en,(function(n,r){on[n]=function(){return arguments[0]=arguments[0][0],r.apply(this,arguments)}})),on.deleteProperty=function(r,t){return true&&isNaN(parseInt(t))&&n(13),on.set.call(this,r,t,void 0)},on.set=function(r,t,e){return true&&"length"!==t&&isNaN(parseInt(t))&&n(14),en.set.call(this,r[0],t,e,r[0])};var un=function(){function e(r){var e=this;this.g=B,this.F=!0,this.produce=function(r,i,o){if("function"==typeof r&&"function"!=typeof i){var u=i;i=r;var a=e;return function(n){var r=this;void 0===n&&(n=u);for(var t=arguments.length,e=Array(t>1?t-1:0),o=1;o<t;o++)e[o-1]=arguments[o];return a.produce(n,(function(n){var t;return(t=i).call.apply(t,[r,n].concat(e))}))}}var f;if("function"!=typeof i&&n(6),void 0!==o&&"function"!=typeof o&&n(7),t(r)){var c=w(e),s=R(e,r,void 0),v=!0;try{f=i(s),v=!1}finally{v?O(c):g(c)}return"undefined"!=typeof Promise&&f instanceof Promise?f.then((function(n){return j(c,o),P(n,c)}),(function(n){throw O(c),n})):(j(c,o),P(f,c))}if(!r||"object"!=typeof r){if(void 0===(f=i(r))&&(f=r),f===H&&(f=void 0),e.F&&d(f,!0),o){var p=[],l=[];b("Patches").M(r,f,p,l),o(p,l)}return f}n(21,r)},this.produceWithPatches=function(n,r){if("function"==typeof n)return function(r){for(var t=arguments.length,i=Array(t>1?t-1:0),o=1;o<t;o++)i[o-1]=arguments[o];return e.produceWithPatches(r,(function(r){return n.apply(void 0,[r].concat(i))}))};var t,i,o=e.produce(n,r,(function(n,r){t=n,i=r}));return"undefined"!=typeof Promise&&o instanceof Promise?o.then((function(n){return[n,t,i]})):[o,t,i]},"boolean"==typeof(null==r?void 0:r.useProxies)&&this.setUseProxies(r.useProxies),"boolean"==typeof(null==r?void 0:r.autoFreeze)&&this.setAutoFreeze(r.autoFreeze)}var i=e.prototype;return i.createDraft=function(e){t(e)||n(8),r(e)&&(e=D(e));var i=w(this),o=R(this,e,void 0);return o[Q].C=!0,g(i),o},i.finishDraft=function(r,t){var e=r&&r[Q]; true&&(e&&e.C||n(9),e.I&&n(10));var i=e.A;return j(i,t),P(void 0,i)},i.setAutoFreeze=function(n){this.F=n},i.setUseProxies=function(r){r&&!B&&n(20),this.g=r},i.applyPatches=function(n,t){var e;for(e=t.length-1;e>=0;e--){var i=t[e];if(0===i.path.length&&"replace"===i.op){n=i.value;break}}e>-1&&(t=t.slice(e+1));var o=b("Patches").$;return r(n)?o(n,t):this.produce(n,(function(n){return o(n,t)}))},e}(),an=new un,fn=an.produce,cn=an.produceWithPatches.bind(an),sn=an.setAutoFreeze.bind(an),vn=an.setUseProxies.bind(an),pn=an.applyPatches.bind(an),ln=an.createDraft.bind(an),dn=an.finishDraft.bind(an);/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fn);
-//# sourceMappingURL=immer.esm.js.map
-
 
 /***/ })
 

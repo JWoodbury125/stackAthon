@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { withRouter, Route, Switch, Redirect } from "react-router-dom";
+import Dropoff from "./components/Dropoff";
 import Pickup from "./components/Pickup";
 import Uber from "./components/Uber";
 import { me } from "./store";

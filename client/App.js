@@ -2,8 +2,12 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import RoutesManager from "./RoutesManager";
 import me from "./store/auth";
+import { fetchSearches } from "./store";
 
 class App extends Component {
+  componentDidMount() {
+    this.props.fetchSearches;
+  }
   render() {
     return (
       <div>
@@ -15,7 +19,7 @@ class App extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    auth: dispatch(me),
+    fetchSearches: dispatch(fetchSearches()),
   };
 };
 

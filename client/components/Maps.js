@@ -1,88 +1,52 @@
 import React, { Component } from "react";
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
+import ReactDOM from "react-dom";
+import {
+  Map,
+  GoogleApiWrapper,
+  Marker,
+  DirectionsRenderer,
+  DirectionsService,
+} from "google-maps-react";
+import { connect } from "react-redux";
 import { googleApiKey } from "../config";
 
-export class GoogleMap extends Component {
+export class FullMap extends Component {
   constructor(props) {
     super(props);
-
-    const { lat, lng } = this.props.text;
 
     this.state = {
       stores: [
         {
-          latitude: this.props.text ? lat : null,
-          longitude: this.props.text ? lng : null,
+          latitudeFrom: this.props.search.latFrom,
+          longitudeFrom: this.props.search.lngFrom,
+        },
+        {
+          latitudeTo: this.props.search.latTo,
+          longitudeTo: this.props.search.lngTo,
         },
       ],
     };
     this.displayMarkers = this.displayMarkers.bind(this);
-    this.recenterMap = this.recenterMap.bind(this);
-    this.loadMap = this.loadMap.bind(this);
+    this.handleDrawMarkers = this.handleDrawMarkers.bind(this);
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log(`HERE IS PREV PROPS ---> ${prevProps.text.lat}`);
-    if (prevProps.google !== this.props.google) {
-      this.loadMap();
-    }
-    if (prevProps.text.lat !== this.state.stores[0].latitude) {
-      this.recenterMap();
-    }
-  }
+  handleDrawMarkers = (latitude, longitude) => {
+    const { stores } = this.state;
+    new google.maps.Marker({
+      position: (latitude, longitude),
+      map: this.map,
+    });
+  };
 
-  // ...
-
-  loadMap() {
-    if (this.props && this.props.google) {
-      // checks if google is available
-      const { google } = this.props;
-      const maps = google.maps;
-
-      const mapRef = this.refs.map;
-
-      // reference to the actual DOM element
-      const node = ReactDOM.findDOMNode(mapRef);
-
-      let { zoom } = this.props;
-      const { lat, lng } = this.state.stores[0];
-      const center = new maps.LatLng(lat, lng);
-
-      const mapConfig = Object.assign(
-        {},
-        {
-          center: center,
-          zoom: zoom,
-        }
-      );
-
-      // maps.Map() is constructor that instantiates the map
-      this.map = new maps.Map(node, mapConfig);
-    }
-  }
-
-  // ...
-  recenterMap() {
-    const map = this.map;
-    const current = this.state.stores[0];
-    const google = this.props.google;
-    const maps = google.maps;
-
-    if (map) {
-      let center = new maps.LatLng(current.latitude, current.longitude);
-      map.panTo(center);
-    }
-  }
-
-  displayMarkers = () => {
+  displayMarkers = (latitude, longitude) => {
     return this.state.stores.map((store, index) => {
       return (
         <Marker
           key={index}
           id={index}
           position={{
-            lat: store.latitude,
-            lng: store.longitude,
+            lat: latitude,
+            lng: longitude,
           }}
         />
       );
@@ -90,9 +54,6 @@ export class GoogleMap extends Component {
   };
 
   render() {
-    console.log(
-      `HERE IS MAP PROPS----> ${this.props.text.lat} ${this.props.text.lng}`
-    );
     const mapStyles = {
       maxWidth: "550px",
       height: "550px",
@@ -108,21 +69,45 @@ export class GoogleMap extends Component {
     return (
       <Map
         google={this.props.google}
-        zoom={16}
+        zoom={14}
         style={mapStyles}
         containerStyle={containerStyle}
-        initialCenter={
-          this.props.text.lat
-            ? { lat: this.props.text.lat, lng: this.props.text.lng }
-            : { lat: 40.632769, lng: -73.90728 }
-        }
+        initialCenter={{
+          lat: `${this.props.search.latFrom}` * 1.0,
+          lng: `${this.props.search.lngFrom}` * 1.0,
+        }}
       >
-        {this.displayMarkers()}
+        {this.displayMarkers(
+          parseFloat(`${this.props.search.latFrom}`),
+          parseFloat(`${this.props.search.longFrom}`)
+        )}
+        {this.displayMarkers(
+          parseFloat(`${this.props.search.latTo}`),
+          parseFloat(`${this.props.search.longTo}`)
+        )}
+        {/* {this.handleDrawMarkers(
+          parseFloat(`${this.props.search.latFrom}`),
+          parseFloat(`${this.props.search.longFrom}`)
+        )}
+        {this.handleDrawMarkers(
+          parseFloat(`${this.props.search.latTo}`),
+          parseFloat(`${this.props.search.longTo}`)
+        )} */}
       </Map>
     );
   }
 }
+const mapStateToProps = (state) => {
+  const { searches } = state;
+  const lastElement = searches.length;
+  const search = searches.filter((_search) => _search.id === lastElement)[0];
+  return {
+    search,
+  };
+};
 
-export default GoogleApiWrapper({
-  apiKey: googleApiKey,
-})(GoogleMap);
+export default connect(mapStateToProps)(
+  GoogleApiWrapper({
+    apiKey: googleApiKey,
+  })(FullMap)
+);
